@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cómo estudiar el AZ-900 · Cuaderno AZ-900</title>
-<meta name="description" content="Un método de cuatro pasos para preparar el examen Microsoft AZ-900: analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj.">
-<link rel="canonical" href="https://az900.sintitulo.dev/metodo">
+<title>Cómo estudiar el CLF-C02 · Cuaderno Cloud Practitioner</title>
+<meta name="description" content="Un método de cuatro pasos para preparar el examen AWS Certified Cloud Practitioner (CLF-C02): analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/metodo">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Cuaderno AZ-900">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
 <meta property="og:locale" content="es_MX">
-<meta property="og:url" content="https://az900.sintitulo.dev/metodo">
-<meta property="og:title" content="Cómo estudiar para el AZ-900: un método de cuatro pasos">
-<meta property="og:description" content="Analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj. El método que se usó para aprobar el examen.">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/metodo">
+<meta property="og:title" content="Cómo estudiar para el CLF-C02: un método de cuatro pasos">
+<meta property="og:description" content="Analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj. El método que sirvió para aprobar el AZ-900, aplicado al Cloud Practitioner.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cómo estudiar para el AZ-900: un método de cuatro pasos">
-<meta name="twitter:description" content="Analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj. El método que se usó para aprobar el examen.">
+<meta name="twitter:title" content="Cómo estudiar para el CLF-C02: un método de cuatro pasos">
+<meta name="twitter:description" content="Analogía antes que dato, una pista por tema, bitácora de errores y simulacro con reloj. El método que sirvió para aprobar el AZ-900, aplicado al Cloud Practitioner.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#fbf9f2">
-<meta property="og:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cuaderno AZ-900: ¿un lock o un permiso? ¿Cold o Archive? ¿PaaS o SaaS?">
-<meta name="twitter:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: ¿CloudTrail o CloudWatch? ¿Shield o WAF? ¿EBS o EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
@@ -36,7 +36,7 @@
   <div class="limite pad barra">
     <a class="marca-sitio" href="/">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a6b52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
-      Cuaderno AZ&#8209;900
+      Cuaderno Cloud Practitioner
     </a>
     <nav class="menu" aria-label="Secciones">
       <a class="nav-cta" href="/practica">Practicar</a>
@@ -51,8 +51,8 @@
 
   <div style="max-width: 68ch">
     <h1>Cómo estudiar esto</h1>
-    <p class="prosa" style="margin-top: 22px">El AZ-900 evalúa reconocimiento: qué servicio resuelve cada situación y en qué se distingue del que se le parece. La experiencia práctica ayuda, aunque el examen no la exige, y por eso rinde más entender pocas ideas a fondo que leer el temario completo dos veces.</p>
-    <p class="prosa" style="margin-top: 16px">Estos cuatro pasos salieron de preparar el examen en serio, con diagnóstico al inicio y medición al final. El tercero es el que más cuesta y el que más se salta.</p>
+    <p class="prosa" style="margin-top: 22px">El CLF&#8209;C02 evalúa reconocimiento: qué servicio de AWS resuelve cada situación y en qué se distingue del que se le parece. La guía oficial deja fuera del examen programar, diseñar arquitecturas y resolver fallas. Por eso rinde más entender pocas ideas a fondo que leer el temario completo dos veces.</p>
+    <p class="prosa" style="margin-top: 16px">Estos cuatro pasos salieron de preparar el AZ&#8209;900 en serio, con diagnóstico al inicio y medición al final, y sirven igual para este examen. El tercero es el que más cuesta y el que más se salta.</p>
   </div>
 
   <section class="seccion" data-revelar>
@@ -62,20 +62,20 @@
         <h2>1. Una analogía antes que un dato</h2>
         <p class="prosa" style="margin-top: 14px">Un concepto se entiende cuando se puede contar con algo de la vida diaria. Antes de eso solo está memorizado, y la memoria se cae en cuanto la pregunta cambia de forma.</p>
         <div class="tarjeta" style="margin-top: 20px">
-          <p class="densa"><strong style="font-weight: 600">IaaS, PaaS y SaaS, con una cocina:</strong> IaaS es rentar la cocina vacía, con la estufa a cargo de quien cocina. PaaS es llegar a una cocina equipada y poner solo la receta. SaaS es sentarse en el restaurante.</p>
+          <p class="densa"><strong style="font-weight: 600">La responsabilidad compartida, con una cocina:</strong> EC2 es rentar la cocina vacía; la estufa, que aquí es el sistema operativo, la mantiene quien cocina. En RDS la cocina llega equipada y AWS le da mantenimiento; tú pones la receta y los ingredientes, que son los datos. En S3 solo guardas tus cosas en la alacena y decides quién tiene llave.</p>
           <p class="densa" style="margin-top: 14px">Con esa imagen, «¿quién parcha el sistema operativo?» deja de ser un dato suelto: es quién le da mantenimiento a la estufa.</p>
         </div>
       </li>
 
       <li>
         <h2>2. Una frase que decide la respuesta</h2>
-        <p class="prosa" style="margin-top: 14px">Cada tema se puede reducir a una pista corta que separa dos opciones parecidas. En el examen esas frases valen más que la explicación completa, porque el tiempo alcanza para reconocer, no para razonar desde cero.</p>
+        <p class="prosa" style="margin-top: 14px">Cada tema se puede reducir a una pista corta que separa dos opciones parecidas. En el examen esas frases valen más que la explicación completa: son 65 preguntas en 90 minutos, unos 83 segundos por pregunta, y ese tiempo alcanza para reconocer, no para razonar desde cero.</p>
         <ul class="lista-limpia" style="margin-top: 20px; gap: 12px">
-          <li class="densa"><strong class="pista">MG = reglas, no candados.</strong></li>
-          <li class="densa"><strong class="pista">Budget = semáforo, no llave de paso.</strong></li>
-          <li class="densa"><strong class="pista">Si puede tardar horas, es Archive.</strong></li>
+          <li class="densa"><strong class="pista">¿Quién hizo qué? = CloudTrail.</strong></li>
+          <li class="densa"><strong class="pista">Puede interrumpirse = instancias de spot.</strong></li>
+          <li class="densa"><strong class="pista">Puede esperar horas = Glacier Flexible Retrieval o Deep Archive.</strong></li>
         </ul>
-        <p class="prosa" style="margin-top: 20px">Las 34 pistas del cuaderno están en <a href="/diferencias">Diferencias</a>, con la explicación de cada una debajo.</p>
+        <p class="prosa" style="margin-top: 20px">Las 45 pistas del cuaderno están en <a href="/diferencias">Diferencias</a>, con la explicación de cada una debajo.</p>
       </li>
 
       <li>
@@ -88,7 +88,7 @@
       <li>
         <h2>4. Simulacro completo, sin pausas</h2>
         <p class="prosa" style="margin-top: 14px">Un simulacro mide algo solo si se hace de corrido y con reloj, porque así es el examen: sin pausas y sin dónde consultar.</p>
-        <p class="prosa" style="margin-top: 16px">La referencia útil: el examen real se aprueba con 700 de 1000, que es un puntaje escalado y no un porcentaje de aciertos. Un simulacro arriba del 80 % da margen suficiente. También conviene esperar que el examen real salga algo más bajo que la práctica: pasa casi siempre.</p>
+        <p class="prosa" style="margin-top: 16px">La referencia útil: el CLF&#8209;C02 se aprueba con 700 de 1000, que es un puntaje escalado y no un porcentaje de aciertos. Un simulacro arriba del 80 % da margen. En el AZ&#8209;900 el examen real salió más bajo que la práctica; conviene contar con eso.</p>
       </li>
 
     </ul>
@@ -97,12 +97,12 @@
   <section class="banda" data-revelar style="margin-left: calc(var(--gutter) * -1); margin-right: calc(var(--gutter) * -1); padding-left: var(--gutter); padding-right: var(--gutter)">
     <div style="max-width: 72ch">
       <h2>Si quedan pocos días</h2>
-      <p class="prosa" style="margin-top: 18px">Con el examen encima, el orden importa más que la cantidad. Esto es lo que rindió:</p>
+      <p class="prosa" style="margin-top: 18px">Con el examen encima, el orden importa más que la cantidad. Esto es lo que rindió en el AZ&#8209;900:</p>
       <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
         <li class="densa"><strong style="font-weight: 600">Primero, medir.</strong> Un diagnóstico dice en qué dominio conviene pasar la tarde. Estudiar sin eso reparte el tiempo en partes iguales entre lo que ya se sabe y lo que no.</li>
         <li class="densa"><strong style="font-weight: 600">Bloques cortos por tema, con preguntas de inmediato.</strong> Leer treinta minutos seguidos rinde menos que leer diez y contestar cinco preguntas.</li>
         <li class="densa"><strong style="font-weight: 600">Nada nuevo la noche anterior.</strong> Material nuevo a esas horas quita confianza y no alcanza a fijarse. Esa noche es para dormir.</li>
-        <li class="densa"><strong style="font-weight: 600">La mañana del examen, solo pistas.</strong> La vista de pistas de <a href="/diferencias">Diferencias</a> se lee en cinco minutos y cabe en tres hojas.</li>
+        <li class="densa"><strong style="font-weight: 600">La mañana del examen, solo pistas.</strong> La vista de pistas de <a href="/diferencias">Diferencias</a> se lee en unos siete minutos.</li>
       </ul>
     </div>
   </section>
@@ -110,12 +110,12 @@
   <section class="seccion" data-revelar>
     <div class="cierre">
       <div>
-        <h2>Empieza por saber dónde estás parado</h2>
-        <p class="prosa" style="margin-top: 16px">El diagnóstico son 20 preguntas de los tres dominios. Al terminar muestra en cuál vas bien y en cuál conviene pasar la tarde.</p>
+        <h2>Mientras llega la práctica, empieza por las diferencias</h2>
+        <p class="prosa" style="margin-top: 16px">Son 45, repartidas en los cuatro dominios del examen. Se leen en unos 25 minutos.</p>
       </div>
       <div class="cierre-accion">
-        <a class="cta grande" href="/practica">Empezar el diagnóstico</a>
-        <p class="meta" style="margin-top: 12px">Unos 10 minutos. Nada que instalar ni registrar.</p>
+        <a class="cta grande" href="/diferencias">Ver las diferencias</a>
+        <p class="meta" style="margin-top: 12px">Nada que instalar ni registrar.</p>
       </div>
     </div>
   </section>
@@ -126,7 +126,7 @@
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">Este método salió de preparar el AZ&#8209;900 y presentarlo el 17 de septiembre de 2026. Funcionó para alguien que ya tenía bases de nube; quien empieza de cero necesita más días, no otro método.</p>
+        <p class="densa">Este método salió de preparar y aprobar el AZ&#8209;900 en septiembre de 2026. Funcionó para alguien que ya tenía bases de nube; quien empieza de cero necesita más días, no otro método.</p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
         <h2>El cuaderno</h2>
@@ -144,10 +144,10 @@
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno AZ-900 es un proyecto personal y gratuito, sin relación con Microsoft. Microsoft, Azure y AZ-900 son marcas de Microsoft. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
-      <p class="sello">Contenido verificado contra la guía oficial de Microsoft en septiembre de 2026, con los <em>skills measured</em> del 20 de julio de 2026. Si el temario cambia, esta fecha se queda atrás: compruébalo en learn.microsoft.com.</p>
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito, sin relación con Amazon Web Services. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
       <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
-      <p class="sello">El primero de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+      <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
     </div>
   </div>
 </footer>

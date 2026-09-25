@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://az900.sintitulo.dev/sitemap.xml
+Sitemap: https://cloud-practitioner.sintitulo.dev/sitemap.xml

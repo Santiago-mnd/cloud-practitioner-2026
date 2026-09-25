@@ -11,7 +11,7 @@ import json
 import urllib.request
 
 CLAVE = "f42d097b2239e1408b611e91d388c718"
-HOST = "az900.sintitulo.dev"
+HOST = "cloud-practitioner.sintitulo.dev"
 URLS = [
     f"https://{HOST}/",
     f"https://{HOST}/practica",

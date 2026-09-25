@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Las 34 diferencias clave del AZ-900 · Cuaderno AZ-900</title>
-<meta name="description" content="Las 34 diferencias clave del examen Microsoft AZ-900: dónde se confunden, qué pasa en realidad y la frase que decide la respuesta.">
-<link rel="canonical" href="https://az900.sintitulo.dev/diferencias">
+<title>Las 45 diferencias clave del CLF-C02 · Cuaderno Cloud Practitioner</title>
+<meta name="description" content="Las 45 diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden, qué pasa en realidad y la frase que decide la respuesta.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/diferencias">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Cuaderno AZ-900">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
 <meta property="og:locale" content="es_MX">
-<meta property="og:url" content="https://az900.sintitulo.dev/diferencias">
-<meta property="og:title" content="Las 34 diferencias clave del AZ-900">
-<meta property="og:description" content="Dónde se confunde cada par de conceptos del examen AZ-900, qué pasa en realidad y la frase que decide la respuesta.">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/diferencias">
+<meta property="og:title" content="Las 45 diferencias clave del CLF-C02">
+<meta property="og:description" content="Dónde se confunde cada par de servicios y conceptos del examen CLF-C02, qué pasa en realidad y la frase que decide la respuesta.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Las 34 diferencias clave del AZ-900">
-<meta name="twitter:description" content="Dónde se confunde cada par de conceptos del examen AZ-900, qué pasa en realidad y la frase que decide la respuesta.">
+<meta name="twitter:title" content="Las 45 diferencias clave del CLF-C02">
+<meta name="twitter:description" content="Dónde se confunde cada par de servicios y conceptos del examen CLF-C02, qué pasa en realidad y la frase que decide la respuesta.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#fbf9f2">
-<meta property="og:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cuaderno AZ-900: ¿un lock o un permiso? ¿Cold o Archive? ¿PaaS o SaaS?">
-<meta name="twitter:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: ¿CloudTrail o CloudWatch? ¿Shield o WAF? ¿EBS o EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
@@ -36,7 +36,7 @@
   <div class="limite pad barra">
     <a class="marca-sitio" href="/">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a6b52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
-      Cuaderno AZ&#8209;900
+      Cuaderno Cloud Practitioner
     </a>
     <nav class="menu" aria-label="Secciones">
       <a class="nav-cta" href="/practica">Practicar</a>
@@ -50,9 +50,9 @@
 <main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
 
   <div class="encabezado-diferencias">
-    <h1>Las 34 diferencias del AZ&#8209;900</h1>
-    <p class="subtitulo">¿Un lock o un permiso? ¿Cold o Archive? Resueltas una por una.</p>
-    <p class="prosa" style="margin-top: 20px">La respuesta equivocada convence hasta que alguien explica por qué falla. De cada una: la pista que decide la respuesta, dónde se confunde y qué pasa en realidad. Se leen en unos veinte minutos; en la vista de pistas, en cinco.</p>
+    <h1>Las 45 diferencias del CLF&#8209;C02</h1>
+    <p class="subtitulo">¿CloudTrail o CloudWatch? ¿Shield o WAF? Resueltas una por una.</p>
+    <p class="prosa" style="margin-top: 20px">La respuesta equivocada convence hasta que alguien explica por qué falla. De cada una: la pista que decide la respuesta, dónde se confunde y qué pasa en realidad. Se leen en unos 25 minutos; en la vista de pistas, en siete.</p>
     <div class="controles">
       <button type="button" class="cta secundaria" id="alternar-pistas" aria-pressed="false">Solo pistas</button>
       <span class="meta" id="estado-dominadas" role="status"></span>
@@ -63,55 +63,71 @@
   <div class="marco-diferencias">
     <nav class="indice-lateral" aria-label="Índice de diferencias">
       <details class="indice-caja" id="indice-caja" open>
-        <summary>Índice · 34 diferencias</summary>
+        <summary>Índice · 45 diferencias</summary>
         <ul>
           <li class="indice-dominio" data-indice-dominio="1">
-            <a class="indice-dominio-titulo" href="#dominio-1">Conceptos de nube <span class="indice-rango">01–12</span></a>
+            <a class="indice-dominio-titulo" href="#dominio-1">Conceptos de la nube <span class="indice-rango">01–07</span></a>
             <ul>
-              <li><a href="#sql-database-paas" data-indice="sql-database-paas"><span class="indice-num">01</span> SQL Database es PaaS</a></li>
-              <li><a href="#infraestructura-iaas" data-indice="infraestructura-iaas"><span class="indice-num">02</span> La infraestructura es IaaS</a></li>
-              <li><a href="#frontera-iaas-paas" data-indice="frontera-iaas-paas"><span class="indice-num">03</span> ¿Quién parcha el SO?</a></li>
-              <li><a href="#paas-vs-saas" data-indice="paas-vs-saas"><span class="indice-num">04</span> PaaS o SaaS</a></li>
-              <li><a href="#modelo-vs-tipo" data-indice="modelo-vs-tipo"><span class="indice-num">05</span> Modelo o tipo de servicio</a></li>
-              <li><a href="#opex-vs-governance" data-indice="opex-vs-governance"><span class="indice-num">06</span> OpEx o governance</a></li>
-              <li><a href="#confiabilidad-vs-disponibilidad" data-indice="confiabilidad-vs-disponibilidad"><span class="indice-num">07</span> Confiabilidad o disponibilidad</a></li>
-              <li><a href="#agilidad-vs-elasticidad" data-indice="agilidad-vs-elasticidad"><span class="indice-num">08</span> Agilidad o elasticidad</a></li>
-              <li><a href="#geografia-vs-desastres" data-indice="geografia-vs-desastres"><span class="indice-num">09</span> Geografía o desastres</a></li>
-              <li><a href="#nube-publica" data-indice="nube-publica"><span class="indice-num">10</span> Nube pública</a></li>
-              <li><a href="#nube-privada" data-indice="nube-privada"><span class="indice-num">11</span> Nube privada</a></li>
-              <li><a href="#paas-so-microsoft" data-indice="paas-so-microsoft"><span class="indice-num">12</span> El SO en PaaS</a></li>
+              <li><a href="#agility-vs-elasticity" data-indice="agility-vs-elasticity"><span class="indice-num">01</span> Agilidad o elasticidad</a></li>
+              <li><a href="#economies-of-scale" data-indice="economies-of-scale"><span class="indice-num">02</span> Escala o gasto variable</a></li>
+              <li><a href="#well-architected-pillars" data-indice="well-architected-pillars"><span class="indice-num">03</span> Los seis pilares</a></li>
+              <li><a href="#caf-perspectives" data-indice="caf-perspectives"><span class="indice-num">04</span> CAF: perspectivas y resultados</a></li>
+              <li><a href="#seven-rs" data-indice="seven-rs"><span class="indice-num">05</span> Las siete R</a></li>
+              <li><a href="#byol-vs-license-included" data-indice="byol-vs-license-included"><span class="indice-num">06</span> BYOL o licencia incluida</a></li>
+              <li><a href="#rightsizing-vs-autoscaling" data-indice="rightsizing-vs-autoscaling"><span class="indice-num">07</span> Rightsizing o Auto Scaling</a></li>
             </ul>
           </li>
           <li class="indice-dominio" data-indice-dominio="2">
-            <a class="indice-dominio-titulo" href="#dominio-2">Arquitectura y servicios <span class="indice-rango">13–23</span></a>
+            <a class="indice-dominio-titulo" href="#dominio-2">Seguridad y cumplimiento <span class="indice-rango">08–20</span></a>
             <ul>
-              <li><a href="#scale-sets-vs-aks" data-indice="scale-sets-vs-aks"><span class="indice-num">13</span> Scale Sets, AKS o set</a></li>
-              <li><a href="#zona-de-una-vm" data-indice="zona-de-una-vm"><span class="indice-num">14</span> La zona de una VM</a></li>
-              <li><a href="#zone-set-pair" data-indice="zone-set-pair"><span class="indice-num">15</span> Zone, set y pair</a></li>
-              <li><a href="#cold-vs-archive" data-indice="cold-vs-archive"><span class="indice-num">16</span> Cold o Archive</a></li>
-              <li><a href="#archive-restricciones" data-indice="archive-restricciones"><span class="indice-num">17</span> Dónde cabe Archive</a></li>
-              <li><a href="#files-vs-blob" data-indice="files-vs-blob"><span class="indice-num">18</span> Files o Blob</a></li>
-              <li><a href="#que-conecta-con-que" data-indice="que-conecta-con-que"><span class="indice-num">19</span> Qué conecta con qué</a></li>
-              <li><a href="#capas-vs-zero-trust" data-indice="capas-vs-zero-trust"><span class="indice-num">20</span> Capas o Zero Trust</a></li>
-              <li><a href="#acceso-condicional-vs-rbac" data-indice="acceso-condicional-vs-rbac"><span class="indice-num">21</span> Acceso condicional o RBAC</a></li>
-              <li><a href="#sso-vs-mfa" data-indice="sso-vs-mfa"><span class="indice-num">22</span> SSO o MFA</a></li>
-              <li><a href="#entra-no-hace-dns" data-indice="entra-no-hace-dns"><span class="indice-num">23</span> Entra ID no hace DNS</a></li>
+              <li><a href="#security-of-vs-in" data-indice="security-of-vs-in"><span class="indice-num">08</span> De la nube o en la nube</a></li>
+              <li><a href="#responsibility-by-service" data-indice="responsibility-by-service"><span class="indice-num">09</span> Responsabilidad por servicio</a></li>
+              <li><a href="#shared-controls" data-indice="shared-controls"><span class="indice-num">10</span> Controles compartidos</a></li>
+              <li><a href="#cloudwatch-cloudtrail-config" data-indice="cloudwatch-cloudtrail-config"><span class="indice-num">11</span> CloudWatch, CloudTrail, Config</a></li>
+              <li><a href="#artifact-vs-config" data-indice="artifact-vs-config"><span class="indice-num">12</span> Artifact o Config</a></li>
+              <li><a href="#threat-detection-family" data-indice="threat-detection-family"><span class="indice-num">13</span> Cinco servicios de seguridad</a></li>
+              <li><a href="#shield-waf-firewall-manager" data-indice="shield-waf-firewall-manager"><span class="indice-num">14</span> Shield, WAF, Firewall Manager</a></li>
+              <li><a href="#keys-certificates-secrets" data-indice="keys-certificates-secrets"><span class="indice-num">15</span> Claves, certificados, secretos</a></li>
+              <li><a href="#encryption-transit-vs-rest" data-indice="encryption-transit-vs-rest"><span class="indice-num">16</span> En tránsito o en reposo</a></li>
+              <li><a href="#iam-user-vs-role" data-indice="iam-user-vs-role"><span class="indice-num">17</span> Usuario o rol</a></li>
+              <li><a href="#iam-identity-center-cognito" data-indice="iam-identity-center-cognito"><span class="indice-num">18</span> IAM, Identity Center, Cognito</a></li>
+              <li><a href="#iam-policy-vs-scp" data-indice="iam-policy-vs-scp"><span class="indice-num">19</span> Política de IAM o SCP</a></li>
+              <li><a href="#root-user" data-indice="root-user"><span class="indice-num">20</span> El usuario raíz</a></li>
             </ul>
           </li>
           <li class="indice-dominio" data-indice-dominio="3">
-            <a class="indice-dominio-titulo" href="#dominio-3">Administración y gobernanza <span class="indice-rango">24–34</span></a>
+            <a class="indice-dominio-titulo" href="#dominio-3">Tecnología y servicios en la nube <span class="indice-rango">21–37</span></a>
             <ul>
-              <li><a href="#locks-management-group" data-indice="locks-management-group"><span class="indice-num">24</span> Locks y management groups</a></li>
-              <li><a href="#lock-vs-rbac" data-indice="lock-vs-rbac"><span class="indice-num">25</span> Lock o RBAC</a></li>
-              <li><a href="#tenant-vs-suscripcion" data-indice="tenant-vs-suscripcion"><span class="indice-num">26</span> Tenant o suscripción</a></li>
-              <li><a href="#un-solo-resource-group" data-indice="un-solo-resource-group"><span class="indice-num">27</span> Un solo resource group</a></li>
-              <li><a href="#advisor-no-es-todo" data-indice="advisor-no-es-todo"><span class="indice-num">28</span> Advisor y su familia</a></li>
-              <li><a href="#cloud-shell-vs-arc" data-indice="cloud-shell-vs-arc"><span class="indice-num">29</span> Cloud Shell o Arc</a></li>
-              <li><a href="#budget-avisa" data-indice="budget-avisa"><span class="indice-num">30</span> El budget solo avisa</a></li>
-              <li><a href="#estimar-analizar-recomendar" data-indice="estimar-analizar-recomendar"><span class="indice-num">31</span> Estimar, analizar, recomendar</a></li>
-              <li><a href="#cost-management-no-tco" data-indice="cost-management-no-tco"><span class="indice-num">32</span> Cost Management y el TCO</a></li>
-              <li><a href="#ingress-egress" data-indice="ingress-egress"><span class="indice-num">33</span> Entrada y salida de datos</a></li>
-              <li><a href="#tags-para-costos" data-indice="tags-para-costos"><span class="indice-num">34</span> Tags para costos</a></li>
+              <li><a href="#deployment-models" data-indice="deployment-models"><span class="indice-num">21</span> Modelos de implementación</a></li>
+              <li><a href="#console-vs-iac" data-indice="console-vs-iac"><span class="indice-num">22</span> Consola o código</a></li>
+              <li><a href="#region-az-edge" data-indice="region-az-edge"><span class="indice-num">23</span> Región, AZ y periferia</a></li>
+              <li><a href="#ec2-instance-families" data-indice="ec2-instance-families"><span class="indice-num">24</span> Familias de instancia</a></li>
+              <li><a href="#compute-options" data-indice="compute-options"><span class="indice-num">25</span> ECS, EKS, Fargate, Lambda</a></li>
+              <li><a href="#elb-vs-auto-scaling" data-indice="elb-vs-auto-scaling"><span class="indice-num">26</span> Balanceador o Auto Scaling</a></li>
+              <li><a href="#database-options" data-indice="database-options"><span class="indice-num">27</span> Qué base de datos</a></li>
+              <li><a href="#dms-vs-sct" data-indice="dms-vs-sct"><span class="indice-num">28</span> DMS o SCT</a></li>
+              <li><a href="#security-group-vs-nacl" data-indice="security-group-vs-nacl"><span class="indice-num">29</span> Grupo de seguridad o ACL</a></li>
+              <li><a href="#connectivity-options" data-indice="connectivity-options"><span class="indice-num">30</span> Conectar redes</a></li>
+              <li><a href="#edge-services" data-indice="edge-services"><span class="indice-num">31</span> CloudFront, Accelerator, Route 53</a></li>
+              <li><a href="#storage-types" data-indice="storage-types"><span class="indice-num">32</span> Bloque, archivo u objeto</a></li>
+              <li><a href="#s3-storage-classes" data-indice="s3-storage-classes"><span class="indice-num">33</span> Clases de S3</a></li>
+              <li><a href="#analytics-services" data-indice="analytics-services"><span class="indice-num">34</span> Servicios de análisis</a></li>
+              <li><a href="#ai-services" data-indice="ai-services"><span class="indice-num">35</span> Servicios de IA</a></li>
+              <li><a href="#messaging-services" data-indice="messaging-services"><span class="indice-num">36</span> SNS, SQS, EventBridge</a></li>
+              <li><a href="#other-services" data-indice="other-services"><span class="indice-num">37</span> Escritorios, IoT, código</a></li>
+            </ul>
+          </li>
+          <li class="indice-dominio" data-indice-dominio="4">
+            <a class="indice-dominio-titulo" href="#dominio-4">Facturación, precios y soporte <span class="indice-rango">38–45</span></a>
+            <ul>
+              <li><a href="#purchase-options" data-indice="purchase-options"><span class="indice-num">38</span> Opciones de compra</a></li>
+              <li><a href="#savings-plans-vs-ri" data-indice="savings-plans-vs-ri"><span class="indice-num">39</span> Savings Plans o RI</a></li>
+              <li><a href="#data-transfer" data-indice="data-transfer"><span class="indice-num">40</span> Entrada y salida de datos</a></li>
+              <li><a href="#cost-tools" data-indice="cost-tools"><span class="indice-num">41</span> Herramientas de costos</a></li>
+              <li><a href="#cost-allocation-tags" data-indice="cost-allocation-tags"><span class="indice-num">42</span> Etiquetas de costos</a></li>
+              <li><a href="#organizations-vs-control-tower" data-indice="organizations-vs-control-tower"><span class="indice-num">43</span> Organizations o Control Tower</a></li>
+              <li><a href="#support-plans" data-indice="support-plans"><span class="indice-num">44</span> Planes de soporte</a></li>
+              <li><a href="#where-to-go" data-indice="where-to-go"><span class="indice-num">45</span> A quién acudir</a></li>
             </ul>
           </li>
         </ul>
@@ -120,681 +136,1047 @@
 
     <div class="columna-diferencias">
       <section class="dominio" id="dominio-1" data-dominio="1">
-        <h2>Conceptos de nube <span class="conteo">01–12</span></h2>
+        <h2>Conceptos de la nube <span class="conteo">01–07</span></h2>
         <div class="lista-diferencias">
-        <article class="diferencia" id="sql-database-paas" data-dif="sql-database-paas">
+        <article class="diferencia" id="agility-vs-elasticity" data-dif="agility-vs-elasticity">
           <div class="dif-cabeza">
             <span class="numero">01</span>
             <div class="dif-titular">
-              <h3><a href="#sql-database-paas">Azure SQL Database siempre es PaaS</a></h3>
-              <p><strong class="pista">«Administrada» o «Azure SQL Database» = PaaS. «Dentro de una VM» = IaaS.</strong></p>
+              <h3><a href="#agility-vs-elasticity">Agilidad es lanzar rápido; elasticidad es ajustarse a la demanda</a></h3>
+              <p><strong class="pista">Algo nuevo disponible en minutos = agilidad. Crecer y encogerse según la carga = elasticidad.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="sql-database-paas" aria-label="Marcar como dominada: Azure SQL Database siempre es PaaS">
+              <input type="checkbox" data-dominada="agility-vs-elasticity" aria-label="Marcar como dominada: Agilidad es lanzar rápido; elasticidad es ajustarse a la demanda">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El nombre suena a servidor de base de datos, y quien ha administrado SQL Server lo asocia con una máquina que alguien mantiene.</p>
-            <p class="regla">Es un motor de base de datos administrado: Microsoft opera el servidor, el sistema operativo, los parches y los respaldos. Solo se aportan tablas, consultas y datos. SQL Server instalado dentro de una máquina virtual sí es IaaS. Cosmos DB va en la misma bolsa que Azure SQL.</p>
-            <p class="tema-pie">Tipos de servicio</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos suenan a rapidez, y en un escenario de lanzamiento aparecen juntas.</p>
+            <p class="regla">AWS enumera seis ventajas de la nube. «Aumentar la velocidad y la agilidad» habla de tener recursos nuevos en minutos para experimentar más. «Dejar de adivinar la capacidad» habla de subirla o bajarla según la demanda real, que es la elasticidad. La alta disponibilidad responde a otra pregunta: que el servicio siga en línea aunque falle una parte.</p>
+            <p class="tema-pie">Beneficios</p>
           </div>
         </article>
-        <article class="diferencia" id="infraestructura-iaas" data-dif="infraestructura-iaas">
+        <article class="diferencia" id="economies-of-scale" data-dif="economies-of-scale">
           <div class="dif-cabeza">
             <span class="numero">02</span>
             <div class="dif-titular">
-              <h3><a href="#infraestructura-iaas">La infraestructura es IaaS, aunque nadie instale cables</a></h3>
-              <p><strong class="pista">VM, VNet y disco = IaaS. App Service, Azure SQL y Functions = PaaS.</strong></p>
+              <h3><a href="#economies-of-scale">Economías de escala y gasto variable abaratan por caminos distintos</a></h3>
+              <p><strong class="pista">Pagar solo lo que se consume = gasto variable. Precio más bajo porque AWS suma el uso de muchos clientes = economías de escala.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="infraestructura-iaas" aria-label="Marcar como dominada: La infraestructura es IaaS, aunque nadie instale cables">
+              <input type="checkbox" data-dominada="economies-of-scale" aria-label="Marcar como dominada: Economías de escala y gasto variable abaratan por caminos distintos">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como una red virtual se crea con unos clics y no hay hardware de por medio, parece una plataforma administrada.</p>
-            <p class="regla">Las máquinas virtuales, las redes virtuales, los discos y los balanceadores son la capa de infraestructura: el cliente los diseña y los administra. PaaS empieza un piso más arriba, cuando la plataforma ya está lista para recibir código o datos.</p>
-            <p class="tema-pie">Tipos de servicio</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos terminan en «sale más barato», así que parecen la misma ventaja.</p>
+            <p class="regla">Cambiar gasto fijo por variable significa no invertir por adelantado en centros de datos y servidores, y pagar solo cuando se consume. Las economías de escala vienen de que AWS suma el uso de cientos de miles de clientes. Con ese volumen cobra un precio por uso más bajo del que lograría una empresa por su cuenta.</p>
+            <p class="tema-pie">Economía de la nube</p>
           </div>
         </article>
-        <article class="diferencia" id="frontera-iaas-paas" data-dif="frontera-iaas-paas">
+        <article class="diferencia" id="well-architected-pillars" data-dif="well-architected-pillars">
           <div class="dif-cabeza">
             <span class="numero">03</span>
             <div class="dif-titular">
-              <h3><a href="#frontera-iaas-paas">La frontera entre IaaS y PaaS es el sistema operativo</a></h3>
-              <p><strong class="pista">La pregunta que decide: ¿quién parcha el sistema operativo?</strong></p>
+              <h3><a href="#well-architected-pillars">Los seis pilares de Well-Architected se distinguen por la pregunta que responden</a></h3>
+              <p><strong class="pista">Funcionar bien y de forma constante = fiabilidad. Usar el recurso adecuado conforme cambia la demanda = eficiencia del rendimiento. Energía o impacto ambiental = sostenibilidad.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="frontera-iaas-paas" aria-label="Marcar como dominada: La frontera entre IaaS y PaaS es el sistema operativo">
+              <input type="checkbox" data-dominada="well-architected-pillars" aria-label="Marcar como dominada: Los seis pilares de Well-Architected se distinguen por la pregunta que responden">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> En los dos modelos se construye algo encima, así que «construir» no distingue nada.</p>
-            <p class="regla">Si el cliente instala y parcha el sistema operativo, es IaaS, y eso incluye a los Scale Sets. Si Microsoft lo parcha, es PaaS.</p>
-            <p class="tema-pie">Tipos de servicio</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Varios pilares suenan a «que todo funcione bien». Apagar recursos que sobran ahorra dinero y energía a la vez, así que costos y sostenibilidad también se cruzan.</p>
+            <p class="regla">La herramienta AWS Well-Architected mide una carga de trabajo contra las buenas prácticas del marco y da recomendaciones para mejorarla.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Organizar al equipo, operar la carga y mejorarla con el tiempo</th><td>Excelencia operativa</td></tr>
+              <tr><th scope="row">Proteger datos, sistemas y activos</th><td>Seguridad</td></tr>
+              <tr><th scope="row">Que la carga haga su función de forma correcta y constante</th><td>Fiabilidad</td></tr>
+              <tr><th scope="row">Usar los recursos con eficiencia conforme cambian la demanda y la tecnología</th><td>Eficiencia del rendimiento</td></tr>
+              <tr><th scope="row">Entregar valor de negocio al menor precio</th><td>Optimización de costos</td></tr>
+              <tr><th scope="row">Reducir el impacto ambiental, sobre todo el consumo de energía</th><td>Sostenibilidad</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Well-Architected</p>
           </div>
         </article>
-        <article class="diferencia" id="paas-vs-saas" data-dif="paas-vs-saas">
+        <article class="diferencia" id="caf-perspectives" data-dif="caf-perspectives">
           <div class="dif-cabeza">
             <span class="numero">04</span>
             <div class="dif-titular">
-              <h3><a href="#paas-vs-saas">PaaS y SaaS se separan por quién escribe la aplicación</a></h3>
-              <p><strong class="pista">Si alguien escribe código o diseña tablas, ya no es SaaS.</strong></p>
+              <h3><a href="#caf-perspectives">El AWS CAF tiene seis perspectivas y cuatro resultados de negocio</a></h3>
+              <p><strong class="pista">Negocio, personas, gobernanza, plataforma, seguridad y operaciones = perspectivas. Menos riesgo, mejor ESG, más ingresos y más eficiencia = resultados.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="paas-vs-saas" aria-label="Marcar como dominada: PaaS y SaaS se separan por quién escribe la aplicación">
+              <input type="checkbox" data-dominada="caf-perspectives" aria-label="Marcar como dominada: El AWS CAF tiene seis perspectivas y cuatro resultados de negocio">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos evitan administrar servidores, así que suenan intercambiables.</p>
-            <p class="regla">PaaS es una herramienta para construir encima: el código y las tablas son del cliente. SaaS es un producto terminado que solo se usa, como Microsoft 365, Teams, Outlook o Power BI.</p>
-            <p class="tema-pie">Tipos de servicio</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos listas se parecen, y «gobernanza» aparece como perspectiva y también dentro del ESG.</p>
+            <p class="regla">El marco de adopción de la nube de AWS (AWS CAF) agrupa en seis perspectivas las capacidades que una organización necesita para adoptar la nube; cada perspectiva tiene sus propios responsables. Los resultados son lo que la transformación entrega al negocio: menor riesgo, mejor desempeño ambiental, social y de gobernanza (ESG), más ingresos y más eficiencia operativa.</p>
+            <p class="tema-pie">Adopción de la nube</p>
           </div>
         </article>
-        <article class="diferencia" id="modelo-vs-tipo" data-dif="modelo-vs-tipo">
+        <article class="diferencia" id="seven-rs" data-dif="seven-rs">
           <div class="dif-cabeza">
             <span class="numero">05</span>
             <div class="dif-titular">
-              <h3><a href="#modelo-vs-tipo">Modelo de implementación y tipo de servicio son ejes distintos</a></h3>
-              <p><strong class="pista">On-premises conectado con Azure = nube híbrida, aunque el escenario hable de VMs.</strong></p>
+              <h3><a href="#seven-rs">Las siete estrategias de migración se distinguen por lo que le pasa a la aplicación</a></h3>
+              <p><strong class="pista">Sin cambios = rehost. Con ajustes = replatform. Rediseño nativo = refactor. Otro producto = repurchase.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="modelo-vs-tipo" aria-label="Marcar como dominada: Modelo de implementación y tipo de servicio son ejes distintos">
+              <input type="checkbox" data-dominada="seven-rs" aria-label="Marcar como dominada: Las siete estrategias de migración se distinguen por lo que le pasa a la aplicación">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Un escenario menciona máquinas virtuales y la respuesta parece ser IaaS, aunque la pregunta sea sobre dónde vive la solución.</p>
-            <p class="regla">El modelo responde dónde: pública, privada, híbrida o multinube. El tipo de servicio responde cuánto administra el cliente: IaaS, PaaS o SaaS. Son independientes entre sí.</p>
-            <p class="tema-pie">Tipos de servicio</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Rehost, relocate y replatform suenan igual: mover la aplicación a la nube.</p>
+            <p class="regla">Para migraciones grandes, AWS recomienda rehost, replatform o relocate, y dejar el rediseño para después de migrar, porque refactor es la estrategia más compleja.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Moverla tal cual, sin cambios (lift and shift)</th><td>Rehost</td></tr>
+              <tr><th scope="row">Moverla con algunos ajustes para aprovechar la nube (lift, tinker and shift)</th><td>Replatform</td></tr>
+              <tr><th scope="row">Rediseñarla con capacidades nativas de la nube</th><td>Refactor</td></tr>
+              <tr><th scope="row">Cambiarla por otro producto, a menudo software como servicio o SaaS (drop and shop)</th><td>Repurchase</td></tr>
+              <tr><th scope="row">Pasar muchos servidores a la versión en la nube de la misma plataforma, sin comprar hardware ni reescribir</th><td>Relocate</td></tr>
+              <tr><th scope="row">Dejarla donde está por ahora</th><td>Retain</td></tr>
+              <tr><th scope="row">Apagarla porque ya no aporta valor</th><td>Retire</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Migración</p>
           </div>
         </article>
-        <article class="diferencia" id="opex-vs-governance" data-dif="opex-vs-governance">
+        <article class="diferencia" id="byol-vs-license-included" data-dif="byol-vs-license-included">
           <div class="dif-cabeza">
             <span class="numero">06</span>
             <div class="dif-titular">
-              <h3><a href="#opex-vs-governance">Pagar por uso es OpEx; governance es otra cosa</a></h3>
-              <p><strong class="pista">Sin inversión inicial = OpEx. Reglas y estándares = governance.</strong></p>
+              <h3><a href="#byol-vs-license-included">Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra</a></h3>
+              <p><strong class="pista">Ya tiene licencias y quiere reusarlas = BYOL.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="opex-vs-governance" aria-label="Marcar como dominada: Pagar por uso es OpEx; governance es otra cosa">
+              <input type="checkbox" data-dominada="byol-vs-license-included" aria-label="Marcar como dominada: Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> La palabra control aparece en las dos ideas, y quien decide el gasto también parece estar gobernando.</p>
-            <p class="regla">CapEx es la inversión inicial en infraestructura. OpEx es pagar conforme se usa, y la nube es OpEx por naturaleza. Governance son reglas y cumplimiento sobre lo que puede existir: Policy, locks, tags y RBAC.</p>
-            <p class="tema-pie">Beneficios</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> En los dos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.</p>
+            <p class="regla">Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y para eso existen los hosts dedicados.</p>
+            <p class="tema-pie">Economía de la nube</p>
           </div>
         </article>
-        <article class="diferencia" id="confiabilidad-vs-disponibilidad" data-dif="confiabilidad-vs-disponibilidad">
+        <article class="diferencia" id="rightsizing-vs-autoscaling" data-dif="rightsizing-vs-autoscaling">
           <div class="dif-cabeza">
             <span class="numero">07</span>
             <div class="dif-titular">
-              <h3><a href="#confiabilidad-vs-disponibilidad">Confiabilidad es recuperarse; alta disponibilidad es no caerse</a></h3>
-              <p><strong class="pista">Recuperarse de fallas = confiabilidad.</strong></p>
+              <h3><a href="#rightsizing-vs-autoscaling">Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad</a></h3>
+              <p><strong class="pista">Instancias sobradas todo el tiempo = rightsizing. Carga que sube y baja = Auto Scaling.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="confiabilidad-vs-disponibilidad" aria-label="Marcar como dominada: Confiabilidad es recuperarse; alta disponibilidad es no caerse">
+              <input type="checkbox" data-dominada="rightsizing-vs-autoscaling" aria-label="Marcar como dominada: Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Distribuir una aplicación en varias regiones suena directamente a disponibilidad.</p>
-            <p class="regla">La confiabilidad es la capacidad de recuperarse de una falla y seguir operando. La alta disponibilidad es mantenerse en línea el mayor tiempo posible, y se mide con el SLA. La agilidad es desplegar rápido, y la previsibilidad es que el costo y el rendimiento sean esperables.</p>
-            <p class="tema-pie">Beneficios</p>
-          </div>
-        </article>
-        <article class="diferencia" id="agilidad-vs-elasticidad" data-dif="agilidad-vs-elasticidad">
-          <div class="dif-cabeza">
-            <span class="numero">08</span>
-            <div class="dif-titular">
-              <h3><a href="#agilidad-vs-elasticidad">Agilidad es desplegar rápido; elasticidad es ajustarse solo</a></h3>
-              <p><strong class="pista">Rápido de implementar = agilidad. Según la demanda = elasticidad.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="agilidad-vs-elasticidad" aria-label="Marcar como dominada: Agilidad es desplegar rápido; elasticidad es ajustarse solo">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos suenan a rapidez y a nube moderna.</p>
-            <p class="regla">La agilidad es la rapidez para crear o cambiar recursos nuevos. La elasticidad es que lo ya desplegado crezca y se reduzca según la demanda.</p>
-            <p class="tema-pie">Beneficios</p>
-          </div>
-        </article>
-        <article class="diferencia" id="geografia-vs-desastres" data-dif="geografia-vs-desastres">
-          <div class="dif-cabeza">
-            <span class="numero">09</span>
-            <div class="dif-titular">
-              <h3><a href="#geografia-vs-desastres">Distribución geográfica y recuperación ante desastres no son lo mismo</a></h3>
-              <p><strong class="pista">Cerca de los usuarios = distribución geográfica. Restaurar tras un desastre = recuperación ante desastres.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="geografia-vs-desastres" aria-label="Marcar como dominada: Distribución geográfica y recuperación ante desastres no son lo mismo">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos hablan de tener la solución en varios lugares del mundo.</p>
-            <p class="regla">La distribución geográfica busca estar cerca de los usuarios para dar mejor rendimiento. La recuperación ante desastres busca restaurar el servicio después de una catástrofe, con respaldos y conmutación a otra región. GRS es redundancia de almacenamiento, no distribución.</p>
-            <p class="tema-pie">Beneficios</p>
-          </div>
-        </article>
-        <article class="diferencia" id="nube-publica" data-dif="nube-publica">
-          <div class="dif-cabeza">
-            <span class="numero">10</span>
-            <div class="dif-titular">
-              <h3><a href="#nube-publica">La nube pública no incluye hardware propio del cliente</a></h3>
-              <p><strong class="pista">Si el hardware es de la organización, no es pública.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="nube-publica" aria-label="Marcar como dominada: La nube pública no incluye hardware propio del cliente">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El escenario menciona servidores y centros de datos, y eso se asocia con infraestructura propia.</p>
-            <p class="regla">La nube pública es del proveedor y está disponible para cualquiera. Hardware propio o de uso exclusivo describe una nube privada.</p>
-            <p class="tema-pie">Modelos de nube</p>
-          </div>
-        </article>
-        <article class="diferencia" id="nube-privada" data-dif="nube-privada">
-          <div class="dif-cabeza">
-            <span class="numero">11</span>
-            <div class="dif-titular">
-              <h3><a href="#nube-privada">En la nube privada alguien compró el hardware</a></h3>
-              <p><strong class="pista">Privada: se compra y se controla. Pública: se renta y se escala rápido.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="nube-privada" aria-label="Marcar como dominada: En la nube privada alguien compró el hardware">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como se contrata y se usa de forma parecida a la pública, se le atribuyen sus ventajas: aprovisionamiento rápido y pago por uso.</p>
-            <p class="regla">Una nube privada es infraestructura de uso exclusivo de una organización, en su propio centro de datos o hospedada por un tercero. Alguien adquirió ese hardware, y la organización mantiene el control de los recursos y de la seguridad.</p>
-            <p class="tema-pie">Modelos de nube</p>
-          </div>
-        </article>
-        <article class="diferencia" id="paas-so-microsoft" data-dif="paas-so-microsoft">
-          <div class="dif-cabeza">
-            <span class="numero">12</span>
-            <div class="dif-titular">
-              <h3><a href="#paas-so-microsoft">En PaaS el sistema operativo es de Microsoft</a></h3>
-              <p><strong class="pista">Los datos y las identidades nunca dejan de ser del cliente.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="paas-so-microsoft" aria-label="Marcar como dominada: En PaaS el sistema operativo es de Microsoft">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como en PaaS el cliente conserva bastante control sobre su aplicación, parece que también conserva el sistema operativo.</p>
-            <p class="regla">En PaaS el proveedor cubre lo físico y además el sistema operativo. Los datos, las cuentas, los accesos y los dispositivos son siempre responsabilidad del cliente, en los tres modelos.</p>
-            <p class="tema-pie">Responsabilidad compartida</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos ajustan la capacidad al uso para no pagar de más.</p>
+            <p class="regla">El dimensionamiento correcto (rightsizing) elige el tipo y el tamaño de instancia que corresponden al uso real, al menor costo. Es una revisión continua. AWS Compute Optimizer da recomendaciones de este tipo. El escalado automático agrega o quita instancias según la demanda, sin cambiarles el tamaño.</p>
+            <p class="tema-pie">Economía de la nube</p>
           </div>
         </article>
         </div>
       </section>
       <section class="dominio" id="dominio-2" data-dominio="2">
-        <h2>Arquitectura y servicios <span class="conteo">13–23</span></h2>
+        <h2>Seguridad y cumplimiento <span class="conteo">08–20</span></h2>
         <div class="lista-diferencias">
-        <article class="diferencia" id="scale-sets-vs-aks" data-dif="scale-sets-vs-aks">
+        <article class="diferencia" id="security-of-vs-in" data-dif="security-of-vs-in">
+          <div class="dif-cabeza">
+            <span class="numero">08</span>
+            <div class="dif-titular">
+              <h3><a href="#security-of-vs-in">AWS protege la nube; el cliente protege lo que pone en ella</a></h3>
+              <p><strong class="pista">Instalaciones, hardware, red y virtualización = AWS. Datos, identidades, configuración y sistema operativo invitado = cliente.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="security-of-vs-in" aria-label="Marcar como dominada: AWS protege la nube; el cliente protege lo que pone en ella">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> «Seguridad de la nube» y «seguridad en la nube» se leen casi igual.</p>
+            <p class="regla">AWS responde por la seguridad de la nube: la infraestructura de hardware, software, red e instalaciones que corre todos sus servicios. El cliente responde por la seguridad en la nube: sus datos, sus accesos, su configuración y, según el servicio, el sistema operativo y las aplicaciones.</p>
+            <p class="tema-pie">Responsabilidad compartida</p>
+          </div>
+        </article>
+        <article class="diferencia" id="responsibility-by-service" data-dif="responsibility-by-service">
+          <div class="dif-cabeza">
+            <span class="numero">09</span>
+            <div class="dif-titular">
+              <h3><a href="#responsibility-by-service">Lo que le toca al cliente cambia con cada servicio</a></h3>
+              <p><strong class="pista">EC2 = el cliente parcha el sistema operativo. S3 o DynamoDB = AWS opera hasta la plataforma.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="responsibility-by-service" aria-label="Marcar como dominada: Lo que le toca al cliente cambia con cada servicio">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El modelo se aprende como una línea fija, pero la línea se mueve según el servicio.</p>
+            <p class="regla">Mientras más abstracto es el servicio, más capas opera AWS. Los datos, su cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Amazon EC2</th><td>Cliente: sistema operativo invitado con sus parches, aplicaciones y grupo de seguridad</td></tr>
+              <tr><th scope="row">Amazon RDS</th><td>AWS: parches, respaldos y recuperación ante fallas. Cliente: datos, usuarios y acceso de red</td></tr>
+              <tr><th scope="row">AWS Lambda</th><td>AWS: servidores, sistema operativo, capacidad y escalado. Cliente: código, datos y permisos</td></tr>
+              <tr><th scope="row">Amazon S3 y DynamoDB</th><td>AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, cifrado y permisos</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Responsabilidad compartida</p>
+          </div>
+        </article>
+        <article class="diferencia" id="shared-controls" data-dif="shared-controls">
+          <div class="dif-cabeza">
+            <span class="numero">10</span>
+            <div class="dif-titular">
+              <h3><a href="#shared-controls">En un control compartido, cada parte cubre su propia capa</a></h3>
+              <p><strong class="pista">Parches, configuración y capacitación = compartidos. Físicos y ambientales = heredados de AWS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="shared-controls" aria-label="Marcar como dominada: En un control compartido, cada parte cubre su propia capa">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> «Compartido» suena a que AWS y el cliente hacen juntos la misma tarea.</p>
+            <p class="regla">Un control heredado lo cumple AWS por completo y el cliente lo recibe tal cual, como los controles físicos y ambientales. En un control compartido cada parte lo implementa en su capa: AWS parcha su infraestructura y el cliente parcha su sistema operativo invitado y sus aplicaciones; AWS capacita a su personal y el cliente al suyo. Los controles específicos del cliente, como separar datos en zonas de seguridad, son solo suyos.</p>
+            <p class="tema-pie">Responsabilidad compartida</p>
+          </div>
+        </article>
+        <article class="diferencia" id="cloudwatch-cloudtrail-config" data-dif="cloudwatch-cloudtrail-config">
+          <div class="dif-cabeza">
+            <span class="numero">11</span>
+            <div class="dif-titular">
+              <h3><a href="#cloudwatch-cloudtrail-config">CloudWatch, CloudTrail y Config responden tres preguntas distintas</a></h3>
+              <p><strong class="pista">¿Cómo se comporta? = CloudWatch. ¿Quién hizo qué? = CloudTrail. ¿Cómo está configurado y si cumple? = Config.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="cloudwatch-cloudtrail-config" aria-label="Marcar como dominada: CloudWatch, CloudTrail y Config responden tres preguntas distintas">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los tres registran algo, y la guía los pone juntos en la misma habilidad de gobernanza y cumplimiento.</p>
+            <p class="regla">Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config guarda cómo quedó el recurso.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Métricas, registros y alarmas de recursos y aplicaciones</th><td>Amazon CloudWatch</td></tr>
+              <tr><th scope="row">Quién hizo cada acción en la cuenta, y cuándo</th><td>AWS CloudTrail</td></tr>
+              <tr><th scope="row">Historial de configuración de los recursos y su evaluación contra reglas</th><td>AWS Config</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Monitoreo y auditoría</p>
+          </div>
+        </article>
+        <article class="diferencia" id="artifact-vs-config" data-dif="artifact-vs-config">
+          <div class="dif-cabeza">
+            <span class="numero">12</span>
+            <div class="dif-titular">
+              <h3><a href="#artifact-vs-config">Artifact entrega los reportes de AWS; Config evalúa tus recursos</a></h3>
+              <p><strong class="pista">Descargar el reporte SOC o PCI de AWS = Artifact.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="artifact-vs-config" aria-label="Marcar como dominada: Artifact entrega los reportes de AWS; Config evalúa tus recursos">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos aparecen cuando el enunciado dice «cumplimiento».</p>
+            <p class="regla">AWS Artifact es el portal para descargar los documentos de cumplimiento de AWS, como los reportes SOC y PCI y las certificaciones ISO. Ahí también se aceptan acuerdos con AWS. Sirve para mostrarle a un auditor lo que AWS cumple de su lado. AWS Config revisa si los recursos del cliente cumplen las reglas que el cliente define.</p>
+            <p class="tema-pie">Cumplimiento</p>
+          </div>
+        </article>
+        <article class="diferencia" id="threat-detection-family" data-dif="threat-detection-family">
           <div class="dif-cabeza">
             <span class="numero">13</span>
             <div class="dif-titular">
-              <h3><a href="#scale-sets-vs-aks">Scale Sets escalan máquinas; AKS orquesta contenedores</a></h3>
-              <p><strong class="pista">Máquinas idénticas que escalan = Scale Set. Contenedores orquestados = AKS.</strong></p>
+              <h3><a href="#threat-detection-family">Cinco servicios de seguridad, cinco preguntas distintas</a></h3>
+              <p><strong class="pista">Vulnerabilidades = Inspector. Actividad sospechosa = GuardDuty. Causa raíz = Detective. Datos sensibles en S3 = Macie. Todo junto = Security Hub.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="scale-sets-vs-aks" aria-label="Marcar como dominada: Scale Sets escalan máquinas; AKS orquesta contenedores">
+              <input type="checkbox" data-dominada="threat-detection-family" aria-label="Marcar como dominada: Cinco servicios de seguridad, cinco preguntas distintas">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos crecen solos y reponen lo que se cae, así que la diferencia parece de tamaño y no de naturaleza.</p>
-            <p class="regla">Cada uno resuelve un problema distinto, aunque los tres suenen a que nada se caiga.</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todos buscan problemas de seguridad, y sus nombres no dicen qué buscan.</p>
+            <p class="regla">Inspector revisa el software instalado. GuardDuty analiza registros de actividad de la cuenta, de la red y de DNS.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
-              <tr><th scope="row">Que varias máquinas no caigan juntas</th><td>Availability set</td></tr>
-              <tr><th scope="row">Agregar y quitar máquinas idénticas según la carga</th><td>Virtual Machine Scale Set</td></tr>
-              <tr><th scope="row">Coordinar muchos contenedores</th><td>Azure Kubernetes Service</td></tr>
+              <tr><th scope="row">Vulnerabilidades de software y exposición de red en EC2, imágenes de contenedores y Lambda</th><td>Amazon Inspector</td></tr>
+              <tr><th scope="row">Actividad sospechosa o maliciosa en la cuenta</th><td>Amazon GuardDuty</td></tr>
+              <tr><th scope="row">Investigar un hallazgo hasta su causa raíz</th><td>Amazon Detective</td></tr>
+              <tr><th scope="row">Datos sensibles, como datos personales, guardados en S3</th><td>Amazon Macie</td></tr>
+              <tr><th scope="row">Reunir hallazgos de varios servicios y revisar la postura contra estándares</th><td>AWS Security Hub</td></tr>
               </tbody>
             </table>
-            <p class="tema-pie">Cómputo</p>
+            <p class="tema-pie">Protección</p>
           </div>
         </article>
-        <article class="diferencia" id="zona-de-una-vm" data-dif="zona-de-una-vm">
+        <article class="diferencia" id="shield-waf-firewall-manager" data-dif="shield-waf-firewall-manager">
           <div class="dif-cabeza">
             <span class="numero">14</span>
             <div class="dif-titular">
-              <h3><a href="#zona-de-una-vm">La availability zone de una máquina virtual se fija al crearla</a></h3>
-              <p><strong class="pista">El portal hace casi todo, pero no mueve de zona una VM existente.</strong></p>
+              <h3><a href="#shield-waf-firewall-manager">Shield frena DDoS, WAF filtra peticiones web y Firewall Manager administra las reglas</a></h3>
+              <p><strong class="pista">Denegación de servicio = Shield. Inyección SQL o XSS = WAF. Reglas en todas las cuentas = Firewall Manager.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="zona-de-una-vm" aria-label="Marcar como dominada: La availability zone de una máquina virtual se fija al crearla">
+              <input type="checkbox" data-dominada="shield-waf-firewall-manager" aria-label="Marcar como dominada: Shield frena DDoS, WAF filtra peticiones web y Firewall Manager administra las reglas">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El portal permite cambiar casi cualquier propiedad, así que la zona parece una más.</p>
-            <p class="regla">La zona se elige al crear la máquina. Para cambiarla hay que recrearla o migrarla.</p>
-            <p class="tema-pie">Cómputo</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los tres se presentan como protección del perímetro, y WAF y Shield suelen ir juntos.</p>
+            <p class="regla">AWS Shield Standard protege contra los ataques de denegación de servicio distribuido (DDoS) más comunes, sin costo adicional y sin configurarlo. Shield Advanced es de pago y agrega protección y ayuda especializada. AWS WAF filtra peticiones HTTP y HTTPS con reglas, por ejemplo contra inyección SQL y secuencias de comandos entre sitios (XSS). AWS Firewall Manager administra esas reglas de forma central en las cuentas de AWS Organizations.</p>
+            <p class="tema-pie">Protección</p>
           </div>
         </article>
-        <article class="diferencia" id="zone-set-pair" data-dif="zone-set-pair">
+        <article class="diferencia" id="keys-certificates-secrets" data-dif="keys-certificates-secrets">
           <div class="dif-cabeza">
             <span class="numero">15</span>
             <div class="dif-titular">
-              <h3><a href="#zone-set-pair">Zone, set y region pair protegen de cosas distintas</a></h3>
-              <p><strong class="pista">Rack = set. Centro de datos = zone. Región = pair.</strong></p>
+              <h3><a href="#keys-certificates-secrets">Claves, HSM dedicados, certificados y secretos viven en servicios separados</a></h3>
+              <p><strong class="pista">Claves de cifrado = KMS. HSM dedicado = CloudHSM. Certificados TLS = ACM. Contraseñas que rotan = Secrets Manager.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="zone-set-pair" aria-label="Marcar como dominada: Zone, set y region pair protegen de cosas distintas">
+              <input type="checkbox" data-dominada="keys-certificates-secrets" aria-label="Marcar como dominada: Claves, HSM dedicados, certificados y secretos viven en servicios separados">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las tres suenan a alta disponibilidad, y en el examen aparecen juntas como opciones.</p>
-            <p class="regla">La alta disponibilidad es el concepto y se pacta en el SLA; lo demás son formas concretas de repartir el riesgo.</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todo suena a guardar algo secreto.</p>
+            <p class="regla">KMS también cifra datos de otros servicios de AWS, como S3 y EBS, con las claves que administra.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
-              <tr><th scope="row">Falla un rack o hay un reinicio por mantenimiento</th><td>Availability set</td></tr>
-              <tr><th scope="row">Cae un centro de datos completo</th><td>Availability zone</td></tr>
-              <tr><th scope="row">Cae la región entera</th><td>Region pair</td></tr>
+              <tr><th scope="row">Crear y controlar claves de cifrado administradas</th><td>AWS Key Management Service (KMS)</td></tr>
+              <tr><th scope="row">Un módulo de seguridad de hardware (HSM) dedicado que controla el cliente</th><td>AWS CloudHSM</td></tr>
+              <tr><th scope="row">Emitir y renovar certificados SSL/TLS</th><td>AWS Certificate Manager</td></tr>
+              <tr><th scope="row">Guardar credenciales y rotarlas de forma automática</th><td>AWS Secrets Manager</td></tr>
               </tbody>
             </table>
-            <p class="tema-pie">Regiones</p>
+            <p class="tema-pie">Cifrado y secretos</p>
           </div>
         </article>
-        <article class="diferencia" id="cold-vs-archive" data-dif="cold-vs-archive">
+        <article class="diferencia" id="encryption-transit-vs-rest" data-dif="encryption-transit-vs-rest">
           <div class="dif-cabeza">
             <span class="numero">16</span>
             <div class="dif-titular">
-              <h3><a href="#cold-vs-archive">Cold sigue en línea; Archive no</a></h3>
-              <p><strong class="pista">Si la pregunta dice que puede tardar horas, es Archive.</strong></p>
+              <h3><a href="#encryption-transit-vs-rest">El cifrado en tránsito protege el viaje; el cifrado en reposo protege lo guardado</a></h3>
+              <p><strong class="pista">TLS o HTTPS = en tránsito. Datos guardados en S3, EBS o RDS = en reposo.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="cold-vs-archive" aria-label="Marcar como dominada: Cold sigue en línea; Archive no">
+              <input type="checkbox" data-dominada="encryption-transit-vs-rest" aria-label="Marcar como dominada: El cifrado en tránsito protege el viaje; el cifrado en reposo protege lo guardado">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos guardan datos que casi nunca se consultan, los dos son baratos y los dos suenan igual de fríos.</p>
-            <p class="regla">Hot, Cool y Cold están en línea: se leen en milisegundos. Archive está fuera de línea y hay que rehidratarlo a un tier en línea antes de leerlo, lo que puede tardar hasta 15 horas según la prioridad que se elija. Entre más frío el tier, más barato guardar y más caro leer. Cada uno tiene un mínimo de permanencia, y salirse antes genera un cargo prorrateado.</p>
-            <table class="mapa">
-              <caption class="sr">Qué servicio responde a cada situación</caption>
-              <tbody>
-              <tr><th scope="row">Datos en uso, se leen y escriben seguido</th><td>Hot · sin mínimo</td></tr>
-              <tr><th scope="row">Poco frecuentes, pero disponibles al instante</th><td>Cool · 30 días</td></tr>
-              <tr><th scope="row">Raros, y aun así se necesitan rápido</th><td>Cold · 90 días</td></tr>
-              <tr><th scope="row">Casi nunca, y se puede esperar horas</th><td>Archive · 180 días</td></tr>
-              </tbody>
-            </table>
-            <p class="tema-pie">Storage</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos se llaman cifrado y muchos servicios ofrecen ambas.</p>
+            <p class="regla">El cifrado en tránsito protege los datos mientras viajan entre sistemas, con protocolos de cifrado como TLS. El cifrado en reposo protege los datos almacenados; en AWS se puede hacer con claves de AWS KMS.</p>
+            <p class="tema-pie">Cifrado y secretos</p>
           </div>
         </article>
-        <article class="diferencia" id="archive-restricciones" data-dif="archive-restricciones">
+        <article class="diferencia" id="iam-user-vs-role" data-dif="iam-user-vs-role">
           <div class="dif-cabeza">
             <span class="numero">17</span>
             <div class="dif-titular">
-              <h3><a href="#archive-restricciones">Archive no sirve para todo ni se activa en cualquier cuenta</a></h3>
-              <p><strong class="pista">Archive: por blob, nunca por defecto, y solo en LRS, GRS o RA-GRS.</strong></p>
+              <h3><a href="#iam-user-vs-role">Un usuario de IAM tiene credenciales fijas; un rol se asume</a></h3>
+              <p><strong class="pista">Credenciales temporales o acceso entre cuentas = rol.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="archive-restricciones" aria-label="Marcar como dominada: Archive no sirve para todo ni se activa en cualquier cuenta">
+              <input type="checkbox" data-dominada="iam-user-vs-role" aria-label="Marcar como dominada: Un usuario de IAM tiene credenciales fijas; un rol se asume">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Si Archive es el más barato, parece razonable ponerlo como valor por defecto de la cuenta y olvidarse.</p>
-            <p class="regla">El tier por defecto de una storage account solo puede ser Hot, Cool o Cold; Archive se asigna blob por blob. Además, Archive solo está disponible en cuentas con redundancia LRS, GRS o RA-GRS, no en ZRS ni GZRS, y los tiers de acceso aplican únicamente a block blobs.</p>
-            <p class="tema-pie">Storage</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos reciben políticas de permisos, así que parecen dos formas de lo mismo.</p>
+            <p class="regla">Un usuario de IAM es una identidad con credenciales de largo plazo: contraseña para la consola o claves de acceso para la línea de comandos (CLI) y los kits de desarrollo (SDK). Un rol no tiene credenciales de largo plazo; quien lo asume recibe credenciales temporales. Se usa para dar permisos a servicios, a otras cuentas o a identidades federadas.</p>
+            <p class="tema-pie">Identidad y acceso</p>
           </div>
         </article>
-        <article class="diferencia" id="files-vs-blob" data-dif="files-vs-blob">
+        <article class="diferencia" id="iam-identity-center-cognito" data-dif="iam-identity-center-cognito">
           <div class="dif-cabeza">
             <span class="numero">18</span>
             <div class="dif-titular">
-              <h3><a href="#files-vs-blob">Azure Files se monta; Blob se consume por URL</a></h3>
-              <p><strong class="pista">Carpeta compartida o unidad montada = Azure Files.</strong></p>
+              <h3><a href="#iam-identity-center-cognito">IAM, IAM Identity Center y Cognito atienden a gente distinta</a></h3>
+              <p><strong class="pista">Empleados en varias cuentas = Identity Center. Usuarios de tu app = Cognito.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="files-vs-blob" aria-label="Marcar como dominada: Azure Files se monta; Blob se consume por URL">
+              <input type="checkbox" data-dominada="iam-identity-center-cognito" aria-label="Marcar como dominada: IAM, IAM Identity Center y Cognito atienden a gente distinta">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos guardan archivos, así que cualquiera parece servir.</p>
-            <p class="regla">Azure Files entrega recursos compartidos que se montan como unidad de red con SMB o NFS. Blob guarda objetos no estructurados y se consume por HTTP o REST. Los niveles Hot, Cool, Cold y Archive son exclusivos de Blob.</p>
-            <p class="tema-pie">Storage</p>
-          </div>
-        </article>
-        <article class="diferencia" id="que-conecta-con-que" data-dif="que-conecta-con-que">
-          <div class="dif-cabeza">
-            <span class="numero">19</span>
-            <div class="dif-titular">
-              <h3><a href="#que-conecta-con-que">Cada conexión tiene su servicio</a></h3>
-              <p><strong class="pista">Red con red = peering. Servicio con red = endpoint. Oficina con Azure = VPN o ExpressRoute.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="que-conecta-con-que" aria-label="Marcar como dominada: Cada conexión tiene su servicio">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Peering, service endpoint, private endpoint, VPN y ExpressRoute se describen todos como conectar, y las opciones aparecen mezcladas.</p>
-            <p class="regla">La pregunta útil es qué dos cosas se están uniendo.</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los tres autentican usuarios.</p>
+            <p class="regla">IAM Identity Center antes se llamaba AWS Single Sign-On, y ese nombre sigue apareciendo en material de estudio.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
-              <tr><th scope="row">Dos redes virtuales entre sí</th><td>VNet peering</td></tr>
-              <tr><th scope="row">Un servicio de Azure con una red virtual</th><td>Service endpoint o private endpoint</td></tr>
-              <tr><th scope="row">Una oficina con Azure, cifrado por internet</th><td>VPN Gateway</td></tr>
-              <tr><th scope="row">Una oficina con Azure, línea privada dedicada</th><td>ExpressRoute</td></tr>
+              <tr><th scope="row">Identidades y permisos dentro de una cuenta de AWS</th><td>AWS IAM</td></tr>
+              <tr><th scope="row">Inicio de sesión único de los empleados en varias cuentas y aplicaciones</th><td>AWS IAM Identity Center</td></tr>
+              <tr><th scope="row">Registro e inicio de sesión de los usuarios de tus apps web y móviles</th><td>Amazon Cognito</td></tr>
               </tbody>
             </table>
-            <p class="tema-pie">Redes</p>
+            <p class="tema-pie">Identidad y acceso</p>
           </div>
         </article>
-        <article class="diferencia" id="capas-vs-zero-trust" data-dif="capas-vs-zero-trust">
+        <article class="diferencia" id="iam-policy-vs-scp" data-dif="iam-policy-vs-scp">
+          <div class="dif-cabeza">
+            <span class="numero">19</span>
+            <div class="dif-titular">
+              <h3><a href="#iam-policy-vs-scp">Una SCP pone el techo; una política de IAM da el permiso</a></h3>
+              <p><strong class="pista">Limitar lo que pueden hacer los usuarios y roles de las cuentas miembro = SCP.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="iam-policy-vs-scp" aria-label="Marcar como dominada: Una SCP pone el techo; una política de IAM da el permiso">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos se escriben en JSON y hablan de permitir y negar acciones.</p>
+            <p class="regla">Las políticas de control de servicios (SCP) de AWS Organizations fijan el máximo de permisos para los usuarios y roles de las cuentas miembro, incluido su usuario raíz. Por sí mismas no otorgan nada. No afectan a la cuenta de administración. Para hacer una acción, una política de IAM tiene que permitirla y las SCP de cada nivel sobre la cuenta también: basta un nivel que no la permita para bloquearla.</p>
+            <p class="tema-pie">Identidad y acceso</p>
+          </div>
+        </article>
+        <article class="diferencia" id="root-user" data-dif="root-user">
           <div class="dif-cabeza">
             <span class="numero">20</span>
             <div class="dif-titular">
-              <h3><a href="#capas-vs-zero-trust">Defense-in-depth son capas; Zero Trust es una filosofía</a></h3>
-              <p><strong class="pista">Capas = defense-in-depth. Nunca confiar y siempre verificar = Zero Trust.</strong></p>
+              <h3><a href="#root-user">El usuario raíz se guarda para unas cuantas tareas</a></h3>
+              <p><strong class="pista">En una cuenta independiente, cambiar el correo o la contraseña raíz, o cerrar la cuenta = usuario raíz.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="capas-vs-zero-trust" aria-label="Marcar como dominada: Defense-in-depth son capas; Zero Trust es una filosofía">
+              <input type="checkbox" data-dominada="root-user" aria-label="Marcar como dominada: El usuario raíz se guarda para unas cuantas tareas">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos describen seguridad seria y aparecen juntas en las opciones.</p>
-            <p class="regla">Defense-in-depth organiza la protección en capas (física, identidad, perímetro, red, cómputo, aplicación y datos) con los datos al centro. Zero Trust son tres principios: verificar explícitamente, dar el mínimo privilegio y asumir que ya hubo una brecha.</p>
-            <p class="tema-pie">Identidad y seguridad</p>
-          </div>
-        </article>
-        <article class="diferencia" id="acceso-condicional-vs-rbac" data-dif="acceso-condicional-vs-rbac">
-          <div class="dif-cabeza">
-            <span class="numero">21</span>
-            <div class="dif-titular">
-              <h3><a href="#acceso-condicional-vs-rbac">El acceso condicional decide cómo se entra; RBAC, qué se puede hacer</a></h3>
-              <p><strong class="pista">«Solo desde…» o «únicamente cuando…» = acceso condicional.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="acceso-condicional-vs-rbac" aria-label="Marcar como dominada: El acceso condicional decide cómo se entra; RBAC, qué se puede hacer">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Restringir el acceso a ciertas aplicaciones suena a permisos, y los permisos suenan a RBAC.</p>
-            <p class="regla">El acceso condicional evalúa señales del inicio de sesión (usuario, ubicación, dispositivo, aplicación cliente y riesgo) y decide si deja pasar, pide MFA o bloquea. Son políticas que alguien configura, no un comportamiento automático. RBAC define qué puede hacer una identidad con los recursos una vez dentro.</p>
-            <p class="tema-pie">Identidad y seguridad</p>
-          </div>
-        </article>
-        <article class="diferencia" id="sso-vs-mfa" data-dif="sso-vs-mfa">
-          <div class="dif-cabeza">
-            <span class="numero">22</span>
-            <div class="dif-titular">
-              <h3><a href="#sso-vs-mfa">SSO es una sesión para muchas apps; MFA es una prueba adicional</a></h3>
-              <p><strong class="pista">Una sola vez = SSO. Prueba adicional = MFA.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="sso-vs-mfa" aria-label="Marcar como dominada: SSO es una sesión para muchas apps; MFA es una prueba adicional">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos mejoran el inicio de sesión y suelen configurarse juntas.</p>
-            <p class="regla">El inicio de sesión único permite autenticarse una vez y entrar a varias aplicaciones. La autenticación multifactor exige dos o más factores de categorías distintas: algo que se sabe, algo que se tiene y algo que se es. Dos contraseñas no son MFA.</p>
-            <p class="tema-pie">Identidad y seguridad</p>
-          </div>
-        </article>
-        <article class="diferencia" id="entra-no-hace-dns" data-dif="entra-no-hace-dns">
-          <div class="dif-cabeza">
-            <span class="numero">23</span>
-            <div class="dif-titular">
-              <h3><a href="#entra-no-hace-dns">Microsoft Entra ID no resuelve nombres de dominio</a></h3>
-              <p><strong class="pista">Entra = personas. DNS = nombres y direcciones.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="entra-no-hace-dns" aria-label="Marcar como dominada: Microsoft Entra ID no resuelve nombres de dominio">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Entra ID aparece como el servicio central de identidad, así que parece cubrir todo lo que suene a red.</p>
-            <p class="regla">Entra ID administra identidades: autenticación, inicio de sesión único, MFA, acceso condicional e identidades externas. La resolución de nombres a direcciones IP es Azure DNS, otro servicio.</p>
-            <p class="tema-pie">Identidad y seguridad</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como el usuario raíz puede hacer todo, parece la identidad natural para administrar.</p>
+            <p class="regla">AWS recomienda no usar el usuario raíz en el día a día, protegerlo con autenticación multifactor (MFA) y reservarlo para lo que lo exige. Eso incluye devolverle permisos a un administrador de IAM que se quitó los suyos. En una cuenta que no pertenece a AWS Organizations, también incluye cambiar el correo, la contraseña y las claves de acceso del usuario raíz, y cerrar la cuenta.</p>
+            <p class="tema-pie">Identidad y acceso</p>
           </div>
         </article>
         </div>
       </section>
       <section class="dominio" id="dominio-3" data-dominio="3">
-        <h2>Administración y gobernanza <span class="conteo">24–34</span></h2>
+        <h2>Tecnología y servicios en la nube <span class="conteo">21–37</span></h2>
         <div class="lista-diferencias">
-        <article class="diferencia" id="locks-management-group" data-dif="locks-management-group">
+        <article class="diferencia" id="deployment-models" data-dif="deployment-models">
+          <div class="dif-cabeza">
+            <span class="numero">21</span>
+            <div class="dif-titular">
+              <h3><a href="#deployment-models">Para AWS, la nube privada se llama «en las instalaciones»</a></h3>
+              <p><strong class="pista">Todo en AWS = en la nube. AWS y centro de datos propio conectados = híbrido. Todo en centro propio = en las instalaciones.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="deployment-models" aria-label="Marcar como dominada: Para AWS, la nube privada se llama «en las instalaciones»">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Quien estudió otros temarios busca «pública, privada e híbrida» y no encuentra esos nombres en las opciones.</p>
+            <p class="regla">La guía del CLF-C02 nombra tres modelos de implementación: en la nube, híbrido y en las instalaciones (on-premises). En la nube, la aplicación corre por completo ahí. El híbrido conecta recursos de la nube con los que siguen fuera de ella. En las instalaciones, que AWS a veces llama nube privada, la infraestructura vive en el centro de datos propio.</p>
+            <p class="tema-pie">Implementación</p>
+          </div>
+        </article>
+        <article class="diferencia" id="console-vs-iac" data-dif="console-vs-iac">
+          <div class="dif-cabeza">
+            <span class="numero">22</span>
+            <div class="dif-titular">
+              <h3><a href="#console-vs-iac">La consola sirve para una vez; lo que se repite va en código</a></h3>
+              <p><strong class="pista">Operación única = consola. Proceso repetible o automatizado = CLI, SDK o infraestructura como código.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="console-vs-iac" aria-label="Marcar como dominada: La consola sirve para una vez; lo que se repite va en código">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todo se puede hacer desde la consola, así que parece la respuesta segura.</p>
+            <p class="regla">La consola de administración es para tareas puntuales con interfaz visual. La CLI, los SDK y las API, que son las interfaces que usan los programas, permiten automatizar. Con infraestructura como código, como AWS CloudFormation, el entorno se describe en plantillas y se crea igual cada vez.</p>
+            <p class="tema-pie">Implementación</p>
+          </div>
+        </article>
+        <article class="diferencia" id="region-az-edge" data-dif="region-az-edge">
+          <div class="dif-cabeza">
+            <span class="numero">23</span>
+            <div class="dif-titular">
+              <h3><a href="#region-az-edge">Región, zona de disponibilidad y ubicación periférica son tres niveles distintos</a></h3>
+              <p><strong class="pista">Falla un centro de datos = varias AZ. Desastre regional, latencia o soberanía de datos = varias regiones. Contenido cerca del usuario = ubicación periférica.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="region-az-edge" aria-label="Marcar como dominada: Región, zona de disponibilidad y ubicación periférica son tres niveles distintos">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las tres son lugares de AWS, y un escenario de alta disponibilidad parece pedir más regiones.</p>
+            <p class="regla">Una región es una ubicación física con varias zonas de disponibilidad (AZ), aislada de las demás regiones. Cada AZ es uno o más centros de datos con energía, red y conectividad redundantes, y las AZ no comparten puntos únicos de falla. Las ubicaciones periféricas acercan el contenido al usuario con Amazon CloudFront.</p>
+            <p class="tema-pie">Infraestructura global</p>
+          </div>
+        </article>
+        <article class="diferencia" id="ec2-instance-families" data-dif="ec2-instance-families">
           <div class="dif-cabeza">
             <span class="numero">24</span>
             <div class="dif-titular">
-              <h3><a href="#locks-management-group">Los resource locks no existen en management groups</a></h3>
-              <p><strong class="pista">Management group = reglas, no candados.</strong></p>
+              <h3><a href="#ec2-instance-families">La familia de instancia se elige por el recurso que más usa la carga</a></h3>
+              <p><strong class="pista">CPU intensiva = optimizada para cómputo. Datos grandes en memoria = optimizada para memoria. Mucha lectura y escritura local = optimizada para almacenamiento.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="locks-management-group" aria-label="Marcar como dominada: Los resource locks no existen en management groups">
+              <input type="checkbox" data-dominada="ec2-instance-families" aria-label="Marcar como dominada: La familia de instancia se elige por el recurso que más usa la carga">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como todo lo demás se hereda hacia abajo desde el management group, parece el lugar natural para poner un candado.</p>
-            <p class="regla">Los locks se aplican en suscripción, resource group o recurso, y desde ahí se heredan. Un management group agrupa suscripciones: ahí van Azure Policy y RBAC.</p>
-            <p class="tema-pie">Jerarquía</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todas son máquinas virtuales de EC2, y las letras de cada familia no dicen nada a primera vista.</p>
+            <p class="regla">EC2 agrupa sus tipos de instancia en familias según el recurso que optimizan.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Balance entre cómputo, memoria y red</th><td>Uso general</td></tr>
+              <tr><th scope="row">Lotes, transcodificación, servidores web de alto rendimiento, cómputo de alto rendimiento (HPC)</th><td>Optimizada para cómputo</td></tr>
+              <tr><th scope="row">Conjuntos de datos grandes procesados en memoria</th><td>Optimizada para memoria</td></tr>
+              <tr><th scope="row">Lectura y escritura secuencial intensa sobre datos locales muy grandes</th><td>Optimizada para almacenamiento</td></tr>
+              <tr><th scope="row">Aceleradores de hardware, como GPU</th><td>Computación acelerada</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Cómputo</p>
           </div>
         </article>
-        <article class="diferencia" id="lock-vs-rbac" data-dif="lock-vs-rbac">
+        <article class="diferencia" id="compute-options" data-dif="compute-options">
           <div class="dif-cabeza">
             <span class="numero">25</span>
             <div class="dif-titular">
-              <h3><a href="#lock-vs-rbac">Un lock aplica a todos; RBAC aplica a alguien</a></h3>
-              <p><strong class="pista">Si la pregunta nombra a una persona o a un equipo, es RBAC.</strong></p>
+              <h3><a href="#compute-options">ECS, EKS, Fargate y Lambda resuelven capas distintas</a></h3>
+              <p><strong class="pista">Kubernetes = EKS. Contenedores sin administrar servidores = Fargate. Código que corre por evento, hasta 15 minutos = Lambda.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="lock-vs-rbac" aria-label="Marcar como dominada: Un lock aplica a todos; RBAC aplica a alguien">
+              <input type="checkbox" data-dominada="compute-options" aria-label="Marcar como dominada: ECS, EKS, Fargate y Lambda resuelven capas distintas">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Ambos impiden que se borre algo, así que cualquiera de los dos parece resolver la pregunta.</p>
-            <p class="regla">El lock protege el recurso frente a cualquiera, incluido un Owner. RBAC define qué puede hacer una persona o un grupo en un ámbito determinado.</p>
-            <p class="tema-pie">Jerarquía</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los cuatro corren código sin que el cliente toque hardware, y Fargate funciona con ECS y con EKS.</p>
+            <p class="regla">ECS y EKS orquestan contenedores: ECS es el orquestador de AWS y EKS es Kubernetes administrado. Fargate es el motor sin servidor donde corren esos contenedores, sin administrar instancias de EC2. Lambda ejecuta funciones en respuesta a eventos, con un máximo de 15 minutos por ejecución.</p>
+            <p class="tema-pie">Cómputo</p>
           </div>
         </article>
-        <article class="diferencia" id="tenant-vs-suscripcion" data-dif="tenant-vs-suscripcion">
+        <article class="diferencia" id="elb-vs-auto-scaling" data-dif="elb-vs-auto-scaling">
           <div class="dif-cabeza">
             <span class="numero">26</span>
             <div class="dif-titular">
-              <h3><a href="#tenant-vs-suscripcion">Las cuentas de usuario viven en el tenant, no en la suscripción</a></h3>
-              <p><strong class="pista">Tenant = personas. Suscripción = factura. Resource group = contenedor.</strong></p>
+              <h3><a href="#elb-vs-auto-scaling">El balanceador reparte el tráfico; Auto Scaling decide cuántas instancias hay</a></h3>
+              <p><strong class="pista">Repartir peticiones entre instancias sanas = Elastic Load Balancing. Agregar o quitar instancias = Auto Scaling.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="tenant-vs-suscripcion" aria-label="Marcar como dominada: Las cuentas de usuario viven en el tenant, no en la suscripción">
+              <input type="checkbox" data-dominada="elb-vs-auto-scaling" aria-label="Marcar como dominada: El balanceador reparte el tráfico; Auto Scaling decide cuántas instancias hay">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> La suscripción se siente como la cuenta de Azure, así que ahí parecerían vivir los usuarios.</p>
-            <p class="regla">Dentro de una suscripción se crean resource groups y recursos. Los management groups están por encima. Los usuarios y grupos viven en el tenant de Microsoft Entra ID, que es un eje aparte en el que la suscripción confía.</p>
-            <p class="tema-pie">Jerarquía</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> En los diagramas de arquitectura aparecen juntos, así que parecen un solo servicio.</p>
+            <p class="regla">Elastic Load Balancing reparte el tráfico entrante entre varios destinos y deja de mandarlo a los que no están sanos. Amazon EC2 Auto Scaling mantiene el número de instancias y lo ajusta según la demanda; eso es lo que da elasticidad.</p>
+            <p class="tema-pie">Cómputo</p>
           </div>
         </article>
-        <article class="diferencia" id="un-solo-resource-group" data-dif="un-solo-resource-group">
+        <article class="diferencia" id="database-options" data-dif="database-options">
           <div class="dif-cabeza">
             <span class="numero">27</span>
             <div class="dif-titular">
-              <h3><a href="#un-solo-resource-group">Un recurso vive en un solo resource group</a></h3>
-              <p><strong class="pista">Muchas tags, un solo resource group.</strong></p>
+              <h3><a href="#database-options">Cada modelo de datos tiene su base de datos administrada</a></h3>
+              <p><strong class="pista">Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Análisis = Redshift.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="un-solo-resource-group" aria-label="Marcar como dominada: Un recurso vive en un solo resource group">
+              <input type="checkbox" data-dominada="database-options" aria-label="Marcar como dominada: Cada modelo de datos tiene su base de datos administrada">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como un recurso puede tener varias etiquetas y aparecer en varios reportes, parece que puede pertenecer a varios grupos.</p>
-            <p class="regla">Cada recurso pertenece a exactamente un resource group. Se puede mover, pero nunca está en dos a la vez. Para agrupar por otro criterio se usan tags.</p>
-            <p class="tema-pie">Jerarquía</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todas guardan datos, y todas las administra AWS.</p>
+            <p class="regla">Primero se decide el modelo de datos. Después, si conviene que AWS administre la base o instalarla en EC2 para controlar el motor y el sistema operativo.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Relacional administrada, con varios motores</th><td>Amazon RDS</td></tr>
+              <tr><th scope="row">Relacional de AWS, compatible con MySQL y PostgreSQL</th><td>Amazon Aurora</td></tr>
+              <tr><th scope="row">NoSQL de clave-valor y de documentos, sin servidor</th><td>Amazon DynamoDB</td></tr>
+              <tr><th scope="row">Documentos, compatible con MongoDB</th><td>Amazon DocumentDB</td></tr>
+              <tr><th scope="row">Grafos</th><td>Amazon Neptune</td></tr>
+              <tr><th scope="row">Caché en memoria</th><td>Amazon ElastiCache</td></tr>
+              <tr><th scope="row">Almacén de datos para análisis</th><td>Amazon Redshift</td></tr>
+              <tr><th scope="row">Control total del motor y del sistema operativo</th><td>Base de datos instalada en EC2</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Bases de datos</p>
           </div>
         </article>
-        <article class="diferencia" id="advisor-no-es-todo" data-dif="advisor-no-es-todo">
+        <article class="diferencia" id="dms-vs-sct" data-dif="dms-vs-sct">
           <div class="dif-cabeza">
             <span class="numero">28</span>
             <div class="dif-titular">
-              <h3><a href="#advisor-no-es-todo">Azure Advisor no es la respuesta a todo lo que suene a consejo</a></h3>
-              <p><strong class="pista">Recomendación = Advisor. Caída de Azure = Service Health. Aplicación lenta = Application Insights.</strong></p>
+              <h3><a href="#dms-vs-sct">DMS mueve los datos; SCT convierte el esquema</a></h3>
+              <p><strong class="pista">Motor de origen distinto al de destino = SCT para el esquema y DMS para los datos.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="advisor-no-es-todo" aria-label="Marcar como dominada: Azure Advisor no es la respuesta a todo lo que suene a consejo">
+              <input type="checkbox" data-dominada="dms-vs-sct" aria-label="Marcar como dominada: DMS mueve los datos; SCT convierte el esquema">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Advisor aparece como la herramienta que revisa y sugiere, y eso encaja con casi cualquier pregunta de operación.</p>
-            <p class="regla">Seis herramientas distintas se reparten el trabajo que suele atribuirse a una sola.</p>
-            <table class="mapa">
-              <caption class="sr">Qué servicio responde a cada situación</caption>
-              <tbody>
-              <tr><th scope="row">Recomendaciones sobre los recursos propios</th><td>Azure Advisor</td></tr>
-              <tr><th scope="row">Fallas y mantenimiento de la plataforma</th><td>Azure Service Health</td></tr>
-              <tr><th scope="row">Si un recurso concreto está afectado por Azure</th><td>Resource Health</td></tr>
-              <tr><th scope="row">Rendimiento y errores de una aplicación</th><td>Application Insights</td></tr>
-              <tr><th scope="row">Métricas, logs y alertas</th><td>Azure Monitor</td></tr>
-              <tr><th scope="row">Postura de seguridad y amenazas</th><td>Microsoft Defender for Cloud</td></tr>
-              </tbody>
-            </table>
-            <p class="tema-pie">Herramientas</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos herramientas aparecen en cualquier migración de base de datos.</p>
+            <p class="regla">AWS Database Migration Service copia los datos de una base a otra: puede hacer una migración única o replicar los cambios en curso para mantener sincronizados el origen y el destino. AWS Schema Conversion Tool convierte el esquema y el código de la base cuando el motor cambia, por ejemplo de Oracle a Aurora PostgreSQL.</p>
+            <p class="tema-pie">Bases de datos</p>
           </div>
         </article>
-        <article class="diferencia" id="cloud-shell-vs-arc" data-dif="cloud-shell-vs-arc">
+        <article class="diferencia" id="security-group-vs-nacl" data-dif="security-group-vs-nacl">
           <div class="dif-cabeza">
             <span class="numero">29</span>
             <div class="dif-titular">
-              <h3><a href="#cloud-shell-vs-arc">Cloud Shell es una terminal; Azure Arc conecta lo que está fuera</a></h3>
-              <p><strong class="pista">Administrar algo que está fuera de Azure, desde Azure = Arc.</strong></p>
+              <h3><a href="#security-group-vs-nacl">El grupo de seguridad cuida la instancia; la ACL de red cuida la subred</a></h3>
+              <p><strong class="pista">Regla de denegar o nivel de subred = ACL de red. Solo permitir, a nivel de instancia = grupo de seguridad.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="cloud-shell-vs-arc" aria-label="Marcar como dominada: Cloud Shell es una terminal; Azure Arc conecta lo que está fuera">
+              <input type="checkbox" data-dominada="security-group-vs-nacl" aria-label="Marcar como dominada: El grupo de seguridad cuida la instancia; la ACL de red cuida la subred">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Cloud Shell parece la herramienta general para administrar cualquier cosa desde Azure.</p>
-            <p class="regla">Cloud Shell es una terminal en el navegador, con la CLI y PowerShell listas y la sesión ya iniciada. Azure Arc incorpora a Azure servidores y servicios que viven fuera, en un centro de datos propio o en otra nube, para aplicarles Policy, RBAC y monitoreo.</p>
-            <p class="tema-pie">Herramientas</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos filtran tráfico con reglas de puertos y direcciones dentro de una red virtual de AWS (VPC).</p>
+            <p class="regla">El grupo de seguridad se asocia a las instancias, solo admite reglas de permitir y tiene estado: si una conexión entra permitida, su respuesta sale sin otra regla. La lista de control de acceso (ACL) de red se asocia a la subred, admite reglas de permitir y de denegar, y no tiene estado: la entrada y la salida se permiten por separado.</p>
+            <p class="tema-pie">Redes</p>
           </div>
         </article>
-        <article class="diferencia" id="budget-avisa" data-dif="budget-avisa">
+        <article class="diferencia" id="connectivity-options" data-dif="connectivity-options">
           <div class="dif-cabeza">
             <span class="numero">30</span>
             <div class="dif-titular">
-              <h3><a href="#budget-avisa">Un presupuesto avisa; por sí solo no apaga nada</a></h3>
-              <p><strong class="pista">Budget = semáforo, no llave de paso.</strong></p>
+              <h3><a href="#connectivity-options">Para conectar redes con AWS, el servicio depende de qué se conecta</a></h3>
+              <p><strong class="pista">Enlace físico dedicado = Direct Connect. Túnel cifrado por internet = Site-to-Site VPN. Personas desde su equipo = Client VPN.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="budget-avisa" aria-label="Marcar como dominada: Un presupuesto avisa; por sí solo no apaga nada">
+              <input type="checkbox" data-dominada="connectivity-options" aria-label="Marcar como dominada: Para conectar redes con AWS, el servicio depende de qué se conecta">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Si se configura un límite de gasto, parece lógico que al llegar al tope Azure detenga los recursos.</p>
-            <p class="regla">Los budgets de Cost Management envían alertas al alcanzar los porcentajes definidos. Los recursos siguen corriendo y el gasto sigue creciendo, salvo que alguien automatice una acción aparte.</p>
-            <p class="tema-pie">Costos</p>
-          </div>
-        </article>
-        <article class="diferencia" id="estimar-analizar-recomendar" data-dif="estimar-analizar-recomendar">
-          <div class="dif-cabeza">
-            <span class="numero">31</span>
-            <div class="dif-titular">
-              <h3><a href="#estimar-analizar-recomendar">Estimar, analizar y recomendar son tres herramientas distintas</a></h3>
-              <p><strong class="pista">Antes de crear = calculator. Lo que ya corre = Cost Management. Consejo = Advisor.</strong></p>
-            </div>
-            <label class="dominada">
-              <input type="checkbox" data-dominada="estimar-analizar-recomendar" aria-label="Marcar como dominada: Estimar, analizar y recomendar son tres herramientas distintas">
-              <span>Dominada</span>
-            </label>
-          </div>
-          <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las tres hablan de dinero y todas viven en el portal.</p>
-            <p class="regla">Lo que separa a las tres es el momento en el que se usan.</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los cuatro conectan algo con una VPC.</p>
+            <p class="regla">Direct Connect evita pasar por internet. Site-to-Site VPN sí viaja por internet, dentro de un túnel IPsec cifrado.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
-              <tr><th scope="row">Calcular el costo de algo que aún no existe</th><td>Pricing calculator</td></tr>
-              <tr><th scope="row">Analizar el gasto real, con presupuestos y alertas</th><td>Cost Management</td></tr>
-              <tr><th scope="row">Recibir sugerencias para gastar menos</th><td>Azure Advisor</td></tr>
+              <tr><th scope="row">Conexión física dedicada y privada desde el centro de datos</th><td>AWS Direct Connect</td></tr>
+              <tr><th scope="row">Túnel IPsec cifrado sobre internet entre una red y la VPC</th><td>AWS Site-to-Site VPN</td></tr>
+              <tr><th scope="row">Acceso de personas desde su propio dispositivo</th><td>AWS Client VPN</td></tr>
+              <tr><th scope="row">Un concentrador que une muchas VPC y redes locales</th><td>AWS Transit Gateway</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Redes</p>
+          </div>
+        </article>
+        <article class="diferencia" id="edge-services" data-dif="edge-services">
+          <div class="dif-cabeza">
+            <span class="numero">31</span>
+            <div class="dif-titular">
+              <h3><a href="#edge-services">CloudFront entrega contenido web, Global Accelerator acelera TCP y UDP, y Route 53 resuelve nombres</a></h3>
+              <p><strong class="pista">Contenido web en caché cerca del usuario = CloudFront. IP estáticas o tráfico que no es HTTP = Global Accelerator. DNS = Route 53.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="edge-services" aria-label="Marcar como dominada: CloudFront entrega contenido web, Global Accelerator acelera TCP y UDP, y Route 53 resuelve nombres">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los tres usan la red global de AWS y mejoran lo que percibe el usuario.</p>
+            <p class="regla">Amazon CloudFront es una red de entrega de contenido que guarda copias en las ubicaciones periféricas y también acelera contenido dinámico. AWS Global Accelerator da direcciones IP estáticas. Recibe los paquetes TCP o UDP en la ubicación periférica y los lleva a la región por la red de AWS. Amazon Route 53 es el servicio de DNS, el sistema que traduce nombres de dominio en direcciones: registra dominios, enruta el tráfico y revisa la salud de los destinos.</p>
+            <p class="tema-pie">Redes</p>
+          </div>
+        </article>
+        <article class="diferencia" id="storage-types" data-dif="storage-types">
+          <div class="dif-cabeza">
+            <span class="numero">32</span>
+            <div class="dif-titular">
+              <h3><a href="#storage-types">Bloque, archivo u objeto: la primera pregunta del almacenamiento</a></h3>
+              <p><strong class="pista">Disco de una instancia = EBS. Carpeta compartida por muchas instancias = EFS. Objetos por API = S3.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="storage-types" aria-label="Marcar como dominada: Bloque, archivo u objeto: la primera pregunta del almacenamiento">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> S3, EBS y EFS guardan datos y los tres tienen una S en el nombre.</p>
+            <p class="regla">AWS Backup y Elastic Disaster Recovery cubren respaldos y recuperación; los demás guardan los datos con los que trabaja la aplicación.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Disco en bloques persistente para una instancia</th><td>Amazon EBS</td></tr>
+              <tr><th scope="row">Disco en bloques temporal, que se pierde al detener o terminar la instancia</th><td>Almacén de instancias</td></tr>
+              <tr><th scope="row">Sistema de archivos compartido por muchas instancias, con el protocolo NFS</th><td>Amazon EFS</td></tr>
+              <tr><th scope="row">Sistemas de archivos de terceros: Windows File Server, Lustre, NetApp ONTAP, OpenZFS</th><td>Amazon FSx</td></tr>
+              <tr><th scope="row">Objetos accesibles por API</th><td>Amazon S3</td></tr>
+              <tr><th scope="row">Acceso local, en caché, a almacenamiento en la nube</th><td>AWS Storage Gateway</td></tr>
+              <tr><th scope="row">Respaldos centralizados con políticas</th><td>AWS Backup</td></tr>
+              <tr><th scope="row">Replicación continua para recuperar servidores tras un desastre</th><td>AWS Elastic Disaster Recovery</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Almacenamiento</p>
+          </div>
+        </article>
+        <article class="diferencia" id="s3-storage-classes" data-dif="s3-storage-classes">
+          <div class="dif-cabeza">
+            <span class="numero">33</span>
+            <div class="dif-titular">
+              <h3><a href="#s3-storage-classes">La clase de S3 se elige por la frecuencia de acceso y por cuánto se puede esperar</a></h3>
+              <p><strong class="pista">Acceso impredecible = Intelligent-Tiering. Dato que se puede recrear = One Zone-IA. Puede esperar horas = Glacier Flexible Retrieval o Deep Archive.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="s3-storage-classes" aria-label="Marcar como dominada: La clase de S3 se elige por la frecuencia de acceso y por cuánto se puede esperar">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todas las clases guardan el mismo objeto; cambian el precio, las zonas de disponibilidad y el tiempo para recuperarlo.</p>
+            <p class="regla">Las políticas de ciclo de vida mueven objetos de una clase a otra con reglas fijas, por ejemplo por antigüedad. Intelligent-Tiering los mueve solo entre sus propios niveles de acceso, dentro de la misma clase, según el acceso real.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Acceso frecuente</th><td>S3 Standard</td></tr>
+              <tr><th scope="row">Patrón de acceso desconocido o cambiante</th><td>S3 Intelligent-Tiering</td></tr>
+              <tr><th scope="row">Acceso poco frecuente, dato que no se puede recrear</th><td>S3 Standard-IA</td></tr>
+              <tr><th scope="row">Acceso poco frecuente, dato recreable; una sola AZ</th><td>S3 One Zone-IA</td></tr>
+              <tr><th scope="row">Archivo que se lee en milisegundos</th><td>S3 Glacier Instant Retrieval</td></tr>
+              <tr><th scope="row">Archivo que se recupera en minutos u horas</th><td>S3 Glacier Flexible Retrieval</td></tr>
+              <tr><th scope="row">Archivo que se consulta menos de una vez al año; recuperación en horas</th><td>S3 Glacier Deep Archive</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Almacenamiento</p>
+          </div>
+        </article>
+        <article class="diferencia" id="analytics-services" data-dif="analytics-services">
+          <div class="dif-cabeza">
+            <span class="numero">34</span>
+            <div class="dif-titular">
+              <h3><a href="#analytics-services">Consultar, transformar, procesar, transmitir y visualizar son servicios distintos</a></h3>
+              <p><strong class="pista">SQL sobre datos en S3 = Athena. ETL sin servidor = Glue. Datos en tiempo real = Kinesis. Tableros = Quick Sight.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="analytics-services" aria-label="Marcar como dominada: Consultar, transformar, procesar, transmitir y visualizar son servicios distintos">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todos trabajan con datos para análisis, y en una arquitectura real se usan encadenados.</p>
+            <p class="regla">Por ejemplo, Kinesis puede recibir los datos, Glue transformarlos, Athena consultarlos y Quick Sight mostrarlos en un tablero.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Consultas SQL directas sobre datos en S3, sin servidor</th><td>Amazon Athena</td></tr>
+              <tr><th scope="row">Integración de datos y ETL (extraer, transformar y cargar), sin servidor</th><td>AWS Glue</td></tr>
+              <tr><th scope="row">Clústeres de big data con Spark o Hadoop</th><td>Amazon EMR</td></tr>
+              <tr><th scope="row">Flujos de datos en tiempo real</th><td>Amazon Kinesis</td></tr>
+              <tr><th scope="row">Almacén de datos para análisis recurrente</th><td>Amazon Redshift</td></tr>
+              <tr><th scope="row">Tableros e inteligencia de negocios</th><td>Amazon Quick Sight</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Análisis</p>
+          </div>
+        </article>
+        <article class="diferencia" id="ai-services" data-dif="ai-services">
+          <div class="dif-cabeza">
+            <span class="numero">35</span>
+            <div class="dif-titular">
+              <h3><a href="#ai-services">Los servicios de IA se reconocen por lo que reciben y lo que devuelven</a></h3>
+              <p><strong class="pista">Voz a texto = Transcribe. Texto a voz = Polly. Chatbot = Lex. Entrenar un modelo propio = SageMaker AI.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="ai-services" aria-label="Marcar como dominada: Los servicios de IA se reconocen por lo que reciben y lo que devuelven">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los nombres no dicen qué hacen, y varios trabajan con texto.</p>
+            <p class="regla">Salvo SageMaker AI, estos servicios traen modelos ya entrenados y se usan por API sin saber de machine learning. Algunos, como Comprehend, también permiten entrenar modelos propios.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Crear, entrenar y desplegar modelos propios</th><td>Amazon SageMaker AI</td></tr>
+              <tr><th scope="row">Chatbots e interfaces conversacionales</th><td>Amazon Lex</td></tr>
+              <tr><th scope="row">Texto a voz</th><td>Amazon Polly</td></tr>
+              <tr><th scope="row">Voz a texto</th><td>Amazon Transcribe</td></tr>
+              <tr><th scope="row">Traducir texto entre idiomas</th><td>Amazon Translate</td></tr>
+              <tr><th scope="row">Encontrar entidades, sentimiento y frases clave en un texto</th><td>Amazon Comprehend</td></tr>
+              <tr><th scope="row">Extraer texto y datos de documentos escaneados</th><td>Amazon Textract</td></tr>
+              <tr><th scope="row">Analizar imágenes y video</th><td>Amazon Rekognition</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">IA y machine learning</p>
+          </div>
+        </article>
+        <article class="diferencia" id="messaging-services" data-dif="messaging-services">
+          <div class="dif-cabeza">
+            <span class="numero">36</span>
+            <div class="dif-titular">
+              <h3><a href="#messaging-services">SNS empuja, SQS espera y EventBridge enruta</a></h3>
+              <p><strong class="pista">Un mensaje a muchos suscriptores = SNS. Cola que desacopla = SQS. Eventos con reglas = EventBridge. Correo electrónico = SES.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="messaging-services" aria-label="Marcar como dominada: SNS empuja, SQS espera y EventBridge enruta">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todos mueven mensajes entre partes de una aplicación.</p>
+            <p class="regla">SNS entrega el mensaje a sus suscriptores en cuanto llega. En SQS el mensaje espera en la cola hasta que un consumidor lo pide.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Enviar un mensaje a muchos suscriptores</th><td>Amazon SNS</td></tr>
+              <tr><th scope="row">Cola de mensajes que desacopla componentes</th><td>Amazon SQS</td></tr>
+              <tr><th scope="row">Bus de eventos que enruta con reglas</th><td>Amazon EventBridge</td></tr>
+              <tr><th scope="row">Orquestar los pasos de un flujo de trabajo</th><td>AWS Step Functions</td></tr>
+              <tr><th scope="row">Enviar y recibir correo electrónico</th><td>Amazon SES</td></tr>
+              <tr><th scope="row">Centro de contacto en la nube (hoy se llama Amazon Connect Customer)</th><td>Amazon Connect</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Integración de aplicaciones</p>
+          </div>
+        </article>
+        <article class="diferencia" id="other-services" data-dif="other-services">
+          <div class="dif-cabeza">
+            <span class="numero">37</span>
+            <div class="dif-titular">
+              <h3><a href="#other-services">Escritorios, frontends, IoT y herramientas de desarrollo tienen su propio servicio</a></h3>
+              <p><strong class="pista">Escritorio virtual completo = WorkSpaces. Aplicaciones transmitidas, sin escritorio persistente = AppStream 2.0. Seguir una petición entre servicios = X-Ray.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="other-services" aria-label="Marcar como dominada: Escritorios, frontends, IoT y herramientas de desarrollo tienen su propio servicio">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Son servicios que se usan poco al estudiar y sus nombres se parecen entre sí.</p>
+            <p class="regla">AppStream 2.0 hoy se llama WorkSpaces Applications, pero la guía del examen usa el nombre anterior.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Escritorios virtuales completos</th><td>Amazon WorkSpaces</td></tr>
+              <tr><th scope="row">Transmitir aplicaciones sueltas (hoy se llama WorkSpaces Applications)</th><td>Amazon AppStream 2.0</td></tr>
+              <tr><th scope="row">Acceso seguro desde el navegador a sitios internos</th><td>Navegador seguro Amazon WorkSpaces</td></tr>
+              <tr><th scope="row">Crear y hospedar frontends web y móviles</th><td>AWS Amplify</td></tr>
+              <tr><th scope="row">Conectar y administrar dispositivos IoT</th><td>AWS IoT Core</td></tr>
+              <tr><th scope="row">Compilar código y correr pruebas</th><td>AWS CodeBuild</td></tr>
+              <tr><th scope="row">Entrega continua de principio a fin</th><td>AWS CodePipeline</td></tr>
+              <tr><th scope="row">Trazar peticiones entre servicios</th><td>AWS X-Ray</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Otras categorías</p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="dominio" id="dominio-4" data-dominio="4">
+        <h2>Facturación, precios y soporte <span class="conteo">38–45</span></h2>
+        <div class="lista-diferencias">
+        <article class="diferencia" id="purchase-options" data-dif="purchase-options">
+          <div class="dif-cabeza">
+            <span class="numero">38</span>
+            <div class="dif-titular">
+              <h3><a href="#purchase-options">La opción de compra de EC2 se elige por compromiso y tolerancia a interrupciones</a></h3>
+              <p><strong class="pista">Puede interrumpirse = spot. Uso estable por 1 o 3 años = Savings Plans o instancias reservadas. Licencia por socket o núcleo = host dedicado.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="purchase-options" aria-label="Marcar como dominada: La opción de compra de EC2 se elige por compromiso y tolerancia a interrupciones">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Varias opciones dan descuento y varias hablan de «reservar».</p>
+            <p class="regla">Las reservas de capacidad aseguran capacidad pero, por sí solas, se cobran a precio bajo demanda; el descuento llega al combinarlas con Savings Plans o instancias reservadas regionales.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Sin compromiso, pago por uso</th><td>Instancias bajo demanda</td></tr>
+              <tr><th scope="row">Capacidad sobrante con gran descuento, que AWS puede recuperar</th><td>Instancias de spot</td></tr>
+              <tr><th scope="row">Compromiso de gasto por hora a 1 o 3 años; el de cómputo es flexible entre familias, regiones y servicios</th><td>Savings Plans</td></tr>
+              <tr><th scope="row">Compromiso con una configuración de instancia a 1 o 3 años</th><td>Instancias reservadas</td></tr>
+              <tr><th scope="row">Servidor físico completo, con visibilidad de sockets y núcleos</th><td>Hosts dedicados</td></tr>
+              <tr><th scope="row">Hardware aislado para la cuenta, sin control del servidor</th><td>Instancias dedicadas</td></tr>
+              <tr><th scope="row">Asegurar capacidad en una AZ</th><td>Reservas de capacidad</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Precios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="savings-plans-vs-ri" data-dif="savings-plans-vs-ri">
+          <div class="dif-cabeza">
+            <span class="numero">39</span>
+            <div class="dif-titular">
+              <h3><a href="#savings-plans-vs-ri">Savings Plans compromete dinero; una instancia reservada compromete una configuración</a></h3>
+              <p><strong class="pista">Descuento que también cubre Fargate y Lambda = Compute Savings Plans.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="savings-plans-vs-ri" aria-label="Marcar como dominada: Savings Plans compromete dinero; una instancia reservada compromete una configuración">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos dan descuento a cambio de un compromiso de uno o tres años.</p>
+            <p class="regla">Con Savings Plans el cliente se compromete a gastar una cantidad por hora. Compute Savings Plans aplica sin importar familia, tamaño, sistema operativo, tenencia o región, y cubre también Fargate y Lambda. Una instancia reservada compromete una configuración: la estándar da más descuento y la convertible permite cambiarla por otra. En AWS Organizations, los descuentos se comparten entre las cuentas de la facturación unificada, salvo que se desactive.</p>
+            <p class="tema-pie">Precios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="data-transfer" data-dif="data-transfer">
+          <div class="dif-cabeza">
+            <span class="numero">40</span>
+            <div class="dif-titular">
+              <h3><a href="#data-transfer">Meter datos a AWS desde internet no cuesta; sacarlos sí</a></h3>
+              <p><strong class="pista">Salida a internet = se cobra. Entrada = en general sin costo.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="data-transfer" aria-label="Marcar como dominada: Meter datos a AWS desde internet no cuesta; sacarlos sí">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Parece lógico que mover datos cueste lo mismo en las dos direcciones.</p>
+            <p class="regla">La transferencia desde internet hacia AWS no se cobra. La salida hacia internet sí, y mientras más se transfiere, menos cuesta cada GB. Dentro de una región, algunos servicios no cobran el tráfico, pero pasar datos entre zonas de disponibilidad se cobra en los dos sentidos. Pasar datos a otra región también genera cargos.</p>
+            <p class="tema-pie">Precios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="cost-tools" data-dif="cost-tools">
+          <div class="dif-cabeza">
+            <span class="numero">41</span>
+            <div class="dif-titular">
+              <h3><a href="#cost-tools">Estimar, analizar, avisar y detallar: una herramienta de costos para cada verbo</a></h3>
+              <p><strong class="pista">Antes de construir = Calculadora de precios. Gasto pasado y pronóstico = Cost Explorer. Aviso al pasar un umbral = Budgets. Detalle máximo = CUR.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="cost-tools" aria-label="Marcar como dominada: Estimar, analizar, avisar y detallar: una herramienta de costos para cada verbo">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las cuatro hablan de costos y viven juntas en la consola de facturación.</p>
+            <p class="regla">AWS Budgets avisa cuando el gasto real o pronosticado pasa un umbral. Con acciones de presupuesto también puede aplicar una política de IAM o una SCP, o detener instancias de EC2 o RDS. Esas acciones corren solas o después de una aprobación.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Estimar el costo antes de construir</th><td>Calculadora de precios de AWS</td></tr>
+              <tr><th scope="row">Ver y analizar el gasto, con pronóstico</th><td>AWS Cost Explorer</td></tr>
+              <tr><th scope="row">Recibir una alerta cuando el gasto real o pronosticado pasa un umbral</th><td>AWS Budgets</td></tr>
+              <tr><th scope="row">El detalle más completo de costo y uso, entregado en S3</th><td>Informe de costo y uso (CUR)</td></tr>
+              <tr><th scope="row">Recomendaciones de tamaño de cómputo según el uso</th><td>AWS Compute Optimizer</td></tr>
               </tbody>
             </table>
             <p class="tema-pie">Costos</p>
           </div>
         </article>
-        <article class="diferencia" id="cost-management-no-tco" data-dif="cost-management-no-tco">
+        <article class="diferencia" id="cost-allocation-tags" data-dif="cost-allocation-tags">
           <div class="dif-cabeza">
-            <span class="numero">32</span>
+            <span class="numero">42</span>
             <div class="dif-titular">
-              <h3><a href="#cost-management-no-tco">Cost Management no calcula el costo total de propiedad</a></h3>
-              <p><strong class="pista">Estimar lo que no existe = pricing calculator.</strong></p>
+              <h3><a href="#cost-allocation-tags">Una etiqueta no aparece en los reportes de costos hasta activarla</a></h3>
+              <p><strong class="pista">Costos por proyecto o por área = etiquetas de asignación de costos, activadas.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="cost-management-no-tco" aria-label="Marcar como dominada: Cost Management no calcula el costo total de propiedad">
+              <input type="checkbox" data-dominada="cost-allocation-tags" aria-label="Marcar como dominada: Una etiqueta no aparece en los reportes de costos hasta activarla">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Suena a la herramienta de dinero por excelencia, así que parece que también proyecta escenarios.</p>
-            <p class="regla">El TCO, o Total Cost of Ownership, es todo lo que cuesta sostener algo: hardware, energía, espacio, licencias y personal. Cost Management solo trabaja con gasto real y su pronóstico. El TCO calculator, además, ya no forma parte del temario vigente.</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Se etiqueta el recurso y se espera verlo de inmediato en el reporte de costos.</p>
+            <p class="regla">Hay etiquetas generadas por AWS, como createdBy, y etiquetas definidas por el usuario. Las dos se activan en la consola de Billing and Cost Management; solo entonces AWS las usa para organizar los costos en el reporte de asignación.</p>
             <p class="tema-pie">Costos</p>
           </div>
         </article>
-        <article class="diferencia" id="ingress-egress" data-dif="ingress-egress">
+        <article class="diferencia" id="organizations-vs-control-tower" data-dif="organizations-vs-control-tower">
           <div class="dif-cabeza">
-            <span class="numero">33</span>
+            <span class="numero">43</span>
             <div class="dif-titular">
-              <h3><a href="#ingress-egress">Entrar datos no se cobra; sacarlos sí</a></h3>
-              <p><strong class="pista">Como el estacionamiento: se paga al salir.</strong></p>
+              <h3><a href="#organizations-vs-control-tower">Organizations agrupa las cuentas; Control Tower arma la zona de aterrizaje</a></h3>
+              <p><strong class="pista">Facturación unificada y SCP = Organizations. Entorno de varias cuentas listo, con controles = Control Tower.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="ingress-egress" aria-label="Marcar como dominada: Entrar datos no se cobra; sacarlos sí">
+              <input type="checkbox" data-dominada="organizations-vs-control-tower" aria-label="Marcar como dominada: Organizations agrupa las cuentas; Control Tower arma la zona de aterrizaje">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como la nube cobra por casi todo, se asume que el tráfico se cobra en ambos sentidos.</p>
-            <p class="regla">El tráfico de entrada a Azure normalmente no tiene costo. El de salida, hacia internet o hacia otra región, sí se cobra. Lo que se queda dentro de la misma región suele ser gratuito.</p>
-            <p class="tema-pie">Costos</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos administran varias cuentas.</p>
+            <p class="regla">AWS Organizations agrupa cuentas en unidades organizativas, unifica la facturación y aplica SCP. AWS Control Tower se apoya en Organizations para montar una zona de aterrizaje con controles ya configurados.</p>
+            <p class="tema-pie">Cuentas</p>
           </div>
         </article>
-        <article class="diferencia" id="tags-para-costos" data-dif="tags-para-costos">
+        <article class="diferencia" id="support-plans" data-dif="support-plans">
           <div class="dif-cabeza">
-            <span class="numero">34</span>
+            <span class="numero">44</span>
             <div class="dif-titular">
-              <h3><a href="#tags-para-costos">Los costos por área se reportan con tags</a></h3>
-              <p><strong class="pista">Costos por departamento o proyecto = tags.</strong></p>
+              <h3><a href="#support-plans">Los planes de soporte del examen se separan por el TAM y el tiempo de respuesta</a></h3>
+              <p><strong class="pista">TAM designado = Enterprise. Grupo de TAM = Enterprise On-Ramp. Teléfono 24/7 = desde Business. Solo web en horario laboral = Developer.</strong></p>
             </div>
             <label class="dominada">
-              <input type="checkbox" data-dominada="tags-para-costos" aria-label="Marcar como dominada: Los costos por área se reportan con tags">
+              <input type="checkbox" data-dominada="support-plans" aria-label="Marcar como dominada: Los planes de soporte del examen se separan por el TAM y el tiempo de respuesta">
               <span>Dominada</span>
             </label>
           </div>
           <div class="dif-cuerpo">
-            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Reorganizar los recursos en grupos por departamento parece la forma natural de separar gastos.</p>
-            <p class="regla">Las tags son pares nombre-valor que permiten filtrar y reportar costos sin mover nada de lugar. No se heredan del resource group, salvo que una Policy lo imponga.</p>
-            <p class="tema-pie">Costos</p>
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los planes de pago comparten casi todo, y «Enterprise On-Ramp» suena a una versión menor de Business.</p>
+            <p class="regla">La guía del CLF-C02 nombra Developer, Business, Enterprise On-Ramp y Enterprise, y el examen sigue la guía. AWS descontinúa Developer, Business y Enterprise On-Ramp el 1 de enero de 2027; hoy ofrece Business Support+, Enterprise Support y Unified Operations. Basic, sin costo, incluye servicio al cliente, las revisiones centrales de Trusted Advisor y AWS Health.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Experimentar o probar; web en horario laboral</th><td>Developer</td></tr>
+              <tr><th scope="row">Mínimo recomendado para producción; teléfono, web y chat 24/7; todas las revisiones de Trusted Advisor</th><td>Business</td></tr>
+              <tr><th scope="row">Cargas críticas; un grupo de gerentes técnicos de cuenta (TAM); menos de 30 minutos si cae un sistema crítico</th><td>Enterprise On-Ramp</td></tr>
+              <tr><th scope="row">Cargas críticas; TAM designado; menos de 15 minutos si cae un sistema crítico</th><td>Enterprise</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Soporte</p>
+          </div>
+        </article>
+        <article class="diferencia" id="where-to-go" data-dif="where-to-go">
+          <div class="dif-cabeza">
+            <span class="numero">45</span>
+            <div class="dif-titular">
+              <h3><a href="#where-to-go">Cada necesidad tiene a quién acudir en AWS</a></h3>
+              <p><strong class="pista">Reportar abuso desde recursos de AWS = Trust &amp; Safety. Consultoría de AWS = Professional Services. Software de terceros = Marketplace.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="where-to-go" aria-label="Marcar como dominada: Cada necesidad tiene a quién acudir en AWS">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Varias opciones suenan a «pedirle ayuda a AWS».</p>
+            <p class="regla">Trust &amp; Safety atiende el abuso que sale de recursos de AWS. Un problema técnico de tu propia cuenta va con AWS Support.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Reportar spam, ataques o contenido ilegal que sale de recursos de AWS</th><td>Equipo de confianza y seguridad (Trust &amp; Safety)</td></tr>
+              <tr><th scope="row">Consultoría del propio equipo de AWS</th><td>AWS Professional Services</td></tr>
+              <tr><th scope="row">Integradores y proveedores de software externos</th><td>Socios de la AWS Partner Network (APN)</td></tr>
+              <tr><th scope="row">Comprar software de terceros</th><td>AWS Marketplace</td></tr>
+              <tr><th scope="row">Revisiones automáticas de buenas prácticas en la cuenta</th><td>AWS Trusted Advisor</td></tr>
+              <tr><th scope="row">Eventos de AWS que afectan tus recursos</th><td>Panel de AWS Health</td></tr>
+              <tr><th scope="row">Artículos de AWS con respuestas a preguntas frecuentes</th><td>AWS Knowledge Center</td></tr>
+              <tr><th scope="row">Preguntas y respuestas de la comunidad</th><td>AWS re:Post</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Soporte</p>
           </div>
         </article>
         </div>
@@ -808,7 +1190,7 @@
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">Son 34 porque salieron de preparar el examen: los errores que se cometieron al estudiar y los puntos donde el material oficial queda ambiguo. Ninguna reproduce preguntas del examen ni del Practice Assessment de Microsoft.</p>
+        <p class="densa">Son 45. Salieron de cruzar la guía oficial del examen con la documentación de cada servicio y con lo que reporta quien ya lo presentó. Ninguna reproduce preguntas del examen ni las preguntas de práctica oficiales de AWS.</p>
         <p class="nota">practicarlas <span aria-hidden="true">→</span></p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
@@ -827,10 +1209,9 @@
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno AZ-900 es un proyecto personal y gratuito, sin relación con Microsoft. Microsoft, Azure y AZ-900 son marcas de Microsoft. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
-      <p class="sello">Contenido verificado contra la guía oficial de Microsoft en septiembre de 2026, con los <em>skills measured</em> del 20 de julio de 2026. Si el temario cambia, esta fecha se queda atrás: compruébalo en learn.microsoft.com.</p>
+      <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
       <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
-      <p class="sello">El primero de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+      <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
     </div>
   </div>
 </footer>

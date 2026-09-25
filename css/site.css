@@ -14,7 +14,12 @@
   --clay: #a33f28;
   --marker: #ffe27a;
   --mint: #cfe9dc;
-  --dark: #22221f;
+  --dark: #232F3E;
+  --accent: #FF9900;
+  --accent-ink: #232F3E;
+  --brand: #232F3E;
+  --mark: #fdce85;
+  --mark-soft: #fce1b5;
   --dark-ink: #f6f4ec;
   --dark-soft: #b8b4a7;
   --shadow: 0 2px 4px rgba(34, 34, 31, 0.05), 0 14px 34px rgba(34, 34, 31, 0.08);
@@ -37,21 +42,21 @@ body {
     linear-gradient(var(--grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid) 1px, transparent 1px);
   background-size: 28px 28px;
-  caret-color: var(--green);
+  caret-color: var(--brand);
 }
 
-::selection { background: var(--marker); color: var(--ink); }
+::selection { background: var(--mark-soft); color: var(--ink); }
 
 :focus-visible {
-  outline: 2px solid var(--green);
+  outline: 2px solid var(--brand);
   outline-offset: 3px;
   border-radius: 3px;
 }
 
 * { scrollbar-color: #c9c5b6 var(--band); scrollbar-width: thin; }
 
-a { color: var(--green); text-underline-offset: 3px; }
-a:hover { color: var(--green-dark); }
+a { color: var(--brand); text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:hover { color: var(--brand); text-decoration-color: var(--brand); }
 
 img { max-width: 100%; }
 
@@ -124,8 +129,8 @@ p { margin: 0; }
 /* acciones */
 .cta {
   display: inline-block;
-  background: var(--green);
-  color: var(--paper);
+  background: var(--accent);
+  color: var(--accent-ink);
   padding: 15px 26px;
   border: 0;
   border-radius: 8px;
@@ -134,7 +139,7 @@ p { margin: 0; }
   text-decoration: none;
   cursor: pointer;
 }
-.cta:hover { background: var(--green-dark); color: var(--paper); }
+.cta:hover { background: var(--brand); color: var(--paper); }
 .cta.secundaria { background: var(--band); color: var(--ink); box-shadow: var(--shadow); }
 .cta.secundaria:hover { background: var(--track); color: var(--ink); }
 
@@ -169,7 +174,7 @@ p { margin: 0; }
 .banda-oscura .prosa { color: var(--dark-soft); }
 
 .marca {
-  background-image: linear-gradient(transparent 58%, var(--marker) 58%);
+  background-image: linear-gradient(transparent 58%, var(--mark) 58%);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   animation: pintar 900ms cubic-bezier(0.16, 1, 0.3, 1) 300ms forwards;
@@ -181,7 +186,7 @@ p { margin: 0; }
 
 .pista {
   font-weight: 600;
-  background-image: linear-gradient(transparent 58%, var(--mint) 58%);
+  background-image: linear-gradient(transparent 58%, var(--mark-soft) 58%);
   padding: 0 3px;
 }
 
@@ -203,8 +208,8 @@ p { margin: 0; }
 }
 .opcion:hover:not(:disabled) { background: var(--track); }
 .opcion .letra { color: var(--ink-mute); font-weight: 600; }
-.opcion[aria-pressed="true"] { background: var(--green-soft); font-weight: 600; }
-.opcion[aria-pressed="true"] .letra { color: var(--green); }
+.opcion[aria-pressed="true"] { background: var(--mark-soft); font-weight: 600; }
+.opcion[aria-pressed="true"] .letra { color: var(--brand); }
 .opcion.correcta { background: var(--green-soft); font-weight: 600; }
 .opcion.correcta .letra { color: var(--green); }
 .opcion.incorrecta { background: #f7e2dc; }
@@ -213,7 +218,7 @@ p { margin: 0; }
 
 /* avance */
 .barra-avance { height: 8px; background: var(--track); border-radius: 999px; margin-top: 8px; overflow: hidden; }
-.barra-avance i { display: block; height: 100%; border-radius: 999px; background: var(--green); }
+.barra-avance i { display: block; height: 100%; border-radius: 999px; background: var(--brand); }
 .barra-avance i.baja { background: var(--clay); }
 
 .lista-limpia { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
@@ -244,7 +249,7 @@ p { margin: 0; }
   margin-bottom: 4px;
 }
 .pie-menu a { color: var(--ink-soft); text-decoration: none; font-size: 16px; }
-.pie-menu a:hover { color: var(--green); text-decoration: underline; }
+.pie-menu a:hover { color: var(--brand); text-decoration: underline; }
 .pie-letra-chica {
   margin-top: 44px;
   padding-top: 24px;
@@ -317,7 +322,7 @@ p { margin: 0; }
   color: var(--ink-soft);
   text-decoration: none;
 }
-.indice-dominio ul a:hover { color: var(--green); }
+.indice-dominio ul a:hover { color: var(--brand); }
 .indice-dominio ul a.actual { color: var(--ink); font-weight: 600; }
 .js .indice-dominio:not(.abierto) ul { display: none; }
 .indice-num { color: var(--ink-mute); font-variant-numeric: tabular-nums; }
@@ -348,7 +353,7 @@ p { margin: 0; }
 }
 .diferencia h3 { font-size: 22px; line-height: 1.3; }
 .diferencia h3 a { color: inherit; text-decoration: none; }
-.diferencia h3 a:hover { color: var(--green); }
+.diferencia h3 a:hover { color: var(--brand); }
 .dif-titular p { margin-top: 10px; }
 .dif-titular .pista { font-weight: 400; }
 .dif-cuerpo { margin: 18px 0 0 46px; display: flex; flex-direction: column; gap: 14px; }
@@ -368,7 +373,7 @@ p { margin: 0; }
 @media (max-width: 560px) { .mapa th { width: 48%; } }
 
 .dominada { display: flex; flex: 0 0 auto; min-height: 24px; align-items: center; gap: 7px; font-size: 14px; color: var(--ink-mute); cursor: pointer; white-space: nowrap; }
-.dominada input { accent-color: var(--green); width: 16px; height: 16px; cursor: pointer; }
+.dominada input { accent-color: var(--brand); width: 16px; height: 16px; cursor: pointer; }
 .diferencia.dominada-si .dif-titular h3 a { color: var(--ink-mute); }
 
 /* vista de solo pistas */
@@ -526,9 +531,9 @@ code {
 }
 .saltar:focus { left: 0; color: var(--paper); }
 
-.banda-oscura :focus-visible { outline-color: #8fd3b6; }
+.banda-oscura :focus-visible { outline-color: var(--accent); }
 
-#alternar-pistas[aria-pressed="true"] { background: var(--green-soft); }
+#alternar-pistas[aria-pressed="true"] { background: var(--mark-soft); }
 
 /* a 320 px la etiqueta de dominada bajaba a su propia línea */
 @media (max-width: 560px) {
@@ -544,15 +549,15 @@ code {
 .menu a.nav-cta,
 .menu a.nav-cta:hover,
 .menu a.nav-cta[aria-current="page"] {
-  background: var(--green);
-  color: var(--paper);
+  background: var(--accent);
+  color: var(--accent-ink);
   padding: 9px 16px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   line-height: 1.2;
 }
-.menu a.nav-cta:hover { background: var(--green-dark); }
+.menu a.nav-cta:hover { background: var(--brand); color: var(--paper); }
 
 html { scroll-padding-top: calc(var(--cabecera) + 20px); }
 @media print { .cabecera { position: static; box-shadow: none; background: none; } }

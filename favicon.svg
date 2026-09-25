@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Cuaderno AZ-900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Cuaderno Cloud Practitioner">
   <rect width="32" height="32" rx="7" fill="#fbf9f2"/>
-  <path d="M6 6.5A1.5 1.5 0 0 1 7.5 5H25a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H7.5A1.5 1.5 0 0 1 6 25.5z" fill="none" stroke="#1a6b52" stroke-width="2.2" stroke-linejoin="round"/>
-  <path d="M6 22h20" stroke="#1a6b52" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M11.5 5v22" stroke="#1a6b52" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M15 12.5h7" stroke="#ffe27a" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M15 17h4.5" stroke="#ffe27a" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M6 6.5A1.5 1.5 0 0 1 7.5 5H25a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H7.5A1.5 1.5 0 0 1 6 25.5z" fill="none" stroke="#232F3E" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M6 22h20" stroke="#232F3E" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M11.5 5v22" stroke="#232F3E" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M15 12.5h7" stroke="#FF9900" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M15 17h4.5" stroke="#FF9900" stroke-width="3.4" stroke-linecap="round"/>
 </svg>

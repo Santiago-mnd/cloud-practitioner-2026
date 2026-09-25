@@ -265,7 +265,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Dónde se confunde:</span> En los dos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.</p>
-            <p class="regla">Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y para eso existen los hosts dedicados.</p>
+            <p class="regla">Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y los hosts dedicados permiten usarlas.</p>
             <p class="tema-pie">Economía de la nube</p>
           </div>
         </article>
@@ -324,14 +324,14 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El modelo se aprende como una línea fija, pero la línea se mueve según el servicio.</p>
-            <p class="regla">Mientras más abstracto es el servicio, más capas opera AWS. Los datos, su cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.</p>
+            <p class="regla">Mientras más abstracto es el servicio, más capas opera AWS. Los datos, las opciones de cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
               <tr><th scope="row">Amazon EC2</th><td>Cliente: sistema operativo invitado con sus parches, aplicaciones y grupo de seguridad</td></tr>
               <tr><th scope="row">Amazon RDS</th><td>AWS: parches, respaldos y recuperación ante fallas. Cliente: datos, usuarios y acceso de red</td></tr>
               <tr><th scope="row">AWS Lambda</th><td>AWS: servidores, sistema operativo, capacidad y escalado. Cliente: código, datos y permisos</td></tr>
-              <tr><th scope="row">Amazon S3 y DynamoDB</th><td>AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, cifrado y permisos</td></tr>
+              <tr><th scope="row">Amazon S3 y DynamoDB</th><td>AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, opciones de cifrado y permisos</td></tr>
               </tbody>
             </table>
             <p class="tema-pie">Responsabilidad compartida</p>
@@ -369,7 +369,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los tres registran algo, y la guía los pone juntos en la misma habilidad de gobernanza y cumplimiento.</p>
-            <p class="regla">Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config guarda cómo quedó el recurso.</p>
+            <p class="regla">Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config, si está grabando ese tipo de recurso, guarda cómo quedó.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
@@ -459,7 +459,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Todo suena a guardar algo secreto.</p>
-            <p class="regla">KMS también cifra datos de otros servicios de AWS, como S3 y EBS, con las claves que administra.</p>
+            <p class="regla">Otros servicios de AWS, como S3 y EBS, se integran con KMS para cifrar sus datos con claves de KMS.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
@@ -698,7 +698,7 @@
             <span class="numero">27</span>
             <div class="dif-titular">
               <h3><a href="#database-options">Cada modelo de datos tiene su base de datos administrada</a></h3>
-              <p><strong class="pista">Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Análisis = Redshift.</strong></p>
+              <p><strong class="pista">Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Almacén de datos para análisis = Redshift.</strong></p>
             </div>
             <label class="dominada">
               <input type="checkbox" data-dominada="database-options" aria-label="Marcar como dominada: Cada modelo de datos tiene su base de datos administrada">
@@ -810,7 +810,7 @@
             <span class="numero">32</span>
             <div class="dif-titular">
               <h3><a href="#storage-types">Bloque, archivo u objeto: la primera pregunta del almacenamiento</a></h3>
-              <p><strong class="pista">Disco de una instancia = EBS. Carpeta compartida por muchas instancias = EFS. Objetos por API = S3.</strong></p>
+              <p><strong class="pista">Disco de una instancia = EBS. Carpeta compartida entre instancias Linux = EFS; entre instancias Windows = FSx for Windows File Server. Objetos por API = S3.</strong></p>
             </div>
             <label class="dominada">
               <input type="checkbox" data-dominada="storage-types" aria-label="Marcar como dominada: Bloque, archivo u objeto: la primera pregunta del almacenamiento">
@@ -819,7 +819,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Dónde se confunde:</span> S3, EBS y EFS guardan datos y los tres tienen una S en el nombre.</p>
-            <p class="regla">AWS Backup y Elastic Disaster Recovery cubren respaldos y recuperación; los demás guardan los datos con los que trabaja la aplicación.</p>
+            <p class="regla">AWS Backup y Elastic Disaster Recovery se dedican a respaldos y recuperación. Storage Gateway también sirve para respaldar y archivar desde las instalaciones.</p>
             <table class="mapa">
               <caption class="sr">Qué servicio responde a cada situación</caption>
               <tbody>
@@ -1209,6 +1209,7 @@
       </div>
     </div>
     <div class="pie-letra-chica">
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
       <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
       <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
       <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>

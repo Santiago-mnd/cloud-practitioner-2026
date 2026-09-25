@@ -114,7 +114,7 @@ DIFERENCIAS = [
        titulo="Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra",
        pista="Ya tiene licencias y quiere reusarlas = BYOL.",
        confusion="En los dos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.",
-       regla="Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y para eso existen los hosts dedicados."),
+       regla="Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y los hosts dedicados permiten usarlas."),
   dict(dominio=1, tema="Economía de la nube", id="rightsizing-vs-autoscaling",
        titulo="Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad",
        pista="Instancias sobradas todo el tiempo = rightsizing. Carga que sube y baja = Auto Scaling.",
@@ -131,11 +131,11 @@ DIFERENCIAS = [
        titulo="Lo que le toca al cliente cambia con cada servicio",
        pista="EC2 = el cliente parcha el sistema operativo. S3 o DynamoDB = AWS opera hasta la plataforma.",
        confusion="El modelo se aprende como una línea fija, pero la línea se mueve según el servicio.",
-       regla="Mientras más abstracto es el servicio, más capas opera AWS. Los datos, su cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.",
+       regla="Mientras más abstracto es el servicio, más capas opera AWS. Los datos, las opciones de cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.",
        tabla=[("Amazon EC2", "Cliente: sistema operativo invitado con sus parches, aplicaciones y grupo de seguridad"),
               ("Amazon RDS", "AWS: parches, respaldos y recuperación ante fallas. Cliente: datos, usuarios y acceso de red"),
               ("AWS Lambda", "AWS: servidores, sistema operativo, capacidad y escalado. Cliente: código, datos y permisos"),
-              ("Amazon S3 y DynamoDB", "AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, cifrado y permisos")]),
+              ("Amazon S3 y DynamoDB", "AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, opciones de cifrado y permisos")]),
   dict(dominio=2, tema="Responsabilidad compartida", id="shared-controls",
        titulo="En un control compartido, cada parte cubre su propia capa",
        pista="Parches, configuración y capacitación = compartidos. Físicos y ambientales = heredados de AWS.",
@@ -145,7 +145,7 @@ DIFERENCIAS = [
        titulo="CloudWatch, CloudTrail y Config responden tres preguntas distintas",
        pista="¿Cómo se comporta? = CloudWatch. ¿Quién hizo qué? = CloudTrail. ¿Cómo está configurado y si cumple? = Config.",
        confusion="Los tres registran algo, y la guía los pone juntos en la misma habilidad de gobernanza y cumplimiento.",
-       regla="Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config guarda cómo quedó el recurso.",
+       regla="Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config, si está grabando ese tipo de recurso, guarda cómo quedó.",
        tabla=[("Métricas, registros y alarmas de recursos y aplicaciones", "Amazon CloudWatch"),
               ("Quién hizo cada acción en la cuenta, y cuándo", "AWS CloudTrail"),
               ("Historial de configuración de los recursos y su evaluación contra reglas", "AWS Config")]),
@@ -173,7 +173,7 @@ DIFERENCIAS = [
        titulo="Claves, HSM dedicados, certificados y secretos viven en servicios separados",
        pista="Claves de cifrado = KMS. HSM dedicado = CloudHSM. Certificados TLS = ACM. Contraseñas que rotan = Secrets Manager.",
        confusion="Todo suena a guardar algo secreto.",
-       regla="KMS también cifra datos de otros servicios de AWS, como S3 y EBS, con las claves que administra.",
+       regla="Otros servicios de AWS, como S3 y EBS, se integran con KMS para cifrar sus datos con claves de KMS.",
        tabla=[("Crear y controlar claves de cifrado administradas", "AWS Key Management Service (KMS)"),
               ("Un módulo de seguridad de hardware (HSM) dedicado que controla el cliente", "AWS CloudHSM"),
               ("Emitir y renovar certificados SSL/TLS", "AWS Certificate Manager"),
@@ -245,7 +245,7 @@ DIFERENCIAS = [
        regla="Elastic Load Balancing reparte el tráfico entrante entre varios destinos y deja de mandarlo a los que no están sanos. Amazon EC2 Auto Scaling mantiene el número de instancias y lo ajusta según la demanda; eso es lo que da elasticidad."),
   dict(dominio=3, tema="Bases de datos", id="database-options",
        titulo="Cada modelo de datos tiene su base de datos administrada",
-       pista="Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Análisis = Redshift.",
+       pista="Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Almacén de datos para análisis = Redshift.",
        confusion="Todas guardan datos, y todas las administra AWS.",
        regla="Primero se decide el modelo de datos. Después, si conviene que AWS administre la base o instalarla en EC2 para controlar el motor y el sistema operativo.",
        tabla=[("Relacional administrada, con varios motores", "Amazon RDS"),
@@ -282,9 +282,9 @@ DIFERENCIAS = [
        regla="Amazon CloudFront es una red de entrega de contenido que guarda copias en las ubicaciones periféricas y también acelera contenido dinámico. AWS Global Accelerator da direcciones IP estáticas. Recibe los paquetes TCP o UDP en la ubicación periférica y los lleva a la región por la red de AWS. Amazon Route 53 es el servicio de DNS, el sistema que traduce nombres de dominio en direcciones: registra dominios, enruta el tráfico y revisa la salud de los destinos."),
   dict(dominio=3, tema="Almacenamiento", id="storage-types",
        titulo="Bloque, archivo u objeto: la primera pregunta del almacenamiento",
-       pista="Disco de una instancia = EBS. Carpeta compartida por muchas instancias = EFS. Objetos por API = S3.",
+       pista="Disco de una instancia = EBS. Carpeta compartida entre instancias Linux = EFS; entre instancias Windows = FSx for Windows File Server. Objetos por API = S3.",
        confusion="S3, EBS y EFS guardan datos y los tres tienen una S en el nombre.",
-       regla="AWS Backup y Elastic Disaster Recovery cubren respaldos y recuperación; los demás guardan los datos con los que trabaja la aplicación.",
+       regla="AWS Backup y Elastic Disaster Recovery se dedican a respaldos y recuperación. Storage Gateway también sirve para respaldar y archivar desde las instalaciones.",
        tabla=[("Disco en bloques persistente para una instancia", "Amazon EBS"),
               ("Disco en bloques temporal, que se pierde al detener o terminar la instancia", "Almacén de instancias"),
               ("Sistema de archivos compartido por muchas instancias, con el protocolo NFS", "Amazon EFS"),
@@ -594,6 +594,7 @@ doc = f"""<!doctype html>
       </div>
     </div>
     <div class="pie-letra-chica">
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
       <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
       <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
       <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>

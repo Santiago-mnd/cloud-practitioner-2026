@@ -82,17 +82,17 @@
         <p class="densa" style="margin-top: 8px">Pearson VUE pide pasarla en la misma computadora y la misma red del examen; en otra máquina no prueba nada. Al presentar el AZ&#8209;900, la prueba corrió en modo anónimo pero el resultado no quedó registrado: córrela con tu sesión iniciada.</p>
       </li>
       <li>
-        <h3>Apaga Hyper-V y cualquier máquina virtual</h3>
-        <p class="densa" style="margin-top: 8px">Pearson VUE prohíbe las máquinas virtuales. Con WSL, Docker o emuladores instalados, Hyper-V suele estar activo sin que nadie lo haya encendido, y desactivarlo pide reiniciar. Alguien que presentó el CLF&#8209;C02 contó en AWS re:Post que OnVUE confundió su laptop personal con una máquina virtual, y terminó presentando en un centro.</p>
-        <p class="densa" style="margin-top: 8px">Para revisarlo en Windows, en PowerShell como administrador: <code>Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All</code>.</p>
+        <h3>Nada de máquinas virtuales, y revisa Hyper-V</h3>
+        <p class="densa" style="margin-top: 8px">Pearson VUE prohíbe las máquinas virtuales. Por precaución, revisa Hyper-V: con WSL, Docker o emuladores instalados suele estar activo sin que nadie lo haya encendido, y desactivarlo pide reiniciar. Alguien que presentó el CLF&#8209;C02 contó en AWS re:Post que OnVUE confundió su laptop personal con una máquina virtual, y terminó presentando en un centro.</p>
+        <p class="densa" style="margin-top: 8px">Para revisarlo en Windows, en PowerShell como administrador: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 usa la plataforma de máquina virtual aunque Hyper-V aparezca deshabilitado.</p>
       </li>
       <li>
         <h3>Revisa tu identificación</h3>
-        <p class="densa" style="margin-top: 8px">Tiene que ser oficial, vigente, con foto y con el nombre exacto de tu reserva. Sirven el pasaporte, la licencia de conducir de plástico o una identificación nacional. Una inicial de diferencia alcanza para que no te dejen entrar, y eso se corrige antes, no en el check&#8209;in.</p>
+        <p class="densa" style="margin-top: 8px">Tiene que ser oficial, vigente y con foto. Sirven el pasaporte, la licencia de conducir de plástico o una identificación nacional. El nombre y los apellidos deben ser idénticos a los de tu cuenta de AWS Certification; el segundo nombre no hace falta. Si algo no coincide, corrígelo en tu cuenta al menos dos días hábiles antes del examen.</p>
       </li>
       <li>
         <h3>Ten un plan B</h3>
-        <p class="densa" style="margin-top: 8px">Si la prueba del sistema falla o no tienes un cuarto a solas garantizado, un centro de Pearson VUE cuesta lo mismo y quita estos riesgos. La decisión tiene fecha límite: 24 horas antes de la cita.</p>
+        <p class="densa" style="margin-top: 8px">Si la prueba del sistema falla o no tienes un cuarto a solas garantizado, un centro de Pearson VUE cuesta lo mismo y quita estos riesgos. En el centro piden dos identificaciones: dos principales, o una principal y una secundaria. La decisión tiene fecha límite: 24 horas antes de la cita.</p>
       </li>
     </ul>
   </section>
@@ -102,10 +102,10 @@
       <h2>Media hora antes</h2>
       <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
         <li class="densa">Reinicia la computadora y cierra todo menos OnVUE: Teams, Slack, Discord, música y navegadores.</li>
-        <li class="densa">Desconecta la VPN y evita redes corporativas, públicas o compartidas. Detén el <em>servicio</em> de la VPN, no solo la ventana: Tailscale y similares se reinician solos. En Windows: <code>Stop-Service</code>, y déjalo deshabilitado hasta terminar.</li>
+        <li class="densa">Desconecta la VPN y evita redes corporativas, públicas o compartidas. Detén el <em>servicio</em> de la VPN, no solo la ventana: Tailscale y similares se reinician solos. En Windows: <code>Stop-Service</code> y luego <code>Set-Service -StartupType Disabled</code>; vuelve a activarlo al terminar.</li>
         <li class="densa">Pide que nadie en casa use la red para ver series o descargar archivos grandes.</li>
-        <li class="densa">Desactiva las actualizaciones automáticas para que Windows no reinicie a media prueba.</li>
-        <li class="densa">Una sola pantalla. Desconecta la segunda; si no se puede quitar, desconéctala y tápala.</li>
+        <li class="densa">Por precaución, desactiva las actualizaciones automáticas para que Windows no reinicie a media prueba.</li>
+        <li class="densa">Una sola pantalla. Desconecta la segunda y cualquier pantalla táctil adicional; si no se puede quitar, desconéctala y tápala.</li>
         <li class="densa">Escritorio vacío: solo la computadora y, si quieres, una bebida en un recipiente sin etiqueta. Nada de papel, plumas, celular, reloj ni audífonos al alcance del brazo.</li>
         <li class="densa">Sin audífonos: se usan las bocinas y el micrófono del equipo.</li>
         <li class="densa">A solas, en un cuarto tranquilo. El baño y los lugares públicos, como oficinas o cafeterías, no están permitidos.</li>
@@ -117,7 +117,7 @@
     <div style="max-width: 72ch">
       <h2>El check-in</h2>
       <p class="prosa" style="margin-top: 18px">Empieza 30 minutos antes de la cita. Incluye pruebas del equipo, una foto tuya y de tu identificación, y un escaneo del cuarto en 360 grados. Si algo no cumple, no presentas y pierdes el pago.</p>
-      <p class="prosa" style="margin-top: 16px">Un detalle que confunde: la hora de la cita aparece en la zona horaria de tu perfil. Confírmala con el desfase explícito, del tipo UTC−06:00, antes de fiarte de un nombre como «hora central».</p>
+      <p class="prosa" style="margin-top: 16px">Confirma en el correo de tu cita la hora y la zona horaria, con el desfase explícito, del tipo UTC−06:00. Al presentar el AZ&#8209;900, la hora aparecía en la zona horaria del perfil y el nombre «hora central» se prestaba a confusión.</p>
     </div>
   </section>
 
@@ -173,7 +173,7 @@
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito, sin relación con Amazon Web Services. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
       <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
       <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
       <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>

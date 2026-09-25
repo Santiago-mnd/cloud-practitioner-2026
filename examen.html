@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El día del examen: guía de OnVUE · Cuaderno AZ-900</title>
+<meta name="description" content="Qué revisar antes y durante el examen AZ-900 en línea con OnVUE: prueba del sistema, Hyper-V, VPN, check-in y requisitos del cuarto.">
+<link rel="canonical" href="https://az900.sintitulo.dev/examen">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno AZ-900">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://az900.sintitulo.dev/examen">
+<meta property="og:title" content="El día del examen AZ-900: guía de OnVUE">
+<meta property="og:description" content="Prueba del sistema, Hyper-V, VPN, check-in y requisitos del cuarto. Las fallas de equipo que cuestan el examen, y cómo evitarlas.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El día del examen AZ-900: guía de OnVUE">
+<meta name="twitter:description" content="Prueba del sistema, Hyper-V, VPN, check-in y requisitos del cuarto. Las fallas de equipo que cuestan el examen, y cómo evitarlas.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno AZ-900: ¿un lock o un permiso? ¿Cold o Archive? ¿PaaS o SaaS?">
+<meta name="twitter:image" content="https://az900.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a6b52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno AZ&#8209;900
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a class="nav-cta" href="/practica">Practicar</a>
+      <a href="/diferencias">Diferencias</a>
+      <a href="/metodo">Método</a>
+      <a href="/examen" aria-current="page"><span class="largo">Día del examen</span><span class="corto">Examen</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
+
+  <div style="max-width: 68ch">
+    <h1>El día del examen</h1>
+    <p class="prosa" style="margin-top: 22px">Cuando el examen se presenta en línea con OnVUE, la computadora también se evalúa. Si el equipo falla el día de la cita, el examen se pierde. Y las fallas son casi siempre las mismas cinco.</p>
+    <p class="meta" style="margin-top: 18px">Esta guía sale de presentar el examen el 17 de septiembre de 2026. Las reglas de Pearson VUE cambian: confirma los detalles en tu confirmación de cita.</p>
+  </div>
+
+  <section class="seccion" data-revelar>
+    <h2>Días antes</h2>
+    <ul class="lista-limpia" style="margin-top: 24px; gap: 22px; max-width: 72ch">
+      <li>
+        <h3>Corre la prueba del sistema con tu sesión iniciada</h3>
+        <p class="densa" style="margin-top: 8px">En modo anónimo la prueba corre igual, pero el resultado no queda registrado. Entra desde tu cita en Pearson VUE, que para exámenes de Microsoft se abre desde tu perfil en learn.microsoft.com, y córrela ahí.</p>
+        <p class="densa" style="margin-top: 8px">Hazla en la computadora y la red donde vas a presentar. En otra máquina no prueba nada.</p>
+      </li>
+      <li>
+        <h3>Apaga Hyper-V</h3>
+        <p class="densa" style="margin-top: 8px">Con WSL, Docker o emuladores instalados suele estar activo sin que nadie lo haya encendido, y OnVUE rechaza equipos que hospedan máquinas virtuales. Desactivarlo pide reiniciar, así que no se resuelve a las prisas.</p>
+        <p class="densa" style="margin-top: 8px">Para revisarlo en Windows, en PowerShell como administrador: <code>Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All</code>.</p>
+      </li>
+      <li>
+        <h3>Revisa el nombre de tu identificación</h3>
+        <p class="densa" style="margin-top: 8px">Debe coincidir exacto con el del perfil. Una inicial de diferencia alcanza para que el proctor rechace el acceso, y eso se corrige antes, no en el check-in.</p>
+      </li>
+      <li>
+        <h3>Ten un plan B</h3>
+        <p class="densa" style="margin-top: 8px">Si la prueba del sistema falla o no hay un cuarto privado garantizado, un centro de aplicación cuesta lo mismo y quita todos estos riesgos. Reagendar suele ser gratis hasta 24 horas antes, así que la decisión tiene fecha límite.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="banda" data-revelar style="margin-left: calc(var(--gutter) * -1); margin-right: calc(var(--gutter) * -1); padding-left: var(--gutter); padding-right: var(--gutter)">
+    <div style="max-width: 72ch">
+      <h2>Media hora antes</h2>
+      <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
+        <li class="densa">Reinicia la computadora y cierra todo: Teams, Slack, Discord, música, navegadores con pestañas abiertas. Un proceso en segundo plano cuenta como violación de seguridad.</li>
+        <li class="densa">Detén el <em>servicio</em> de tu VPN, no el proceso. Tailscale y similares se reinician solos si solo se cierra la ventana. En Windows: <code>Stop-Service</code> y dejarlo deshabilitado hasta terminar.</li>
+        <li class="densa">Desactiva las actualizaciones automáticas. Un reinicio a media prueba termina el examen.</li>
+        <li class="densa">Desconecta el cable de la segunda pantalla; apagarla desde el botón no basta.</li>
+        <li class="densa">Escritorio despejado, cuarto a solas y puerta cerrada.</li>
+        <li class="densa">Prepara el cuarto para el escaneo: en el check-in te piden fotos del espacio en 360 grados, y el proctor puede pedirte que retires o desconectes lo que vea, como un segundo monitor, una tableta, un celular, bocinas o cuadernos. Quitar eso antes evita discutirlo con el reloj corriendo.</li>
+        <li class="densa">Sin audífonos: se necesitan bocinas y micrófono del equipo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div style="max-width: 72ch">
+      <h2>El check-in</h2>
+      <p class="prosa" style="margin-top: 18px">Abre 30 minutos antes de la hora de la cita y cierra 15 minutos después. Entrar tarde cuesta el examen y el pago.</p>
+      <p class="prosa" style="margin-top: 16px">No es instantáneo: incluye una foto tuya, la foto de tu identificación, fotos del cuarto desde varios ángulos y la espera a que un proctor libere el acceso. Entre 10 y 20 minutos es normal, y por eso existe esa ventana. Entrar en cuanto abre deja margen para cualquier problema.</p>
+      <p class="prosa" style="margin-top: 16px">Un detalle que confunde: la hora de la cita aparece en la zona horaria del perfil. Conviene confirmarla con el desfase explícito, del tipo UTC−06:00, antes que fiarse de un nombre como «hora central».</p>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div style="max-width: 72ch">
+      <h2>Durante</h2>
+      <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
+        <li class="densa"><strong style="font-weight: 600">Identifica qué se está preguntando antes de elegir.</strong> Muchos errores vienen de contestar el eje equivocado: la pregunta dice dónde vive la solución y la respuesta elegida describe cuánto se administra.</li>
+        <li class="densa"><strong style="font-weight: 600">Marca y avanza.</strong> Una pregunta atorada puede costar cinco minutos que valen más al final. Se puede volver a ella.</li>
+        <li class="densa"><strong style="font-weight: 600">Sospecha de los absolutos.</strong> Opciones con «siempre», «nunca» o «todas las regiones» suelen ser las descartables.</li>
+        <li class="densa"><strong style="font-weight: 600">El primer instinto suele ganar.</strong> Cambiar una respuesta razonada con calma casi siempre empeora el resultado.</li>
+      </ul>
+      <p class="prosa" style="margin-top: 22px">Los fundamentals no incluyen laboratorios ni acceso a Microsoft Learn durante el examen. El resultado aparece al terminar.</p>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div class="cierre">
+      <div>
+        <h2>La lectura de la última hora</h2>
+        <p class="prosa" style="margin-top: 16px">La vista de pistas de las 34 diferencias se lee en cinco minutos y se imprime en tres hojas. Es lo único que conviene repasar ese día.</p>
+      </div>
+      <div class="cierre-accion">
+        <a class="cta" href="/diferencias">Ver las diferencias</a>
+        <p class="meta" style="margin-top: 12px">Con el botón «Solo pistas» activado.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">Las reglas de aplicación las define Pearson VUE y cambian con el tiempo. Esta guía describe lo que ocurrió en una cita de septiembre de 2026: úsala como checklist, y confirma lo formal en tu correo de confirmación.</p>
+        <p class="nota">respira: vas a estar bien</p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
+        <h2>El cuaderno</h2>
+        <a href="/practica">Práctica</a>
+        <a href="/diferencias">Diferencias</a>
+        <a href="/metodo">Método</a>
+        <a href="/examen"><span class="largo">Día del </span>examen</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Quién lo hizo</h2>
+        <a href="https://www.santiagos.mx/es/inicio">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Apoyar el proyecto</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Aviso.</strong> Cuaderno AZ-900 es un proyecto personal y gratuito, sin relación con Microsoft. Microsoft, Azure y AZ-900 son marcas de Microsoft. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Contenido verificado contra la guía oficial de Microsoft en septiembre de 2026, con los <em>skills measured</em> del 20 de julio de 2026. Si el temario cambia, esta fecha se queda atrás: compruébalo en learn.microsoft.com.</p>
+      <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
+      <p class="sello">El primero de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/anim.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+<script src="js/cabecera.js" defer></script>
+</body>
+</html>

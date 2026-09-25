@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las 34 diferencias clave del AZ-900 · Cuaderno AZ-900</title>
+<meta name="description" content="Las 34 diferencias clave del examen Microsoft AZ-900: dónde se confunden, qué pasa en realidad y la frase que decide la respuesta.">
+<link rel="canonical" href="https://az900.sintitulo.dev/diferencias">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno AZ-900">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://az900.sintitulo.dev/diferencias">
+<meta property="og:title" content="Las 34 diferencias clave del AZ-900">
+<meta property="og:description" content="Dónde se confunde cada par de conceptos del examen AZ-900, qué pasa en realidad y la frase que decide la respuesta.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Las 34 diferencias clave del AZ-900">
+<meta name="twitter:description" content="Dónde se confunde cada par de conceptos del examen AZ-900, qué pasa en realidad y la frase que decide la respuesta.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://az900.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno AZ-900: ¿un lock o un permiso? ¿Cold o Archive? ¿PaaS o SaaS?">
+<meta name="twitter:image" content="https://az900.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a6b52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno AZ&#8209;900
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a class="nav-cta" href="/practica">Practicar</a>
+      <a href="/diferencias" aria-current="page">Diferencias</a>
+      <a href="/metodo">Método</a>
+      <a href="/examen"><span class="largo">Día del examen</span><span class="corto">Examen</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
+
+  <div class="encabezado-diferencias">
+    <h1>Las 34 diferencias del AZ&#8209;900</h1>
+    <p class="subtitulo">¿Un lock o un permiso? ¿Cold o Archive? Resueltas una por una.</p>
+    <p class="prosa" style="margin-top: 20px">La respuesta equivocada convence hasta que alguien explica por qué falla. De cada una: la pista que decide la respuesta, dónde se confunde y qué pasa en realidad. Se leen en unos veinte minutos; en la vista de pistas, en cinco.</p>
+    <div class="controles">
+      <button type="button" class="cta secundaria" id="alternar-pistas" aria-pressed="false">Solo pistas</button>
+      <span class="meta" id="estado-dominadas" role="status"></span>
+      <span class="meta">Marca las que ya dominas y desaparecen de la hoja de pistas.</span>
+    </div>
+  </div>
+
+  <div class="marco-diferencias">
+    <nav class="indice-lateral" aria-label="Índice de diferencias">
+      <details class="indice-caja" id="indice-caja" open>
+        <summary>Índice · 34 diferencias</summary>
+        <ul>
+          <li class="indice-dominio" data-indice-dominio="1">
+            <a class="indice-dominio-titulo" href="#dominio-1">Conceptos de nube <span class="indice-rango">01–12</span></a>
+            <ul>
+              <li><a href="#sql-database-paas" data-indice="sql-database-paas"><span class="indice-num">01</span> SQL Database es PaaS</a></li>
+              <li><a href="#infraestructura-iaas" data-indice="infraestructura-iaas"><span class="indice-num">02</span> La infraestructura es IaaS</a></li>
+              <li><a href="#frontera-iaas-paas" data-indice="frontera-iaas-paas"><span class="indice-num">03</span> ¿Quién parcha el SO?</a></li>
+              <li><a href="#paas-vs-saas" data-indice="paas-vs-saas"><span class="indice-num">04</span> PaaS o SaaS</a></li>
+              <li><a href="#modelo-vs-tipo" data-indice="modelo-vs-tipo"><span class="indice-num">05</span> Modelo o tipo de servicio</a></li>
+              <li><a href="#opex-vs-governance" data-indice="opex-vs-governance"><span class="indice-num">06</span> OpEx o governance</a></li>
+              <li><a href="#confiabilidad-vs-disponibilidad" data-indice="confiabilidad-vs-disponibilidad"><span class="indice-num">07</span> Confiabilidad o disponibilidad</a></li>
+              <li><a href="#agilidad-vs-elasticidad" data-indice="agilidad-vs-elasticidad"><span class="indice-num">08</span> Agilidad o elasticidad</a></li>
+              <li><a href="#geografia-vs-desastres" data-indice="geografia-vs-desastres"><span class="indice-num">09</span> Geografía o desastres</a></li>
+              <li><a href="#nube-publica" data-indice="nube-publica"><span class="indice-num">10</span> Nube pública</a></li>
+              <li><a href="#nube-privada" data-indice="nube-privada"><span class="indice-num">11</span> Nube privada</a></li>
+              <li><a href="#paas-so-microsoft" data-indice="paas-so-microsoft"><span class="indice-num">12</span> El SO en PaaS</a></li>
+            </ul>
+          </li>
+          <li class="indice-dominio" data-indice-dominio="2">
+            <a class="indice-dominio-titulo" href="#dominio-2">Arquitectura y servicios <span class="indice-rango">13–23</span></a>
+            <ul>
+              <li><a href="#scale-sets-vs-aks" data-indice="scale-sets-vs-aks"><span class="indice-num">13</span> Scale Sets, AKS o set</a></li>
+              <li><a href="#zona-de-una-vm" data-indice="zona-de-una-vm"><span class="indice-num">14</span> La zona de una VM</a></li>
+              <li><a href="#zone-set-pair" data-indice="zone-set-pair"><span class="indice-num">15</span> Zone, set y pair</a></li>
+              <li><a href="#cold-vs-archive" data-indice="cold-vs-archive"><span class="indice-num">16</span> Cold o Archive</a></li>
+              <li><a href="#archive-restricciones" data-indice="archive-restricciones"><span class="indice-num">17</span> Dónde cabe Archive</a></li>
+              <li><a href="#files-vs-blob" data-indice="files-vs-blob"><span class="indice-num">18</span> Files o Blob</a></li>
+              <li><a href="#que-conecta-con-que" data-indice="que-conecta-con-que"><span class="indice-num">19</span> Qué conecta con qué</a></li>
+              <li><a href="#capas-vs-zero-trust" data-indice="capas-vs-zero-trust"><span class="indice-num">20</span> Capas o Zero Trust</a></li>
+              <li><a href="#acceso-condicional-vs-rbac" data-indice="acceso-condicional-vs-rbac"><span class="indice-num">21</span> Acceso condicional o RBAC</a></li>
+              <li><a href="#sso-vs-mfa" data-indice="sso-vs-mfa"><span class="indice-num">22</span> SSO o MFA</a></li>
+              <li><a href="#entra-no-hace-dns" data-indice="entra-no-hace-dns"><span class="indice-num">23</span> Entra ID no hace DNS</a></li>
+            </ul>
+          </li>
+          <li class="indice-dominio" data-indice-dominio="3">
+            <a class="indice-dominio-titulo" href="#dominio-3">Administración y gobernanza <span class="indice-rango">24–34</span></a>
+            <ul>
+              <li><a href="#locks-management-group" data-indice="locks-management-group"><span class="indice-num">24</span> Locks y management groups</a></li>
+              <li><a href="#lock-vs-rbac" data-indice="lock-vs-rbac"><span class="indice-num">25</span> Lock o RBAC</a></li>
+              <li><a href="#tenant-vs-suscripcion" data-indice="tenant-vs-suscripcion"><span class="indice-num">26</span> Tenant o suscripción</a></li>
+              <li><a href="#un-solo-resource-group" data-indice="un-solo-resource-group"><span class="indice-num">27</span> Un solo resource group</a></li>
+              <li><a href="#advisor-no-es-todo" data-indice="advisor-no-es-todo"><span class="indice-num">28</span> Advisor y su familia</a></li>
+              <li><a href="#cloud-shell-vs-arc" data-indice="cloud-shell-vs-arc"><span class="indice-num">29</span> Cloud Shell o Arc</a></li>
+              <li><a href="#budget-avisa" data-indice="budget-avisa"><span class="indice-num">30</span> El budget solo avisa</a></li>
+              <li><a href="#estimar-analizar-recomendar" data-indice="estimar-analizar-recomendar"><span class="indice-num">31</span> Estimar, analizar, recomendar</a></li>
+              <li><a href="#cost-management-no-tco" data-indice="cost-management-no-tco"><span class="indice-num">32</span> Cost Management y el TCO</a></li>
+              <li><a href="#ingress-egress" data-indice="ingress-egress"><span class="indice-num">33</span> Entrada y salida de datos</a></li>
+              <li><a href="#tags-para-costos" data-indice="tags-para-costos"><span class="indice-num">34</span> Tags para costos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </nav>
+
+    <div class="columna-diferencias">
+      <section class="dominio" id="dominio-1" data-dominio="1">
+        <h2>Conceptos de nube <span class="conteo">01–12</span></h2>
+        <div class="lista-diferencias">
+        <article class="diferencia" id="sql-database-paas" data-dif="sql-database-paas">
+          <div class="dif-cabeza">
+            <span class="numero">01</span>
+            <div class="dif-titular">
+              <h3><a href="#sql-database-paas">Azure SQL Database siempre es PaaS</a></h3>
+              <p><strong class="pista">«Administrada» o «Azure SQL Database» = PaaS. «Dentro de una VM» = IaaS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="sql-database-paas" aria-label="Marcar como dominada: Azure SQL Database siempre es PaaS">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El nombre suena a servidor de base de datos, y quien ha administrado SQL Server lo asocia con una máquina que alguien mantiene.</p>
+            <p class="regla">Es un motor de base de datos administrado: Microsoft opera el servidor, el sistema operativo, los parches y los respaldos. Solo se aportan tablas, consultas y datos. SQL Server instalado dentro de una máquina virtual sí es IaaS. Cosmos DB va en la misma bolsa que Azure SQL.</p>
+            <p class="tema-pie">Tipos de servicio</p>
+          </div>
+        </article>
+        <article class="diferencia" id="infraestructura-iaas" data-dif="infraestructura-iaas">
+          <div class="dif-cabeza">
+            <span class="numero">02</span>
+            <div class="dif-titular">
+              <h3><a href="#infraestructura-iaas">La infraestructura es IaaS, aunque nadie instale cables</a></h3>
+              <p><strong class="pista">VM, VNet y disco = IaaS. App Service, Azure SQL y Functions = PaaS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="infraestructura-iaas" aria-label="Marcar como dominada: La infraestructura es IaaS, aunque nadie instale cables">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como una red virtual se crea con unos clics y no hay hardware de por medio, parece una plataforma administrada.</p>
+            <p class="regla">Las máquinas virtuales, las redes virtuales, los discos y los balanceadores son la capa de infraestructura: el cliente los diseña y los administra. PaaS empieza un piso más arriba, cuando la plataforma ya está lista para recibir código o datos.</p>
+            <p class="tema-pie">Tipos de servicio</p>
+          </div>
+        </article>
+        <article class="diferencia" id="frontera-iaas-paas" data-dif="frontera-iaas-paas">
+          <div class="dif-cabeza">
+            <span class="numero">03</span>
+            <div class="dif-titular">
+              <h3><a href="#frontera-iaas-paas">La frontera entre IaaS y PaaS es el sistema operativo</a></h3>
+              <p><strong class="pista">La pregunta que decide: ¿quién parcha el sistema operativo?</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="frontera-iaas-paas" aria-label="Marcar como dominada: La frontera entre IaaS y PaaS es el sistema operativo">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> En los dos modelos se construye algo encima, así que «construir» no distingue nada.</p>
+            <p class="regla">Si el cliente instala y parcha el sistema operativo, es IaaS, y eso incluye a los Scale Sets. Si Microsoft lo parcha, es PaaS.</p>
+            <p class="tema-pie">Tipos de servicio</p>
+          </div>
+        </article>
+        <article class="diferencia" id="paas-vs-saas" data-dif="paas-vs-saas">
+          <div class="dif-cabeza">
+            <span class="numero">04</span>
+            <div class="dif-titular">
+              <h3><a href="#paas-vs-saas">PaaS y SaaS se separan por quién escribe la aplicación</a></h3>
+              <p><strong class="pista">Si alguien escribe código o diseña tablas, ya no es SaaS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="paas-vs-saas" aria-label="Marcar como dominada: PaaS y SaaS se separan por quién escribe la aplicación">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos evitan administrar servidores, así que suenan intercambiables.</p>
+            <p class="regla">PaaS es una herramienta para construir encima: el código y las tablas son del cliente. SaaS es un producto terminado que solo se usa, como Microsoft 365, Teams, Outlook o Power BI.</p>
+            <p class="tema-pie">Tipos de servicio</p>
+          </div>
+        </article>
+        <article class="diferencia" id="modelo-vs-tipo" data-dif="modelo-vs-tipo">
+          <div class="dif-cabeza">
+            <span class="numero">05</span>
+            <div class="dif-titular">
+              <h3><a href="#modelo-vs-tipo">Modelo de implementación y tipo de servicio son ejes distintos</a></h3>
+              <p><strong class="pista">On-premises conectado con Azure = nube híbrida, aunque el escenario hable de VMs.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="modelo-vs-tipo" aria-label="Marcar como dominada: Modelo de implementación y tipo de servicio son ejes distintos">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Un escenario menciona máquinas virtuales y la respuesta parece ser IaaS, aunque la pregunta sea sobre dónde vive la solución.</p>
+            <p class="regla">El modelo responde dónde: pública, privada, híbrida o multinube. El tipo de servicio responde cuánto administra el cliente: IaaS, PaaS o SaaS. Son independientes entre sí.</p>
+            <p class="tema-pie">Tipos de servicio</p>
+          </div>
+        </article>
+        <article class="diferencia" id="opex-vs-governance" data-dif="opex-vs-governance">
+          <div class="dif-cabeza">
+            <span class="numero">06</span>
+            <div class="dif-titular">
+              <h3><a href="#opex-vs-governance">Pagar por uso es OpEx; governance es otra cosa</a></h3>
+              <p><strong class="pista">Sin inversión inicial = OpEx. Reglas y estándares = governance.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="opex-vs-governance" aria-label="Marcar como dominada: Pagar por uso es OpEx; governance es otra cosa">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> La palabra control aparece en las dos ideas, y quien decide el gasto también parece estar gobernando.</p>
+            <p class="regla">CapEx es la inversión inicial en infraestructura. OpEx es pagar conforme se usa, y la nube es OpEx por naturaleza. Governance son reglas y cumplimiento sobre lo que puede existir: Policy, locks, tags y RBAC.</p>
+            <p class="tema-pie">Beneficios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="confiabilidad-vs-disponibilidad" data-dif="confiabilidad-vs-disponibilidad">
+          <div class="dif-cabeza">
+            <span class="numero">07</span>
+            <div class="dif-titular">
+              <h3><a href="#confiabilidad-vs-disponibilidad">Confiabilidad es recuperarse; alta disponibilidad es no caerse</a></h3>
+              <p><strong class="pista">Recuperarse de fallas = confiabilidad.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="confiabilidad-vs-disponibilidad" aria-label="Marcar como dominada: Confiabilidad es recuperarse; alta disponibilidad es no caerse">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Distribuir una aplicación en varias regiones suena directamente a disponibilidad.</p>
+            <p class="regla">La confiabilidad es la capacidad de recuperarse de una falla y seguir operando. La alta disponibilidad es mantenerse en línea el mayor tiempo posible, y se mide con el SLA. La agilidad es desplegar rápido, y la previsibilidad es que el costo y el rendimiento sean esperables.</p>
+            <p class="tema-pie">Beneficios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="agilidad-vs-elasticidad" data-dif="agilidad-vs-elasticidad">
+          <div class="dif-cabeza">
+            <span class="numero">08</span>
+            <div class="dif-titular">
+              <h3><a href="#agilidad-vs-elasticidad">Agilidad es desplegar rápido; elasticidad es ajustarse solo</a></h3>
+              <p><strong class="pista">Rápido de implementar = agilidad. Según la demanda = elasticidad.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="agilidad-vs-elasticidad" aria-label="Marcar como dominada: Agilidad es desplegar rápido; elasticidad es ajustarse solo">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos suenan a rapidez y a nube moderna.</p>
+            <p class="regla">La agilidad es la rapidez para crear o cambiar recursos nuevos. La elasticidad es que lo ya desplegado crezca y se reduzca según la demanda.</p>
+            <p class="tema-pie">Beneficios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="geografia-vs-desastres" data-dif="geografia-vs-desastres">
+          <div class="dif-cabeza">
+            <span class="numero">09</span>
+            <div class="dif-titular">
+              <h3><a href="#geografia-vs-desastres">Distribución geográfica y recuperación ante desastres no son lo mismo</a></h3>
+              <p><strong class="pista">Cerca de los usuarios = distribución geográfica. Restaurar tras un desastre = recuperación ante desastres.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="geografia-vs-desastres" aria-label="Marcar como dominada: Distribución geográfica y recuperación ante desastres no son lo mismo">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos hablan de tener la solución en varios lugares del mundo.</p>
+            <p class="regla">La distribución geográfica busca estar cerca de los usuarios para dar mejor rendimiento. La recuperación ante desastres busca restaurar el servicio después de una catástrofe, con respaldos y conmutación a otra región. GRS es redundancia de almacenamiento, no distribución.</p>
+            <p class="tema-pie">Beneficios</p>
+          </div>
+        </article>
+        <article class="diferencia" id="nube-publica" data-dif="nube-publica">
+          <div class="dif-cabeza">
+            <span class="numero">10</span>
+            <div class="dif-titular">
+              <h3><a href="#nube-publica">La nube pública no incluye hardware propio del cliente</a></h3>
+              <p><strong class="pista">Si el hardware es de la organización, no es pública.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="nube-publica" aria-label="Marcar como dominada: La nube pública no incluye hardware propio del cliente">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El escenario menciona servidores y centros de datos, y eso se asocia con infraestructura propia.</p>
+            <p class="regla">La nube pública es del proveedor y está disponible para cualquiera. Hardware propio o de uso exclusivo describe una nube privada.</p>
+            <p class="tema-pie">Modelos de nube</p>
+          </div>
+        </article>
+        <article class="diferencia" id="nube-privada" data-dif="nube-privada">
+          <div class="dif-cabeza">
+            <span class="numero">11</span>
+            <div class="dif-titular">
+              <h3><a href="#nube-privada">En la nube privada alguien compró el hardware</a></h3>
+              <p><strong class="pista">Privada: se compra y se controla. Pública: se renta y se escala rápido.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="nube-privada" aria-label="Marcar como dominada: En la nube privada alguien compró el hardware">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como se contrata y se usa de forma parecida a la pública, se le atribuyen sus ventajas: aprovisionamiento rápido y pago por uso.</p>
+            <p class="regla">Una nube privada es infraestructura de uso exclusivo de una organización, en su propio centro de datos o hospedada por un tercero. Alguien adquirió ese hardware, y la organización mantiene el control de los recursos y de la seguridad.</p>
+            <p class="tema-pie">Modelos de nube</p>
+          </div>
+        </article>
+        <article class="diferencia" id="paas-so-microsoft" data-dif="paas-so-microsoft">
+          <div class="dif-cabeza">
+            <span class="numero">12</span>
+            <div class="dif-titular">
+              <h3><a href="#paas-so-microsoft">En PaaS el sistema operativo es de Microsoft</a></h3>
+              <p><strong class="pista">Los datos y las identidades nunca dejan de ser del cliente.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="paas-so-microsoft" aria-label="Marcar como dominada: En PaaS el sistema operativo es de Microsoft">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como en PaaS el cliente conserva bastante control sobre su aplicación, parece que también conserva el sistema operativo.</p>
+            <p class="regla">En PaaS el proveedor cubre lo físico y además el sistema operativo. Los datos, las cuentas, los accesos y los dispositivos son siempre responsabilidad del cliente, en los tres modelos.</p>
+            <p class="tema-pie">Responsabilidad compartida</p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="dominio" id="dominio-2" data-dominio="2">
+        <h2>Arquitectura y servicios <span class="conteo">13–23</span></h2>
+        <div class="lista-diferencias">
+        <article class="diferencia" id="scale-sets-vs-aks" data-dif="scale-sets-vs-aks">
+          <div class="dif-cabeza">
+            <span class="numero">13</span>
+            <div class="dif-titular">
+              <h3><a href="#scale-sets-vs-aks">Scale Sets escalan máquinas; AKS orquesta contenedores</a></h3>
+              <p><strong class="pista">Máquinas idénticas que escalan = Scale Set. Contenedores orquestados = AKS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="scale-sets-vs-aks" aria-label="Marcar como dominada: Scale Sets escalan máquinas; AKS orquesta contenedores">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos crecen solos y reponen lo que se cae, así que la diferencia parece de tamaño y no de naturaleza.</p>
+            <p class="regla">Cada uno resuelve un problema distinto, aunque los tres suenen a que nada se caiga.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Que varias máquinas no caigan juntas</th><td>Availability set</td></tr>
+              <tr><th scope="row">Agregar y quitar máquinas idénticas según la carga</th><td>Virtual Machine Scale Set</td></tr>
+              <tr><th scope="row">Coordinar muchos contenedores</th><td>Azure Kubernetes Service</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Cómputo</p>
+          </div>
+        </article>
+        <article class="diferencia" id="zona-de-una-vm" data-dif="zona-de-una-vm">
+          <div class="dif-cabeza">
+            <span class="numero">14</span>
+            <div class="dif-titular">
+              <h3><a href="#zona-de-una-vm">La availability zone de una máquina virtual se fija al crearla</a></h3>
+              <p><strong class="pista">El portal hace casi todo, pero no mueve de zona una VM existente.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="zona-de-una-vm" aria-label="Marcar como dominada: La availability zone de una máquina virtual se fija al crearla">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> El portal permite cambiar casi cualquier propiedad, así que la zona parece una más.</p>
+            <p class="regla">La zona se elige al crear la máquina. Para cambiarla hay que recrearla o migrarla.</p>
+            <p class="tema-pie">Cómputo</p>
+          </div>
+        </article>
+        <article class="diferencia" id="zone-set-pair" data-dif="zone-set-pair">
+          <div class="dif-cabeza">
+            <span class="numero">15</span>
+            <div class="dif-titular">
+              <h3><a href="#zone-set-pair">Zone, set y region pair protegen de cosas distintas</a></h3>
+              <p><strong class="pista">Rack = set. Centro de datos = zone. Región = pair.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="zone-set-pair" aria-label="Marcar como dominada: Zone, set y region pair protegen de cosas distintas">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las tres suenan a alta disponibilidad, y en el examen aparecen juntas como opciones.</p>
+            <p class="regla">La alta disponibilidad es el concepto y se pacta en el SLA; lo demás son formas concretas de repartir el riesgo.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Falla un rack o hay un reinicio por mantenimiento</th><td>Availability set</td></tr>
+              <tr><th scope="row">Cae un centro de datos completo</th><td>Availability zone</td></tr>
+              <tr><th scope="row">Cae la región entera</th><td>Region pair</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Regiones</p>
+          </div>
+        </article>
+        <article class="diferencia" id="cold-vs-archive" data-dif="cold-vs-archive">
+          <div class="dif-cabeza">
+            <span class="numero">16</span>
+            <div class="dif-titular">
+              <h3><a href="#cold-vs-archive">Cold sigue en línea; Archive no</a></h3>
+              <p><strong class="pista">Si la pregunta dice que puede tardar horas, es Archive.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="cold-vs-archive" aria-label="Marcar como dominada: Cold sigue en línea; Archive no">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos guardan datos que casi nunca se consultan, los dos son baratos y los dos suenan igual de fríos.</p>
+            <p class="regla">Hot, Cool y Cold están en línea: se leen en milisegundos. Archive está fuera de línea y hay que rehidratarlo a un tier en línea antes de leerlo, lo que puede tardar hasta 15 horas según la prioridad que se elija. Entre más frío el tier, más barato guardar y más caro leer. Cada uno tiene un mínimo de permanencia, y salirse antes genera un cargo prorrateado.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Datos en uso, se leen y escriben seguido</th><td>Hot · sin mínimo</td></tr>
+              <tr><th scope="row">Poco frecuentes, pero disponibles al instante</th><td>Cool · 30 días</td></tr>
+              <tr><th scope="row">Raros, y aun así se necesitan rápido</th><td>Cold · 90 días</td></tr>
+              <tr><th scope="row">Casi nunca, y se puede esperar horas</th><td>Archive · 180 días</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Storage</p>
+          </div>
+        </article>
+        <article class="diferencia" id="archive-restricciones" data-dif="archive-restricciones">
+          <div class="dif-cabeza">
+            <span class="numero">17</span>
+            <div class="dif-titular">
+              <h3><a href="#archive-restricciones">Archive no sirve para todo ni se activa en cualquier cuenta</a></h3>
+              <p><strong class="pista">Archive: por blob, nunca por defecto, y solo en LRS, GRS o RA-GRS.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="archive-restricciones" aria-label="Marcar como dominada: Archive no sirve para todo ni se activa en cualquier cuenta">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Si Archive es el más barato, parece razonable ponerlo como valor por defecto de la cuenta y olvidarse.</p>
+            <p class="regla">El tier por defecto de una storage account solo puede ser Hot, Cool o Cold; Archive se asigna blob por blob. Además, Archive solo está disponible en cuentas con redundancia LRS, GRS o RA-GRS, no en ZRS ni GZRS, y los tiers de acceso aplican únicamente a block blobs.</p>
+            <p class="tema-pie">Storage</p>
+          </div>
+        </article>
+        <article class="diferencia" id="files-vs-blob" data-dif="files-vs-blob">
+          <div class="dif-cabeza">
+            <span class="numero">18</span>
+            <div class="dif-titular">
+              <h3><a href="#files-vs-blob">Azure Files se monta; Blob se consume por URL</a></h3>
+              <p><strong class="pista">Carpeta compartida o unidad montada = Azure Files.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="files-vs-blob" aria-label="Marcar como dominada: Azure Files se monta; Blob se consume por URL">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Los dos guardan archivos, así que cualquiera parece servir.</p>
+            <p class="regla">Azure Files entrega recursos compartidos que se montan como unidad de red con SMB o NFS. Blob guarda objetos no estructurados y se consume por HTTP o REST. Los niveles Hot, Cool, Cold y Archive son exclusivos de Blob.</p>
+            <p class="tema-pie">Storage</p>
+          </div>
+        </article>
+        <article class="diferencia" id="que-conecta-con-que" data-dif="que-conecta-con-que">
+          <div class="dif-cabeza">
+            <span class="numero">19</span>
+            <div class="dif-titular">
+              <h3><a href="#que-conecta-con-que">Cada conexión tiene su servicio</a></h3>
+              <p><strong class="pista">Red con red = peering. Servicio con red = endpoint. Oficina con Azure = VPN o ExpressRoute.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="que-conecta-con-que" aria-label="Marcar como dominada: Cada conexión tiene su servicio">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Peering, service endpoint, private endpoint, VPN y ExpressRoute se describen todos como conectar, y las opciones aparecen mezcladas.</p>
+            <p class="regla">La pregunta útil es qué dos cosas se están uniendo.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Dos redes virtuales entre sí</th><td>VNet peering</td></tr>
+              <tr><th scope="row">Un servicio de Azure con una red virtual</th><td>Service endpoint o private endpoint</td></tr>
+              <tr><th scope="row">Una oficina con Azure, cifrado por internet</th><td>VPN Gateway</td></tr>
+              <tr><th scope="row">Una oficina con Azure, línea privada dedicada</th><td>ExpressRoute</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Redes</p>
+          </div>
+        </article>
+        <article class="diferencia" id="capas-vs-zero-trust" data-dif="capas-vs-zero-trust">
+          <div class="dif-cabeza">
+            <span class="numero">20</span>
+            <div class="dif-titular">
+              <h3><a href="#capas-vs-zero-trust">Defense-in-depth son capas; Zero Trust es una filosofía</a></h3>
+              <p><strong class="pista">Capas = defense-in-depth. Nunca confiar y siempre verificar = Zero Trust.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="capas-vs-zero-trust" aria-label="Marcar como dominada: Defense-in-depth son capas; Zero Trust es una filosofía">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos describen seguridad seria y aparecen juntas en las opciones.</p>
+            <p class="regla">Defense-in-depth organiza la protección en capas (física, identidad, perímetro, red, cómputo, aplicación y datos) con los datos al centro. Zero Trust son tres principios: verificar explícitamente, dar el mínimo privilegio y asumir que ya hubo una brecha.</p>
+            <p class="tema-pie">Identidad y seguridad</p>
+          </div>
+        </article>
+        <article class="diferencia" id="acceso-condicional-vs-rbac" data-dif="acceso-condicional-vs-rbac">
+          <div class="dif-cabeza">
+            <span class="numero">21</span>
+            <div class="dif-titular">
+              <h3><a href="#acceso-condicional-vs-rbac">El acceso condicional decide cómo se entra; RBAC, qué se puede hacer</a></h3>
+              <p><strong class="pista">«Solo desde…» o «únicamente cuando…» = acceso condicional.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="acceso-condicional-vs-rbac" aria-label="Marcar como dominada: El acceso condicional decide cómo se entra; RBAC, qué se puede hacer">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Restringir el acceso a ciertas aplicaciones suena a permisos, y los permisos suenan a RBAC.</p>
+            <p class="regla">El acceso condicional evalúa señales del inicio de sesión (usuario, ubicación, dispositivo, aplicación cliente y riesgo) y decide si deja pasar, pide MFA o bloquea. Son políticas que alguien configura, no un comportamiento automático. RBAC define qué puede hacer una identidad con los recursos una vez dentro.</p>
+            <p class="tema-pie">Identidad y seguridad</p>
+          </div>
+        </article>
+        <article class="diferencia" id="sso-vs-mfa" data-dif="sso-vs-mfa">
+          <div class="dif-cabeza">
+            <span class="numero">22</span>
+            <div class="dif-titular">
+              <h3><a href="#sso-vs-mfa">SSO es una sesión para muchas apps; MFA es una prueba adicional</a></h3>
+              <p><strong class="pista">Una sola vez = SSO. Prueba adicional = MFA.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="sso-vs-mfa" aria-label="Marcar como dominada: SSO es una sesión para muchas apps; MFA es una prueba adicional">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las dos mejoran el inicio de sesión y suelen configurarse juntas.</p>
+            <p class="regla">El inicio de sesión único permite autenticarse una vez y entrar a varias aplicaciones. La autenticación multifactor exige dos o más factores de categorías distintas: algo que se sabe, algo que se tiene y algo que se es. Dos contraseñas no son MFA.</p>
+            <p class="tema-pie">Identidad y seguridad</p>
+          </div>
+        </article>
+        <article class="diferencia" id="entra-no-hace-dns" data-dif="entra-no-hace-dns">
+          <div class="dif-cabeza">
+            <span class="numero">23</span>
+            <div class="dif-titular">
+              <h3><a href="#entra-no-hace-dns">Microsoft Entra ID no resuelve nombres de dominio</a></h3>
+              <p><strong class="pista">Entra = personas. DNS = nombres y direcciones.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="entra-no-hace-dns" aria-label="Marcar como dominada: Microsoft Entra ID no resuelve nombres de dominio">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Entra ID aparece como el servicio central de identidad, así que parece cubrir todo lo que suene a red.</p>
+            <p class="regla">Entra ID administra identidades: autenticación, inicio de sesión único, MFA, acceso condicional e identidades externas. La resolución de nombres a direcciones IP es Azure DNS, otro servicio.</p>
+            <p class="tema-pie">Identidad y seguridad</p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="dominio" id="dominio-3" data-dominio="3">
+        <h2>Administración y gobernanza <span class="conteo">24–34</span></h2>
+        <div class="lista-diferencias">
+        <article class="diferencia" id="locks-management-group" data-dif="locks-management-group">
+          <div class="dif-cabeza">
+            <span class="numero">24</span>
+            <div class="dif-titular">
+              <h3><a href="#locks-management-group">Los resource locks no existen en management groups</a></h3>
+              <p><strong class="pista">Management group = reglas, no candados.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="locks-management-group" aria-label="Marcar como dominada: Los resource locks no existen en management groups">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como todo lo demás se hereda hacia abajo desde el management group, parece el lugar natural para poner un candado.</p>
+            <p class="regla">Los locks se aplican en suscripción, resource group o recurso, y desde ahí se heredan. Un management group agrupa suscripciones: ahí van Azure Policy y RBAC.</p>
+            <p class="tema-pie">Jerarquía</p>
+          </div>
+        </article>
+        <article class="diferencia" id="lock-vs-rbac" data-dif="lock-vs-rbac">
+          <div class="dif-cabeza">
+            <span class="numero">25</span>
+            <div class="dif-titular">
+              <h3><a href="#lock-vs-rbac">Un lock aplica a todos; RBAC aplica a alguien</a></h3>
+              <p><strong class="pista">Si la pregunta nombra a una persona o a un equipo, es RBAC.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="lock-vs-rbac" aria-label="Marcar como dominada: Un lock aplica a todos; RBAC aplica a alguien">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Ambos impiden que se borre algo, así que cualquiera de los dos parece resolver la pregunta.</p>
+            <p class="regla">El lock protege el recurso frente a cualquiera, incluido un Owner. RBAC define qué puede hacer una persona o un grupo en un ámbito determinado.</p>
+            <p class="tema-pie">Jerarquía</p>
+          </div>
+        </article>
+        <article class="diferencia" id="tenant-vs-suscripcion" data-dif="tenant-vs-suscripcion">
+          <div class="dif-cabeza">
+            <span class="numero">26</span>
+            <div class="dif-titular">
+              <h3><a href="#tenant-vs-suscripcion">Las cuentas de usuario viven en el tenant, no en la suscripción</a></h3>
+              <p><strong class="pista">Tenant = personas. Suscripción = factura. Resource group = contenedor.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="tenant-vs-suscripcion" aria-label="Marcar como dominada: Las cuentas de usuario viven en el tenant, no en la suscripción">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> La suscripción se siente como la cuenta de Azure, así que ahí parecerían vivir los usuarios.</p>
+            <p class="regla">Dentro de una suscripción se crean resource groups y recursos. Los management groups están por encima. Los usuarios y grupos viven en el tenant de Microsoft Entra ID, que es un eje aparte en el que la suscripción confía.</p>
+            <p class="tema-pie">Jerarquía</p>
+          </div>
+        </article>
+        <article class="diferencia" id="un-solo-resource-group" data-dif="un-solo-resource-group">
+          <div class="dif-cabeza">
+            <span class="numero">27</span>
+            <div class="dif-titular">
+              <h3><a href="#un-solo-resource-group">Un recurso vive en un solo resource group</a></h3>
+              <p><strong class="pista">Muchas tags, un solo resource group.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="un-solo-resource-group" aria-label="Marcar como dominada: Un recurso vive en un solo resource group">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como un recurso puede tener varias etiquetas y aparecer en varios reportes, parece que puede pertenecer a varios grupos.</p>
+            <p class="regla">Cada recurso pertenece a exactamente un resource group. Se puede mover, pero nunca está en dos a la vez. Para agrupar por otro criterio se usan tags.</p>
+            <p class="tema-pie">Jerarquía</p>
+          </div>
+        </article>
+        <article class="diferencia" id="advisor-no-es-todo" data-dif="advisor-no-es-todo">
+          <div class="dif-cabeza">
+            <span class="numero">28</span>
+            <div class="dif-titular">
+              <h3><a href="#advisor-no-es-todo">Azure Advisor no es la respuesta a todo lo que suene a consejo</a></h3>
+              <p><strong class="pista">Recomendación = Advisor. Caída de Azure = Service Health. Aplicación lenta = Application Insights.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="advisor-no-es-todo" aria-label="Marcar como dominada: Azure Advisor no es la respuesta a todo lo que suene a consejo">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Advisor aparece como la herramienta que revisa y sugiere, y eso encaja con casi cualquier pregunta de operación.</p>
+            <p class="regla">Seis herramientas distintas se reparten el trabajo que suele atribuirse a una sola.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Recomendaciones sobre los recursos propios</th><td>Azure Advisor</td></tr>
+              <tr><th scope="row">Fallas y mantenimiento de la plataforma</th><td>Azure Service Health</td></tr>
+              <tr><th scope="row">Si un recurso concreto está afectado por Azure</th><td>Resource Health</td></tr>
+              <tr><th scope="row">Rendimiento y errores de una aplicación</th><td>Application Insights</td></tr>
+              <tr><th scope="row">Métricas, logs y alertas</th><td>Azure Monitor</td></tr>
+              <tr><th scope="row">Postura de seguridad y amenazas</th><td>Microsoft Defender for Cloud</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Herramientas</p>
+          </div>
+        </article>
+        <article class="diferencia" id="cloud-shell-vs-arc" data-dif="cloud-shell-vs-arc">
+          <div class="dif-cabeza">
+            <span class="numero">29</span>
+            <div class="dif-titular">
+              <h3><a href="#cloud-shell-vs-arc">Cloud Shell es una terminal; Azure Arc conecta lo que está fuera</a></h3>
+              <p><strong class="pista">Administrar algo que está fuera de Azure, desde Azure = Arc.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="cloud-shell-vs-arc" aria-label="Marcar como dominada: Cloud Shell es una terminal; Azure Arc conecta lo que está fuera">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Cloud Shell parece la herramienta general para administrar cualquier cosa desde Azure.</p>
+            <p class="regla">Cloud Shell es una terminal en el navegador, con la CLI y PowerShell listas y la sesión ya iniciada. Azure Arc incorpora a Azure servidores y servicios que viven fuera, en un centro de datos propio o en otra nube, para aplicarles Policy, RBAC y monitoreo.</p>
+            <p class="tema-pie">Herramientas</p>
+          </div>
+        </article>
+        <article class="diferencia" id="budget-avisa" data-dif="budget-avisa">
+          <div class="dif-cabeza">
+            <span class="numero">30</span>
+            <div class="dif-titular">
+              <h3><a href="#budget-avisa">Un presupuesto avisa; por sí solo no apaga nada</a></h3>
+              <p><strong class="pista">Budget = semáforo, no llave de paso.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="budget-avisa" aria-label="Marcar como dominada: Un presupuesto avisa; por sí solo no apaga nada">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Si se configura un límite de gasto, parece lógico que al llegar al tope Azure detenga los recursos.</p>
+            <p class="regla">Los budgets de Cost Management envían alertas al alcanzar los porcentajes definidos. Los recursos siguen corriendo y el gasto sigue creciendo, salvo que alguien automatice una acción aparte.</p>
+            <p class="tema-pie">Costos</p>
+          </div>
+        </article>
+        <article class="diferencia" id="estimar-analizar-recomendar" data-dif="estimar-analizar-recomendar">
+          <div class="dif-cabeza">
+            <span class="numero">31</span>
+            <div class="dif-titular">
+              <h3><a href="#estimar-analizar-recomendar">Estimar, analizar y recomendar son tres herramientas distintas</a></h3>
+              <p><strong class="pista">Antes de crear = calculator. Lo que ya corre = Cost Management. Consejo = Advisor.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="estimar-analizar-recomendar" aria-label="Marcar como dominada: Estimar, analizar y recomendar son tres herramientas distintas">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Las tres hablan de dinero y todas viven en el portal.</p>
+            <p class="regla">Lo que separa a las tres es el momento en el que se usan.</p>
+            <table class="mapa">
+              <caption class="sr">Qué servicio responde a cada situación</caption>
+              <tbody>
+              <tr><th scope="row">Calcular el costo de algo que aún no existe</th><td>Pricing calculator</td></tr>
+              <tr><th scope="row">Analizar el gasto real, con presupuestos y alertas</th><td>Cost Management</td></tr>
+              <tr><th scope="row">Recibir sugerencias para gastar menos</th><td>Azure Advisor</td></tr>
+              </tbody>
+            </table>
+            <p class="tema-pie">Costos</p>
+          </div>
+        </article>
+        <article class="diferencia" id="cost-management-no-tco" data-dif="cost-management-no-tco">
+          <div class="dif-cabeza">
+            <span class="numero">32</span>
+            <div class="dif-titular">
+              <h3><a href="#cost-management-no-tco">Cost Management no calcula el costo total de propiedad</a></h3>
+              <p><strong class="pista">Estimar lo que no existe = pricing calculator.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="cost-management-no-tco" aria-label="Marcar como dominada: Cost Management no calcula el costo total de propiedad">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Suena a la herramienta de dinero por excelencia, así que parece que también proyecta escenarios.</p>
+            <p class="regla">El TCO, o Total Cost of Ownership, es todo lo que cuesta sostener algo: hardware, energía, espacio, licencias y personal. Cost Management solo trabaja con gasto real y su pronóstico. El TCO calculator, además, ya no forma parte del temario vigente.</p>
+            <p class="tema-pie">Costos</p>
+          </div>
+        </article>
+        <article class="diferencia" id="ingress-egress" data-dif="ingress-egress">
+          <div class="dif-cabeza">
+            <span class="numero">33</span>
+            <div class="dif-titular">
+              <h3><a href="#ingress-egress">Entrar datos no se cobra; sacarlos sí</a></h3>
+              <p><strong class="pista">Como el estacionamiento: se paga al salir.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="ingress-egress" aria-label="Marcar como dominada: Entrar datos no se cobra; sacarlos sí">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Como la nube cobra por casi todo, se asume que el tráfico se cobra en ambos sentidos.</p>
+            <p class="regla">El tráfico de entrada a Azure normalmente no tiene costo. El de salida, hacia internet o hacia otra región, sí se cobra. Lo que se queda dentro de la misma región suele ser gratuito.</p>
+            <p class="tema-pie">Costos</p>
+          </div>
+        </article>
+        <article class="diferencia" id="tags-para-costos" data-dif="tags-para-costos">
+          <div class="dif-cabeza">
+            <span class="numero">34</span>
+            <div class="dif-titular">
+              <h3><a href="#tags-para-costos">Los costos por área se reportan con tags</a></h3>
+              <p><strong class="pista">Costos por departamento o proyecto = tags.</strong></p>
+            </div>
+            <label class="dominada">
+              <input type="checkbox" data-dominada="tags-para-costos" aria-label="Marcar como dominada: Los costos por área se reportan con tags">
+              <span>Dominada</span>
+            </label>
+          </div>
+          <div class="dif-cuerpo">
+            <p class="confusion"><span class="rotulo">Dónde se confunde:</span> Reorganizar los recursos en grupos por departamento parece la forma natural de separar gastos.</p>
+            <p class="regla">Las tags son pares nombre-valor que permiten filtrar y reportar costos sin mover nada de lugar. No se heredan del resource group, salvo que una Policy lo imponga.</p>
+            <p class="tema-pie">Costos</p>
+          </div>
+        </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">Son 34 porque salieron de preparar el examen: los errores que se cometieron al estudiar y los puntos donde el material oficial queda ambiguo. Ninguna reproduce preguntas del examen ni del Practice Assessment de Microsoft.</p>
+        <p class="nota">practicarlas <span aria-hidden="true">→</span></p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
+        <h2>El cuaderno</h2>
+        <a href="/practica">Práctica</a>
+        <a href="/diferencias">Diferencias</a>
+        <a href="/metodo">Método</a>
+        <a href="/examen"><span class="largo">Día del </span>examen</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Quién lo hizo</h2>
+        <a href="https://www.santiagos.mx/es/inicio">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Apoyar el proyecto</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Aviso.</strong> Cuaderno AZ-900 es un proyecto personal y gratuito, sin relación con Microsoft. Microsoft, Azure y AZ-900 son marcas de Microsoft. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Contenido verificado contra la guía oficial de Microsoft en septiembre de 2026, con los <em>skills measured</em> del 20 de julio de 2026. Si el temario cambia, esta fecha se queda atrás: compruébalo en learn.microsoft.com.</p>
+      <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
+      <p class="sello">El primero de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cabecera.js" defer></script>
+<script src="js/diferencias.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+</body>
+</html>

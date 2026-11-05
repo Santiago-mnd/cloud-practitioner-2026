@@ -1,5 +1,7 @@
 # Cuaderno Cloud Practitioner
 
+[![Cuaderno Cloud Practitioner](site/og.png)](https://cloud-practitioner.sintitulo.dev)
+
 Guía estática y gratuita, en español de México, para estudiar el examen **AWS Certified Cloud Practitioner (CLF-C02)**. No requiere cuenta ni correo; tampoco rastrea entre sitios, y cada persona conserva su avance en el navegador mediante `localStorage`.
 
 **Sitio:** [cloud-practitioner.sintitulo.dev](https://cloud-practitioner.sintitulo.dev)

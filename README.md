@@ -55,6 +55,6 @@ Este proyecto no está afiliado a Amazon Web Services ni cuenta con su patrocini
 
 ## Licencia
 
-Por definir.
+El código (`site/css/`, `site/js/` y los scripts de Python) usa la licencia MIT; ver [`LICENSE`](LICENSE). Los textos (las páginas del sitio, las diferencias y `research/`) usan Creative Commons Atribución 4.0 Internacional; ver [`LICENSE-CONTENT`](LICENSE-CONTENT). Puedes usarlos y adaptarlos si das crédito a Santiago García Arellano con un enlace a este repositorio.
 
 Si te sirvió, puedes dejarle una estrella al repositorio.

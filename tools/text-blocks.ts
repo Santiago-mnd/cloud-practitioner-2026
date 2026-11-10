@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { basename } from "node:path";
 import { parse, HTMLElement, NodeType } from "node-html-parser";
 
-type Block = {
+export type Block = {
   id: string;
   kind: "inner" | "attr";
   attr?: string;
@@ -10,7 +10,7 @@ type Block = {
   files: string[];
 };
 
-type Occurrence = { file: string; start: number; end: number; key: string };
+export type Occurrence = { file: string; start: number; end: number; key: string };
 
 const META_ATTRS = new Set([
   "description",
@@ -35,7 +35,7 @@ function innerRange(source: string, el: HTMLElement): [number, number] {
   return [open, close];
 }
 
-function collect(file: string, source: string): Occurrence[] {
+export function collect(file: string, source: string): Occurrence[] {
   const root = parse(source, { comment: false });
   const found: Occurrence[] = [];
 
@@ -106,16 +106,16 @@ function extract(out: string, files: string[]): void {
   console.log(`${blocks.size} bloques en ${out}`);
 }
 
-const SVG = /<svg[\s\S]*?<\/svg>/g;
-const SVG_TOKEN = "⟦svg⟧";
+export const SVG = /<svg[\s\S]*?<\/svg>/g;
+export const SVG_TOKEN = "⟦svg⟧";
 
-function restoreSvg(original: string, text: string): string {
+export function restoreSvg(original: string, text: string): string {
   const svgs = original.match(SVG) ?? [];
   let i = 0;
   return text.replaceAll(SVG_TOKEN, () => svgs[i++] ?? SVG_TOKEN);
 }
 
-function parseRewrites(text: string): Map<string, string> {
+export function parseRewrites(text: string): Map<string, string> {
   const result = new Map<string, string>();
   const re = /^\[([bd]\d{3})\]\s?([\s\S]*?)(?=^\[[bd]\d{3}\]|^###|(?![\s\S]))/gm;
   for (const m of text.matchAll(re)) result.set(m[1], m[2].trim().replace(/^\((?:atributo [\w:-]+|titulo|pista|confusion|regla|tabla\d+a)\)\s*/, ""));
@@ -146,19 +146,19 @@ function apply(blocksPath: string, rewritesPath: string, files: string[]): void 
   console.log(`${changed} reemplazos aplicados`);
 }
 
-const AWS_TERM = /\b(?:AWS|Amazon)(?:\s+[A-Z][\w-]*)+|\b[A-Z][a-z]+[A-Z][\w]*\b|\b[A-Z]{2,}[\w-]*\b/g;
-const NUMBER = /\d+(?:[.,]\d+)?/g;
+export const AWS_TERM = /\b(?:AWS|Amazon)(?:\s+[A-Z][\w-]*)+|\b[A-Z][a-z]+[A-Z][\w]*\b|\b[A-Z]{2,}[\w-]*\b/g;
+export const NUMBER = /\d+(?:[.,]\d+)?/g;
 
-function tagsOf(html: string): string[] {
+export function tagsOf(html: string): string[] {
   return [...html.matchAll(/<\/?[a-z][^>]*>/gi)].map((m) => m[0]);
 }
 
-function terms(text: string, re: RegExp): string[] {
+export function terms(text: string, re: RegExp): string[] {
   const plain = text.replace(/<[^>]+>/g, " ").replace(/&#8209;/g, "-");
   return [...new Set(plain.match(re) ?? [])].sort();
 }
 
-function plainLength(html: string): number {
+export function plainLength(html: string): number {
   return html.replace(/<[^>]+>/g, "").replace(/&[#\w]+;/g, "x").length;
 }
 
@@ -207,12 +207,14 @@ function brief(blocksPath: string, file: string): void {
   }
 }
 
-const [command, ...args] = process.argv.slice(2);
-if (command === "extract") extract(args[0], args.slice(1));
-else if (command === "apply") apply(args[0], args[1], args.slice(2));
-else if (command === "check") check(args[0], args[1], Number(args[2] ?? "0.6"), Number(args[3] ?? "1.6"));
-else if (command === "brief") brief(args[0], args[1]);
-else {
-  console.error("Uso: node text-blocks.ts extract|apply|check|brief ...");
-  process.exit(1);
+if (import.meta.main) {
+  const [command, ...args] = process.argv.slice(2);
+  if (command === "extract") extract(args[0], args.slice(1));
+  else if (command === "apply") apply(args[0], args[1], args.slice(2));
+  else if (command === "check") check(args[0], args[1], Number(args[2] ?? "0.6"), Number(args[3] ?? "1.6"));
+  else if (command === "brief") brief(args[0], args[1]);
+  else {
+    console.error("Uso: node text-blocks.ts extract|apply|check|brief ...");
+    process.exit(1);
+  }
 }

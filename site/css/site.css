@@ -584,3 +584,15 @@ html { scroll-padding-top: calc(var(--cabecera) + 20px); }
   .menu .largo { display: none; }
   .menu .corto { display: inline; }
 }
+
+/* cambio de idioma */
+.menu a.idioma {
+  padding-left: 18px;
+  border-left: 1px solid var(--grid);
+  color: var(--ink-mute);
+  font-size: 15px;
+}
+.menu a.idioma:hover { color: var(--ink); }
+@media (max-width: 560px) {
+  .menu a.idioma { padding-left: 0; border-left: 0; }
+}

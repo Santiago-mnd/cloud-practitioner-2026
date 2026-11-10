@@ -18,6 +18,11 @@ URLS = [
     f"https://{HOST}/diferencias",
     f"https://{HOST}/metodo",
     f"https://{HOST}/examen",
+    f"https://{HOST}/en",
+    f"https://{HOST}/en/practice",
+    f"https://{HOST}/en/differences",
+    f"https://{HOST}/en/method",
+    f"https://{HOST}/en/exam",
 ]
 
 cuerpo = json.dumps({

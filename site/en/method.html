@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How to study for the CLF-C02 · Cuaderno Cloud Practitioner</title>
+<meta name="description" content="Prepare for the AWS Certified Cloud Practitioner (CLF-C02) exam in four steps: understand an analogy, find a hint for each topic, log your mistakes, and take a timed practice exam.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/en/method">
+<link rel="alternate" hreflang="es-MX" href="https://cloud-practitioner.sintitulo.dev/metodo">
+<link rel="alternate" hreflang="en-US" href="https://cloud-practitioner.sintitulo.dev/en/method">
+<link rel="alternate" hreflang="x-default" href="https://cloud-practitioner.sintitulo.dev/metodo">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/en/method">
+<meta property="og:title" content="How to study for the CLF-C02: a four-step method">
+<meta property="og:description" content="An analogy to understand, a hint to choose, a log to learn from mistakes, and a timed practice exam. A method that helped someone pass the AZ-900, applied to Cloud Practitioner.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to study for the CLF-C02: a four-step method">
+<meta name="twitter:description" content="An analogy to understand, a hint to choose, a log to learn from mistakes, and a timed practice exam. A method that helped someone pass the AZ-900, applied to Cloud Practitioner.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: CloudTrail or CloudWatch? Shield or WAF? EBS or EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/en">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno Cloud Practitioner
+    </a>
+    <nav class="menu" aria-label="Sections">
+      <a class="nav-cta" href="/en/practice">Practice</a>
+      <a href="/en/differences">Differences</a>
+      <a href="/en/method" aria-current="page">Method</a>
+      <a href="/en/exam"><span class="largo">Exam day</span><span class="corto">Exam</span></a>
+      <a class="idioma" href="/metodo" hreflang="es" lang="es"><span class="largo">Español</span><span class="corto">ES</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
+
+  <div style="max-width: 68ch">
+    <h1>How to study</h1>
+    <p class="prosa" style="margin-top: 22px">On the CLF&#8209;C02, you need to recognize cloud concepts, identify which AWS service fits a situation, and tell it apart from other plausible choices. The official guide leaves out programming, architecture design, and troubleshooting, so understanding a few ideas well will serve you better than reading the whole outline twice.</p>
+    <p class="prosa" style="margin-top: 16px">These four steps came from preparing for the AZ&#8209;900, with an assessment at the start and another at the end. You can use them for this exam; pay particular attention to the third, since it takes the most effort and is easiest to skip.</p>
+  </div>
+
+  <section class="seccion" data-revelar>
+    <ul class="lista-limpia" style="gap: 44px; max-width: 72ch">
+
+      <li>
+        <h2>1. Start with an analogy</h2>
+        <p class="prosa" style="margin-top: 14px">If you can explain a concept through something familiar, you can recognize it when a question frames it differently. A memorized fact is much less reliable when you don’t understand it.</p>
+        <div class="tarjeta" style="margin-top: 20px">
+          <p class="densa"><strong style="font-weight: 600">Shared responsibility, explained with a kitchen:</strong> EC2 is like renting an empty kitchen; the cook maintains the stove, which stands for the operating system. With RDS, the kitchen comes equipped and AWS maintains it; you bring the recipe and ingredients—the data. With S3, you store your things in the pantry and decide who gets a key.</p>
+          <p class="densa" style="margin-top: 14px">So when a question asks, “Who patches the operating system?” think about who maintains the stove.</p>
+        </div>
+      </li>
+
+      <li>
+        <h2>2. Find the phrase that settles the choice</h2>
+        <p class="prosa" style="margin-top: 14px">For each topic, look for a hint that separates similar services. You have 65 questions in 90 minutes, about 83 seconds per question; a clear phrase helps you spot the answer without reasoning through every service from scratch.</p>
+        <ul class="lista-limpia" style="margin-top: 20px; gap: 12px">
+          <li class="densa"><strong class="pista">Who did what? = CloudTrail.</strong></li>
+          <li class="densa"><strong class="pista">Can be interrupted = Spot Instances.</strong></li>
+          <li class="densa"><strong class="pista">Can wait hours = Glacier Flexible Retrieval or Deep Archive.</strong></li>
+        </ul>
+        <p class="prosa" style="margin-top: 20px">You’ll find the notebook’s 45 hints in <a href="/en/differences">Differences</a>, each with an explanation below it.</p>
+      </li>
+
+      <li>
+        <h2>3. Log every mistake, not every topic</h2>
+        <p class="prosa" style="margin-top: 14px">The official materials already summarize the exam topics. Your log has a different job: collect the questions you missed and reveal which choices you still confuse.</p>
+        <p class="prosa" style="margin-top: 16px">After each mistake, write down your answer, the correct answer, and why your choice seemed reasonable. That last explanation helps you catch the confusion before it happens again.</p>
+        <p class="prosa" style="margin-top: 16px">If you miss the same question twice and choose different answers, you’re probably guessing. Go back to the hint that separates those choices.</p>
+      </li>
+
+      <li>
+        <h2>4. Take a full practice exam without breaks</h2>
+        <p class="prosa" style="margin-top: 14px">Take the practice exam in one sitting, with a timer. That way, you can see how you respond under exam conditions, without breaks or looking things up.</p>
+        <p class="prosa" style="margin-top: 16px">The passing score for the CLF&#8209;C02 is 700 out of 1000: it’s a scaled score, not a percentage of correct answers. AWS doesn’t publish how many correct answers equal 700; for practice, aim to score above 80% on practice exams, and allow for a somewhat lower result on the real exam.</p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="banda" data-revelar style="margin-left: calc(var(--gutter) * -1); margin-right: calc(var(--gutter) * -1); padding-left: var(--gutter); padding-right: var(--gutter)">
+    <div style="max-width: 72ch">
+      <h2>If the exam is a few days away</h2>
+      <p class="prosa" style="margin-top: 18px">When the exam is close, decide where to spend your time. This order worked when preparing for the AZ&#8209;900:</p>
+      <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
+        <li class="densa"><strong style="font-weight: 600">First, find out where you stand.</strong> Take an assessment to see which domain deserves your study time that afternoon, instead of dividing it equally between what you know and what you don’t.</li>
+        <li class="densa"><strong style="font-weight: 600">Study one topic in short blocks, then answer questions.</strong> Instead of reading for thirty minutes straight, read for ten and answer five questions to check what you understood.</li>
+        <li class="densa"><strong style="font-weight: 600">Skip new material the night before.</strong> It may shake your confidence, and there isn’t enough time for it to stick. Get some sleep that night.</li>
+        <li class="densa"><strong style="font-weight: 600">On exam morning, use Hints only.</strong> You can read the hint view in <a href="/en/differences">Differences</a> in about seven minutes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div class="cierre">
+      <div>
+        <h2>While Practice is being built, start with Differences</h2>
+        <p class="prosa" style="margin-top: 16px">There are 45 across the four exam domains; you can read them in about 25 minutes.</p>
+      </div>
+      <div class="cierre-accion">
+        <a class="cta grande" href="/en/differences">See the differences</a>
+        <p class="meta" style="margin-top: 12px">Nothing to install. No account to create.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">This method came from preparing for and passing the AZ&#8209;900 in September 2026. The person who used it already knew the basics of cloud computing; if you’re starting from scratch, set aside more days for the same steps.</p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Site sections">
+        <h2>The guide</h2>
+        <a href="/en/practice">Practice</a>
+        <a href="/en/differences">Differences</a>
+        <a href="/en/method">Method</a>
+        <a href="/en/exam"><span class="largo">Exam </span>day</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Who made it</h2>
+        <a href="https://santiagos.mx/en/">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Support the project</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Notice.</strong> Cuaderno Cloud Practitioner is a free personal project; it is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates. This material can help you study, but it does not guarantee a passing score. The practice questions were written for this site; none come from the real exam. I prepared some content with AI assistance and checked it against the official documentation; if you find an error, let me know on <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">I checked the content against the official CLF-C02 guide and AWS documentation in September 2026. If the exam topics change, check the current information at docs.aws.amazon.com.</p>
+      <p class="sello">You don’t need an account or email; the site doesn’t use cookies either. Analytics collects page views, country, and browser without building profiles or tracking you across sites. Your study progress stays in your browser.</p>
+      <p class="sello">This is the second free resource from sintitulo.dev; more are coming.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+<script src="/js/cabecera.js" defer></script>
+</body>
+</html>

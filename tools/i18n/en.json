@@ -1,0 +1,3926 @@
+[
+  {
+    "kind": "inner",
+    "es": "Cuaderno Cloud Practitioner · 45 diferencias clave del CLF-C02, en español",
+    "en": "Cuaderno Cloud Practitioner · 45 key CLF-C02 differences, in English and Spanish"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Las 45 diferencias entre servicios que suelen confundirse en el examen AWS Certified Cloud Practitioner (CLF-C02), explicadas una por una. Incluye una guía de OnVUE; es gratis, en español y sin cuenta.",
+    "en": "The 45 differences between services often confused on the AWS Certified Cloud Practitioner (CLF-C02) exam, explained one by one. Includes an OnVUE guide; free, in English and Spanish, with no account needed."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Cuaderno Cloud Practitioner: 45 diferencias clave del CLF-C02, en español",
+    "en": "Cuaderno Cloud Practitioner: 45 key CLF-C02 differences, in English and Spanish"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Las 45 diferencias entre servicios que suelen confundirse en el examen AWS Certified Cloud Practitioner (CLF-C02), más una guía de OnVUE. Gratis, en español y sin cuenta.",
+    "en": "The 45 differences between services often confused on the AWS Certified Cloud Practitioner (CLF-C02) exam, plus an OnVUE guide. Free, in English and Spanish, with no account needed."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Cuaderno Cloud Practitioner: ¿CloudTrail o CloudWatch? ¿Shield o WAF? ¿EBS o EFS?",
+    "en": "Cuaderno Cloud Practitioner: CloudTrail or CloudWatch? Shield or WAF? EBS or EFS?"
+  },
+  {
+    "kind": "inner",
+    "es": "Ir al contenido",
+    "en": "Skip to content"
+  },
+  {
+    "kind": "inner",
+    "es": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#FF9900\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z\"></path><path d=\"M4 16.5h15\"></path><path d=\"M8 3v17\"></path></svg>\n      Cuaderno Cloud Practitioner",
+    "en": "⟦svg⟧\n      Cuaderno Cloud Practitioner"
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Secciones",
+    "en": "Sections"
+  },
+  {
+    "kind": "inner",
+    "es": "Practicar",
+    "en": "Practice"
+  },
+  {
+    "kind": "inner",
+    "es": "Diferencias",
+    "en": "Differences"
+  },
+  {
+    "kind": "inner",
+    "es": "Método",
+    "en": "Method"
+  },
+  {
+    "kind": "inner",
+    "es": "Día del examen",
+    "en": "Exam day"
+  },
+  {
+    "kind": "inner",
+    "es": "Examen",
+    "en": "Exam"
+  },
+  {
+    "kind": "inner",
+    "es": "English",
+    "en": "Español"
+  },
+  {
+    "kind": "inner",
+    "es": "EN",
+    "en": "ES"
+  },
+  {
+    "kind": "inner",
+    "es": "¿CloudTrail o CloudWatch?<br>¿Shield o WAF?<br><span class=\"marca\">¿EBS o EFS?</span>",
+    "en": "CloudTrail or CloudWatch?<br>Shield or WAF?<br><span class=\"marca\">EBS or EFS?</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "En el CLF&#8209;C02, las opciones equivocadas también son servicios reales. Estas 45 diferencias del examen AWS Certified Cloud Practitioner te muestran dónde se parecen y qué frase decide la respuesta.",
+    "en": "On the CLF&#8209;C02, the wrong answers are real services too. These 45 AWS Certified Cloud Practitioner differences show you where services overlap and which phrase points to the answer."
+  },
+  {
+    "kind": "inner",
+    "es": "Armado con la guía oficial del examen y la documentación de AWS; verificado contra ambas en septiembre de 2026.",
+    "en": "Built from the official exam guide and AWS documentation; checked against both in September 2026."
+  },
+  {
+    "kind": "inner",
+    "es": "Ver las diferencias",
+    "en": "See the differences"
+  },
+  {
+    "kind": "inner",
+    "es": "45 diferencias, unos 25 minutos<br>sin cuenta ni correo",
+    "en": "45 differences, about 25 minutes<br>no account or email needed"
+  },
+  {
+    "kind": "inner",
+    "es": "Una diferencia, en una pregunta",
+    "en": "One difference, one question"
+  },
+  {
+    "kind": "inner",
+    "es": "¿Qué servicio registra quién hizo cada acción en tu cuenta de AWS?",
+    "en": "Which service records who took each action in your AWS account?"
+  },
+  {
+    "kind": "inner",
+    "es": "A",
+    "en": "A"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon CloudWatch",
+    "en": "Amazon CloudWatch"
+  },
+  {
+    "kind": "inner",
+    "es": "B",
+    "en": "B"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS CloudTrail",
+    "en": "AWS CloudTrail"
+  },
+  {
+    "kind": "inner",
+    "es": "C",
+    "en": "C"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Config",
+    "en": "AWS Config"
+  },
+  {
+    "kind": "inner",
+    "es": "CloudWatch mide el comportamiento de los recursos; Config guarda su configuración. Pero la pregunta dice «quién hizo qué»: eso lo registra CloudTrail.",
+    "en": "CloudWatch measures how resources behave; Config records their configuration. But the question asks “who did what”: CloudTrail records that."
+  },
+  {
+    "kind": "inner",
+    "es": "¿Quién hizo qué? = CloudTrail.",
+    "en": "Who did what? = CloudTrail."
+  },
+  {
+    "kind": "inner",
+    "es": "tres servicios, tres preguntas distintas",
+    "en": "three services, three different questions"
+  },
+  {
+    "kind": "inner",
+    "es": "Las opciones equivocadas suenan bien porque son servicios reales. Por eso, cada grupo de vecinos tiene aquí una frase que los separa.",
+    "en": "The wrong answers sound plausible because they’re real services. That’s why each group of similar services has a phrase that sets them apart."
+  },
+  {
+    "kind": "inner",
+    "es": "Una SCP fija el techo de permisos; por sí sola no concede ninguno.",
+    "en": "An SCP sets the permissions ceiling; it grants no permissions by itself."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Budgets avisa; con acciones, también puede detener instancias.",
+    "en": "AWS Budgets sends alerts; with actions, it can also stop instances."
+  },
+  {
+    "kind": "inner",
+    "es": "Meter datos a AWS desde internet no cuesta; sacarlos sí.",
+    "en": "Data transfer in from the internet to AWS is free; data transfer out costs money."
+  },
+  {
+    "kind": "inner",
+    "es": "Shield Standard viene incluido; Shield Advanced es de pago.",
+    "en": "Shield Standard is included; Shield Advanced costs extra."
+  },
+  {
+    "kind": "inner",
+    "es": "Ver las 45 diferencias",
+    "en": "See all 45 differences"
+  },
+  {
+    "kind": "inner",
+    "es": "La práctica viene en camino",
+    "en": "Practice is on the way"
+  },
+  {
+    "kind": "inner",
+    "es": "El banco de 240 preguntas propias está en construcción, distribuido según el peso de cada dominio del examen. Las que falles volverán a los pocos minutos; después, al día siguiente, hasta que reconozcas la respuesta.",
+    "en": "The bank of 240 original questions is being built, with questions distributed by each exam domain’s weight. Questions you miss will return a few minutes later, then the next day, until you recognize the answer."
+  },
+  {
+    "kind": "inner",
+    "es": "El simulacro tendrá 65 preguntas en 90 minutos, como el examen. El CLF&#8209;C02 se aprueba con 700 de 1000: es un puntaje escalado, no un porcentaje de aciertos.",
+    "en": "The mock exam will have 65 questions in 90 minutes, like the real exam. You pass the CLF&#8209;C02 with 700 out of 1000: that’s a scaled score, not a percentage of correct answers."
+  },
+  {
+    "kind": "inner",
+    "es": "Así se verá tu avance <span class=\"etiqueta-ejemplo\">ejemplo</span>",
+    "en": "Here’s how your progress will look <span class=\"etiqueta-ejemplo\">example</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "guardado en este navegador",
+    "en": "saved in this browser"
+  },
+  {
+    "kind": "inner",
+    "es": "Conceptos de la nube",
+    "en": "Cloud Concepts"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">83%</strong> de aciertos <span class=\"meta\">· 25 de 58 vistas</span>",
+    "en": "<strong style=\"font-weight: 600\">83%</strong> correct <span class=\"meta\">· 25 of 58 seen</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "Seguridad y cumplimiento",
+    "en": "Security and Compliance"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">71%</strong> de aciertos <span class=\"meta\">· 30 de 72 vistas</span>",
+    "en": "<strong style=\"font-weight: 600\">71%</strong> correct <span class=\"meta\">· 30 of 72 seen</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "Tecnología y servicios",
+    "en": "Cloud Technology and Services"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">64%</strong> de aciertos <span class=\"meta\">· 38 de 81 vistas</span>",
+    "en": "<strong style=\"font-weight: 600\">64%</strong> correct <span class=\"meta\">· 38 of 81 seen</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "Facturación, precios y soporte",
+    "en": "Billing, Pricing, and Support"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">48%</strong> de aciertos <span class=\"meta\">· 12 de 29 vistas</span>",
+    "en": "<strong style=\"font-weight: 600\">48%</strong> correct <span class=\"meta\">· 12 of 29 seen</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "conviene empezar por el dominio más bajo →",
+    "en": "start with your lowest-scoring domain →"
+  },
+  {
+    "kind": "inner",
+    "es": "Cómo estudiar con este cuaderno",
+    "en": "How to study with this guide"
+  },
+  {
+    "kind": "inner",
+    "es": "Sigue estos cuatro pasos. El tercero suele costar más; también es el más fácil de saltarse.",
+    "en": "Follow these four steps. The third usually takes the most effort; it’s also the easiest to skip."
+  },
+  {
+    "kind": "inner",
+    "es": "1",
+    "en": "1"
+  },
+  {
+    "kind": "inner",
+    "es": "Una analogía antes que un dato",
+    "en": "Start with an analogy, not a fact"
+  },
+  {
+    "kind": "inner",
+    "es": "Si puedes explicar un concepto con algo de la vida diaria, lo entendiste. Si todavía no puedes, quizá solo memorizaste el dato.",
+    "en": "If you can explain a concept using something from everyday life, you understand it. If you can’t yet, you may have only memorized the fact."
+  },
+  {
+    "kind": "inner",
+    "es": "2",
+    "en": "2"
+  },
+  {
+    "kind": "inner",
+    "es": "Una frase que decide la respuesta",
+    "en": "Find the phrase that decides the answer"
+  },
+  {
+    "kind": "inner",
+    "es": "Busca la pista corta de cada tema: «¿quién hizo qué?» distingue CloudTrail de CloudWatch en dos segundos.",
+    "en": "Look for each topic’s short hint: “who did what?” separates CloudTrail from CloudWatch in two seconds."
+  },
+  {
+    "kind": "inner",
+    "es": "3",
+    "en": "3"
+  },
+  {
+    "kind": "inner",
+    "es": "Anota cada error, no cada tema",
+    "en": "Write down every mistake, not every topic"
+  },
+  {
+    "kind": "inner",
+    "es": "Tu bitácora de fallos vale más que cualquier resumen: señala justo las preguntas que te van a costar puntos.",
+    "en": "Your mistake log is worth more than any summary: it shows you exactly which questions could cost you points."
+  },
+  {
+    "kind": "inner",
+    "es": "4",
+    "en": "4"
+  },
+  {
+    "kind": "inner",
+    "es": "Simulacro completo, sin pausas",
+    "en": "Take a full mock exam without breaks"
+  },
+  {
+    "kind": "inner",
+    "es": "Haz el simulacro de corrido y con reloj; así sabrás cómo respondes bajo el tiempo del examen.",
+    "en": "Take the mock exam in one sitting, with a timer; you’ll see how you answer under exam time limits."
+  },
+  {
+    "kind": "inner",
+    "es": "Muchos exámenes se pierden antes de la primera pregunta",
+    "en": "Many exams go wrong before the first question"
+  },
+  {
+    "kind": "inner",
+    "es": "También puedes presentar el CLF&#8209;C02 en línea con OnVUE, el software de Pearson VUE; para entrar, tu computadora debe cumplir sus reglas. Esta lista reúne las que Pearson VUE publica para AWS y las fallas que aparecen en la práctica.",
+    "en": "You can also take the CLF&#8209;C02 online with OnVUE, Pearson VUE’s software; your computer must meet its requirements. This list covers the rules Pearson VUE publishes for AWS and problems that come up in practice."
+  },
+  {
+    "kind": "inner",
+    "es": "Corre la prueba del sistema en la misma computadora y la misma red que usarás en el examen.",
+    "en": "Run the system test on the same computer and network you’ll use for the exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Nada de máquinas virtuales. Si tienes WSL, Docker o emuladores instalados, Hyper&#8209;V suele estar activo sin que lo hayas encendido; desactivarlo requiere reiniciar.",
+    "en": "No virtual machines. If you have WSL, Docker, or emulators installed, Hyper&#8209;V may be active even if you never turned it on; disabling it requires a restart."
+  },
+  {
+    "kind": "inner",
+    "es": "Evita las VPN y las redes corporativas o públicas. Detén el <em>servicio</em> de la VPN: Tailscale y similares pueden reiniciarse aunque cierres la ventana.",
+    "en": "Avoid VPNs and corporate or public networks. Stop the VPN <em>service</em>: Tailscale and similar apps can restart even after you close their windows."
+  },
+  {
+    "kind": "inner",
+    "es": "Entra al check&#8209;in 30 minutos antes. Harás pruebas del equipo, tomarás una foto tuya y de tu identificación, además de escanear el cuarto en 360 grados.",
+    "en": "Start check&#8209;in 30 minutes early. You’ll test your equipment, photograph yourself and your ID, and scan your room in 360 degrees."
+  },
+  {
+    "kind": "inner",
+    "es": "Una sola pantalla, sin audífonos y a solas en el cuarto. Lleva una identificación oficial cuyo nombre coincida exactamente con tu reserva.",
+    "en": "Use one screen, no headphones, and a room to yourself. Bring an official ID with a name that exactly matches your booking."
+  },
+  {
+    "kind": "inner",
+    "es": "Ver la guía completa del día del examen",
+    "en": "See the full exam day guide"
+  },
+  {
+    "kind": "inner",
+    "es": "Empieza por las diferencias",
+    "en": "Start with the differences"
+  },
+  {
+    "kind": "inner",
+    "es": "Puedes leer las 45 diferencias en unos 25 minutos. Marca las que ya dominas para quitarlas de tu hoja de pistas; la práctica con diagnóstico por dominio llegará después.",
+    "en": "You can read all 45 differences in about 25 minutes. Mark the ones you’ve mastered to remove them from your hint sheet; practice with a breakdown by domain will come later."
+  },
+  {
+    "kind": "inner",
+    "es": "No necesitas instalar nada ni crear una cuenta. Tus marcas se quedan en este navegador; no viajan a ningún servidor.",
+    "en": "You don’t need to install anything or create an account. Your marks stay in this browser; they aren’t sent to a server."
+  },
+  {
+    "kind": "inner",
+    "es": "Este cuaderno parte de la guía oficial del CLF&#8209;C02 y la documentación de AWS; usa el mismo método que sirvió para aprobar el AZ&#8209;900. Las 45 diferencias cruzan el temario con servicios que se confunden entre sí. Es gratis y seguirá siéndolo.",
+    "en": "This guide draws on the official CLF&#8209;C02 guide and AWS documentation; it uses the same method that helped pass the AZ&#8209;900. The 45 differences connect exam topics with services that are easy to confuse. It’s free and will stay free."
+  },
+  {
+    "kind": "inner",
+    "es": "léelo completo la mañana del examen",
+    "en": "read it all on exam morning"
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Secciones del sitio",
+    "en": "Site sections"
+  },
+  {
+    "kind": "inner",
+    "es": "El cuaderno",
+    "en": "The guide"
+  },
+  {
+    "kind": "inner",
+    "es": "Práctica",
+    "en": "Practice"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"largo\">Día del </span>examen",
+    "en": "<span class=\"largo\">Exam </span>day"
+  },
+  {
+    "kind": "inner",
+    "es": "Quién lo hizo",
+    "en": "Who made it"
+  },
+  {
+    "kind": "inner",
+    "es": "Santiago García Arellano",
+    "en": "Santiago García Arellano"
+  },
+  {
+    "kind": "inner",
+    "es": "GitHub",
+    "en": "GitHub"
+  },
+  {
+    "kind": "inner",
+    "es": "LinkedIn",
+    "en": "LinkedIn"
+  },
+  {
+    "kind": "inner",
+    "es": "Apoyar el proyecto",
+    "en": "Support the project"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni tiene su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Este material te ayuda a estudiar, pero no garantiza que apruebes. Las preguntas de práctica son propias del sitio; ninguna proviene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href=\"https://github.com/Santiago-mnd\">GitHub</a>.",
+    "en": "<strong>Notice.</strong> Cuaderno Cloud Practitioner is a free personal project; it is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates. This material can help you study, but it does not guarantee a passing score. The practice questions were written for this site; none come from the real exam. I prepared some content with AI assistance and checked it against the official documentation; if you find an error, let me know on <a href=\"https://github.com/Santiago-mnd\">GitHub</a>."
+  },
+  {
+    "kind": "inner",
+    "es": "Verifiqué el contenido en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si cambia el temario, comprueba la información actual en docs.aws.amazon.com.",
+    "en": "I checked the content against the official CLF-C02 guide and AWS documentation in September 2026. If the exam topics change, check the current information at docs.aws.amazon.com."
+  },
+  {
+    "kind": "inner",
+    "es": "No necesitas cuenta ni correo; el sitio tampoco usa cookies. La analítica reúne páginas vistas, país y navegador, sin crear perfiles ni seguirte entre sitios. Tu avance de estudio se queda en tu navegador.",
+    "en": "You don’t need an account or email; the site doesn’t use cookies either. Analytics collects page views, country, and browser without building profiles or tracking you across sites. Your study progress stays in your browser."
+  },
+  {
+    "kind": "inner",
+    "es": "Este es el segundo recurso libre de sintitulo.dev; habrá más.",
+    "en": "This is the second free resource from sintitulo.dev; more are coming."
+  },
+  {
+    "kind": "inner",
+    "es": "Cómo estudiar el CLF-C02 · Cuaderno Cloud Practitioner",
+    "en": "How to study for the CLF-C02 · Cuaderno Cloud Practitioner"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Prepara el examen AWS Certified Cloud Practitioner (CLF-C02) en cuatro pasos: entiende con una analogía, encuentra una pista por tema, anota tus errores y haz un simulacro con reloj.",
+    "en": "Prepare for the AWS Certified Cloud Practitioner (CLF-C02) exam in four steps: understand an analogy, find a hint for each topic, log your mistakes, and take a timed practice exam."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Cómo estudiar para el CLF-C02: un método de cuatro pasos",
+    "en": "How to study for the CLF-C02: a four-step method"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Una analogía para entender, una pista para elegir, una bitácora para corregir errores y un simulacro con reloj. Un método que sirvió para aprobar el AZ-900, aplicado al Cloud Practitioner.",
+    "en": "An analogy to understand, a hint to choose, a log to learn from mistakes, and a timed practice exam. A method that helped someone pass the AZ-900, applied to Cloud Practitioner."
+  },
+  {
+    "kind": "inner",
+    "es": "Cómo estudiar esto",
+    "en": "How to study"
+  },
+  {
+    "kind": "inner",
+    "es": "En el CLF&#8209;C02 tienes que reconocer conceptos de la nube, qué servicio de AWS resuelve una situación y en qué se distingue de otros que también suenan bien. La guía oficial deja fuera programar, diseñar arquitecturas y resolver fallas; por eso conviene entender pocas ideas a fondo antes que leer el temario completo dos veces.",
+    "en": "On the CLF&#8209;C02, you need to recognize cloud concepts, identify which AWS service fits a situation, and tell it apart from other plausible choices. The official guide leaves out programming, architecture design, and troubleshooting, so understanding a few ideas well will serve you better than reading the whole outline twice."
+  },
+  {
+    "kind": "inner",
+    "es": "Estos cuatro pasos salieron de preparar el AZ&#8209;900 con un diagnóstico al inicio y una medición al final. Puedes aplicarlos a este examen; pon especial atención al tercero, porque es el que más cuesta y el que más se salta.",
+    "en": "These four steps came from preparing for the AZ&#8209;900, with an assessment at the start and another at the end. You can use them for this exam; pay particular attention to the third, since it takes the most effort and is easiest to skip."
+  },
+  {
+    "kind": "inner",
+    "es": "1. Una analogía antes que un dato",
+    "en": "1. Start with an analogy"
+  },
+  {
+    "kind": "inner",
+    "es": "Si puedes explicar un concepto con algo cotidiano, ya tienes una forma de reconocerlo cuando cambie la pregunta. Memorizar el dato sin entenderlo deja esa respuesta mucho más frágil.",
+    "en": "If you can explain a concept through something familiar, you can recognize it when a question frames it differently. A memorized fact is much less reliable when you don’t understand it."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">La responsabilidad compartida, con una cocina:</strong> EC2 es rentar la cocina vacía; quien cocina mantiene la estufa, que aquí es el sistema operativo. En RDS la cocina llega equipada y AWS le da mantenimiento; tú llevas la receta y los ingredientes, es decir, los datos. En S3 guardas tus cosas en la alacena y decides quién tiene llave.",
+    "en": "<strong style=\"font-weight: 600\">Shared responsibility, explained with a kitchen:</strong> EC2 is like renting an empty kitchen; the cook maintains the stove, which stands for the operating system. With RDS, the kitchen comes equipped and AWS maintains it; you bring the recipe and ingredients—the data. With S3, you store your things in the pantry and decide who gets a key."
+  },
+  {
+    "kind": "inner",
+    "es": "Así, cuando te pregunten «¿quién parcha el sistema operativo?», piensa en quién mantiene la estufa.",
+    "en": "So when a question asks, “Who patches the operating system?” think about who maintains the stove."
+  },
+  {
+    "kind": "inner",
+    "es": "2. Una frase que decide la respuesta",
+    "en": "2. Find the phrase that settles the choice"
+  },
+  {
+    "kind": "inner",
+    "es": "Busca en cada tema una pista que separe servicios parecidos. En el examen tienes 65 preguntas en 90 minutos, unos 83 segundos por pregunta; una frase clara te permite reconocer la opción sin razonar cada servicio desde cero.",
+    "en": "For each topic, look for a hint that separates similar services. You have 65 questions in 90 minutes, about 83 seconds per question; a clear phrase helps you spot the answer without reasoning through every service from scratch."
+  },
+  {
+    "kind": "inner",
+    "es": "Puede interrumpirse = instancias de spot.",
+    "en": "Can be interrupted = Spot Instances."
+  },
+  {
+    "kind": "inner",
+    "es": "Puede esperar horas = Glacier Flexible Retrieval o Deep Archive.",
+    "en": "Can wait hours = Glacier Flexible Retrieval or Deep Archive."
+  },
+  {
+    "kind": "inner",
+    "es": "Encontrarás las 45 pistas del cuaderno en <a href=\"/diferencias\">Diferencias</a>; cada una trae su explicación debajo.",
+    "en": "You’ll find the notebook’s 45 hints in <a href=\"/diferencias\">Differences</a>, each with an explanation below it."
+  },
+  {
+    "kind": "inner",
+    "es": "3. Anota cada error, no cada tema",
+    "en": "3. Log every mistake, not every topic"
+  },
+  {
+    "kind": "inner",
+    "es": "El material oficial ya resume el temario. Tu bitácora sirve para otra cosa: reunir las preguntas en las que te equivocaste y descubrir qué opciones todavía confundes.",
+    "en": "The official materials already summarize the exam topics. Your log has a different job: collect the questions you missed and reveal which choices you still confuse."
+  },
+  {
+    "kind": "inner",
+    "es": "Después de cada fallo, anota qué respondiste, cuál era la respuesta correcta y por qué tu opción parecía razonable. Esa última explicación te ayuda a detectar la confusión antes de repetirla.",
+    "en": "After each mistake, write down your answer, the correct answer, and why your choice seemed reasonable. That last explanation helps you catch the confusion before it happens again."
+  },
+  {
+    "kind": "inner",
+    "es": "Si fallas la misma pregunta dos veces con respuestas distintas, probablemente estás adivinando. Vuelve a buscar la pista que separa esas opciones.",
+    "en": "If you miss the same question twice and choose different answers, you’re probably guessing. Go back to the hint that separates those choices."
+  },
+  {
+    "kind": "inner",
+    "es": "4. Simulacro completo, sin pausas",
+    "en": "4. Take a full practice exam without breaks"
+  },
+  {
+    "kind": "inner",
+    "es": "Haz el simulacro de corrido y con reloj; así podrás medir cómo respondes bajo las condiciones del examen, sin pausas ni consultas.",
+    "en": "Take the practice exam in one sitting, with a timer. That way, you can see how you respond under exam conditions, without breaks or looking things up."
+  },
+  {
+    "kind": "inner",
+    "es": "La referencia es 700 de 1000 para aprobar el CLF&#8209;C02: es un puntaje escalado, no un porcentaje de aciertos. AWS no publica cuántas respuestas correctas equivalen a 700; como meta de práctica, busca superar el 80 % en los simulacros y contempla que el examen real puede salir algo más bajo.",
+    "en": "The passing score for the CLF&#8209;C02 is 700 out of 1000: it’s a scaled score, not a percentage of correct answers. AWS doesn’t publish how many correct answers equal 700; for practice, aim to score above 80% on practice exams, and allow for a somewhat lower result on the real exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Si quedan pocos días",
+    "en": "If the exam is a few days away"
+  },
+  {
+    "kind": "inner",
+    "es": "Cuando el examen está cerca, decide dónde poner el tiempo. Este fue el orden que rindió al preparar el AZ&#8209;900:",
+    "en": "When the exam is close, decide where to spend your time. This order worked when preparing for the AZ&#8209;900:"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Primero, medir.</strong> Haz un diagnóstico para saber en qué dominio conviene estudiar esa tarde; así no repartes el tiempo por igual entre lo que ya sabes y lo que te falta.",
+    "en": "<strong style=\"font-weight: 600\">First, find out where you stand.</strong> Take an assessment to see which domain deserves your study time that afternoon, instead of dividing it equally between what you know and what you don’t."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Bloques cortos por tema, con preguntas de inmediato.</strong> En lugar de leer treinta minutos seguidos, lee diez y contesta cinco preguntas para comprobar qué entendiste.",
+    "en": "<strong style=\"font-weight: 600\">Study one topic in short blocks, then answer questions.</strong> Instead of reading for thirty minutes straight, read for ten and answer five questions to check what you understood."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Nada nuevo la noche anterior.</strong> El material nuevo a esas horas puede quitarte confianza y no alcanza a fijarse. Esa noche, duerme.",
+    "en": "<strong style=\"font-weight: 600\">Skip new material the night before.</strong> It may shake your confidence, and there isn’t enough time for it to stick. Get some sleep that night."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">La mañana del examen, solo pistas.</strong> La vista de pistas de <a href=\"/diferencias\">Diferencias</a> se lee en unos siete minutos.",
+    "en": "<strong style=\"font-weight: 600\">On exam morning, use Hints only.</strong> You can read the hint view in <a href=\"/diferencias\">Differences</a> in about seven minutes."
+  },
+  {
+    "kind": "inner",
+    "es": "Mientras llega la práctica, empieza por las diferencias",
+    "en": "While Practice is being built, start with Differences"
+  },
+  {
+    "kind": "inner",
+    "es": "Son 45, repartidas en los cuatro dominios del examen; puedes leerlas en unos 25 minutos.",
+    "en": "There are 45 across the four exam domains; you can read them in about 25 minutes."
+  },
+  {
+    "kind": "inner",
+    "es": "Nada que instalar ni registrar.",
+    "en": "Nothing to install. No account to create."
+  },
+  {
+    "kind": "inner",
+    "es": "Este método salió de preparar y aprobar el AZ&#8209;900 en septiembre de 2026. Quien lo usó ya tenía bases de nube; si empiezas de cero, reserva más días para recorrer los mismos pasos.",
+    "en": "This method came from preparing for and passing the AZ&#8209;900 in September 2026. The person who used it already knew the basics of cloud computing; if you’re starting from scratch, set aside more days for the same steps."
+  },
+  {
+    "kind": "inner",
+    "es": "El día del examen: guía de OnVUE · Cuaderno Cloud Practitioner",
+    "en": "Exam day: an OnVUE guide · Cuaderno Cloud Practitioner"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Qué revisar antes y durante el examen CLF-C02 en línea con OnVUE: prueba del sistema, máquinas virtuales, VPN, identificación, check-in y resultados.",
+    "en": "What to check before and during the online CLF-C02 exam with OnVUE: system test, virtual machines, VPN, ID, check-in, and results."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "El día del examen CLF-C02: guía de OnVUE",
+    "en": "CLF-C02 exam day: an OnVUE guide"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Prueba del sistema, máquinas virtuales, VPN, identificación y check-in. Revisa las fallas de equipo que pueden costarte el examen.",
+    "en": "System test, virtual machines, VPN, ID, and check-in. Check the computer issues that could cost you your exam."
+  },
+  {
+    "kind": "inner",
+    "es": "El día del examen",
+    "en": "Exam day"
+  },
+  {
+    "kind": "inner",
+    "es": "Puedes presentar el CLF&#8209;C02 en un centro de Pearson VUE o en línea con OnVUE. Si eliges hacerlo en línea, también deben cumplir tu computadora y tu cuarto; de lo contrario, Pearson VUE cancela la cita y pierdes el pago.",
+    "en": "You can take the CLF&#8209;C02 at a Pearson VUE test center or online with OnVUE. If you choose the online exam, your computer and room must meet the requirements too; otherwise, Pearson VUE cancels your appointment and you lose the fee."
+  },
+  {
+    "kind": "inner",
+    "es": "Aquí están las reglas que Pearson VUE publica para AWS y las políticas de AWS, revisadas en septiembre de 2026, junto con fallas que aparecen en la práctica. Confirma los requisitos formales en el correo de tu cita.",
+    "en": "Here are the rules Pearson VUE publishes for AWS, along with AWS policies, reviewed in September 2026 and paired with problems people encounter in practice. Confirm the formal requirements in your appointment email."
+  },
+  {
+    "kind": "inner",
+    "es": "Al agendar",
+    "en": "When you schedule"
+  },
+  {
+    "kind": "inner",
+    "es": "Agenda desde tu cuenta de AWS Certification",
+    "en": "Schedule through your AWS Certification account"
+  },
+  {
+    "kind": "inner",
+    "es": "Crea tu cuenta en aws.training/Certification con un AWS Builder ID; es distinta de una cuenta de AWS. Desde ahí pasas a Pearson VUE para elegir centro o examen en línea, fecha y hora. Cuesta 100 USD, más los impuestos que apliquen.",
+    "en": "Create an account at aws.training/Certification with an AWS Builder ID; it’s separate from an AWS account. From there, you’ll go to Pearson VUE to choose a test center or online exam, date, and time. The exam costs 100 USD, plus applicable taxes."
+  },
+  {
+    "kind": "inner",
+    "es": "Elige el idioma con calma",
+    "en": "Choose your exam language carefully"
+  },
+  {
+    "kind": "inner",
+    "es": "Hay versión en español de Latinoamérica; durante el examen puedes ver cada pregunta en inglés con un botón. Si lo presentas en inglés y tu idioma nativo es otro, puedes pedir 30 minutos extra (ESL +30) en tu cuenta antes de agendar. Solo tienes que pedirlo una vez.",
+    "en": "A Latin American Spanish version is available; during the exam, a button lets you view each question in English. If you take it in English and your native language is different, you can request 30 extra minutes (ESL +30) in your account before scheduling. You only need to request it once."
+  },
+  {
+    "kind": "inner",
+    "es": "En línea, la supervisión en español está disponible de lunes a viernes, de 10:00 a 17:45 hora del Este de Estados Unidos. En inglés hay supervisión a toda hora.",
+    "en": "For online exams, Spanish-language proctoring is available Monday through Friday, from 10:00 to 17:45 U.S. Eastern Time. English-language proctoring is available around the clock."
+  },
+  {
+    "kind": "inner",
+    "es": "Reagendar tiene límite",
+    "en": "There’s a limit on rescheduling"
+  },
+  {
+    "kind": "inner",
+    "es": "Puedes reagendar hasta 24 horas antes, como máximo dos veces por cita. Si cancelas con más de 24 horas, te devuelven el pago; con menos tiempo, o si no te presentas, lo pierdes.",
+    "en": "You can reschedule up to 24 hours before your appointment, at most twice per appointment. Cancel more than 24 hours ahead and you’ll get a refund; cancel later, or miss the appointment, and you’ll lose the fee."
+  },
+  {
+    "kind": "inner",
+    "es": "Días antes",
+    "en": "In the days before"
+  },
+  {
+    "kind": "inner",
+    "es": "Corre la prueba del sistema en tu equipo y tu red",
+    "en": "Run the system test on your computer and network"
+  },
+  {
+    "kind": "inner",
+    "es": "Pearson VUE pide pasar la prueba en la misma computadora y la misma red que usarás en el examen; hacerla en otra máquina no verifica tu equipo. Inicia sesión antes: en modo anónimo, la prueba puede correr sin que quede registrado el resultado.",
+    "en": "Pearson VUE asks you to run the test on the same computer and network you’ll use for the exam; testing another machine doesn’t check yours. Sign in first: in a private browsing window, the test may run without saving the result."
+  },
+  {
+    "kind": "inner",
+    "es": "Nada de máquinas virtuales, y revisa Hyper-V",
+    "en": "Avoid virtual machines, and check Hyper-V"
+  },
+  {
+    "kind": "inner",
+    "es": "Pearson VUE prohíbe las máquinas virtuales. Revisa también Hyper-V por precaución: WSL, Docker o los emuladores pueden dejarlo activo sin que lo sepas; desactivarlo requiere reiniciar. Una persona contó en AWS re:Post que OnVUE confundió su laptop personal con una máquina virtual cuando presentó el CLF&#8209;C02, por lo que terminó haciéndolo en un centro.",
+    "en": "Pearson VUE prohibits virtual machines. Check Hyper-V as a precaution, too: WSL, Docker, or emulators may leave it active without your knowledge, and turning it off requires a restart. One person reported on AWS re:Post that OnVUE mistook their personal laptop for a virtual machine during the CLF&#8209;C02, so they ended up taking the exam at a center."
+  },
+  {
+    "kind": "inner",
+    "es": "Para revisarlo en Windows, abre PowerShell como administrador y ejecuta: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 usa la plataforma de máquina virtual aunque Hyper-V aparezca deshabilitado.",
+    "en": "To check on Windows, open PowerShell as an administrator and run: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 uses the virtual machine platform even when Hyper-V appears disabled."
+  },
+  {
+    "kind": "inner",
+    "es": "Revisa tu identificación",
+    "en": "Check your ID"
+  },
+  {
+    "kind": "inner",
+    "es": "Debe ser oficial, vigente y tener foto. Sirven el pasaporte, la licencia de conducir de plástico o una identificación nacional. Tu nombre y tus apellidos deben ser idénticos a los de tu cuenta de AWS Certification; el segundo nombre no hace falta. Si hay una diferencia, corrígela en tu cuenta al menos dos días hábiles antes del examen.",
+    "en": "It must be a valid government-issued photo ID. A passport, plastic driver’s license, or national ID card will work. Your first and last names must match your AWS Certification account exactly; a middle name isn’t required. If they differ, correct your account at least two business days before the exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Ten un plan B",
+    "en": "Have a backup plan"
+  },
+  {
+    "kind": "inner",
+    "es": "Si falla la prueba del sistema o no puedes garantizar un cuarto a solas, puedes elegir un centro de Pearson VUE: cuesta lo mismo y evita esos riesgos. Ahí te pedirán dos identificaciones, ya sean dos principales o una principal y una secundaria. Tienes hasta 24 horas antes de la cita para tomar la decisión.",
+    "en": "If the system test fails or you can’t guarantee a room to yourself, you can choose a Pearson VUE test center: it costs the same and avoids those risks. You’ll need two forms of ID there, either two primary IDs or one primary and one secondary ID. You have until 24 hours before your appointment to decide."
+  },
+  {
+    "kind": "inner",
+    "es": "Media hora antes",
+    "en": "Half an hour before"
+  },
+  {
+    "kind": "inner",
+    "es": "Reinicia la computadora; cierra todo menos OnVUE, incluidos Teams, Slack, Discord, la música y los navegadores.",
+    "en": "Restart your computer; close everything except OnVUE, including Teams, Slack, Discord, music, and browsers."
+  },
+  {
+    "kind": "inner",
+    "es": "Desconecta la VPN; evita las redes corporativas, públicas o compartidas. Detén el <em>servicio</em> de la VPN, no solo su ventana: Tailscale y otros similares se reinician solos. En Windows: <code>Stop-Service</code> y luego <code>Set-Service -StartupType Disabled</code>; vuelve a activarlo al terminar.",
+    "en": "Disconnect your VPN; avoid corporate, public, or shared networks. Stop the VPN <em>service</em>, not just its window: Tailscale and similar apps can restart themselves. On Windows, run <code>Stop-Service</code> followed by <code>Set-Service -StartupType Disabled</code>; turn it back on after the exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Pide que nadie en casa use la red para ver series o descargar archivos grandes.",
+    "en": "Ask everyone at home to avoid streaming shows or downloading large files."
+  },
+  {
+    "kind": "inner",
+    "es": "Por precaución, desactiva las actualizaciones automáticas para evitar que Windows se reinicie durante la prueba.",
+    "en": "As a precaution, turn off automatic updates so Windows doesn’t restart during the exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Usa una sola pantalla. Desconecta la segunda y cualquier pantalla táctil adicional; si no puedes quitarla, desconéctala y tápala.",
+    "en": "Use one screen. Disconnect a second monitor and any additional touchscreen; if you can’t remove one, disconnect it and cover it."
+  },
+  {
+    "kind": "inner",
+    "es": "Deja el escritorio vacío: solo la computadora y, si quieres, una bebida en un recipiente sin etiqueta. Mantén el papel, las plumas, el celular, el reloj y los audífonos fuera del alcance del brazo.",
+    "en": "Clear your desk: keep only your computer and, if you want one, a drink in an unlabeled container. Keep paper, pens, your phone, your watch, and headphones out of arm’s reach."
+  },
+  {
+    "kind": "inner",
+    "es": "No uses audífonos: necesitas las bocinas y el micrófono del equipo.",
+    "en": "Don’t use headphones: you need your computer’s speakers and microphone."
+  },
+  {
+    "kind": "inner",
+    "es": "Debes estar a solas en un cuarto tranquilo. No se permiten el baño ni los lugares públicos, como oficinas o cafeterías.",
+    "en": "You must be alone in a quiet room. Bathrooms and public places, such as offices or coffee shops, aren’t allowed."
+  },
+  {
+    "kind": "inner",
+    "es": "El check-in",
+    "en": "Check-in"
+  },
+  {
+    "kind": "inner",
+    "es": "El check-in empieza 30 minutos antes de la cita. Harás pruebas del equipo, tomarás una foto tuya y de tu identificación, y mostrarás el cuarto en un escaneo de 360 grados. Si algo no cumple, no presentas y pierdes el pago.",
+    "en": "Check-in opens 30 minutes before your appointment. You’ll test your equipment, take photos of yourself and your ID, and show the room in a 360-degree scan. If something doesn’t meet the requirements, you can’t take the exam and you lose the fee."
+  },
+  {
+    "kind": "inner",
+    "es": "Comprueba en el correo de tu cita la hora y la zona horaria con su desfase explícito, por ejemplo, UTC−06:00. Un nombre como «hora central» puede prestarse a confusión; el desfase la evita.",
+    "en": "Check your appointment email for the time and its explicit UTC offset, for example, UTC−06:00. A label like “Central Time” can be ambiguous; the offset clears it up."
+  },
+  {
+    "kind": "inner",
+    "es": "Durante",
+    "en": "During the exam"
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">No dejes ninguna en blanco.</strong> Tienes 90 minutos para 65 preguntas. Quince no cuentan para la calificación, pero no sabrás cuáles son. Una pregunta sin responder cuenta como incorrecta; adivinar no se penaliza.",
+    "en": "<strong style=\"font-weight: 600\">Don’t leave any question blank.</strong> You have 90 minutes for 65 questions. Fifteen don’t count toward your score, but you won’t know which ones. An unanswered question counts as incorrect; there’s no penalty for guessing."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Identifica qué se está preguntando antes de elegir.</strong> Si la pregunta pide quién hizo algo, una opción que describe cómo se comporta puede sonar bien; sin embargo, responde otra cosa.",
+    "en": "<strong style=\"font-weight: 600\">Identify what the question asks before choosing.</strong> If it asks who did something, an answer describing how something works may sound right, but it answers a different question."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Marca y avanza.</strong> Puedes marcar preguntas para volver a ellas; al final verás una pantalla con las marcadas y las incompletas.",
+    "en": "<strong style=\"font-weight: 600\">Flag it and move on.</strong> You can flag questions to revisit; at the end, you’ll see a screen showing flagged and incomplete questions."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Usa el pizarrón digital.</strong> Está dentro del examen en línea. El papel y los pizarrones físicos no están permitidos.",
+    "en": "<strong style=\"font-weight: 600\">Use the digital whiteboard.</strong> It’s built into the online exam. Paper and physical whiteboards aren’t allowed."
+  },
+  {
+    "kind": "inner",
+    "es": "<strong style=\"font-weight: 600\">Si el equipo se congela, cierra OnVUE y vuelve a abrirlo</strong> desde tu carpeta de descargas. El supervisor responde por el chat, pero no puede pausar el examen ni arreglar tu equipo. En línea no hay descansos.",
+    "en": "<strong style=\"font-weight: 600\">If your computer freezes, close OnVUE and reopen it</strong> from your downloads folder. The proctor can respond in chat, but can’t pause the exam or fix your computer. There are no breaks online."
+  },
+  {
+    "kind": "inner",
+    "es": "Al terminar, es probable que no veas si aprobaste. AWS dice que la mayoría de sus exámenes no muestran el resultado en pantalla; llegará a tu cuenta en un máximo de cinco días hábiles. Algunas personas sí lo ven al terminar, mientras que la insignia de Credly puede llegar antes que el resultado.",
+    "en": "You may not see whether you passed when you finish. AWS says most of its exams don’t show a result on screen; it will appear in your account within five business days. Some people do see a result right away, while the Credly badge may arrive before the result."
+  },
+  {
+    "kind": "inner",
+    "es": "La lectura de la última hora",
+    "en": "What to read in the final hour"
+  },
+  {
+    "kind": "inner",
+    "es": "La vista de pistas de las 45 diferencias se lee en unos siete minutos. Si vas a repasar algo ese día, que sea esto.",
+    "en": "You can read the hint view for all 45 differences in about seven minutes. If you review anything that day, make it this."
+  },
+  {
+    "kind": "inner",
+    "es": "Activa el botón «Solo pistas».",
+    "en": "Turn on “Hints only.”"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS y Pearson VUE definen las reglas, que pueden cambiar. Esta guía se revisó en septiembre de 2026; úsala como checklist y confirma los requisitos formales en el correo de tu cita.",
+    "en": "AWS and Pearson VUE set the rules, and those rules can change. This guide was reviewed in September 2026; use it as a checklist and confirm the formal requirements in your appointment email."
+  },
+  {
+    "kind": "inner",
+    "es": "respira: vas a estar bien",
+    "en": "breathe: you’ll be okay"
+  },
+  {
+    "kind": "inner",
+    "es": "Practicar para el CLF-C02 · Cuaderno Cloud Practitioner",
+    "en": "Practice for the CLF-C02 · Cuaderno Cloud Practitioner"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Preguntas de práctica para el examen AWS Certified Cloud Practitioner (CLF-C02): diagnóstico, repaso espaciado y simulacro con cronómetro. En construcción.",
+    "en": "Practice questions for the AWS Certified Cloud Practitioner (CLF-C02) exam: assessment, spaced review, and a timed practice exam. Under construction."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Practicar para el CLF-C02",
+    "en": "Practice for the CLF-C02"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Diagnóstico, repaso espaciado y simulacro con cronómetro para el CLF-C02. En construcción.",
+    "en": "Assessment, spaced review, and a timed practice exam for the CLF-C02. Under construction."
+  },
+  {
+    "kind": "inner",
+    "es": "Las 240 preguntas propias del CLF&#8209;C02 siguen en construcción. Se reparten según el peso de cada dominio: 58 de conceptos de la nube, 72 de seguridad y cumplimiento, 81 de tecnología y servicios, y 29 de facturación, precios y soporte.",
+    "en": "The 240 original CLF&#8209;C02 questions are still being written. They follow the weight of each exam domain: 58 for Cloud Concepts, 72 for Security and Compliance, 81 for Cloud Technology and Services, and 29 for Billing, Pricing, and Support."
+  },
+  {
+    "kind": "inner",
+    "es": "Cuando estén listas, podrás empezar con un diagnóstico de 20 preguntas; después vendrán el repaso espaciado de lo que falles y un simulacro de 65 preguntas en 90 minutos, como el examen.",
+    "en": "Once they’re ready, you’ll be able to start with a 20-question assessment, followed by spaced review of what you miss and a 65-question practice exam in 90 minutes, like the real exam."
+  },
+  {
+    "kind": "inner",
+    "es": "Mientras tanto",
+    "en": "In the meantime"
+  },
+  {
+    "kind": "inner",
+    "es": "Puedes empezar con <a href=\"/diferencias\">las 45 diferencias</a>, seguir <a href=\"/metodo\">el método</a> o consultar <a href=\"/examen\">la guía del día del examen</a>. Para probarte con preguntas, AWS ofrece gratis un <a href=\"https://skillbuilder.aws/learn/E4W52ZKK6P/official-practice-question-set-aws-certified-cloud-practitioner-clfc02--english/RJSZKD3MG3\">set oficial de 20 preguntas de práctica</a> en Skill Builder, disponible en español.",
+    "en": "You can start with <a href=\"/diferencias\">the 45 differences</a>, follow <a href=\"/metodo\">the Method</a>, or check <a href=\"/examen\">the Exam day guide</a>. To try practice questions, AWS offers a free <a href=\"https://skillbuilder.aws/learn/E4W52ZKK6P/official-practice-question-set-aws-certified-cloud-practitioner-clfc02--english/RJSZKD3MG3\">official set of 20 practice questions</a> on Skill Builder, available in English and Spanish."
+  },
+  {
+    "kind": "inner",
+    "es": "Las preguntas de este cuaderno se escriben a partir de la guía oficial del CLF&#8209;C02. Ninguna proviene del examen real ni de las preguntas de práctica oficiales de AWS.",
+    "en": "This notebook’s questions are written from the official CLF&#8209;C02 guide. None come from the real exam or AWS’s official practice questions."
+  },
+  {
+    "kind": "inner",
+    "es": "Las 45 diferencias clave del CLF-C02 · Cuaderno Cloud Practitioner",
+    "en": "The 45 key differences for CLF-C02 · Cuaderno Cloud Practitioner"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Las 45 diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden los servicios, qué pasa en realidad y qué frase decide la respuesta.",
+    "en": "The 45 key differences for the AWS Certified Cloud Practitioner exam (CLF-C02): where services get confused, what actually happens, and which phrase points to the answer."
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Las 45 diferencias clave del CLF-C02",
+    "en": "The 45 key differences for CLF-C02"
+  },
+  {
+    "kind": "attr",
+    "attr": "content",
+    "es": "Cada par de servicios y conceptos del CLF-C02 tiene una confusión frecuente; aquí encuentras la frase que decide la respuesta y la explicación.",
+    "en": "Each pair of CLF-C02 services or concepts has a common point of confusion; find the phrase that points to the answer and an explanation here."
+  },
+  {
+    "kind": "inner",
+    "es": "Las 45 diferencias del CLF&#8209;C02",
+    "en": "The 45 differences for CLF&#8209;C02"
+  },
+  {
+    "kind": "inner",
+    "es": "¿CloudTrail o CloudWatch? ¿Shield o WAF? Una frase para distinguir cada par.",
+    "en": "CloudTrail or CloudWatch? Shield or WAF? One phrase to tell each pair apart."
+  },
+  {
+    "kind": "inner",
+    "es": "Una opción equivocada puede sonar convincente porque nombra un servicio real. Cada diferencia te muestra la pista que decide la respuesta, dónde surge la confusión y qué pasa en realidad; puedes leerlas en unos 25 minutos o repasar solo las pistas en siete.",
+    "en": "A wrong option can sound convincing because it names a real service. Each difference shows you the hint that points to the answer, where the confusion comes from, and what actually happens; you can read them all in about 25 minutes or review just the hints in seven."
+  },
+  {
+    "kind": "inner",
+    "es": "Solo pistas",
+    "en": "Hints only"
+  },
+  {
+    "kind": "inner",
+    "es": "Marca las que dominas para quitarlas de la hoja de pistas.",
+    "en": "Mark the ones you know as mastered to remove them from the hint sheet."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Índice de diferencias",
+    "en": "Differences Index"
+  },
+  {
+    "kind": "inner",
+    "es": "Índice · 45 diferencias",
+    "en": "Index · 45 differences"
+  },
+  {
+    "kind": "inner",
+    "es": "Conceptos de la nube <span class=\"indice-rango\">01–07</span>",
+    "en": "Cloud Concepts <span class=\"indice-rango\">01–07</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">01</span> Agilidad o elasticidad",
+    "en": "<span class=\"indice-num\">01</span> Agility or elasticity"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">02</span> Escala o gasto variable",
+    "en": "<span class=\"indice-num\">02</span> Scale or variable expense"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">03</span> Los seis pilares",
+    "en": "<span class=\"indice-num\">03</span> The six pillars"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">04</span> CAF: perspectivas y resultados",
+    "en": "<span class=\"indice-num\">04</span> CAF: perspectives and outcomes"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">05</span> Las siete R",
+    "en": "<span class=\"indice-num\">05</span> The 7 Rs"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">06</span> BYOL o licencia incluida",
+    "en": "<span class=\"indice-num\">06</span> BYOL or license included"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">07</span> Rightsizing o Auto Scaling",
+    "en": "<span class=\"indice-num\">07</span> Rightsizing or Auto Scaling"
+  },
+  {
+    "kind": "inner",
+    "es": "Seguridad y cumplimiento <span class=\"indice-rango\">08–20</span>",
+    "en": "Security and Compliance <span class=\"indice-rango\">08–20</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">08</span> De la nube o en la nube",
+    "en": "<span class=\"indice-num\">08</span> OF the cloud or IN the cloud"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">09</span> Responsabilidad por servicio",
+    "en": "<span class=\"indice-num\">09</span> Responsibility by service"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">10</span> Controles compartidos",
+    "en": "<span class=\"indice-num\">10</span> Shared controls"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">11</span> CloudWatch, CloudTrail, Config",
+    "en": "<span class=\"indice-num\">11</span> CloudWatch, CloudTrail, Config"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">12</span> Artifact o Config",
+    "en": "<span class=\"indice-num\">12</span> Artifact or Config"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">13</span> Cinco servicios de seguridad",
+    "en": "<span class=\"indice-num\">13</span> Five security services"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">14</span> Shield, WAF, Firewall Manager",
+    "en": "<span class=\"indice-num\">14</span> Shield, WAF, Firewall Manager"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">15</span> Claves, certificados, secretos",
+    "en": "<span class=\"indice-num\">15</span> Keys, certificates, secrets"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">16</span> En tránsito o en reposo",
+    "en": "<span class=\"indice-num\">16</span> In transit or at rest"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">17</span> Usuario o rol",
+    "en": "<span class=\"indice-num\">17</span> User or role"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">18</span> IAM, Identity Center, Cognito",
+    "en": "<span class=\"indice-num\">18</span> IAM, Identity Center, Cognito"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">19</span> Política de IAM o SCP",
+    "en": "<span class=\"indice-num\">19</span> IAM policy or SCP"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">20</span> El usuario raíz",
+    "en": "<span class=\"indice-num\">20</span> The root user"
+  },
+  {
+    "kind": "inner",
+    "es": "Tecnología y servicios en la nube <span class=\"indice-rango\">21–37</span>",
+    "en": "Cloud Technology and Services <span class=\"indice-rango\">21–37</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">21</span> Modelos de implementación",
+    "en": "<span class=\"indice-num\">21</span> Deployment models"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">22</span> Consola o código",
+    "en": "<span class=\"indice-num\">22</span> Console or code"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">23</span> Región, AZ y periferia",
+    "en": "<span class=\"indice-num\">23</span> Region, AZ, and edge location"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">24</span> Familias de instancia",
+    "en": "<span class=\"indice-num\">24</span> Instance families"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">25</span> ECS, EKS, Fargate, Lambda",
+    "en": "<span class=\"indice-num\">25</span> ECS, EKS, Fargate, Lambda"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">26</span> Balanceador o Auto Scaling",
+    "en": "<span class=\"indice-num\">26</span> Load balancer or Auto Scaling"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">27</span> Qué base de datos",
+    "en": "<span class=\"indice-num\">27</span> Which database"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">28</span> DMS o SCT",
+    "en": "<span class=\"indice-num\">28</span> DMS or SCT"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">29</span> Grupo de seguridad o ACL",
+    "en": "<span class=\"indice-num\">29</span> Security group or network ACL"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">30</span> Conectar redes",
+    "en": "<span class=\"indice-num\">30</span> Connect networks"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">31</span> CloudFront, Accelerator, Route 53",
+    "en": "<span class=\"indice-num\">31</span> CloudFront, Accelerator, Route 53"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">32</span> Bloque, archivo u objeto",
+    "en": "<span class=\"indice-num\">32</span> Block, file, or object"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">33</span> Clases de S3",
+    "en": "<span class=\"indice-num\">33</span> S3 storage classes"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">34</span> Servicios de análisis",
+    "en": "<span class=\"indice-num\">34</span> Analytics services"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">35</span> Servicios de IA",
+    "en": "<span class=\"indice-num\">35</span> AI services"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">36</span> SNS, SQS, EventBridge",
+    "en": "<span class=\"indice-num\">36</span> SNS, SQS, EventBridge"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">37</span> Escritorios, IoT, código",
+    "en": "<span class=\"indice-num\">37</span> Desktops, IoT, code"
+  },
+  {
+    "kind": "inner",
+    "es": "Facturación, precios y soporte <span class=\"indice-rango\">38–45</span>",
+    "en": "Billing, Pricing, and Support <span class=\"indice-rango\">38–45</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">38</span> Opciones de compra",
+    "en": "<span class=\"indice-num\">38</span> Purchasing options"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">39</span> Savings Plans o RI",
+    "en": "<span class=\"indice-num\">39</span> Savings Plans or RI"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">40</span> Entrada y salida de datos",
+    "en": "<span class=\"indice-num\">40</span> Data transfer in and out"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">41</span> Herramientas de costos",
+    "en": "<span class=\"indice-num\">41</span> Cost tools"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">42</span> Etiquetas de costos",
+    "en": "<span class=\"indice-num\">42</span> Cost allocation tags"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">43</span> Organizations o Control Tower",
+    "en": "<span class=\"indice-num\">43</span> Organizations or Control Tower"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">44</span> Planes de soporte",
+    "en": "<span class=\"indice-num\">44</span> Support plans"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"indice-num\">45</span> A quién acudir",
+    "en": "<span class=\"indice-num\">45</span> Who to contact"
+  },
+  {
+    "kind": "inner",
+    "es": "Conceptos de la nube <span class=\"conteo\">01–07</span>",
+    "en": "Cloud Concepts <span class=\"conteo\">01–07</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "01",
+    "en": "01"
+  },
+  {
+    "kind": "inner",
+    "es": "Agilidad es lanzar rápido; elasticidad es ajustarse a la demanda",
+    "en": "Agility means launching fast; elasticity means adjusting to demand"
+  },
+  {
+    "kind": "inner",
+    "es": "Algo nuevo disponible en minutos = agilidad. Crecer y encogerse según la carga = elasticidad.",
+    "en": "New resources available in minutes = agility. Scaling up and down with the workload = elasticity."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Agilidad es lanzar rápido; elasticidad es ajustarse a la demanda",
+    "en": "Mark as mastered: Agility means launching fast; elasticity means adjusting to demand"
+  },
+  {
+    "kind": "inner",
+    "es": "Dominada",
+    "en": "Mastered"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las dos suenan a rapidez; además, pueden aparecer juntas en un escenario de lanzamiento.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both sound like speed, and they can appear together in a launch scenario."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS enumera seis ventajas de la nube. «Aumentar la velocidad y la agilidad» habla de tener recursos nuevos en minutos para experimentar más. «Dejar de adivinar la capacidad» habla de subirla o bajarla según la demanda real, que es la elasticidad. La alta disponibilidad responde a otra pregunta: que el servicio siga en línea aunque falle una parte.",
+    "en": "AWS lists six advantages of the cloud. “Increase speed and agility” means getting new resources in minutes so you can experiment more. “Stop guessing capacity” means scaling it up or down based on actual demand: elasticity. High availability answers a different question: whether the service stays online when one part fails."
+  },
+  {
+    "kind": "inner",
+    "es": "Beneficios",
+    "en": "Benefits"
+  },
+  {
+    "kind": "inner",
+    "es": "02",
+    "en": "02"
+  },
+  {
+    "kind": "inner",
+    "es": "Economías de escala y gasto variable abaratan por caminos distintos",
+    "en": "Economies of scale and variable expense lower costs in different ways"
+  },
+  {
+    "kind": "inner",
+    "es": "Pagar solo lo que se consume = gasto variable. Precio más bajo porque AWS suma el uso de muchos clientes = economías de escala.",
+    "en": "Pay only for what you use = variable expense. Lower prices because AWS combines many customers’ usage = economies of scale."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Economías de escala y gasto variable abaratan por caminos distintos",
+    "en": "Mark as mastered: Economies of scale and variable expense lower costs in different ways"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Ambas pueden significar «sale más barato», así que parecen la misma ventaja.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both can mean “it costs less,” so they seem like the same advantage."
+  },
+  {
+    "kind": "inner",
+    "es": "Cambiar gasto fijo por variable significa no invertir por adelantado en centros de datos y servidores, y pagar solo cuando se consume. Las economías de escala vienen de que AWS suma el uso de cientos de miles de clientes. Con ese volumen cobra un precio por uso más bajo del que lograría una empresa por su cuenta.",
+    "en": "Trading fixed expense for variable expense means avoiding an upfront investment in data centers and servers, then paying only when you use them. Economies of scale come from AWS combining the usage of hundreds of thousands of customers. That volume lets AWS charge a lower usage price than a company could obtain on its own."
+  },
+  {
+    "kind": "inner",
+    "es": "Economía de la nube",
+    "en": "Cloud economics"
+  },
+  {
+    "kind": "inner",
+    "es": "03",
+    "en": "03"
+  },
+  {
+    "kind": "inner",
+    "es": "Los seis pilares de Well-Architected se distinguen por la pregunta que responden",
+    "en": "The six Well-Architected pillars differ in the questions they answer"
+  },
+  {
+    "kind": "inner",
+    "es": "Funcionar bien y de forma constante = fiabilidad. Usar el recurso adecuado conforme cambia la demanda = eficiencia del rendimiento. Energía o impacto ambiental = sostenibilidad.",
+    "en": "Working correctly and consistently = reliability. Using the right resources as demand changes = performance efficiency. Energy use or environmental impact = sustainability."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Los seis pilares de Well-Architected se distinguen por la pregunta que responden",
+    "en": "Mark as mastered: The six Well-Architected pillars differ in the questions they answer"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Varios pilares suenan a «que todo funcione bien». Apagar recursos que sobran ahorra dinero y energía a la vez, así que costos y sostenibilidad también se cruzan.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Several pillars sound like “making everything work well.” Turning off unused resources saves both money and energy, so cost optimization and sustainability overlap."
+  },
+  {
+    "kind": "inner",
+    "es": "La herramienta AWS Well-Architected mide una carga de trabajo contra las buenas prácticas del marco y da recomendaciones para mejorarla.",
+    "en": "The AWS Well-Architected Tool assesses a workload against the framework’s best practices and recommends improvements."
+  },
+  {
+    "kind": "inner",
+    "es": "Qué servicio responde a cada situación",
+    "en": "Which pillar fits each situation"
+  },
+  {
+    "kind": "inner",
+    "es": "Organizar al equipo, operar la carga y mejorarla con el tiempo",
+    "en": "Organize the team, operate the workload, and improve it over time"
+  },
+  {
+    "kind": "inner",
+    "es": "Excelencia operativa",
+    "en": "Operational excellence"
+  },
+  {
+    "kind": "inner",
+    "es": "Proteger datos, sistemas y activos",
+    "en": "Protect data, systems, and assets"
+  },
+  {
+    "kind": "inner",
+    "es": "Seguridad",
+    "en": "Security"
+  },
+  {
+    "kind": "inner",
+    "es": "Que la carga haga su función de forma correcta y constante",
+    "en": "Have the workload perform its function correctly and consistently"
+  },
+  {
+    "kind": "inner",
+    "es": "Fiabilidad",
+    "en": "Reliability"
+  },
+  {
+    "kind": "inner",
+    "es": "Usar los recursos con eficiencia conforme cambian la demanda y la tecnología",
+    "en": "Use resources efficiently as demand and technology change"
+  },
+  {
+    "kind": "inner",
+    "es": "Eficiencia del rendimiento",
+    "en": "Performance efficiency"
+  },
+  {
+    "kind": "inner",
+    "es": "Entregar valor de negocio al menor precio",
+    "en": "Deliver business value at the lowest price"
+  },
+  {
+    "kind": "inner",
+    "es": "Optimización de costos",
+    "en": "Cost optimization"
+  },
+  {
+    "kind": "inner",
+    "es": "Reducir el impacto ambiental, sobre todo el consumo de energía",
+    "en": "Reduce environmental impact, especially energy use"
+  },
+  {
+    "kind": "inner",
+    "es": "Sostenibilidad",
+    "en": "Sustainability"
+  },
+  {
+    "kind": "inner",
+    "es": "Well-Architected",
+    "en": "Well-Architected"
+  },
+  {
+    "kind": "inner",
+    "es": "04",
+    "en": "04"
+  },
+  {
+    "kind": "inner",
+    "es": "El AWS CAF tiene seis perspectivas y cuatro resultados de negocio",
+    "en": "The AWS CAF has six perspectives and four business outcomes"
+  },
+  {
+    "kind": "inner",
+    "es": "Negocio, personas, gobernanza, plataforma, seguridad y operaciones = perspectivas. Menos riesgo, mejor ESG, más ingresos y más eficiencia = resultados.",
+    "en": "Business, people, governance, platform, security, and operations = perspectives. Lower risk, better ESG, more revenue, and greater efficiency = outcomes."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: El AWS CAF tiene seis perspectivas y cuatro resultados de negocio",
+    "en": "Mark as mastered: The AWS CAF has six perspectives and four business outcomes"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las dos listas se parecen, y «gobernanza» aparece como perspectiva y también dentro del ESG.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> The two lists sound similar, and “governance” is both a perspective and part of ESG."
+  },
+  {
+    "kind": "inner",
+    "es": "El marco de adopción de la nube de AWS (AWS CAF) agrupa en seis perspectivas las capacidades que una organización necesita para adoptar la nube; cada perspectiva tiene sus propios responsables. Los resultados son lo que la transformación entrega al negocio: menor riesgo, mejor desempeño ambiental, social y de gobernanza (ESG), más ingresos y más eficiencia operativa.",
+    "en": "The AWS Cloud Adoption Framework (AWS CAF) groups the capabilities an organization needs to adopt the cloud into six perspectives; each has its own stakeholders. The outcomes are what the transformation delivers to the business: lower risk, better environmental, social, and governance (ESG) performance, more revenue, and greater operational efficiency."
+  },
+  {
+    "kind": "inner",
+    "es": "Adopción de la nube",
+    "en": "Cloud adoption"
+  },
+  {
+    "kind": "inner",
+    "es": "05",
+    "en": "05"
+  },
+  {
+    "kind": "inner",
+    "es": "Las siete estrategias de migración se distinguen por lo que le pasa a la aplicación",
+    "en": "The seven migration strategies differ in what happens to the application"
+  },
+  {
+    "kind": "inner",
+    "es": "Sin cambios = rehost. Con ajustes = replatform. Rediseño nativo = refactor. Otro producto = repurchase.",
+    "en": "No changes = rehost. Some adjustments = replatform. Cloud-native redesign = refactor. Different product = repurchase."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Las siete estrategias de migración se distinguen por lo que le pasa a la aplicación",
+    "en": "Mark as mastered: The seven migration strategies differ in what happens to the application"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Rehost, relocate y replatform suenan igual: mover la aplicación a la nube.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Rehost, relocate, and replatform all sound like moving an application to the cloud."
+  },
+  {
+    "kind": "inner",
+    "es": "Para migraciones grandes, AWS recomienda rehost, replatform o relocate, y dejar el rediseño para después de migrar, porque refactor es la estrategia más compleja.",
+    "en": "For large migrations, AWS recommends rehost, replatform, or relocate, then redesigning after migration because refactor is the most complex strategy."
+  },
+  {
+    "kind": "inner",
+    "es": "Moverla tal cual, sin cambios (lift and shift)",
+    "en": "Move it as-is, without changes (lift and shift)"
+  },
+  {
+    "kind": "inner",
+    "es": "Rehost",
+    "en": "Rehost"
+  },
+  {
+    "kind": "inner",
+    "es": "Moverla con algunos ajustes para aprovechar la nube (lift, tinker and shift)",
+    "en": "Move it with some adjustments to take advantage of the cloud (lift, tinker and shift)"
+  },
+  {
+    "kind": "inner",
+    "es": "Replatform",
+    "en": "Replatform"
+  },
+  {
+    "kind": "inner",
+    "es": "Rediseñarla con capacidades nativas de la nube",
+    "en": "Redesign it using cloud-native capabilities"
+  },
+  {
+    "kind": "inner",
+    "es": "Refactor",
+    "en": "Refactor"
+  },
+  {
+    "kind": "inner",
+    "es": "Cambiarla por otro producto, a menudo software como servicio o SaaS (drop and shop)",
+    "en": "Replace it with another product, often software as a service or SaaS (drop and shop)"
+  },
+  {
+    "kind": "inner",
+    "es": "Repurchase",
+    "en": "Repurchase"
+  },
+  {
+    "kind": "inner",
+    "es": "Pasar muchos servidores a la versión en la nube de la misma plataforma, sin comprar hardware ni reescribir",
+    "en": "Move many servers to the cloud version of the same platform, without buying hardware or rewriting"
+  },
+  {
+    "kind": "inner",
+    "es": "Relocate",
+    "en": "Relocate"
+  },
+  {
+    "kind": "inner",
+    "es": "Dejarla donde está por ahora",
+    "en": "Leave it where it is for now"
+  },
+  {
+    "kind": "inner",
+    "es": "Retain",
+    "en": "Retain"
+  },
+  {
+    "kind": "inner",
+    "es": "Apagarla porque ya no aporta valor",
+    "en": "Shut it down because it no longer adds value"
+  },
+  {
+    "kind": "inner",
+    "es": "Retire",
+    "en": "Retire"
+  },
+  {
+    "kind": "inner",
+    "es": "Migración",
+    "en": "Migration"
+  },
+  {
+    "kind": "inner",
+    "es": "06",
+    "en": "06"
+  },
+  {
+    "kind": "inner",
+    "es": "Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra",
+    "en": "With BYOL, you reuse your own license; with license included, AWS charges for it"
+  },
+  {
+    "kind": "inner",
+    "es": "Ya tiene licencias y quiere reusarlas = BYOL.",
+    "en": "Already has licenses and wants to reuse them = BYOL."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra",
+    "en": "Mark as mastered: With BYOL, you reuse your own license; with license included, AWS charges for it"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> En ambos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Either way, the software runs on AWS, so the difference can seem purely financial."
+  },
+  {
+    "kind": "inner",
+    "es": "Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y los hosts dedicados permiten usarlas.",
+    "en": "With license included, the service price covers the software license. Oracle Database Standard Edition 2 on Amazon RDS, for example, also supports BYOL. With BYOL (Bring Your Own License), a company uses licenses it has already purchased. Some licenses are counted by socket or physical core, and Dedicated Hosts let companies use them."
+  },
+  {
+    "kind": "inner",
+    "es": "07",
+    "en": "07"
+  },
+  {
+    "kind": "inner",
+    "es": "Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad",
+    "en": "Rightsizing changes instance size; Auto Scaling changes instance count"
+  },
+  {
+    "kind": "inner",
+    "es": "Instancias sobradas todo el tiempo = rightsizing. Carga que sube y baja = Auto Scaling.",
+    "en": "Oversized instances all the time = rightsizing. Workload rises and falls = Auto Scaling."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad",
+    "en": "Mark as mastered: Rightsizing changes instance size; Auto Scaling changes instance count"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Ambos ajustan la capacidad al uso para no pagar de más.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both adjust capacity to match usage and avoid overspending."
+  },
+  {
+    "kind": "inner",
+    "es": "El dimensionamiento correcto (rightsizing) elige el tipo y el tamaño de instancia que corresponden al uso real, al menor costo. Es una revisión continua. AWS Compute Optimizer da recomendaciones de este tipo. El escalado automático agrega o quita instancias según la demanda, sin cambiarles el tamaño.",
+    "en": "Rightsizing selects the instance type and size that fit actual usage at the lowest cost. It takes ongoing review. AWS Compute Optimizer provides recommendations for this. Auto Scaling adds or removes instances as demand changes without resizing them."
+  },
+  {
+    "kind": "inner",
+    "es": "Seguridad y cumplimiento <span class=\"conteo\">08–20</span>",
+    "en": "Security and Compliance <span class=\"conteo\">08–20</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "08",
+    "en": "08"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS protege la nube; el cliente protege lo que pone en ella",
+    "en": "AWS secures the cloud; customers secure what they put in it"
+  },
+  {
+    "kind": "inner",
+    "es": "Instalaciones, hardware, red y virtualización = AWS. Datos, identidades, configuración y sistema operativo invitado = cliente.",
+    "en": "Facilities, hardware, networking, and virtualization = AWS. Data, identities, configuration, and guest operating system = customer."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: AWS protege la nube; el cliente protege lo que pone en ella",
+    "en": "Mark as mastered: AWS secures the cloud; customers secure what they put in it"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> «Seguridad de la nube» y «seguridad en la nube» se leen casi igual.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> “Security OF the cloud” and “security IN the cloud” sound almost identical."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS responde por la seguridad de la nube: la infraestructura de hardware, software, red e instalaciones con la que opera todos sus servicios. El cliente responde por la seguridad en la nube: sus datos, sus accesos, su configuración y, según el servicio, el sistema operativo y las aplicaciones.",
+    "en": "AWS is responsible for security OF the cloud: the hardware, software, networking, and facilities that run its services. Customers are responsible for security IN the cloud: their data, access, configuration, and, depending on the service, operating systems and applications."
+  },
+  {
+    "kind": "inner",
+    "es": "Responsabilidad compartida",
+    "en": "Shared responsibility"
+  },
+  {
+    "kind": "inner",
+    "es": "09",
+    "en": "09"
+  },
+  {
+    "kind": "inner",
+    "es": "Lo que le toca al cliente cambia con cada servicio",
+    "en": "Customer responsibilities change from one service to another"
+  },
+  {
+    "kind": "inner",
+    "es": "EC2 = el cliente parcha el sistema operativo. S3 o DynamoDB = AWS opera hasta la plataforma.",
+    "en": "EC2 = the customer patches the operating system. S3 or DynamoDB = AWS operates through the platform layer."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Lo que le toca al cliente cambia con cada servicio",
+    "en": "Mark as mastered: Customer responsibilities change from one service to another"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> El modelo se aprende como una línea fija, pero esa línea cambia según el servicio.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> The shared responsibility model can look like a fixed dividing line, but that line shifts by service."
+  },
+  {
+    "kind": "inner",
+    "es": "Mientras más abstracto es el servicio, más capas opera AWS. Los datos, las opciones de cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.",
+    "en": "The more abstract the service, the more layers AWS operates. Data, encryption settings, and AWS Identity and Access Management (IAM) permissions always remain the customer’s responsibility."
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon EC2",
+    "en": "Amazon EC2"
+  },
+  {
+    "kind": "inner",
+    "es": "Cliente: sistema operativo invitado con sus parches, aplicaciones y grupo de seguridad",
+    "en": "Customer: guest operating system and its patches, applications, and security group"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon RDS",
+    "en": "Amazon RDS"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS: parches, respaldos y recuperación ante fallas. Cliente: datos, usuarios y acceso de red",
+    "en": "AWS: patches, backups, and failure recovery. Customer: data, users, and network access"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Lambda",
+    "en": "AWS Lambda"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS: servidores, sistema operativo, capacidad y escalado. Cliente: código, datos y permisos",
+    "en": "AWS: servers, operating system, capacity, and scaling. Customer: code, data, and permissions"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon S3 y DynamoDB",
+    "en": "Amazon S3 and DynamoDB"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS: infraestructura, sistema operativo y plataforma. Cliente: datos, opciones de cifrado y permisos",
+    "en": "AWS: infrastructure, operating system, and platform. Customer: data, encryption settings, and permissions"
+  },
+  {
+    "kind": "inner",
+    "es": "10",
+    "en": "10"
+  },
+  {
+    "kind": "inner",
+    "es": "En un control compartido, cada parte cubre su propia capa",
+    "en": "With shared controls, each party covers its own layer"
+  },
+  {
+    "kind": "inner",
+    "es": "Parches, configuración y capacitación = compartidos. Físicos y ambientales = heredados de AWS.",
+    "en": "Patching, configuration, and training = shared controls. Physical and environmental controls = inherited from AWS."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: En un control compartido, cada parte cubre su propia capa",
+    "en": "Mark as mastered: With shared controls, each party covers its own layer"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> «Compartido» suena a que AWS y el cliente hacen juntos la misma tarea.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> “Shared” can sound like AWS and the customer do the same task together."
+  },
+  {
+    "kind": "inner",
+    "es": "Un control heredado lo cumple AWS por completo y el cliente lo recibe tal cual, como los controles físicos y ambientales. En un control compartido, cada parte lo implementa en su capa: AWS parcha su infraestructura y el cliente parcha su sistema operativo invitado y sus aplicaciones; AWS capacita a su personal y el cliente al suyo. Los controles específicos del cliente, como separar datos en zonas de seguridad, son solo suyos.",
+    "en": "AWS handles inherited controls entirely, and customers receive them as they are, such as physical and environmental controls. With shared controls, each party handles its own layer: AWS patches its infrastructure while customers patch their guest operating systems and applications; AWS trains its staff while customers train theirs. Customer-specific controls, such as separating data into security zones, belong entirely to the customer."
+  },
+  {
+    "kind": "inner",
+    "es": "11",
+    "en": "11"
+  },
+  {
+    "kind": "inner",
+    "es": "CloudWatch, CloudTrail y Config responden tres preguntas distintas",
+    "en": "CloudWatch, CloudTrail, and Config answer three different questions"
+  },
+  {
+    "kind": "inner",
+    "es": "¿Cómo se comporta? = CloudWatch. ¿Quién hizo qué? = CloudTrail. ¿Cómo está configurado y si cumple? = Config.",
+    "en": "How is it performing? = CloudWatch. Who did what? = CloudTrail. How is it configured, and does it comply? = Config."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: CloudWatch, CloudTrail y Config responden tres preguntas distintas",
+    "en": "Mark as mastered: CloudWatch, CloudTrail, and Config answer three different questions"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los tres registran algo, y la guía los pone juntos en la misma habilidad de gobernanza y cumplimiento.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All three record something, and the exam guide groups them under the same governance and compliance skill."
+  },
+  {
+    "kind": "inner",
+    "es": "Un cambio de configuración deja rastro en los dos últimos: CloudTrail guarda quién hizo la llamada y Config, si está grabando ese tipo de recurso, guarda cómo quedó.",
+    "en": "A configuration change leaves a trail in the last two: CloudTrail records who made the call, while Config records the resulting configuration if it is recording that resource type."
+  },
+  {
+    "kind": "inner",
+    "es": "Métricas, registros y alarmas de recursos y aplicaciones",
+    "en": "Metrics, logs, and alarms for resources and applications"
+  },
+  {
+    "kind": "inner",
+    "es": "Quién hizo cada acción en la cuenta, y cuándo",
+    "en": "Who took each action in the account, and when"
+  },
+  {
+    "kind": "inner",
+    "es": "Historial de configuración de los recursos y su evaluación contra reglas",
+    "en": "Resource configuration history and evaluation against rules"
+  },
+  {
+    "kind": "inner",
+    "es": "Monitoreo y auditoría",
+    "en": "Monitoring and auditing"
+  },
+  {
+    "kind": "inner",
+    "es": "12",
+    "en": "12"
+  },
+  {
+    "kind": "inner",
+    "es": "Artifact entrega los reportes de AWS; Config evalúa tus recursos",
+    "en": "Artifact provides AWS reports; Config evaluates your resources"
+  },
+  {
+    "kind": "inner",
+    "es": "Descargar el reporte SOC o PCI de AWS = Artifact.",
+    "en": "Download an AWS SOC or PCI report = Artifact."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Artifact entrega los reportes de AWS; Config evalúa tus recursos",
+    "en": "Mark as mastered: Artifact provides AWS reports; Config evaluates your resources"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los dos aparecen cuando el enunciado dice «cumplimiento».",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both come up when a question mentions “compliance.”"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Artifact es el portal para descargar los documentos de cumplimiento de AWS, como los reportes SOC y PCI y las certificaciones ISO. Ahí también se aceptan acuerdos con AWS. Sirve para mostrarle a un auditor lo que AWS cumple de su lado. AWS Config revisa si los recursos del cliente cumplen las reglas que el cliente define.",
+    "en": "AWS Artifact is the portal for downloading AWS compliance documents, including SOC and PCI reports and ISO certifications. You can also accept agreements with AWS there. It helps show an auditor what AWS handles on its side. AWS Config checks whether customer resources comply with rules the customer defines."
+  },
+  {
+    "kind": "inner",
+    "es": "Cumplimiento",
+    "en": "Compliance"
+  },
+  {
+    "kind": "inner",
+    "es": "13",
+    "en": "13"
+  },
+  {
+    "kind": "inner",
+    "es": "Cinco servicios de seguridad, cinco preguntas distintas",
+    "en": "Five security services, five different questions"
+  },
+  {
+    "kind": "inner",
+    "es": "Vulnerabilidades = Inspector. Actividad sospechosa = GuardDuty. Causa raíz = Detective. Datos sensibles en S3 = Macie. Todo junto = Security Hub.",
+    "en": "Vulnerabilities = Inspector. Suspicious activity = GuardDuty. Root cause = Detective. Sensitive data in S3 = Macie. Combined findings = Security Hub."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Cinco servicios de seguridad, cinco preguntas distintas",
+    "en": "Mark as mastered: Five security services, five different questions"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todos buscan problemas de seguridad, y sus nombres no dicen qué buscan.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They all look for security problems, but their names don’t tell you what each one finds."
+  },
+  {
+    "kind": "inner",
+    "es": "Inspector revisa el software instalado. GuardDuty analiza registros de actividad de la cuenta, de la red y de DNS.",
+    "en": "Inspector checks installed software. GuardDuty analyzes account activity, network, and DNS logs."
+  },
+  {
+    "kind": "inner",
+    "es": "Vulnerabilidades de software y exposición de red en EC2, imágenes de contenedores y Lambda",
+    "en": "Software vulnerabilities and network exposure in EC2, container images, and Lambda"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Inspector",
+    "en": "Amazon Inspector"
+  },
+  {
+    "kind": "inner",
+    "es": "Actividad sospechosa o maliciosa en la cuenta",
+    "en": "Suspicious or malicious activity in the account"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon GuardDuty",
+    "en": "Amazon GuardDuty"
+  },
+  {
+    "kind": "inner",
+    "es": "Investigar un hallazgo hasta su causa raíz",
+    "en": "Investigate a finding down to its root cause"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Detective",
+    "en": "Amazon Detective"
+  },
+  {
+    "kind": "inner",
+    "es": "Datos sensibles, como datos personales, guardados en S3",
+    "en": "Sensitive data, such as personal information, stored in S3"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Macie",
+    "en": "Amazon Macie"
+  },
+  {
+    "kind": "inner",
+    "es": "Reunir hallazgos de varios servicios y revisar la postura contra estándares",
+    "en": "Bring together findings from multiple services and assess security posture against standards"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Security Hub",
+    "en": "AWS Security Hub"
+  },
+  {
+    "kind": "inner",
+    "es": "Protección",
+    "en": "Protection"
+  },
+  {
+    "kind": "inner",
+    "es": "14",
+    "en": "14"
+  },
+  {
+    "kind": "inner",
+    "es": "Shield frena DDoS, WAF filtra peticiones web y Firewall Manager administra las reglas",
+    "en": "Shield stops DDoS, WAF filters web requests, and Firewall Manager manages rules"
+  },
+  {
+    "kind": "inner",
+    "es": "Denegación de servicio = Shield. Inyección SQL o XSS = WAF. Reglas en todas las cuentas = Firewall Manager.",
+    "en": "Denial of service = Shield. SQL injection or XSS = WAF. Rules across all accounts = Firewall Manager."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Shield frena DDoS, WAF filtra peticiones web y Firewall Manager administra las reglas",
+    "en": "Mark as mastered: Shield stops DDoS, WAF filters web requests, and Firewall Manager manages rules"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los tres se presentan como protección del perímetro, y WAF y Shield suelen ir juntos.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All three are presented as perimeter protection, and WAF and Shield often appear together."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Shield Standard protege contra los ataques de denegación de servicio distribuido (DDoS) más comunes, sin costo adicional y sin configurarlo. Shield Advanced es de pago y agrega protección y ayuda especializada. AWS WAF filtra peticiones HTTP y HTTPS con reglas, por ejemplo contra inyección SQL y secuencias de comandos entre sitios (XSS). AWS Firewall Manager administra esas reglas de forma central en las cuentas de AWS Organizations.",
+    "en": "AWS Shield Standard protects against the most common distributed denial-of-service (DDoS) attacks at no additional cost, with no setup required. Shield Advanced is paid and adds protection and specialized help. AWS WAF filters HTTP and HTTPS requests using rules, for example, against SQL injection and cross-site scripting (XSS). AWS Firewall Manager manages those rules centrally across AWS Organizations accounts."
+  },
+  {
+    "kind": "inner",
+    "es": "15",
+    "en": "15"
+  },
+  {
+    "kind": "inner",
+    "es": "Claves, HSM dedicados, certificados y secretos viven en servicios separados",
+    "en": "Keys, dedicated HSMs, certificates, and secrets belong to separate services"
+  },
+  {
+    "kind": "inner",
+    "es": "Claves de cifrado = KMS. HSM dedicado = CloudHSM. Certificados TLS = ACM. Contraseñas que rotan = Secrets Manager.",
+    "en": "Encryption keys = KMS. Dedicated HSM = CloudHSM. TLS certificates = ACM. Rotating passwords = Secrets Manager."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Claves, HSM dedicados, certificados y secretos viven en servicios separados",
+    "en": "Mark as mastered: Keys, dedicated HSMs, certificates, and secrets belong to separate services"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todo suena a guardar algo secreto.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They all sound like ways to store something secret."
+  },
+  {
+    "kind": "inner",
+    "es": "Otros servicios de AWS, como S3 y EBS, se integran con KMS para cifrar sus datos con claves de KMS.",
+    "en": "Other AWS services, such as S3 and EBS, integrate with KMS to encrypt their data using KMS keys."
+  },
+  {
+    "kind": "inner",
+    "es": "Crear y controlar claves de cifrado administradas",
+    "en": "Create and control managed encryption keys"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Key Management Service (KMS)",
+    "en": "AWS Key Management Service (KMS)"
+  },
+  {
+    "kind": "inner",
+    "es": "Un módulo de seguridad de hardware (HSM) dedicado que controla el cliente",
+    "en": "A dedicated hardware security module (HSM) controlled by the customer"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS CloudHSM",
+    "en": "AWS CloudHSM"
+  },
+  {
+    "kind": "inner",
+    "es": "Emitir y renovar certificados SSL/TLS",
+    "en": "Issue and renew SSL/TLS certificates"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Certificate Manager",
+    "en": "AWS Certificate Manager"
+  },
+  {
+    "kind": "inner",
+    "es": "Guardar credenciales y rotarlas de forma automática",
+    "en": "Store credentials and rotate them automatically"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Secrets Manager",
+    "en": "AWS Secrets Manager"
+  },
+  {
+    "kind": "inner",
+    "es": "Cifrado y secretos",
+    "en": "Encryption and secrets"
+  },
+  {
+    "kind": "inner",
+    "es": "16",
+    "en": "16"
+  },
+  {
+    "kind": "inner",
+    "es": "El cifrado en tránsito protege el viaje; el cifrado en reposo protege lo guardado",
+    "en": "Encryption in transit protects data in motion; encryption at rest protects stored data"
+  },
+  {
+    "kind": "inner",
+    "es": "TLS o HTTPS = en tránsito. Datos guardados en S3, EBS o RDS = en reposo.",
+    "en": "TLS or HTTPS = in transit. Data stored in S3, EBS, or RDS = at rest."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: El cifrado en tránsito protege el viaje; el cifrado en reposo protege lo guardado",
+    "en": "Mark as mastered: Encryption in transit protects data in motion; encryption at rest protects stored data"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Ambas formas se llaman cifrado y muchos servicios ofrecen las dos.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both are called encryption, and many services offer both."
+  },
+  {
+    "kind": "inner",
+    "es": "El cifrado en tránsito protege los datos mientras viajan entre sistemas, con protocolos de cifrado como TLS. El cifrado en reposo protege los datos almacenados; en AWS se puede hacer con claves de AWS KMS.",
+    "en": "Encryption in transit protects data as it moves between systems, using encryption protocols such as TLS. Encryption at rest protects stored data; on AWS, you can use AWS KMS keys for it."
+  },
+  {
+    "kind": "inner",
+    "es": "17",
+    "en": "17"
+  },
+  {
+    "kind": "inner",
+    "es": "Un usuario de IAM tiene credenciales fijas; un rol se asume",
+    "en": "An IAM user has long-term credentials; a role is assumed"
+  },
+  {
+    "kind": "inner",
+    "es": "Credenciales temporales o acceso entre cuentas = rol.",
+    "en": "Temporary credentials or cross-account access = role."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Un usuario de IAM tiene credenciales fijas; un rol se asume",
+    "en": "Mark as mastered: An IAM user has long-term credentials; a role is assumed"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los dos reciben políticas de permisos, así que parecen dos formas de lo mismo.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both can have permission policies, so they may seem like two versions of the same thing."
+  },
+  {
+    "kind": "inner",
+    "es": "Un usuario de IAM es una identidad con credenciales de largo plazo: contraseña para la consola o claves de acceso para la línea de comandos (CLI) y los kits de desarrollo (SDK). Un rol no tiene credenciales de largo plazo; quien lo asume recibe credenciales temporales. Se usa para dar permisos a servicios, a otras cuentas o a identidades federadas.",
+    "en": "An IAM user is an identity with long-term credentials: a password for the console or access keys for the command line (CLI) and software development kits (SDK). A role has no long-term credentials; whoever assumes it receives temporary credentials. Roles grant permissions to services, other accounts, or federated identities."
+  },
+  {
+    "kind": "inner",
+    "es": "Identidad y acceso",
+    "en": "Identity and access"
+  },
+  {
+    "kind": "inner",
+    "es": "18",
+    "en": "18"
+  },
+  {
+    "kind": "inner",
+    "es": "IAM, IAM Identity Center y Cognito atienden a gente distinta",
+    "en": "IAM, IAM Identity Center, and Cognito serve different people"
+  },
+  {
+    "kind": "inner",
+    "es": "Empleados en varias cuentas = Identity Center. Usuarios de tu app = Cognito.",
+    "en": "Employees across multiple accounts = Identity Center. Users of your app = Cognito."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: IAM, IAM Identity Center y Cognito atienden a gente distinta",
+    "en": "Mark as mastered: IAM, IAM Identity Center, and Cognito serve different people"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los tres autentican usuarios.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All three authenticate users."
+  },
+  {
+    "kind": "inner",
+    "es": "IAM Identity Center antes se llamaba AWS Single Sign-On, y ese nombre sigue apareciendo en material de estudio.",
+    "en": "IAM Identity Center was previously called AWS Single Sign-On, and that name still appears in study materials."
+  },
+  {
+    "kind": "inner",
+    "es": "Identidades y permisos dentro de una cuenta de AWS",
+    "en": "Identities and permissions within an AWS account"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS IAM",
+    "en": "AWS IAM"
+  },
+  {
+    "kind": "inner",
+    "es": "Inicio de sesión único de los empleados en varias cuentas y aplicaciones",
+    "en": "Employee single sign-on across multiple accounts and applications"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS IAM Identity Center",
+    "en": "AWS IAM Identity Center"
+  },
+  {
+    "kind": "inner",
+    "es": "Registro e inicio de sesión de los usuarios de tus apps web y móviles",
+    "en": "Sign-up and sign-in for users of your web and mobile apps"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Cognito",
+    "en": "Amazon Cognito"
+  },
+  {
+    "kind": "inner",
+    "es": "19",
+    "en": "19"
+  },
+  {
+    "kind": "inner",
+    "es": "Una SCP pone el techo; una política de IAM da el permiso",
+    "en": "An SCP sets the ceiling; an IAM policy grants permission"
+  },
+  {
+    "kind": "inner",
+    "es": "Limitar lo que pueden hacer los usuarios y roles de las cuentas miembro = SCP.",
+    "en": "Limit what users and roles in member accounts can do = SCP."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Una SCP pone el techo; una política de IAM da el permiso",
+    "en": "Mark as mastered: An SCP sets the ceiling; an IAM policy grants permission"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las dos se escriben en JSON y hablan de permitir y negar acciones.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both use JSON to allow or deny actions."
+  },
+  {
+    "kind": "inner",
+    "es": "Las políticas de control de servicios (SCP) de AWS Organizations fijan el máximo de permisos para los usuarios y roles de las cuentas miembro, incluido su usuario raíz. Por sí mismas no otorgan nada. No afectan a la cuenta de administración. Para hacer una acción, una política de IAM tiene que permitirla y las SCP de cada nivel sobre la cuenta también: basta un nivel que no la permita para bloquearla.",
+    "en": "AWS Organizations service control policies (SCPs) set the maximum permissions for users and roles in member accounts, including their root users. They grant no permissions on their own and do not affect the management account. To take an action, an IAM policy must allow it, as must the SCPs at every level above the account: one level that does not allow it is enough to block it."
+  },
+  {
+    "kind": "inner",
+    "es": "20",
+    "en": "20"
+  },
+  {
+    "kind": "inner",
+    "es": "El usuario raíz se guarda para unas cuantas tareas",
+    "en": "Save the root user for a few specific tasks"
+  },
+  {
+    "kind": "inner",
+    "es": "En una cuenta independiente, cambiar el correo o la contraseña raíz, o cerrar la cuenta = usuario raíz.",
+    "en": "In a standalone account, changing the root email or password, or closing the account = root user."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: El usuario raíz se guarda para unas cuantas tareas",
+    "en": "Mark as mastered: Save the root user for a few specific tasks"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Como el usuario raíz puede hacer todo, parece la identidad natural para administrar.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> The root user can do everything, so it seems like the natural choice for administration."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS recomienda no usar el usuario raíz en el día a día, protegerlo con autenticación multifactor (MFA) y reservarlo para lo que lo exige. Eso incluye devolverle permisos a un administrador de IAM que se quitó los suyos. En una cuenta que no pertenece a AWS Organizations, también incluye cambiar el correo, la contraseña y las claves de acceso del usuario raíz, y cerrar la cuenta.",
+    "en": "AWS recommends keeping the root user out of day-to-day work, protecting it with multifactor authentication (MFA), and reserving it for tasks that require it. These include restoring permissions to an IAM administrator who removed their own. In an account outside AWS Organizations, they also include changing the root user's email, password, and access keys, and closing the account."
+  },
+  {
+    "kind": "inner",
+    "es": "Tecnología y servicios en la nube <span class=\"conteo\">21–37</span>",
+    "en": "Cloud Technology and Services <span class=\"conteo\">21–37</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "21",
+    "en": "21"
+  },
+  {
+    "kind": "inner",
+    "es": "Para AWS, la nube privada se llama «en las instalaciones»",
+    "en": "AWS calls the private cloud “on-premises”"
+  },
+  {
+    "kind": "inner",
+    "es": "Todo en AWS = en la nube. AWS y centro de datos propio conectados = híbrido. Todo en centro propio = en las instalaciones.",
+    "en": "Everything on AWS = cloud. AWS connected to your own data center = hybrid. Everything in your own data center = on-premises."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Para AWS, la nube privada se llama «en las instalaciones»",
+    "en": "Mark as mastered: AWS calls the private cloud “on-premises”"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Quien estudió otros temarios busca «pública, privada e híbrida» y no encuentra esos nombres en las opciones.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> If you studied another syllabus, you may look for “public, private, and hybrid” and not find those terms among the options."
+  },
+  {
+    "kind": "inner",
+    "es": "La guía del CLF-C02 nombra tres modelos de implementación: en la nube, híbrido y en las instalaciones (on-premises). En la nube, la aplicación corre por completo ahí. El híbrido conecta recursos de la nube con los que siguen fuera de ella. En las instalaciones, que AWS a veces llama nube privada, la infraestructura está en el centro de datos propio.",
+    "en": "The CLF-C02 guide names three deployment models: cloud, hybrid, and on-premises. In the cloud model, the application runs entirely in the cloud. Hybrid connects cloud resources to resources outside it. On-premises means the infrastructure is in your own data center; AWS sometimes calls this a private cloud."
+  },
+  {
+    "kind": "inner",
+    "es": "Implementación",
+    "en": "Deployment"
+  },
+  {
+    "kind": "inner",
+    "es": "22",
+    "en": "22"
+  },
+  {
+    "kind": "inner",
+    "es": "La consola sirve para una vez; lo que se repite va en código",
+    "en": "Use the console for one-off tasks; put repeatable work in code"
+  },
+  {
+    "kind": "inner",
+    "es": "Operación única = consola. Proceso repetible o automatizado = CLI, SDK o infraestructura como código.",
+    "en": "One-off task = console. Repeatable or automated process = CLI, SDK, or infrastructure as code."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: La consola sirve para una vez; lo que se repite va en código",
+    "en": "Mark as mastered: Use the console for one-off tasks; put repeatable work in code"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todo se puede hacer desde la consola, así que parece la respuesta segura.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> You can do everything from the console, so it seems like the safe answer."
+  },
+  {
+    "kind": "inner",
+    "es": "La consola de administración sirve para tareas puntuales mediante una interfaz visual. La CLI, los SDK y las API, que son las interfaces que usan los programas, permiten automatizar. Con infraestructura como código, como AWS CloudFormation, el entorno se describe en plantillas y se crea igual cada vez.",
+    "en": "The AWS Management Console provides a visual interface for one-off tasks. The CLI, SDKs, and APIs—the interfaces programs use—let you automate tasks. With infrastructure as code, such as AWS CloudFormation, you describe an environment in templates and create it the same way each time."
+  },
+  {
+    "kind": "inner",
+    "es": "23",
+    "en": "23"
+  },
+  {
+    "kind": "inner",
+    "es": "Región, zona de disponibilidad y ubicación periférica son tres niveles distintos",
+    "en": "Region, Availability Zone, and edge location are three different levels"
+  },
+  {
+    "kind": "inner",
+    "es": "Falla un centro de datos = varias AZ. Desastre regional, latencia o soberanía de datos = varias regiones. Contenido cerca del usuario = ubicación periférica.",
+    "en": "Data center failure = multiple AZs. Regional disaster, latency, or data sovereignty = multiple Regions. Content close to users = edge location."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Región, zona de disponibilidad y ubicación periférica son tres niveles distintos",
+    "en": "Mark as mastered: Region, Availability Zone, and edge location are three different levels"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las tres son lugares de AWS, y un escenario de alta disponibilidad parece pedir más regiones.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All three are AWS locations, and a high-availability scenario may seem to call for more Regions."
+  },
+  {
+    "kind": "inner",
+    "es": "Una región es una ubicación física con varias zonas de disponibilidad (AZ), aislada de las demás regiones. Cada AZ comprende uno o más centros de datos con energía, red y conectividad redundantes; las AZ no comparten puntos únicos de falla. Las ubicaciones periféricas acercan el contenido al usuario con Amazon CloudFront.",
+    "en": "A Region is a physical location with multiple Availability Zones (AZs), isolated from other Regions. Each AZ contains one or more data centers with redundant power, networking, and connectivity; AZs do not share single points of failure. Edge locations bring content closer to users through Amazon CloudFront."
+  },
+  {
+    "kind": "inner",
+    "es": "Infraestructura global",
+    "en": "Global infrastructure"
+  },
+  {
+    "kind": "inner",
+    "es": "24",
+    "en": "24"
+  },
+  {
+    "kind": "inner",
+    "es": "La familia de instancia se elige por el recurso que más usa la carga",
+    "en": "Choose an instance family by the resource your workload uses most"
+  },
+  {
+    "kind": "inner",
+    "es": "CPU intensiva = optimizada para cómputo. Datos grandes en memoria = optimizada para memoria. Mucha lectura y escritura local = optimizada para almacenamiento.",
+    "en": "CPU-intensive = compute optimized. Large datasets in memory = memory optimized. Heavy local reads and writes = storage optimized."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: La familia de instancia se elige por el recurso que más usa la carga",
+    "en": "Mark as mastered: Choose an instance family by the resource your workload uses most"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todas son máquinas virtuales de EC2, y las letras de cada familia no dicen nada a primera vista.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They are all EC2 virtual machines, and the letters in each family are not obvious at first glance."
+  },
+  {
+    "kind": "inner",
+    "es": "EC2 agrupa sus tipos de instancia en familias según el recurso que optimizan.",
+    "en": "EC2 groups instance types into families based on the resource they optimize."
+  },
+  {
+    "kind": "inner",
+    "es": "Balance entre cómputo, memoria y red",
+    "en": "Balance of compute, memory, and networking"
+  },
+  {
+    "kind": "inner",
+    "es": "Uso general",
+    "en": "General purpose"
+  },
+  {
+    "kind": "inner",
+    "es": "Lotes, transcodificación, servidores web de alto rendimiento, cómputo de alto rendimiento (HPC)",
+    "en": "Batch jobs, transcoding, high-performance web servers, high-performance computing (HPC)"
+  },
+  {
+    "kind": "inner",
+    "es": "Optimizada para cómputo",
+    "en": "Compute optimized"
+  },
+  {
+    "kind": "inner",
+    "es": "Conjuntos de datos grandes procesados en memoria",
+    "en": "Large datasets processed in memory"
+  },
+  {
+    "kind": "inner",
+    "es": "Optimizada para memoria",
+    "en": "Memory optimized"
+  },
+  {
+    "kind": "inner",
+    "es": "Lectura y escritura secuencial intensa sobre datos locales muy grandes",
+    "en": "Heavy sequential reads and writes on very large local datasets"
+  },
+  {
+    "kind": "inner",
+    "es": "Optimizada para almacenamiento",
+    "en": "Storage optimized"
+  },
+  {
+    "kind": "inner",
+    "es": "Aceleradores de hardware, como GPU",
+    "en": "Hardware accelerators, such as GPUs"
+  },
+  {
+    "kind": "inner",
+    "es": "Computación acelerada",
+    "en": "Accelerated computing"
+  },
+  {
+    "kind": "inner",
+    "es": "Cómputo",
+    "en": "Compute"
+  },
+  {
+    "kind": "inner",
+    "es": "25",
+    "en": "25"
+  },
+  {
+    "kind": "inner",
+    "es": "ECS, EKS, Fargate y Lambda resuelven capas distintas",
+    "en": "ECS, EKS, Fargate, and Lambda handle different layers"
+  },
+  {
+    "kind": "inner",
+    "es": "Kubernetes = EKS. Contenedores sin administrar servidores = Fargate. Código que corre por evento, hasta 15 minutos = Lambda.",
+    "en": "Kubernetes = EKS. Containers without managing servers = Fargate. Event-driven code, up to 15 minutes = Lambda."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: ECS, EKS, Fargate y Lambda resuelven capas distintas",
+    "en": "Mark as mastered: ECS, EKS, Fargate, and Lambda handle different layers"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los cuatro corren código sin que el cliente toque hardware, y Fargate funciona con ECS y con EKS.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All four run code without you handling hardware, and Fargate works with both ECS and EKS."
+  },
+  {
+    "kind": "inner",
+    "es": "ECS y EKS orquestan contenedores: ECS es el orquestador de AWS y EKS es Kubernetes administrado. Fargate es el motor sin servidor donde corren esos contenedores, sin administrar instancias de EC2. Lambda ejecuta funciones en respuesta a eventos, con un máximo de 15 minutos por ejecución.",
+    "en": "ECS and EKS orchestrate containers: ECS is AWS's orchestrator, while EKS is managed Kubernetes. Fargate is the serverless engine that runs those containers without managing EC2 instances. Lambda runs functions in response to events, with a maximum of 15 minutes per execution."
+  },
+  {
+    "kind": "inner",
+    "es": "26",
+    "en": "26"
+  },
+  {
+    "kind": "inner",
+    "es": "El balanceador reparte el tráfico; Auto Scaling decide cuántas instancias hay",
+    "en": "The load balancer distributes traffic; Auto Scaling decides how many instances run"
+  },
+  {
+    "kind": "inner",
+    "es": "Repartir peticiones entre instancias sanas = Elastic Load Balancing. Agregar o quitar instancias = Auto Scaling.",
+    "en": "Distribute requests across healthy instances = Elastic Load Balancing. Add or remove instances = Auto Scaling."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: El balanceador reparte el tráfico; Auto Scaling decide cuántas instancias hay",
+    "en": "Mark as mastered: The load balancer distributes traffic; Auto Scaling decides how many instances run"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> En los diagramas de arquitectura aparecen juntos, así que parecen un solo servicio.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They appear together in architecture diagrams, so they can look like one service."
+  },
+  {
+    "kind": "inner",
+    "es": "Elastic Load Balancing reparte el tráfico entrante entre varios destinos y deja de enviarlo a los que no están sanos. Amazon EC2 Auto Scaling mantiene el número de instancias y lo ajusta según la demanda; eso es lo que da elasticidad.",
+    "en": "Elastic Load Balancing distributes incoming traffic across multiple targets and stops sending it to unhealthy ones. Amazon EC2 Auto Scaling maintains the number of instances and adjusts it based on demand; that is what provides elasticity."
+  },
+  {
+    "kind": "inner",
+    "es": "27",
+    "en": "27"
+  },
+  {
+    "kind": "inner",
+    "es": "Cada modelo de datos tiene su base de datos administrada",
+    "en": "Each data model has a managed database option"
+  },
+  {
+    "kind": "inner",
+    "es": "Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Almacén de datos para análisis = Redshift.",
+    "en": "Relational = RDS or Aurora. Serverless NoSQL = DynamoDB. In-memory cache = ElastiCache. Analytics data warehouse = Redshift."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Cada modelo de datos tiene su base de datos administrada",
+    "en": "Mark as mastered: Each data model has a managed database option"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todas guardan datos, y todas las administra AWS.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They all store data, and AWS manages all of them."
+  },
+  {
+    "kind": "inner",
+    "es": "Primero se decide el modelo de datos. Después, si conviene que AWS administre la base o instalarla en EC2 para controlar el motor y el sistema operativo.",
+    "en": "First, choose the data model. Then decide whether AWS should manage the database or you should install it on EC2 to control the database engine and operating system."
+  },
+  {
+    "kind": "inner",
+    "es": "Relacional administrada, con varios motores",
+    "en": "Managed relational database with several engines"
+  },
+  {
+    "kind": "inner",
+    "es": "Relacional de AWS, compatible con MySQL y PostgreSQL",
+    "en": "AWS relational database compatible with MySQL and PostgreSQL"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Aurora",
+    "en": "Amazon Aurora"
+  },
+  {
+    "kind": "inner",
+    "es": "NoSQL de clave-valor y de documentos, sin servidor",
+    "en": "Serverless key-value and document NoSQL database"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon DynamoDB",
+    "en": "Amazon DynamoDB"
+  },
+  {
+    "kind": "inner",
+    "es": "Documentos, compatible con MongoDB",
+    "en": "Document database compatible with MongoDB"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon DocumentDB",
+    "en": "Amazon DocumentDB"
+  },
+  {
+    "kind": "inner",
+    "es": "Grafos",
+    "en": "Graphs"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Neptune",
+    "en": "Amazon Neptune"
+  },
+  {
+    "kind": "inner",
+    "es": "Caché en memoria",
+    "en": "In-memory cache"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon ElastiCache",
+    "en": "Amazon ElastiCache"
+  },
+  {
+    "kind": "inner",
+    "es": "Almacén de datos para análisis",
+    "en": "Analytics data warehouse"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Redshift",
+    "en": "Amazon Redshift"
+  },
+  {
+    "kind": "inner",
+    "es": "Control total del motor y del sistema operativo",
+    "en": "Full control of the database engine and operating system"
+  },
+  {
+    "kind": "inner",
+    "es": "Base de datos instalada en EC2",
+    "en": "Database installed on EC2"
+  },
+  {
+    "kind": "inner",
+    "es": "Bases de datos",
+    "en": "Databases"
+  },
+  {
+    "kind": "inner",
+    "es": "28",
+    "en": "28"
+  },
+  {
+    "kind": "inner",
+    "es": "DMS mueve los datos; SCT convierte el esquema",
+    "en": "DMS moves the data; SCT converts the schema"
+  },
+  {
+    "kind": "inner",
+    "es": "Motor de origen distinto al de destino = SCT para el esquema y DMS para los datos.",
+    "en": "Different source and target engines = SCT for the schema and DMS for the data."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: DMS mueve los datos; SCT convierte el esquema",
+    "en": "Mark as mastered: DMS moves the data; SCT converts the schema"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las dos herramientas aparecen en cualquier migración de base de datos.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both tools come up in database migrations."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Database Migration Service copia los datos de una base a otra: puede hacer una migración única o replicar los cambios en curso para mantener sincronizados el origen y el destino. AWS Schema Conversion Tool convierte el esquema y el código de la base cuando el motor cambia, por ejemplo de Oracle a Aurora PostgreSQL.",
+    "en": "AWS Database Migration Service copies data from one database to another: it can perform a one-time migration or replicate ongoing changes to keep the source and target in sync. AWS Schema Conversion Tool converts the schema and database code when the engine changes, for example, from Oracle to Aurora PostgreSQL."
+  },
+  {
+    "kind": "inner",
+    "es": "29",
+    "en": "29"
+  },
+  {
+    "kind": "inner",
+    "es": "El grupo de seguridad cuida la instancia; la ACL de red cuida la subred",
+    "en": "A security group protects the instance; a network ACL protects the subnet"
+  },
+  {
+    "kind": "inner",
+    "es": "Regla de denegar o nivel de subred = ACL de red. Solo permitir, a nivel de instancia = grupo de seguridad.",
+    "en": "Deny rule or subnet level = network ACL. Allow only, at the instance level = security group."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: El grupo de seguridad cuida la instancia; la ACL de red cuida la subred",
+    "en": "Mark as mastered: A security group protects the instance; a network ACL protects the subnet"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los dos filtran tráfico con reglas de puertos y direcciones dentro de una red virtual de AWS (VPC).",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both filter traffic with port and address rules inside an AWS virtual private cloud (VPC)."
+  },
+  {
+    "kind": "inner",
+    "es": "El grupo de seguridad se asocia a las instancias, solo admite reglas de permitir y tiene estado: si una conexión entra permitida, su respuesta sale sin otra regla. La lista de control de acceso (ACL) de red se asocia a la subred, admite reglas de permitir y de denegar, y no tiene estado: la entrada y la salida se permiten por separado.",
+    "en": "A security group is associated with instances, allows only allow rules, and is stateful: if a connection is allowed in, its response can leave without another rule. A network access control list (ACL) is associated with a subnet, allows both allow and deny rules, and is stateless: inbound and outbound traffic must each be allowed separately."
+  },
+  {
+    "kind": "inner",
+    "es": "Redes",
+    "en": "Networking"
+  },
+  {
+    "kind": "inner",
+    "es": "30",
+    "en": "30"
+  },
+  {
+    "kind": "inner",
+    "es": "Para conectar redes con AWS, el servicio depende de qué se conecta",
+    "en": "To connect networks to AWS, choose based on what needs to connect"
+  },
+  {
+    "kind": "inner",
+    "es": "Enlace físico dedicado = Direct Connect. Túnel cifrado por internet = Site-to-Site VPN. Personas desde su equipo = Client VPN.",
+    "en": "Dedicated physical link = Direct Connect. Encrypted tunnel over the internet = Site-to-Site VPN. People on their own devices = Client VPN."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Para conectar redes con AWS, el servicio depende de qué se conecta",
+    "en": "Mark as mastered: To connect networks to AWS, choose based on what needs to connect"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los cuatro conectan algo con una VPC.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All four connect something to a VPC."
+  },
+  {
+    "kind": "inner",
+    "es": "Direct Connect evita pasar por internet. Site-to-Site VPN sí viaja por internet, dentro de un túnel IPsec cifrado.",
+    "en": "Direct Connect avoids the internet. Site-to-Site VPN travels over the internet through an encrypted IPsec tunnel."
+  },
+  {
+    "kind": "inner",
+    "es": "Conexión física dedicada y privada desde el centro de datos",
+    "en": "Dedicated, private physical connection from a data center"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Direct Connect",
+    "en": "AWS Direct Connect"
+  },
+  {
+    "kind": "inner",
+    "es": "Túnel IPsec cifrado sobre internet entre una red y la VPC",
+    "en": "Encrypted IPsec tunnel over the internet between a network and the VPC"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Site-to-Site VPN",
+    "en": "AWS Site-to-Site VPN"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso de personas desde su propio dispositivo",
+    "en": "Access for people using their own devices"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Client VPN",
+    "en": "AWS Client VPN"
+  },
+  {
+    "kind": "inner",
+    "es": "Un concentrador que une muchas VPC y redes locales",
+    "en": "A hub connecting many VPCs and on-premises networks"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Transit Gateway",
+    "en": "AWS Transit Gateway"
+  },
+  {
+    "kind": "inner",
+    "es": "31",
+    "en": "31"
+  },
+  {
+    "kind": "inner",
+    "es": "CloudFront entrega contenido web, Global Accelerator acelera TCP y UDP, y Route 53 resuelve nombres",
+    "en": "CloudFront delivers web content, Global Accelerator speeds up TCP and UDP, and Route 53 resolves names"
+  },
+  {
+    "kind": "inner",
+    "es": "Contenido web en caché cerca del usuario = CloudFront. IP estáticas o tráfico que no es HTTP = Global Accelerator. DNS = Route 53.",
+    "en": "Cached web content near users = CloudFront. Static IP addresses or non-HTTP traffic = Global Accelerator. DNS = Route 53."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: CloudFront entrega contenido web, Global Accelerator acelera TCP y UDP, y Route 53 resuelve nombres",
+    "en": "Mark as mastered: CloudFront delivers web content, Global Accelerator speeds up TCP and UDP, and Route 53 resolves names"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los tres usan la red global de AWS y mejoran lo que percibe el usuario.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All three use the AWS global network and improve what users experience."
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon CloudFront es una red de entrega de contenido que guarda copias en las ubicaciones periféricas y también acelera contenido dinámico. AWS Global Accelerator da direcciones IP estáticas. Recibe los paquetes TCP o UDP en la ubicación periférica y los lleva a la región por la red de AWS. Amazon Route 53 es el servicio de DNS, el sistema que traduce nombres de dominio en direcciones: registra dominios, enruta el tráfico y revisa la salud de los destinos.",
+    "en": "Amazon CloudFront is a content delivery network that caches copies at edge locations and also speeds up dynamic content. AWS Global Accelerator provides static IP addresses. It receives TCP or UDP packets at an edge location and carries them to the Region over the AWS network. Amazon Route 53 is the DNS service, the system that translates domain names into addresses: it registers domains, routes traffic, and checks the health of destinations."
+  },
+  {
+    "kind": "inner",
+    "es": "32",
+    "en": "32"
+  },
+  {
+    "kind": "inner",
+    "es": "Bloque, archivo u objeto: la primera pregunta del almacenamiento",
+    "en": "Block, file, or object: the first storage question"
+  },
+  {
+    "kind": "inner",
+    "es": "Disco de una instancia = EBS. Carpeta compartida entre instancias Linux = EFS; entre instancias Windows = FSx for Windows File Server. Objetos por API = S3.",
+    "en": "Disk for an instance = EBS. Shared folder for Linux instances = EFS; for Windows instances = FSx for Windows File Server. Objects accessed through an API = S3."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Bloque, archivo u objeto: la primera pregunta del almacenamiento",
+    "en": "Mark as mastered: Block, file, or object: the first storage question"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> S3, EBS y EFS guardan datos y los tres tienen una S en el nombre.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> S3, EBS, and EFS all store data, and each has an S in its name."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Backup y Elastic Disaster Recovery se dedican a respaldos y recuperación. Storage Gateway también sirve para respaldar y archivar desde las instalaciones.",
+    "en": "AWS Backup and Elastic Disaster Recovery handle backups and recovery. Storage Gateway also supports backup and archiving from on-premises environments."
+  },
+  {
+    "kind": "inner",
+    "es": "Disco en bloques persistente para una instancia",
+    "en": "Persistent block storage for an instance"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon EBS",
+    "en": "Amazon EBS"
+  },
+  {
+    "kind": "inner",
+    "es": "Disco en bloques temporal, que se pierde al detener o terminar la instancia",
+    "en": "Temporary block storage, lost when the instance stops or terminates"
+  },
+  {
+    "kind": "inner",
+    "es": "Almacén de instancias",
+    "en": "Instance store"
+  },
+  {
+    "kind": "inner",
+    "es": "Sistema de archivos compartido por muchas instancias, con el protocolo NFS",
+    "en": "File system shared by many instances using the NFS protocol"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon EFS",
+    "en": "Amazon EFS"
+  },
+  {
+    "kind": "inner",
+    "es": "Sistemas de archivos de terceros: Windows File Server, Lustre, NetApp ONTAP, OpenZFS",
+    "en": "Third-party file systems: Windows File Server, Lustre, NetApp ONTAP, OpenZFS"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon FSx",
+    "en": "Amazon FSx"
+  },
+  {
+    "kind": "inner",
+    "es": "Objetos accesibles por API",
+    "en": "Objects accessible through an API"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon S3",
+    "en": "Amazon S3"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso local, en caché, a almacenamiento en la nube",
+    "en": "Cached local access to cloud storage"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Storage Gateway",
+    "en": "AWS Storage Gateway"
+  },
+  {
+    "kind": "inner",
+    "es": "Respaldos centralizados con políticas",
+    "en": "Centralized backups with policies"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Backup",
+    "en": "AWS Backup"
+  },
+  {
+    "kind": "inner",
+    "es": "Replicación continua para recuperar servidores tras un desastre",
+    "en": "Continuous replication to recover servers after a disaster"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Elastic Disaster Recovery",
+    "en": "AWS Elastic Disaster Recovery"
+  },
+  {
+    "kind": "inner",
+    "es": "Almacenamiento",
+    "en": "Storage"
+  },
+  {
+    "kind": "inner",
+    "es": "33",
+    "en": "33"
+  },
+  {
+    "kind": "inner",
+    "es": "La clase de S3 se elige por la frecuencia de acceso y por cuánto se puede esperar",
+    "en": "Choose an S3 storage class by access frequency and how long retrieval can take"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso impredecible = Intelligent-Tiering. Dato que se puede recrear = One Zone-IA. Puede esperar horas = Glacier Flexible Retrieval o Deep Archive.",
+    "en": "Unpredictable access = Intelligent-Tiering. Data you can recreate = One Zone-IA. Can wait hours = Glacier Flexible Retrieval or Deep Archive."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: La clase de S3 se elige por la frecuencia de acceso y por cuánto se puede esperar",
+    "en": "Mark as mastered: Choose an S3 storage class by access frequency and how long retrieval can take"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todas las clases guardan el mismo objeto; cambian el precio, las zonas de disponibilidad y el tiempo para recuperarlo.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Every class stores the same object; price, Availability Zones, and retrieval time vary."
+  },
+  {
+    "kind": "inner",
+    "es": "Las políticas de ciclo de vida mueven objetos de una clase a otra con reglas fijas, por ejemplo por antigüedad. Intelligent-Tiering los mueve solo entre sus propios niveles de acceso, dentro de la misma clase, según el acceso real.",
+    "en": "Lifecycle policies move objects between classes using fixed rules, such as an object's age. Intelligent-Tiering moves them only between its own access tiers, within the same class, based on actual access."
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso frecuente",
+    "en": "Frequent access"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Standard",
+    "en": "S3 Standard"
+  },
+  {
+    "kind": "inner",
+    "es": "Patrón de acceso desconocido o cambiante",
+    "en": "Unknown or changing access patterns"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Intelligent-Tiering",
+    "en": "S3 Intelligent-Tiering"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso poco frecuente, dato que no se puede recrear",
+    "en": "Infrequent access, data you cannot recreate"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Standard-IA",
+    "en": "S3 Standard-IA"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso poco frecuente, dato recreable; una sola AZ",
+    "en": "Infrequent access, data you can recreate; a single AZ"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 One Zone-IA",
+    "en": "S3 One Zone-IA"
+  },
+  {
+    "kind": "inner",
+    "es": "Archivo que se lee en milisegundos",
+    "en": "Archive retrieved in milliseconds"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Glacier Instant Retrieval",
+    "en": "S3 Glacier Instant Retrieval"
+  },
+  {
+    "kind": "inner",
+    "es": "Archivo que se recupera en minutos u horas",
+    "en": "Archive retrieved in minutes or hours"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Glacier Flexible Retrieval",
+    "en": "S3 Glacier Flexible Retrieval"
+  },
+  {
+    "kind": "inner",
+    "es": "Archivo que se consulta menos de una vez al año; recuperación en horas",
+    "en": "Archive accessed less than once a year; retrieval takes hours"
+  },
+  {
+    "kind": "inner",
+    "es": "S3 Glacier Deep Archive",
+    "en": "S3 Glacier Deep Archive"
+  },
+  {
+    "kind": "inner",
+    "es": "34",
+    "en": "34"
+  },
+  {
+    "kind": "inner",
+    "es": "Consultar, transformar, procesar, transmitir y visualizar son servicios distintos",
+    "en": "Querying, transforming, processing, streaming, and visualizing use different services"
+  },
+  {
+    "kind": "inner",
+    "es": "SQL sobre datos en S3 = Athena. ETL sin servidor = Glue. Datos en tiempo real = Kinesis. Tableros = Quick Sight.",
+    "en": "SQL queries on S3 data = Athena. Serverless ETL = Glue. Real-time data = Kinesis. Dashboards = Quick Sight."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Consultar, transformar, procesar, transmitir y visualizar son servicios distintos",
+    "en": "Mark as mastered: Querying, transforming, processing, streaming, and visualizing use different services"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todos trabajan con datos para análisis, y en una arquitectura real se usan encadenados.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They all work with data for analysis, and a real architecture may use them together."
+  },
+  {
+    "kind": "inner",
+    "es": "Por ejemplo, Kinesis puede recibir los datos, Glue transformarlos, Athena consultarlos y Quick Sight mostrarlos en un tablero.",
+    "en": "For example, Kinesis can receive the data, Glue can transform it, Athena can query it, and Quick Sight can display it on a dashboard."
+  },
+  {
+    "kind": "inner",
+    "es": "Consultas SQL directas sobre datos en S3, sin servidor",
+    "en": "Direct, serverless SQL queries on data in S3"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Athena",
+    "en": "Amazon Athena"
+  },
+  {
+    "kind": "inner",
+    "es": "Integración de datos y ETL (extraer, transformar y cargar), sin servidor",
+    "en": "Serverless data integration and ETL (extract, transform, and load)"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Glue",
+    "en": "AWS Glue"
+  },
+  {
+    "kind": "inner",
+    "es": "Clústeres de big data con Spark o Hadoop",
+    "en": "Big data clusters with Spark or Hadoop"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon EMR",
+    "en": "Amazon EMR"
+  },
+  {
+    "kind": "inner",
+    "es": "Flujos de datos en tiempo real",
+    "en": "Real-time data streams"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Kinesis",
+    "en": "Amazon Kinesis"
+  },
+  {
+    "kind": "inner",
+    "es": "Almacén de datos para análisis recurrente",
+    "en": "Data warehouse for recurring analysis"
+  },
+  {
+    "kind": "inner",
+    "es": "Tableros e inteligencia de negocios",
+    "en": "Dashboards and business intelligence"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Quick Sight",
+    "en": "Amazon Quick Sight"
+  },
+  {
+    "kind": "inner",
+    "es": "Análisis",
+    "en": "Analytics"
+  },
+  {
+    "kind": "inner",
+    "es": "35",
+    "en": "35"
+  },
+  {
+    "kind": "inner",
+    "es": "Los servicios de IA se reconocen por lo que reciben y lo que devuelven",
+    "en": "Identify AI services by what they take in and return"
+  },
+  {
+    "kind": "inner",
+    "es": "Voz a texto = Transcribe. Texto a voz = Polly. Chatbot = Lex. Entrenar un modelo propio = SageMaker AI.",
+    "en": "Speech to text = Transcribe. Text to speech = Polly. Chatbot = Lex. Train your own model = SageMaker AI."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Los servicios de IA se reconocen por lo que reciben y lo que devuelven",
+    "en": "Mark as mastered: Identify AI services by what they take in and return"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los nombres no dicen qué hacen, y varios trabajan con texto.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Their names do not explain what they do, and several work with text."
+  },
+  {
+    "kind": "inner",
+    "es": "Salvo SageMaker AI, estos servicios traen modelos ya entrenados y se usan por API sin saber de machine learning. Algunos, como Comprehend, también permiten entrenar modelos propios.",
+    "en": "Except for SageMaker AI, these services come with pretrained models and can be used through an API without knowing machine learning. Some, such as Comprehend, also let you train your own models."
+  },
+  {
+    "kind": "inner",
+    "es": "Crear, entrenar y desplegar modelos propios",
+    "en": "Create, train, and deploy your own models"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon SageMaker AI",
+    "en": "Amazon SageMaker AI"
+  },
+  {
+    "kind": "inner",
+    "es": "Chatbots e interfaces conversacionales",
+    "en": "Chatbots and conversational interfaces"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Lex",
+    "en": "Amazon Lex"
+  },
+  {
+    "kind": "inner",
+    "es": "Texto a voz",
+    "en": "Text to speech"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Polly",
+    "en": "Amazon Polly"
+  },
+  {
+    "kind": "inner",
+    "es": "Voz a texto",
+    "en": "Speech to text"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Transcribe",
+    "en": "Amazon Transcribe"
+  },
+  {
+    "kind": "inner",
+    "es": "Traducir texto entre idiomas",
+    "en": "Translate text between languages"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Translate",
+    "en": "Amazon Translate"
+  },
+  {
+    "kind": "inner",
+    "es": "Encontrar entidades, sentimiento y frases clave en un texto",
+    "en": "Find entities, sentiment, and key phrases in text"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Comprehend",
+    "en": "Amazon Comprehend"
+  },
+  {
+    "kind": "inner",
+    "es": "Extraer texto y datos de documentos escaneados",
+    "en": "Extract text and data from scanned documents"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Textract",
+    "en": "Amazon Textract"
+  },
+  {
+    "kind": "inner",
+    "es": "Analizar imágenes y video",
+    "en": "Analyze images and video"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Rekognition",
+    "en": "Amazon Rekognition"
+  },
+  {
+    "kind": "inner",
+    "es": "IA y machine learning",
+    "en": "AI and machine learning"
+  },
+  {
+    "kind": "inner",
+    "es": "36",
+    "en": "36"
+  },
+  {
+    "kind": "inner",
+    "es": "SNS empuja, SQS espera y EventBridge enruta",
+    "en": "SNS pushes, SQS holds, and EventBridge routes"
+  },
+  {
+    "kind": "inner",
+    "es": "Un mensaje a muchos suscriptores = SNS. Cola que desacopla = SQS. Eventos con reglas = EventBridge. Correo electrónico = SES.",
+    "en": "One message to many subscribers = SNS. A queue that decouples components = SQS. Rule-based events = EventBridge. Email = SES."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: SNS empuja, SQS espera y EventBridge enruta",
+    "en": "Mark as mastered: SNS pushes, SQS holds, and EventBridge routes"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Todos mueven mensajes entre partes de una aplicación.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> They all move messages between parts of an application."
+  },
+  {
+    "kind": "inner",
+    "es": "SNS entrega el mensaje a sus suscriptores en cuanto llega. En SQS el mensaje espera en la cola hasta que un consumidor lo pide.",
+    "en": "SNS delivers a message to its subscribers as soon as it arrives. In SQS, the message waits in the queue until a consumer requests it."
+  },
+  {
+    "kind": "inner",
+    "es": "Enviar un mensaje a muchos suscriptores",
+    "en": "Send one message to many subscribers"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon SNS",
+    "en": "Amazon SNS"
+  },
+  {
+    "kind": "inner",
+    "es": "Cola de mensajes que desacopla componentes",
+    "en": "Message queue that decouples components"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon SQS",
+    "en": "Amazon SQS"
+  },
+  {
+    "kind": "inner",
+    "es": "Bus de eventos que enruta con reglas",
+    "en": "Event bus that routes using rules"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon EventBridge",
+    "en": "Amazon EventBridge"
+  },
+  {
+    "kind": "inner",
+    "es": "Orquestar los pasos de un flujo de trabajo",
+    "en": "Orchestrate the steps of a workflow"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Step Functions",
+    "en": "AWS Step Functions"
+  },
+  {
+    "kind": "inner",
+    "es": "Enviar y recibir correo electrónico",
+    "en": "Send and receive email"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon SES",
+    "en": "Amazon SES"
+  },
+  {
+    "kind": "inner",
+    "es": "Centro de contacto en la nube (hoy se llama Amazon Connect Customer)",
+    "en": "Cloud contact center (now called Amazon Connect Customer)"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon Connect",
+    "en": "Amazon Connect"
+  },
+  {
+    "kind": "inner",
+    "es": "Integración de aplicaciones",
+    "en": "Application integration"
+  },
+  {
+    "kind": "inner",
+    "es": "37",
+    "en": "37"
+  },
+  {
+    "kind": "inner",
+    "es": "Escritorios, frontends, IoT y herramientas de desarrollo tienen su propio servicio",
+    "en": "Desktops, frontends, IoT, and developer tools each have their own service"
+  },
+  {
+    "kind": "inner",
+    "es": "Escritorio virtual completo = WorkSpaces. Aplicaciones transmitidas, sin escritorio persistente = AppStream 2.0. Seguir una petición entre servicios = X-Ray.",
+    "en": "Full virtual desktop = WorkSpaces. Streamed applications without a persistent desktop = AppStream 2.0. Trace a request across services = X-Ray."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Escritorios, frontends, IoT y herramientas de desarrollo tienen su propio servicio",
+    "en": "Mark as mastered: Desktops, frontends, IoT, and developer tools each have their own service"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Son servicios que se usan poco al estudiar y sus nombres se parecen entre sí.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> You may encounter these services less often while studying, and their names can sound alike."
+  },
+  {
+    "kind": "inner",
+    "es": "AppStream 2.0 hoy se llama WorkSpaces Applications, pero la guía del examen usa el nombre anterior.",
+    "en": "AppStream 2.0 is now called WorkSpaces Applications, but the exam guide uses the earlier name."
+  },
+  {
+    "kind": "inner",
+    "es": "Escritorios virtuales completos",
+    "en": "Full virtual desktops"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon WorkSpaces",
+    "en": "Amazon WorkSpaces"
+  },
+  {
+    "kind": "inner",
+    "es": "Transmitir aplicaciones sueltas (hoy se llama WorkSpaces Applications)",
+    "en": "Stream individual applications (now called WorkSpaces Applications)"
+  },
+  {
+    "kind": "inner",
+    "es": "Amazon AppStream 2.0",
+    "en": "Amazon AppStream 2.0"
+  },
+  {
+    "kind": "inner",
+    "es": "Acceso seguro desde el navegador a sitios internos",
+    "en": "Secure browser access to internal websites"
+  },
+  {
+    "kind": "inner",
+    "es": "Navegador seguro Amazon WorkSpaces",
+    "en": "Amazon WorkSpaces Secure Browser"
+  },
+  {
+    "kind": "inner",
+    "es": "Crear y hospedar frontends web y móviles",
+    "en": "Build and host web and mobile frontends"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Amplify",
+    "en": "AWS Amplify"
+  },
+  {
+    "kind": "inner",
+    "es": "Conectar y administrar dispositivos IoT",
+    "en": "Connect and manage IoT devices"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS IoT Core",
+    "en": "AWS IoT Core"
+  },
+  {
+    "kind": "inner",
+    "es": "Compilar código y correr pruebas",
+    "en": "Build code and run tests"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS CodeBuild",
+    "en": "AWS CodeBuild"
+  },
+  {
+    "kind": "inner",
+    "es": "Entrega continua de principio a fin",
+    "en": "End-to-end continuous delivery"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS CodePipeline",
+    "en": "AWS CodePipeline"
+  },
+  {
+    "kind": "inner",
+    "es": "Trazar peticiones entre servicios",
+    "en": "Trace requests across services"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS X-Ray",
+    "en": "AWS X-Ray"
+  },
+  {
+    "kind": "inner",
+    "es": "Otras categorías",
+    "en": "Other categories"
+  },
+  {
+    "kind": "inner",
+    "es": "Facturación, precios y soporte <span class=\"conteo\">38–45</span>",
+    "en": "Billing, pricing, and support <span class=\"conteo\">38–45</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "38",
+    "en": "38"
+  },
+  {
+    "kind": "inner",
+    "es": "La opción de compra de EC2 depende del compromiso y de la tolerancia a interrupciones",
+    "en": "Your EC2 purchasing option depends on your commitment and tolerance for interruptions"
+  },
+  {
+    "kind": "inner",
+    "es": "Puede interrumpirse = spot. Uso estable por 1 o 3 años = Savings Plans o instancias reservadas. Licencia por socket o núcleo = host dedicado.",
+    "en": "Can be interrupted = Spot Instances. Steady use for 1 or 3 years = Savings Plans or Reserved Instances. Per-socket or per-core license = Dedicated Hosts."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: La opción de compra de EC2 depende del compromiso y de la tolerancia a interrupciones",
+    "en": "Mark as mastered: Your EC2 purchasing option depends on your commitment and tolerance for interruptions"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Varias opciones ofrecen descuentos y varias hablan de «reservar».",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Several options offer discounts, and several use the word “reserve.”"
+  },
+  {
+    "kind": "inner",
+    "es": "Las reservas de capacidad aseguran capacidad pero, por sí solas, se cobran a precio bajo demanda; el descuento llega al combinarlas con Savings Plans o instancias reservadas regionales.",
+    "en": "Capacity Reservations guarantee capacity but, on their own, are billed at On-Demand rates; combine them with Savings Plans or regional Reserved Instances for a discount."
+  },
+  {
+    "kind": "inner",
+    "es": "Sin compromiso, pago por uso",
+    "en": "No commitment, pay for what you use"
+  },
+  {
+    "kind": "inner",
+    "es": "Instancias bajo demanda",
+    "en": "On-Demand Instances"
+  },
+  {
+    "kind": "inner",
+    "es": "Capacidad sobrante con gran descuento, que AWS puede recuperar",
+    "en": "Spare capacity at a steep discount that AWS can reclaim"
+  },
+  {
+    "kind": "inner",
+    "es": "Instancias de spot",
+    "en": "Spot Instances"
+  },
+  {
+    "kind": "inner",
+    "es": "Compromiso de gasto por hora a 1 o 3 años; el de cómputo es flexible entre familias, regiones y servicios",
+    "en": "Commitment to hourly spending for 1 or 3 years; Compute Savings Plans work across instance families, Regions, and services"
+  },
+  {
+    "kind": "inner",
+    "es": "Savings Plans",
+    "en": "Savings Plans"
+  },
+  {
+    "kind": "inner",
+    "es": "Compromiso con una configuración de instancia a 1 o 3 años",
+    "en": "Commitment to an instance configuration for 1 or 3 years"
+  },
+  {
+    "kind": "inner",
+    "es": "Instancias reservadas",
+    "en": "Reserved Instances"
+  },
+  {
+    "kind": "inner",
+    "es": "Servidor físico completo, con visibilidad de sockets y núcleos",
+    "en": "An entire physical server, with visibility into sockets and cores"
+  },
+  {
+    "kind": "inner",
+    "es": "Hosts dedicados",
+    "en": "Dedicated Hosts"
+  },
+  {
+    "kind": "inner",
+    "es": "Hardware aislado para la cuenta, sin control del servidor",
+    "en": "Hardware isolated for your account, without control of the server"
+  },
+  {
+    "kind": "inner",
+    "es": "Instancias dedicadas",
+    "en": "Dedicated Instances"
+  },
+  {
+    "kind": "inner",
+    "es": "Asegurar capacidad en una AZ",
+    "en": "Guarantee capacity in an AZ"
+  },
+  {
+    "kind": "inner",
+    "es": "Reservas de capacidad",
+    "en": "Capacity Reservations"
+  },
+  {
+    "kind": "inner",
+    "es": "Precios",
+    "en": "Pricing"
+  },
+  {
+    "kind": "inner",
+    "es": "39",
+    "en": "39"
+  },
+  {
+    "kind": "inner",
+    "es": "Savings Plans compromete dinero; una instancia reservada compromete una configuración",
+    "en": "Savings Plans commit you to spending; Reserved Instances commit you to a configuration"
+  },
+  {
+    "kind": "inner",
+    "es": "Descuento que también cubre Fargate y Lambda = Compute Savings Plans.",
+    "en": "Discount that also covers Fargate and Lambda = Compute Savings Plans."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Savings Plans compromete dinero; una instancia reservada compromete una configuración",
+    "en": "Mark as mastered: Savings Plans commit you to spending; Reserved Instances commit you to a configuration"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los dos dan descuento a cambio de un compromiso de uno o tres años.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both offer a discount in exchange for a 1- or 3-year commitment."
+  },
+  {
+    "kind": "inner",
+    "es": "Con Savings Plans, el cliente se compromete a gastar una cantidad por hora. Compute Savings Plans aplica sin importar familia, tamaño, sistema operativo, tenencia o región; también cubre Fargate y Lambda. Una instancia reservada compromete una configuración: la estándar da más descuento y la convertible permite cambiarla por otra. En AWS Organizations, los descuentos se comparten entre las cuentas de la facturación unificada, salvo que se desactive.",
+    "en": "With Savings Plans, you commit to spending a set amount per hour. Compute Savings Plans apply regardless of instance family, size, operating system, tenancy, or Region; they also cover Fargate and Lambda. A Reserved Instance commits you to a configuration: Standard offers a larger discount, while Convertible lets you exchange it for another configuration. In AWS Organizations, discounts are shared across accounts under consolidated billing unless sharing is turned off."
+  },
+  {
+    "kind": "inner",
+    "es": "40",
+    "en": "40"
+  },
+  {
+    "kind": "inner",
+    "es": "Meter datos a AWS desde internet no cuesta; sacarlos sí",
+    "en": "Data transfer in from the internet is free; data transfer out costs money"
+  },
+  {
+    "kind": "inner",
+    "es": "Salida a internet = se cobra. Entrada = en general sin costo.",
+    "en": "Out to the internet = charged. In = generally free."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Meter datos a AWS desde internet no cuesta; sacarlos sí",
+    "en": "Mark as mastered: Data transfer in from the internet is free; data transfer out costs money"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Parece lógico que mover datos cueste lo mismo en las dos direcciones.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> It seems reasonable to expect data transfer to cost the same in both directions."
+  },
+  {
+    "kind": "inner",
+    "es": "La transferencia desde internet hacia AWS no se cobra. La salida hacia internet sí; mientras más se transfiere, menos cuesta cada GB. Dentro de una región, algunos servicios no cobran el tráfico, pero pasar datos entre zonas de disponibilidad se cobra en los dos sentidos. Pasar datos a otra región también genera cargos.",
+    "en": "Data transfer in from the internet to AWS is free. Data transfer out to the internet is charged; the more you transfer, the less each GB costs. Within a Region, some services do not charge for traffic, but data transfer between Availability Zones is charged in both directions. Transferring data to another Region also incurs charges."
+  },
+  {
+    "kind": "inner",
+    "es": "41",
+    "en": "41"
+  },
+  {
+    "kind": "inner",
+    "es": "Estimar, analizar, avisar y detallar: una herramienta de costos para cada verbo",
+    "en": "Estimate, analyze, alert, and itemize: a cost tool for each job"
+  },
+  {
+    "kind": "inner",
+    "es": "Antes de construir = Calculadora de precios. Gasto pasado y pronóstico = Cost Explorer. Aviso al pasar un umbral = Budgets. Detalle máximo = CUR.",
+    "en": "Before you build = AWS Pricing Calculator. Past spending and forecasts = Cost Explorer. Alert at a threshold = Budgets. Most detail = CUR."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Estimar, analizar, avisar y detallar: una herramienta de costos para cada verbo",
+    "en": "Mark as mastered: Estimate, analyze, alert, and itemize: a cost tool for each job"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Las cuatro hablan de costos y viven juntas en la consola de facturación.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> All four deal with costs and sit together in the billing console."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Budgets avisa cuando el gasto real o pronosticado pasa un umbral. Con acciones de presupuesto, también puede aplicar una política de IAM o una SCP, o detener instancias de EC2 o RDS. Esas acciones corren solas o después de una aprobación.",
+    "en": "AWS Budgets alerts you when actual or forecasted spending crosses a threshold. Budget actions can also apply an IAM policy or an SCP, or stop EC2 or RDS instances. Those actions can run automatically or after approval."
+  },
+  {
+    "kind": "inner",
+    "es": "Estimar el costo antes de construir",
+    "en": "Estimate costs before you build"
+  },
+  {
+    "kind": "inner",
+    "es": "Calculadora de precios de AWS",
+    "en": "AWS Pricing Calculator"
+  },
+  {
+    "kind": "inner",
+    "es": "Ver y analizar el gasto, con pronóstico",
+    "en": "View and analyze spending, including forecasts"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Cost Explorer",
+    "en": "AWS Cost Explorer"
+  },
+  {
+    "kind": "inner",
+    "es": "Recibir una alerta cuando el gasto real o pronosticado pasa un umbral",
+    "en": "Get an alert when actual or forecasted spending crosses a threshold"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Budgets",
+    "en": "AWS Budgets"
+  },
+  {
+    "kind": "inner",
+    "es": "El detalle más completo de costo y uso, entregado en S3",
+    "en": "The most detailed cost and usage data, delivered to S3"
+  },
+  {
+    "kind": "inner",
+    "es": "Informe de costo y uso (CUR)",
+    "en": "AWS Cost and Usage Report (CUR)"
+  },
+  {
+    "kind": "inner",
+    "es": "Recomendaciones de tamaño de cómputo según el uso",
+    "en": "Compute sizing recommendations based on usage"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Compute Optimizer",
+    "en": "AWS Compute Optimizer"
+  },
+  {
+    "kind": "inner",
+    "es": "Costos",
+    "en": "Costs"
+  },
+  {
+    "kind": "inner",
+    "es": "42",
+    "en": "42"
+  },
+  {
+    "kind": "inner",
+    "es": "Una etiqueta no aparece en los reportes de costos hasta activarla",
+    "en": "A tag will not appear in cost reports until you activate it"
+  },
+  {
+    "kind": "inner",
+    "es": "Costos por proyecto o por área = etiquetas de asignación de costos, activadas.",
+    "en": "Costs by project or department = activated cost allocation tags."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Una etiqueta no aparece en los reportes de costos hasta activarla",
+    "en": "Mark as mastered: A tag will not appear in cost reports until you activate it"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Se etiqueta el recurso y se espera verlo de inmediato en el reporte de costos.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> You tag a resource and expect it to show up in the cost report right away."
+  },
+  {
+    "kind": "inner",
+    "es": "Hay etiquetas generadas por AWS, como createdBy, y etiquetas definidas por el usuario. Las dos se activan en la consola de Billing and Cost Management; solo entonces AWS las usa para organizar los costos en el reporte de asignación.",
+    "en": "There are AWS-generated tags, such as createdBy, and user-defined tags. You activate both in the Billing and Cost Management console; only then does AWS use them to organize costs in the allocation report."
+  },
+  {
+    "kind": "inner",
+    "es": "43",
+    "en": "43"
+  },
+  {
+    "kind": "inner",
+    "es": "Organizations agrupa las cuentas; Control Tower arma la zona de aterrizaje",
+    "en": "Organizations groups accounts; Control Tower sets up the landing zone"
+  },
+  {
+    "kind": "inner",
+    "es": "Facturación unificada y SCP = Organizations. Entorno de varias cuentas listo, con controles = Control Tower.",
+    "en": "Consolidated billing and SCP = Organizations. Ready-to-use multi-account environment with controls = Control Tower."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Organizations agrupa las cuentas; Control Tower arma la zona de aterrizaje",
+    "en": "Mark as mastered: Organizations groups accounts; Control Tower sets up the landing zone"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los dos administran varias cuentas.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Both manage multiple accounts."
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Organizations agrupa cuentas en unidades organizativas, unifica la facturación y aplica SCP. AWS Control Tower se apoya en Organizations para montar una zona de aterrizaje con controles ya configurados.",
+    "en": "AWS Organizations groups accounts into organizational units, consolidates billing, and applies SCP. AWS Control Tower uses Organizations to set up a landing zone with preconfigured controls."
+  },
+  {
+    "kind": "inner",
+    "es": "Cuentas",
+    "en": "Accounts"
+  },
+  {
+    "kind": "inner",
+    "es": "44",
+    "en": "44"
+  },
+  {
+    "kind": "inner",
+    "es": "Los planes de soporte del examen se distinguen por el TAM y el tiempo de respuesta",
+    "en": "The exam’s Support plans differ by TAM access and response time"
+  },
+  {
+    "kind": "inner",
+    "es": "TAM designado = Enterprise. Grupo de TAM = Enterprise On-Ramp. Teléfono 24/7 = desde Business. Solo web en horario laboral = Developer.",
+    "en": "Designated TAM = Enterprise. TAM team = Enterprise On-Ramp. 24/7 phone support = Business and above. Business-hours web support only = Developer."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Los planes de soporte del examen se distinguen por el TAM y el tiempo de respuesta",
+    "en": "Mark as mastered: The exam’s Support plans differ by TAM access and response time"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Los planes de pago comparten casi todo, y «Enterprise On-Ramp» suena a una versión menor de Business.",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Paid plans share many features, and “Enterprise On-Ramp” sounds like a step below Business."
+  },
+  {
+    "kind": "inner",
+    "es": "La guía del CLF-C02 nombra Developer, Business, Enterprise On-Ramp y Enterprise; el examen sigue esa guía. AWS descontinúa Developer, Business y Enterprise On-Ramp el 1 de enero de 2027; hoy ofrece Business Support+, Enterprise Support y Unified Operations. Basic, sin costo, incluye servicio al cliente, las revisiones centrales de Trusted Advisor y AWS Health.",
+    "en": "The CLF-C02 guide names Developer, Business, Enterprise On-Ramp, and Enterprise; the exam follows that guide. AWS will discontinue Developer, Business, and Enterprise On-Ramp on January 1, 2027; it currently offers Business Support+, Enterprise Support, and Unified Operations. Basic is free and includes customer service, core Trusted Advisor checks, and AWS Health."
+  },
+  {
+    "kind": "inner",
+    "es": "Experimentar o probar; web en horario laboral",
+    "en": "Experimenting or testing; business-hours web support"
+  },
+  {
+    "kind": "inner",
+    "es": "Developer",
+    "en": "Developer"
+  },
+  {
+    "kind": "inner",
+    "es": "Mínimo recomendado para producción; teléfono, web y chat 24/7; todas las revisiones de Trusted Advisor",
+    "en": "Minimum recommended for production; 24/7 phone, web, and chat support; all Trusted Advisor checks"
+  },
+  {
+    "kind": "inner",
+    "es": "Business",
+    "en": "Business"
+  },
+  {
+    "kind": "inner",
+    "es": "Cargas críticas; un grupo de gerentes técnicos de cuenta (TAM); menos de 30 minutos si cae un sistema crítico",
+    "en": "Critical workloads; a team of technical account managers (TAM); under 30 minutes for a critical system outage"
+  },
+  {
+    "kind": "inner",
+    "es": "Enterprise On-Ramp",
+    "en": "Enterprise On-Ramp"
+  },
+  {
+    "kind": "inner",
+    "es": "Cargas críticas; TAM designado; menos de 15 minutos si cae un sistema crítico",
+    "en": "Critical workloads; designated TAM; under 15 minutes for a critical system outage"
+  },
+  {
+    "kind": "inner",
+    "es": "Enterprise",
+    "en": "Enterprise"
+  },
+  {
+    "kind": "inner",
+    "es": "Soporte",
+    "en": "Support"
+  },
+  {
+    "kind": "inner",
+    "es": "45",
+    "en": "45"
+  },
+  {
+    "kind": "inner",
+    "es": "Cada necesidad tiene a quién acudir en AWS",
+    "en": "Know where to turn at AWS for each need"
+  },
+  {
+    "kind": "inner",
+    "es": "Reportar abuso desde recursos de AWS = Trust &amp; Safety. Consultoría de AWS = Professional Services. Software de terceros = Marketplace.",
+    "en": "Report abuse from AWS resources = Trust &amp; Safety. AWS consulting = Professional Services. Third-party software = Marketplace."
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Marcar como dominada: Cada necesidad tiene a quién acudir en AWS",
+    "en": "Mark as mastered: Know where to turn at AWS for each need"
+  },
+  {
+    "kind": "inner",
+    "es": "<span class=\"rotulo\">Dónde se confunde:</span> Varias opciones suenan a «pedirle ayuda a AWS».",
+    "en": "<span class=\"rotulo\">Where it gets confusing:</span> Several options sound like ways to ask AWS for help."
+  },
+  {
+    "kind": "inner",
+    "es": "Trust &amp; Safety atiende el abuso que sale de recursos de AWS. Un problema técnico de tu propia cuenta va con AWS Support.",
+    "en": "Trust &amp; Safety handles abuse originating from AWS resources. For a technical issue with your own account, contact AWS Support."
+  },
+  {
+    "kind": "inner",
+    "es": "Reportar spam, ataques o contenido ilegal que sale de recursos de AWS",
+    "en": "Report spam, attacks, or illegal content originating from AWS resources"
+  },
+  {
+    "kind": "inner",
+    "es": "Equipo de confianza y seguridad (Trust &amp; Safety)",
+    "en": "Trust &amp; Safety team"
+  },
+  {
+    "kind": "inner",
+    "es": "Consultoría del propio equipo de AWS",
+    "en": "Consulting from AWS’s own team"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Professional Services",
+    "en": "AWS Professional Services"
+  },
+  {
+    "kind": "inner",
+    "es": "Integradores y proveedores de software externos",
+    "en": "Third-party integrators and software providers"
+  },
+  {
+    "kind": "inner",
+    "es": "Socios de la AWS Partner Network (APN)",
+    "en": "AWS Partner Network (APN) partners"
+  },
+  {
+    "kind": "inner",
+    "es": "Comprar software de terceros",
+    "en": "Buy third-party software"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Marketplace",
+    "en": "AWS Marketplace"
+  },
+  {
+    "kind": "inner",
+    "es": "Revisiones automáticas de buenas prácticas en la cuenta",
+    "en": "Automated best-practice checks for your account"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Trusted Advisor",
+    "en": "AWS Trusted Advisor"
+  },
+  {
+    "kind": "inner",
+    "es": "Eventos de AWS que afectan tus recursos",
+    "en": "AWS events affecting your resources"
+  },
+  {
+    "kind": "inner",
+    "es": "Panel de AWS Health",
+    "en": "AWS Health Dashboard"
+  },
+  {
+    "kind": "inner",
+    "es": "Artículos de AWS con respuestas a preguntas frecuentes",
+    "en": "AWS articles answering frequently asked questions"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS Knowledge Center",
+    "en": "AWS Knowledge Center"
+  },
+  {
+    "kind": "inner",
+    "es": "Preguntas y respuestas de la comunidad",
+    "en": "Community questions and answers"
+  },
+  {
+    "kind": "inner",
+    "es": "AWS re:Post",
+    "en": "AWS re:Post"
+  },
+  {
+    "kind": "inner",
+    "es": "Estas 45 diferencias salen de cruzar la guía oficial del examen, la documentación de cada servicio y lo que reporta quien ya lo presentó. Ninguna reproduce preguntas del examen ni preguntas de práctica oficiales de AWS.",
+    "en": "These 45 Differences draw on the official exam guide, each service’s documentation, and reports from people who have taken the exam. None reproduce exam questions or official AWS practice questions."
+  },
+  {
+    "kind": "inner",
+    "es": "practicarlas <span aria-hidden=\"true\">→</span>",
+    "en": "practice them <span aria-hidden=\"true\">→</span>"
+  }
+]

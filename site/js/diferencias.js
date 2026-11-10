@@ -32,9 +32,9 @@ let dominadas = new Set(leer(CLAVE_DOMINADAS) || leer(CLAVE_LEGACY) || []);
 
 function pintarEstado() {
   if (!estado) return;
-  estado.textContent = dominadas.size === 0
-    ? `${total} diferencias`
-    : `${dominadas.size} de ${total} dominadas`;
+  const ingles = document.documentElement.lang.startsWith("en");
+  if (dominadas.size === 0) estado.textContent = ingles ? `${total} differences` : `${total} diferencias`;
+  else estado.textContent = ingles ? `${dominadas.size} of ${total} mastered` : `${dominadas.size} de ${total} dominadas`;
 }
 
 function aplicarDominadas() {

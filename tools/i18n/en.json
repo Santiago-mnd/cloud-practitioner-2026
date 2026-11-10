@@ -71,16 +71,6 @@
   },
   {
     "kind": "inner",
-    "es": "English",
-    "en": "Español"
-  },
-  {
-    "kind": "inner",
-    "es": "EN",
-    "en": "ES"
-  },
-  {
-    "kind": "inner",
     "es": "¿CloudTrail o CloudWatch?<br>¿Shield o WAF?<br><span class=\"marca\">¿EBS o EFS?</span>",
     "en": "CloudTrail or CloudWatch?<br>Shield or WAF?<br><span class=\"marca\">EBS or EFS?</span>"
   },
@@ -3922,5 +3912,26 @@
     "kind": "inner",
     "es": "practicarlas <span aria-hidden=\"true\">→</span>",
     "en": "practice them <span aria-hidden=\"true\">→</span>"
+  },
+  {
+    "kind": "inner",
+    "es": "EN",
+    "en": "EN"
+  },
+  {
+    "kind": "inner",
+    "es": "ES",
+    "en": "ES"
+  },
+  {
+    "kind": "inner",
+    "es": "|",
+    "en": "|"
+  },
+  {
+    "kind": "attr",
+    "attr": "aria-label",
+    "es": "Idioma",
+    "en": "Language"
   }
 ]

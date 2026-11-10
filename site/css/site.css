@@ -586,13 +586,18 @@ html { scroll-padding-top: calc(var(--cabecera) + 20px); }
 }
 
 /* cambio de idioma */
-.menu a.idioma {
+.menu .idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding-left: 18px;
   border-left: 1px solid var(--grid);
-  color: var(--ink-mute);
   font-size: 15px;
+  color: var(--ink-mute);
 }
-.menu a.idioma:hover { color: var(--ink); }
+.menu .idioma a { color: var(--ink-mute); }
+.menu .idioma a:hover { color: var(--ink); }
+.menu .idioma-actual { color: var(--ink); font-weight: 600; }
 @media (max-width: 560px) {
-  .menu a.idioma { padding-left: 0; border-left: 0; }
+  .menu .idioma { padding-left: 0; border-left: 0; }
 }

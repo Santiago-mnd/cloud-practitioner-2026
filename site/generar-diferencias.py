@@ -540,7 +540,7 @@ doc = f"""<!doctype html>
       <a href="/diferencias" aria-current="page">Diferencias</a>
       <a href="/metodo">Método</a>
       <a href="/examen"><span class="largo">Día del examen</span><span class="corto">Examen</span></a>
-      <a class="idioma" href="/en/differences" hreflang="en" lang="en"><span class="largo">English</span><span class="corto">EN</span></a>
+      <div class="idioma" role="group" aria-label="Idioma"><a href="/en/differences" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><span class="idioma-actual" lang="es">ES</span></div>
     </nav>
   </div>
 </header>

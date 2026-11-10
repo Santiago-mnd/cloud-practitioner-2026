@@ -56,7 +56,10 @@ function relink(html: string, spanishRoute: string): string {
     .map((line) => {
       if (line.includes('rel="alternate"')) return line;
       if (line.includes('class="idioma"')) {
-        return line.replace(/<a class="idioma" href="[^"]*" hreflang="en" lang="en">/, `<a class="idioma" href="${spanishRoute}" hreflang="es" lang="es">`);
+        return line.replace(
+          /<div class="idioma"[\s\S]*?<\/div>/,
+          `<div class="idioma" role="group" aria-label="Language"><span class="idioma-actual" lang="en">EN</span><span aria-hidden="true">|</span><a href="${spanishRoute}" hreflang="es" lang="es">ES</a></div>`,
+        );
       }
       let next = line
         .replace('<html lang="es-MX">', '<html lang="en-US">')

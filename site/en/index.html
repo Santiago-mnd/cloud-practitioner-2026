@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuaderno Cloud Practitioner · 45 key CLF-C02 differences, in English and Spanish</title>
+<meta name="description" content="The 45 differences between services often confused on the AWS Certified Cloud Practitioner (CLF-C02) exam, explained one by one. Includes an OnVUE guide; free, in English and Spanish, with no account needed.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/en">
+<link rel="alternate" hreflang="es-MX" href="https://cloud-practitioner.sintitulo.dev/">
+<link rel="alternate" hreflang="en-US" href="https://cloud-practitioner.sintitulo.dev/en">
+<link rel="alternate" hreflang="x-default" href="https://cloud-practitioner.sintitulo.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/en">
+<meta property="og:title" content="Cuaderno Cloud Practitioner: 45 key CLF-C02 differences, in English and Spanish">
+<meta property="og:description" content="The 45 differences between services often confused on the AWS Certified Cloud Practitioner (CLF-C02) exam, plus an OnVUE guide. Free, in English and Spanish, with no account needed.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cuaderno Cloud Practitioner: 45 key CLF-C02 differences, in English and Spanish">
+<meta name="twitter:description" content="The 45 differences between services often confused on the AWS Certified Cloud Practitioner (CLF-C02) exam, plus an OnVUE guide. Free, in English and Spanish, with no account needed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: CloudTrail or CloudWatch? Shield or WAF? EBS or EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/en">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno Cloud Practitioner
+    </a>
+    <nav class="menu" aria-label="Sections">
+      <a class="nav-cta" href="/en/practice">Practice</a>
+      <a href="/en/differences">Differences</a>
+      <a href="/en/method">Method</a>
+      <a href="/en/exam"><span class="largo">Exam day</span><span class="corto">Exam</span></a>
+      <div class="idioma" role="group" aria-label="Language"><span class="idioma-actual" lang="en">EN</span><span aria-hidden="true">|</span><a href="/" hreflang="es" lang="es">ES</a></div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1">
+
+  <section class="limite pad" style="padding-top: 80px">
+    <div class="rejilla" style="align-items: end">
+      <div class="col-8">
+        <h1>CloudTrail or CloudWatch?<br>Shield or WAF?<br><span class="marca">EBS or EFS?</span></h1>
+        <p class="prosa" style="max-width: 64ch; margin-top: 28px">On the CLF&#8209;C02, the wrong answers are real services too. These 45 AWS Certified Cloud Practitioner differences show you where services overlap and which phrase points to the answer.</p>
+        <p class="meta" style="margin-top: 20px">Built from the official exam guide and AWS documentation; checked against both in September 2026.</p>
+      </div>
+      <div class="col-4">
+        <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap">
+          <a class="cta grande" href="/en/differences">See the differences</a>
+          <p class="meta">45 differences, about 25 minutes<br>no account or email needed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="limite pad seccion" id="diferencias" data-revelar aria-labelledby="titulo-diferencias">
+    <h2 class="sr" id="titulo-diferencias">One difference, one question</h2>
+    <div class="rejilla" style="align-items: start">
+      <div class="col-7">
+        <div class="tarjeta">
+          <p style="font-size: 26px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Which service records who took each action in your AWS account?</p>
+          <ul class="opciones" aria-hidden="true">
+            <li class="opcion"><span class="letra">A</span><span>Amazon CloudWatch</span></li>
+            <li class="opcion correcta"><span class="letra">B</span><span>AWS CloudTrail</span></li>
+            <li class="opcion"><span class="letra">C</span><span>AWS Config</span></li>
+          </ul>
+          <p class="densa" style="margin-top: 22px">CloudWatch measures how resources behave; Config records their configuration. But the question asks “who did what”: CloudTrail records that.</p>
+          <p style="margin-top: 24px"><strong class="pista">Who did what? = CloudTrail.</strong></p>
+        </div>
+      </div>
+      <div class="col-5">
+        <p class="nota">three services, three different questions</p>
+        <p class="prosa" style="margin-top: 18px">The wrong answers sound plausible because they’re real services. That’s why each group of similar services has a phrase that sets them apart.</p>
+        <ul class="lista-limpia" style="margin-top: 24px">
+          <li class="densa">An SCP sets the permissions ceiling; it grants no permissions by itself.</li>
+          <li class="densa">AWS Budgets sends alerts; with actions, it can also stop instances.</li>
+          <li class="densa">Data transfer in from the internet to AWS is free; data transfer out costs money.</li>
+          <li class="densa">Shield Standard is included; Shield Advanced costs extra.</li>
+        </ul>
+        <p style="margin-top: 20px"><a href="/en/differences" style="font-weight: 600">See all 45 differences</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="banda" id="practica" data-revelar>
+    <div class="limite pad">
+      <div class="rejilla" style="align-items: start">
+        <div class="col-5">
+          <h2>Practice is on the way</h2>
+          <p class="prosa" style="margin-top: 20px">The bank of 240 original questions is being built, with questions distributed by each exam domain’s weight. Questions you miss will return a few minutes later, then the next day, until you recognize the answer.</p>
+          <p class="prosa" style="margin-top: 16px">The practice exam will have 65 questions in 90 minutes, like the real exam. You pass the CLF&#8209;C02 with 700 out of 1000: that’s a scaled score, not a percentage of correct answers.</p>
+        </div>
+        <div class="col-7">
+          <div class="tarjeta">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 22px">
+              <h3>Here’s how your progress will look <span class="etiqueta-ejemplo">example</span></h3>
+              <span class="meta">saved in this browser</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 18px">
+              <div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 16px; color: var(--ink-soft); flex-wrap: wrap"><span>Cloud Concepts</span><span><strong style="font-weight: 600">83%</strong> correct <span class="meta">· 25 of 58 seen</span></span></div>
+                <div class="barra-avance"><i style="width: 83%"></i></div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 16px; color: var(--ink-soft); flex-wrap: wrap"><span>Security and Compliance</span><span><strong style="font-weight: 600">71%</strong> correct <span class="meta">· 30 of 72 seen</span></span></div>
+                <div class="barra-avance"><i style="width: 71%"></i></div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 16px; color: var(--ink-soft); flex-wrap: wrap"><span>Cloud Technology and Services</span><span><strong style="font-weight: 600">64%</strong> correct <span class="meta">· 38 of 81 seen</span></span></div>
+                <div class="barra-avance"><i style="width: 64%"></i></div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 16px; color: var(--ink-soft); flex-wrap: wrap"><span>Billing, Pricing, and Support</span><span><strong style="font-weight: 600">48%</strong> correct <span class="meta">· 12 of 29 seen</span></span></div>
+                <div class="barra-avance"><i class="baja" style="width: 48%"></i></div>
+              </div>
+            </div>
+            <p class="nota" style="margin-top: 22px">start with your lowest-scoring domain →</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="limite pad seccion" id="metodo" data-revelar>
+    <h2>How to study with this notebook</h2>
+    <p class="prosa" style="max-width: 70ch; margin-top: 16px">Follow these four steps. The third usually takes the most effort; it’s also the easiest to skip.</p>
+    <ol class="lista-limpia" style="margin-top: 36px; gap: 24px; max-width: 900px">
+      <li style="display: flex; gap: 22px; align-items: baseline">
+        <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">1</span>
+        <div><h3>Start with an analogy, not a fact</h3><p class="densa" style="margin-top: 6px">If you can explain a concept using something from everyday life, you understand it. If you can’t yet, you may have only memorized the fact.</p></div>
+      </li>
+      <li style="display: flex; gap: 22px; align-items: baseline">
+        <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">2</span>
+        <div><h3>Find the phrase that decides the answer</h3><p class="densa" style="margin-top: 6px">Look for each topic’s short hint: “who did what?” separates CloudTrail from CloudWatch in two seconds.</p></div>
+      </li>
+      <li style="display: flex; gap: 22px; align-items: baseline">
+        <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">3</span>
+        <div><h3>Write down every mistake, not every topic</h3><p class="densa" style="margin-top: 6px">Your mistake log is worth more than any summary: it shows you exactly which questions could cost you points.</p></div>
+      </li>
+      <li style="display: flex; gap: 22px; align-items: baseline">
+        <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">4</span>
+        <div><h3>Take a full practice exam without breaks</h3><p class="densa" style="margin-top: 6px">Take the practice exam in one sitting, with a timer; you’ll see how you answer under exam time limits.</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="banda-oscura" id="examen" data-revelar>
+    <div class="limite pad">
+      <div class="rejilla" style="align-items: start">
+        <div class="col-5">
+          <h2>Many exams go wrong before the first question</h2>
+          <p class="prosa" style="margin-top: 18px">You can also take the CLF&#8209;C02 online with OnVUE, Pearson VUE’s software; your computer must meet its requirements. This list covers the rules Pearson VUE publishes for AWS and problems that come up in practice.</p>
+        </div>
+        <div class="col-7">
+          <ul class="lista-limpia">
+            <li style="display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="densa" style="color: inherit">Run the system test on the same computer and network you’ll use for the exam.</span>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="densa" style="color: inherit">No virtual machines. If you have WSL, Docker, or emulators installed, Hyper&#8209;V is often active even if you never turned it on; disabling it requires a restart.</span>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="densa" style="color: inherit">Avoid VPNs and corporate or public networks. Stop the VPN <em>service</em>: Tailscale and similar apps can restart even after you close their windows.</span>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="densa" style="color: inherit">Start check&#8209;in 30 minutes early. You’ll test your equipment, photograph yourself and your ID, and scan your room in 360 degrees.</span>
+            </li>
+            <li style="display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
+              <span class="densa" style="color: inherit">Use one screen, no headphones, and a room to yourself. Bring an official ID with a name that exactly matches your booking.</span>
+            </li>
+          </ul>
+          <p style="margin-top: 26px"><a href="/en/exam" style="color: #FF9900; font-weight: 600">See the full exam day guide</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="limite pad seccion" data-revelar>
+    <div class="cierre">
+      <div>
+        <h2>Start with the differences</h2>
+        <p class="prosa" style="margin-top: 16px">You can read all 45 differences in about 25 minutes. Mark the ones you’ve mastered to remove them from your hint sheet; practice with a breakdown by domain will come later.</p>
+      </div>
+      <div class="cierre-accion">
+        <a class="cta grande" href="/en/differences">See the differences</a>
+        <p class="meta" style="margin-top: 12px">You don’t need to install anything or create an account. Your marks stay in this browser; they aren’t sent to a server.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">This notebook draws on the official CLF&#8209;C02 guide and AWS documentation; it uses the same method that helped pass the AZ&#8209;900. The 45 differences connect exam topics with services that are easy to confuse. It’s free and will stay free.</p>
+        <p class="nota">read it all on exam morning</p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Site sections">
+        <h2>The notebook</h2>
+        <a href="/en/practice">Practice</a>
+        <a href="/en/differences">Differences</a>
+        <a href="/en/method">Method</a>
+        <a href="/en/exam"><span class="largo">Exam </span>day</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Who made it</h2>
+        <a href="https://santiagos.mx/en/">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Support the project</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Notice.</strong> Cuaderno Cloud Practitioner is a free personal project; it is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates. This material can help you study, but it does not guarantee a passing score. The practice questions were written for this site; none come from the real exam. I prepared some content with AI assistance and checked it against the official documentation; if you find an error, let me know on <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">I checked the content against the official CLF-C02 guide and AWS documentation in September 2026. If the exam topics change, check the current information at docs.aws.amazon.com.</p>
+      <p class="sello">You don’t need an account or email; the site doesn’t use cookies either. Analytics collects page views, country, and browser without building profiles or tracking you across sites. Your study progress stays in your browser.</p>
+      <p class="sello">This is the second free resource from sintitulo.dev; more are coming.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+<script src="/js/cabecera.js" defer></script>
+</body>
+</html>

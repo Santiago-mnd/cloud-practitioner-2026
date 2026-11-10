@@ -2,7 +2,50 @@
 
 [![Cuaderno Cloud Practitioner](site/og.png)](https://cloud-practitioner.sintitulo.dev)
 
-Guía estática y gratuita, en español de México, para estudiar el examen **AWS Certified Cloud Practitioner (CLF-C02)**. No requiere cuenta ni correo; tampoco rastrea entre sitios, y cada persona conserva su avance en el navegador mediante `localStorage`.
+## English
+
+**Cuaderno Cloud Practitioner** is a free study site for the **AWS Certified Cloud Practitioner (CLF-C02)** exam. Read it in [English](https://cloud-practitioner.sintitulo.dev/en) or [Spanish](https://cloud-practitioner.sintitulo.dev). You can use it without an account or email address; your progress stays in your browser through `localStorage`.
+
+### What you’ll find
+
+- **45 key differences** between services or concepts that are easy to confuse. Each entry explains the confusion, what actually happens, and the hint that decides the answer.
+- **A four-step study method** built around analogies, one hint per topic, an error log, and a timed practice exam.
+- **An online exam guide** covering Pearson VUE OnVUE’s system test, virtual machines, VPNs, identification, check-in, and results.
+- **Practice questions in development.** The planned bank of 240 original questions, diagnostic quiz, spaced review, and timed mock exam are not available yet.
+
+### The exam
+
+The exam has 65 questions and lasts 90 minutes; 50 questions count toward the score. A passing score is 700 out of 1,000, and the exam costs USD 100. It is available in English and Latin American Spanish, among other languages.
+
+| Domain | Weight |
+| --- | ---: |
+| Cloud Concepts | 24% |
+| Security and Compliance | 30% |
+| Cloud Technology and Services | 34% |
+| Billing, Pricing, and Support | 12% |
+
+The study questions are original, with none copied from the real exam or AWS’s official practice set. The content draws on AWS documentation verified on September 24, 2026, with a source and date for each fact. Author Santiago (**santiagos.mx**) has not yet taken the CLF-C02 exam.
+
+### Development and contributions
+
+Development details are in the Spanish section below. To regenerate the differences and then the English pages, run these commands from the repository root:
+
+```bash
+(cd site && python3 generar-diferencias.py)
+(cd tools && pnpm install && node localize.ts)
+```
+
+The English pages are generated from the Spanish pages using `tools/localize.ts` and `tools/i18n/en.json`. Issues are welcome in either language, especially for factual errors cited against AWS documentation or English phrasing that sounds unnatural.
+
+### Trademarks and license
+
+This project is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates.
+
+The code in `site/css/`, `site/js/`, and the Python scripts is licensed under [MIT](LICENSE). The site text, the differences, and `research/` are licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT). You may use and adapt that content if you credit Santiago García Arellano and link to this repository.
+
+## Español
+
+Guía estática y gratuita, en español de México y con [versión en inglés](https://cloud-practitioner.sintitulo.dev/en), para estudiar el examen **AWS Certified Cloud Practitioner (CLF-C02)**. No requiere cuenta ni correo; tampoco rastrea entre sitios, y cada persona conserva su avance en el navegador mediante `localStorage`.
 
 **Sitio:** [cloud-practitioner.sintitulo.dev](https://cloud-practitioner.sintitulo.dev)
 
@@ -30,6 +73,7 @@ Este es el segundo cuaderno de la serie. El primero preparó al autor para el ex
 
 ## Repositorio
 
+- `tools/`: scripts en TypeScript para extraer, revisar y traducir los textos del sitio (`text-blocks.ts`, `localize.ts`).
 - `site/`: sitio estático en HTML, CSS y JavaScript, sin paso de compilación; Vercel lo despliega desde esta carpeta.
 - `research/`: investigación y fuentes. Incluye la logística del examen (`00-research.md`), el temario oficial con 135 puntos identificados (`01-exam-outline.md`), servicios dentro y fuera del alcance (`02-services.md`), recursos oficiales gratuitos (`03-official-resources.md`), 110 pares trampa candidatos junto con una tabla de equivalencias Azure ↔ AWS (`04-trap-pairs.md`), experiencias de la comunidad identificadas como tales (`05-community-experience.md`) y el plan (`06-plan.md`).
 
@@ -39,11 +83,14 @@ Para servir el sitio en local:
 cd site && pnpm dlx serve .
 ```
 
-Para regenerar las diferencias:
+Para regenerar las diferencias y después las páginas en inglés (desde la raíz del repositorio):
 
 ```bash
-cd site && python3 generar-diferencias.py
+(cd site && python3 generar-diferencias.py)
+(cd tools && pnpm install && node localize.ts)
 ```
+
+Las páginas de `site/en/` no se editan a mano: salen de las páginas en español y del diccionario `tools/i18n/en.json`. Si cambias un texto en español, agrega su traducción al diccionario; `localize.ts` avisa qué falta.
 
 ## Contribuir
 

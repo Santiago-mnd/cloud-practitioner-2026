@@ -584,3 +584,20 @@ html { scroll-padding-top: calc(var(--cabecera) + 20px); }
   .menu .largo { display: none; }
   .menu .corto { display: inline; }
 }
+
+/* cambio de idioma */
+.menu .idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 18px;
+  border-left: 1px solid var(--grid);
+  font-size: 15px;
+  color: var(--ink-mute);
+}
+.menu .idioma a { color: var(--ink-mute); }
+.menu .idioma a:hover { color: var(--ink); }
+.menu .idioma-actual { color: var(--ink); font-weight: 600; }
+@media (max-width: 560px) {
+  .menu .idioma { padding-left: 0; border-left: 0; }
+}

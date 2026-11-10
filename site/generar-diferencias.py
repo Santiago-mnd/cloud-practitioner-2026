@@ -500,6 +500,9 @@ doc = f"""<!doctype html>
 <title>Las {total} diferencias clave del CLF-C02 · Cuaderno Cloud Practitioner</title>
 <meta name="description" content="Las {total} diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden los servicios, qué pasa en realidad y qué frase decide la respuesta.">
 <link rel="canonical" href="{SITE_URL}/diferencias">
+<link rel="alternate" hreflang="es-MX" href="{SITE_URL}/diferencias">
+<link rel="alternate" hreflang="en-US" href="{SITE_URL}/en/differences">
+<link rel="alternate" hreflang="x-default" href="{SITE_URL}/diferencias">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cuaderno Cloud Practitioner">
 <meta property="og:locale" content="es_MX">
@@ -537,6 +540,7 @@ doc = f"""<!doctype html>
       <a href="/diferencias" aria-current="page">Diferencias</a>
       <a href="/metodo">Método</a>
       <a href="/examen"><span class="largo">Día del examen</span><span class="corto">Examen</span></a>
+      <div class="idioma" role="group" aria-label="Idioma"><a href="/en/differences" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><span class="idioma-actual" lang="es">ES</span></div>
     </nav>
   </div>
 </header>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exam day: an OnVUE guide · Cuaderno Cloud Practitioner</title>
+<meta name="description" content="What to check before and during the online CLF-C02 exam with OnVUE: system test, virtual machines, VPN, ID, check-in, and results.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/en/exam">
+<link rel="alternate" hreflang="es-MX" href="https://cloud-practitioner.sintitulo.dev/examen">
+<link rel="alternate" hreflang="en-US" href="https://cloud-practitioner.sintitulo.dev/en/exam">
+<link rel="alternate" hreflang="x-default" href="https://cloud-practitioner.sintitulo.dev/examen">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/en/exam">
+<meta property="og:title" content="CLF-C02 exam day: an OnVUE guide">
+<meta property="og:description" content="System test, virtual machines, VPN, ID, and check-in. Check the computer issues that could cost you your exam.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CLF-C02 exam day: an OnVUE guide">
+<meta name="twitter:description" content="System test, virtual machines, VPN, ID, and check-in. Check the computer issues that could cost you your exam.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: CloudTrail or CloudWatch? Shield or WAF? EBS or EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/en">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno Cloud Practitioner
+    </a>
+    <nav class="menu" aria-label="Sections">
+      <a class="nav-cta" href="/en/practice">Practice</a>
+      <a href="/en/differences">Differences</a>
+      <a href="/en/method">Method</a>
+      <a href="/en/exam" aria-current="page"><span class="largo">Exam day</span><span class="corto">Exam</span></a>
+      <div class="idioma" role="group" aria-label="Language"><span class="idioma-actual" lang="en">EN</span><span aria-hidden="true">|</span><a href="/examen" hreflang="es" lang="es">ES</a></div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
+
+  <div style="max-width: 68ch">
+    <h1>Exam day</h1>
+    <p class="prosa" style="margin-top: 22px">You can take the CLF&#8209;C02 at a Pearson VUE test center or online with OnVUE. If you choose the online exam, your computer and room must meet the requirements too; otherwise, Pearson VUE cancels your appointment and you lose the fee.</p>
+    <p class="meta" style="margin-top: 18px">Here are the rules Pearson VUE publishes for AWS, along with AWS policies, reviewed in September 2026 and paired with problems people encounter in practice. Confirm the formal requirements in your appointment email.</p>
+  </div>
+
+  <section class="seccion" data-revelar>
+    <h2>When you schedule</h2>
+    <ul class="lista-limpia" style="margin-top: 24px; gap: 22px; max-width: 72ch">
+      <li>
+        <h3>Schedule through your AWS Certification account</h3>
+        <p class="densa" style="margin-top: 8px">Create an account at aws.training/Certification with an AWS Builder ID; it’s separate from an AWS account. From there, you’ll go to Pearson VUE to choose a test center or online exam, date, and time. The exam costs 100 USD, plus applicable taxes.</p>
+      </li>
+      <li>
+        <h3>Choose your exam language carefully</h3>
+        <p class="densa" style="margin-top: 8px">A Latin American Spanish version is available; during the exam, a button lets you view each question in English. If you take it in English and your native language is different, you can request 30 extra minutes (ESL +30) in your account before scheduling. You only need to request it once.</p>
+        <p class="densa" style="margin-top: 8px">For online exams, Spanish-language proctoring is available Monday through Friday, from 10:00 to 17:45 U.S. Eastern Time. English-language proctoring is available around the clock.</p>
+      </li>
+      <li>
+        <h3>There’s a limit on rescheduling</h3>
+        <p class="densa" style="margin-top: 8px">You can reschedule up to 24 hours before your appointment, at most twice per appointment. Cancel more than 24 hours ahead and you’ll get a refund; cancel later, or miss the appointment, and you’ll lose the fee.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <h2>In the days before</h2>
+    <ul class="lista-limpia" style="margin-top: 24px; gap: 22px; max-width: 72ch">
+      <li>
+        <h3>Run the system test on your computer and network</h3>
+        <p class="densa" style="margin-top: 8px">Pearson VUE asks you to run the test on the same computer and network you’ll use for the exam; testing another machine doesn’t check yours. Sign in first: in a private browsing window, the test may run without saving the result.</p>
+      </li>
+      <li>
+        <h3>Avoid virtual machines, and check Hyper-V</h3>
+        <p class="densa" style="margin-top: 8px">Pearson VUE prohibits virtual machines. Check Hyper-V as a precaution, too: WSL, Docker, or emulators may leave it active without your knowledge, and turning it off requires a restart. One person reported on AWS re:Post that OnVUE mistook their personal laptop for a virtual machine during the CLF&#8209;C02, so they ended up taking the exam at a center.</p>
+        <p class="densa" style="margin-top: 8px">To check on Windows, open PowerShell as an administrator and run: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 uses the virtual machine platform even when Hyper-V appears disabled.</p>
+      </li>
+      <li>
+        <h3>Check your ID</h3>
+        <p class="densa" style="margin-top: 8px">It must be a valid government-issued photo ID. A passport, plastic driver’s license, or national ID card will work. Your first and last names must match your AWS Certification account exactly; a middle name isn’t required. If they differ, correct your account at least two business days before the exam.</p>
+      </li>
+      <li>
+        <h3>Have a backup plan</h3>
+        <p class="densa" style="margin-top: 8px">If the system test fails or you can’t guarantee a room to yourself, you can choose a Pearson VUE test center: it costs the same and avoids those risks. You’ll need two forms of ID there, either two primary IDs or one primary and one secondary ID. You have until 24 hours before your appointment to decide.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="banda" data-revelar style="margin-left: calc(var(--gutter) * -1); margin-right: calc(var(--gutter) * -1); padding-left: var(--gutter); padding-right: var(--gutter)">
+    <div style="max-width: 72ch">
+      <h2>Half an hour before</h2>
+      <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
+        <li class="densa">Restart your computer; close everything except OnVUE, including Teams, Slack, Discord, music, and browsers.</li>
+        <li class="densa">Disconnect your VPN; avoid corporate, public, or shared networks. Stop the VPN <em>service</em>, not just its window: Tailscale and similar apps can restart themselves. On Windows, run <code>Stop-Service</code> followed by <code>Set-Service -StartupType Disabled</code>; turn it back on after the exam.</li>
+        <li class="densa">Ask everyone at home to avoid streaming shows or downloading large files.</li>
+        <li class="densa">As a precaution, turn off automatic updates so Windows doesn’t restart during the exam.</li>
+        <li class="densa">Use one screen. Disconnect a second monitor and any additional touchscreen; if you can’t remove one, disconnect it and cover it.</li>
+        <li class="densa">Clear your desk: keep only your computer and, if you want one, a drink in an unlabeled container. Keep paper, pens, your phone, your watch, and headphones out of arm’s reach.</li>
+        <li class="densa">Don’t use headphones: you need your computer’s speakers and microphone.</li>
+        <li class="densa">You must be alone in a quiet room. Bathrooms and public places, such as offices or coffee shops, aren’t allowed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div style="max-width: 72ch">
+      <h2>Check-in</h2>
+      <p class="prosa" style="margin-top: 18px">Check-in opens 30 minutes before your appointment. You’ll test your equipment, take photos of yourself and your ID, and show the room in a 360-degree scan. If something doesn’t meet the requirements, you can’t take the exam and you lose the fee.</p>
+      <p class="prosa" style="margin-top: 16px">Check your appointment email for the time and its explicit UTC offset, for example, UTC−06:00. A label like “Central Time” can be ambiguous; the offset clears it up.</p>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div style="max-width: 72ch">
+      <h2>During the exam</h2>
+      <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
+        <li class="densa"><strong style="font-weight: 600">Don’t leave any question blank.</strong> You have 90 minutes for 65 questions. Fifteen don’t count toward your score, but you won’t know which ones. An unanswered question counts as incorrect; there’s no penalty for guessing.</li>
+        <li class="densa"><strong style="font-weight: 600">Identify what the question asks before choosing.</strong> If it asks who did something, an answer describing how something works may sound right, but it answers a different question.</li>
+        <li class="densa"><strong style="font-weight: 600">Flag it and move on.</strong> You can flag questions to revisit; at the end, you’ll see a screen showing flagged and incomplete questions.</li>
+        <li class="densa"><strong style="font-weight: 600">Use the digital whiteboard.</strong> It’s built into the online exam. Paper and physical whiteboards aren’t allowed.</li>
+        <li class="densa"><strong style="font-weight: 600">If your computer freezes, close OnVUE and reopen it</strong> from your downloads folder. The proctor can respond in chat, but can’t pause the exam or fix your computer. There are no breaks online.</li>
+      </ul>
+      <p class="prosa" style="margin-top: 22px">You may not see whether you passed when you finish. AWS says most of its exams don’t show a result on screen; it will appear in your account within five business days. Some people do see a result right away, while the Credly badge may arrive before the result.</p>
+    </div>
+  </section>
+
+  <section class="seccion" data-revelar>
+    <div class="cierre">
+      <div>
+        <h2>What to read in the final hour</h2>
+        <p class="prosa" style="margin-top: 16px">You can read the hint view for all 45 differences in about seven minutes. If you review anything that day, make it this.</p>
+      </div>
+      <div class="cierre-accion">
+        <a class="cta" href="/en/differences">See the differences</a>
+        <p class="meta" style="margin-top: 12px">Turn on “Hints only.”</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">AWS and Pearson VUE set the rules, and those rules can change. This guide was reviewed in September 2026; use it as a checklist and confirm the formal requirements in your appointment email.</p>
+        <p class="nota">breathe: you’ll be okay</p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Site sections">
+        <h2>The notebook</h2>
+        <a href="/en/practice">Practice</a>
+        <a href="/en/differences">Differences</a>
+        <a href="/en/method">Method</a>
+        <a href="/en/exam"><span class="largo">Exam </span>day</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Who made it</h2>
+        <a href="https://santiagos.mx/en/">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Support the project</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Notice.</strong> Cuaderno Cloud Practitioner is a free personal project; it is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates. This material can help you study, but it does not guarantee a passing score. The practice questions were written for this site; none come from the real exam. I prepared some content with AI assistance and checked it against the official documentation; if you find an error, let me know on <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">I checked the content against the official CLF-C02 guide and AWS documentation in September 2026. If the exam topics change, check the current information at docs.aws.amazon.com.</p>
+      <p class="sello">You don’t need an account or email; the site doesn’t use cookies either. Analytics collects page views, country, and browser without building profiles or tracking you across sites. Your study progress stays in your browser.</p>
+      <p class="sello">This is the second free resource from sintitulo.dev; more are coming.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+<script src="/js/cabecera.js" defer></script>
+</body>
+</html>

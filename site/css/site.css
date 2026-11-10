@@ -124,7 +124,15 @@ p { margin: 0; }
 .marca-sitio svg { flex-shrink: 0; }
 .menu { display: flex; gap: 22px; align-items: center; font-size: 16px; flex-wrap: wrap; }
 .menu a { color: var(--ink-soft); text-decoration: none; }
-.menu a:hover, .menu a[aria-current="page"] { color: var(--ink); }
+.menu a:hover { color: var(--ink); }
+.menu a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
 
 /* acciones */
 .cta {
@@ -557,7 +565,8 @@ code {
   text-decoration: none;
   line-height: 1.2;
 }
-.menu a.nav-cta:hover { background: var(--brand); color: var(--paper); }
+.menu a.nav-cta:hover,
+.menu a.nav-cta[aria-current="page"] { background: var(--brand); color: var(--paper); }
 
 html { scroll-padding-top: calc(var(--cabecera) + 20px); }
 @media print { .cabecera { position: static; box-shadow: none; background: none; } }

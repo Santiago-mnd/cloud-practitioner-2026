@@ -11,10 +11,10 @@
 <meta property="og:locale" content="es_MX">
 <meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/examen">
 <meta property="og:title" content="El día del examen CLF-C02: guía de OnVUE">
-<meta property="og:description" content="Prueba del sistema, máquinas virtuales, VPN, identificación y check-in. Las fallas de equipo que cuestan el examen, y cómo evitarlas.">
+<meta property="og:description" content="Prueba del sistema, máquinas virtuales, VPN, identificación y check-in. Revisa las fallas de equipo que pueden costarte el examen.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="El día del examen CLF-C02: guía de OnVUE">
-<meta name="twitter:description" content="Prueba del sistema, máquinas virtuales, VPN, identificación y check-in. Las fallas de equipo que cuestan el examen, y cómo evitarlas.">
+<meta name="twitter:description" content="Prueba del sistema, máquinas virtuales, VPN, identificación y check-in. Revisa las fallas de equipo que pueden costarte el examen.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -51,8 +51,8 @@
 
   <div style="max-width: 68ch">
     <h1>El día del examen</h1>
-    <p class="prosa" style="margin-top: 22px">El CLF&#8209;C02 se presenta en un centro de Pearson VUE o en línea con OnVUE. En línea, la computadora y el cuarto también se evalúan: si no cumplen, Pearson VUE cancela la cita y el pago se pierde.</p>
-    <p class="meta" style="margin-top: 18px">Esta guía junta las reglas que Pearson VUE publica para AWS y las políticas de AWS, revisadas en septiembre de 2026, con las fallas que aparecen en la práctica. Confirma lo formal en el correo de tu cita.</p>
+    <p class="prosa" style="margin-top: 22px">Puedes presentar el CLF&#8209;C02 en un centro de Pearson VUE o en línea con OnVUE. Si eliges hacerlo en línea, también deben cumplir tu computadora y tu cuarto; de lo contrario, Pearson VUE cancela la cita y pierdes el pago.</p>
+    <p class="meta" style="margin-top: 18px">Aquí están las reglas que Pearson VUE publica para AWS y las políticas de AWS, revisadas en septiembre de 2026, junto con fallas que aparecen en la práctica. Confirma los requisitos formales en el correo de tu cita.</p>
   </div>
 
   <section class="seccion" data-revelar>
@@ -60,16 +60,16 @@
     <ul class="lista-limpia" style="margin-top: 24px; gap: 22px; max-width: 72ch">
       <li>
         <h3>Agenda desde tu cuenta de AWS Certification</h3>
-        <p class="densa" style="margin-top: 8px">Se crea en aws.training/Certification con un AWS Builder ID y es distinta de una cuenta de AWS. Desde ahí pasas a Pearson VUE para elegir centro o examen en línea, fecha y hora. Cuesta 100 USD, más los impuestos que apliquen.</p>
+        <p class="densa" style="margin-top: 8px">Crea tu cuenta en aws.training/Certification con un AWS Builder ID; es distinta de una cuenta de AWS. Desde ahí pasas a Pearson VUE para elegir centro o examen en línea, fecha y hora. Cuesta 100 USD, más los impuestos que apliquen.</p>
       </li>
       <li>
         <h3>Elige el idioma con calma</h3>
-        <p class="densa" style="margin-top: 8px">Hay versión en español de Latinoamérica, y durante el examen puedes ver cada pregunta en inglés con un botón. Si lo presentas en inglés y tu idioma nativo es otro, puedes pedir 30 minutos extra (ESL +30) en tu cuenta antes de agendar; se pide una sola vez.</p>
-        <p class="densa" style="margin-top: 8px">En línea, la supervisión en español es de lunes a viernes, de 10:00 a 17:45 hora del Este de Estados Unidos. En inglés hay supervisión a toda hora.</p>
+        <p class="densa" style="margin-top: 8px">Hay versión en español de Latinoamérica; durante el examen puedes ver cada pregunta en inglés con un botón. Si lo presentas en inglés y tu idioma nativo es otro, puedes pedir 30 minutos extra (ESL +30) en tu cuenta antes de agendar. Solo tienes que pedirlo una vez.</p>
+        <p class="densa" style="margin-top: 8px">En línea, la supervisión en español está disponible de lunes a viernes, de 10:00 a 17:45 hora del Este de Estados Unidos. En inglés hay supervisión a toda hora.</p>
       </li>
       <li>
         <h3>Reagendar tiene límite</h3>
-        <p class="densa" style="margin-top: 8px">Puedes reagendar hasta 24 horas antes, y cada cita solo dos veces. Si cancelas con más de 24 horas, te devuelven el pago; con menos, o si no te presentas, lo pierdes.</p>
+        <p class="densa" style="margin-top: 8px">Puedes reagendar hasta 24 horas antes, como máximo dos veces por cita. Si cancelas con más de 24 horas, te devuelven el pago; con menos tiempo, o si no te presentas, lo pierdes.</p>
       </li>
     </ul>
   </section>
@@ -79,20 +79,20 @@
     <ul class="lista-limpia" style="margin-top: 24px; gap: 22px; max-width: 72ch">
       <li>
         <h3>Corre la prueba del sistema en tu equipo y tu red</h3>
-        <p class="densa" style="margin-top: 8px">Pearson VUE pide pasarla en la misma computadora y la misma red del examen; en otra máquina no prueba nada. Córrela con tu sesión iniciada: en modo anónimo puede correr sin que el resultado quede registrado.</p>
+        <p class="densa" style="margin-top: 8px">Pearson VUE pide pasar la prueba en la misma computadora y la misma red que usarás en el examen; hacerla en otra máquina no verifica tu equipo. Inicia sesión antes: en modo anónimo, la prueba puede correr sin que quede registrado el resultado.</p>
       </li>
       <li>
         <h3>Nada de máquinas virtuales, y revisa Hyper-V</h3>
-        <p class="densa" style="margin-top: 8px">Pearson VUE prohíbe las máquinas virtuales. Por precaución, revisa Hyper-V: con WSL, Docker o emuladores instalados suele estar activo sin que nadie lo haya encendido, y desactivarlo pide reiniciar. Alguien que presentó el CLF&#8209;C02 contó en AWS re:Post que OnVUE confundió su laptop personal con una máquina virtual, y terminó presentando en un centro.</p>
-        <p class="densa" style="margin-top: 8px">Para revisarlo en Windows, en PowerShell como administrador: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 usa la plataforma de máquina virtual aunque Hyper-V aparezca deshabilitado.</p>
+        <p class="densa" style="margin-top: 8px">Pearson VUE prohíbe las máquinas virtuales. Revisa también Hyper-V por precaución: WSL, Docker o los emuladores pueden dejarlo activo sin que lo sepas; desactivarlo requiere reiniciar. Una persona contó en AWS re:Post que OnVUE confundió su laptop personal con una máquina virtual cuando presentó el CLF&#8209;C02, por lo que terminó haciéndolo en un centro.</p>
+        <p class="densa" style="margin-top: 8px">Para revisarlo en Windows, abre PowerShell como administrador y ejecuta: <code>Get-WindowsOptionalFeature -Online | Where-Object FeatureName -in 'Microsoft-Hyper-V-All','VirtualMachinePlatform'</code>. WSL 2 usa la plataforma de máquina virtual aunque Hyper-V aparezca deshabilitado.</p>
       </li>
       <li>
         <h3>Revisa tu identificación</h3>
-        <p class="densa" style="margin-top: 8px">Tiene que ser oficial, vigente y con foto. Sirven el pasaporte, la licencia de conducir de plástico o una identificación nacional. El nombre y los apellidos deben ser idénticos a los de tu cuenta de AWS Certification; el segundo nombre no hace falta. Si algo no coincide, corrígelo en tu cuenta al menos dos días hábiles antes del examen.</p>
+        <p class="densa" style="margin-top: 8px">Debe ser oficial, vigente y tener foto. Sirven el pasaporte, la licencia de conducir de plástico o una identificación nacional. Tu nombre y tus apellidos deben ser idénticos a los de tu cuenta de AWS Certification; el segundo nombre no hace falta. Si hay una diferencia, corrígela en tu cuenta al menos dos días hábiles antes del examen.</p>
       </li>
       <li>
         <h3>Ten un plan B</h3>
-        <p class="densa" style="margin-top: 8px">Si la prueba del sistema falla o no tienes un cuarto a solas garantizado, un centro de Pearson VUE cuesta lo mismo y quita estos riesgos. En el centro piden dos identificaciones: dos principales, o una principal y una secundaria. La decisión tiene fecha límite: 24 horas antes de la cita.</p>
+        <p class="densa" style="margin-top: 8px">Si falla la prueba del sistema o no puedes garantizar un cuarto a solas, puedes elegir un centro de Pearson VUE: cuesta lo mismo y evita esos riesgos. Ahí te pedirán dos identificaciones, ya sean dos principales o una principal y una secundaria. Tienes hasta 24 horas antes de la cita para tomar la decisión.</p>
       </li>
     </ul>
   </section>
@@ -101,14 +101,14 @@
     <div style="max-width: 72ch">
       <h2>Media hora antes</h2>
       <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
-        <li class="densa">Reinicia la computadora y cierra todo menos OnVUE: Teams, Slack, Discord, música y navegadores.</li>
-        <li class="densa">Desconecta la VPN y evita redes corporativas, públicas o compartidas. Detén el <em>servicio</em> de la VPN, no solo la ventana: Tailscale y similares se reinician solos. En Windows: <code>Stop-Service</code> y luego <code>Set-Service -StartupType Disabled</code>; vuelve a activarlo al terminar.</li>
+        <li class="densa">Reinicia la computadora; cierra todo menos OnVUE, incluidos Teams, Slack, Discord, la música y los navegadores.</li>
+        <li class="densa">Desconecta la VPN; evita las redes corporativas, públicas o compartidas. Detén el <em>servicio</em> de la VPN, no solo su ventana: Tailscale y otros similares se reinician solos. En Windows: <code>Stop-Service</code> y luego <code>Set-Service -StartupType Disabled</code>; vuelve a activarlo al terminar.</li>
         <li class="densa">Pide que nadie en casa use la red para ver series o descargar archivos grandes.</li>
-        <li class="densa">Por precaución, desactiva las actualizaciones automáticas para que Windows no reinicie a media prueba.</li>
-        <li class="densa">Una sola pantalla. Desconecta la segunda y cualquier pantalla táctil adicional; si no se puede quitar, desconéctala y tápala.</li>
-        <li class="densa">Escritorio vacío: solo la computadora y, si quieres, una bebida en un recipiente sin etiqueta. Nada de papel, plumas, celular, reloj ni audífonos al alcance del brazo.</li>
-        <li class="densa">Sin audífonos: se usan las bocinas y el micrófono del equipo.</li>
-        <li class="densa">A solas, en un cuarto tranquilo. El baño y los lugares públicos, como oficinas o cafeterías, no están permitidos.</li>
+        <li class="densa">Por precaución, desactiva las actualizaciones automáticas para evitar que Windows se reinicie durante la prueba.</li>
+        <li class="densa">Usa una sola pantalla. Desconecta la segunda y cualquier pantalla táctil adicional; si no puedes quitarla, desconéctala y tápala.</li>
+        <li class="densa">Deja el escritorio vacío: solo la computadora y, si quieres, una bebida en un recipiente sin etiqueta. Mantén el papel, las plumas, el celular, el reloj y los audífonos fuera del alcance del brazo.</li>
+        <li class="densa">No uses audífonos: necesitas las bocinas y el micrófono del equipo.</li>
+        <li class="densa">Debes estar a solas en un cuarto tranquilo. No se permiten el baño ni los lugares públicos, como oficinas o cafeterías.</li>
       </ul>
     </div>
   </section>
@@ -116,8 +116,8 @@
   <section class="seccion" data-revelar>
     <div style="max-width: 72ch">
       <h2>El check-in</h2>
-      <p class="prosa" style="margin-top: 18px">Empieza 30 minutos antes de la cita. Incluye pruebas del equipo, una foto tuya y de tu identificación, y un escaneo del cuarto en 360 grados. Si algo no cumple, no presentas y pierdes el pago.</p>
-      <p class="prosa" style="margin-top: 16px">Confirma en el correo de tu cita la hora y la zona horaria, con el desfase explícito, del tipo UTC−06:00. Un nombre como «hora central» se presta a confusión; el desfase no.</p>
+      <p class="prosa" style="margin-top: 18px">El check-in empieza 30 minutos antes de la cita. Harás pruebas del equipo, tomarás una foto tuya y de tu identificación, y mostrarás el cuarto en un escaneo de 360 grados. Si algo no cumple, no presentas y pierdes el pago.</p>
+      <p class="prosa" style="margin-top: 16px">Comprueba en el correo de tu cita la hora y la zona horaria con su desfase explícito, por ejemplo, UTC−06:00. Un nombre como «hora central» puede prestarse a confusión; el desfase la evita.</p>
     </div>
   </section>
 
@@ -125,13 +125,13 @@
     <div style="max-width: 72ch">
       <h2>Durante</h2>
       <ul class="lista-limpia" style="margin-top: 22px; gap: 16px">
-        <li class="densa"><strong style="font-weight: 600">No dejes ninguna en blanco.</strong> Son 65 preguntas en 90 minutos. Quince no cuentan para la calificación y no se sabe cuáles. Una pregunta sin responder cuenta como incorrecta, y adivinar no se penaliza.</li>
-        <li class="densa"><strong style="font-weight: 600">Identifica qué se está preguntando antes de elegir.</strong> Muchos errores vienen de contestar el eje equivocado: la pregunta pide quién hizo algo y la respuesta elegida describe cómo se comporta.</li>
-        <li class="densa"><strong style="font-weight: 600">Marca y avanza.</strong> Puedes marcar preguntas y volver a ellas; al final aparece una pantalla para revisar las marcadas y las incompletas.</li>
-        <li class="densa"><strong style="font-weight: 600">Usa el pizarrón digital.</strong> En línea tienes uno dentro del examen. El papel y los pizarrones físicos no están permitidos.</li>
+        <li class="densa"><strong style="font-weight: 600">No dejes ninguna en blanco.</strong> Tienes 90 minutos para 65 preguntas. Quince no cuentan para la calificación, pero no sabrás cuáles son. Una pregunta sin responder cuenta como incorrecta; adivinar no se penaliza.</li>
+        <li class="densa"><strong style="font-weight: 600">Identifica qué se está preguntando antes de elegir.</strong> Si la pregunta pide quién hizo algo, una opción que describe cómo se comporta puede sonar bien; sin embargo, responde otra cosa.</li>
+        <li class="densa"><strong style="font-weight: 600">Marca y avanza.</strong> Puedes marcar preguntas para volver a ellas; al final verás una pantalla con las marcadas y las incompletas.</li>
+        <li class="densa"><strong style="font-weight: 600">Usa el pizarrón digital.</strong> Está dentro del examen en línea. El papel y los pizarrones físicos no están permitidos.</li>
         <li class="densa"><strong style="font-weight: 600">Si el equipo se congela, cierra OnVUE y vuelve a abrirlo</strong> desde tu carpeta de descargas. El supervisor responde por el chat, pero no puede pausar el examen ni arreglar tu equipo. En línea no hay descansos.</li>
       </ul>
-      <p class="prosa" style="margin-top: 22px">Al terminar, lo más probable es que no veas si aprobaste. AWS dice que la mayoría de sus exámenes no muestran el resultado en pantalla y que llega a tu cuenta en un máximo de cinco días hábiles. Hay quien sí lo ve al terminar, y la insignia de Credly puede llegar antes que el resultado.</p>
+      <p class="prosa" style="margin-top: 22px">Al terminar, es probable que no veas si aprobaste. AWS dice que la mayoría de sus exámenes no muestran el resultado en pantalla; llegará a tu cuenta en un máximo de cinco días hábiles. Algunas personas sí lo ven al terminar, mientras que la insignia de Credly puede llegar antes que el resultado.</p>
     </div>
   </section>
 
@@ -139,11 +139,11 @@
     <div class="cierre">
       <div>
         <h2>La lectura de la última hora</h2>
-        <p class="prosa" style="margin-top: 16px">La vista de pistas de las 45 diferencias se lee en unos siete minutos. Es lo único que conviene repasar ese día.</p>
+        <p class="prosa" style="margin-top: 16px">La vista de pistas de las 45 diferencias se lee en unos siete minutos. Si vas a repasar algo ese día, que sea esto.</p>
       </div>
       <div class="cierre-accion">
         <a class="cta" href="/diferencias">Ver las diferencias</a>
-        <p class="meta" style="margin-top: 12px">Con el botón «Solo pistas» activado.</p>
+        <p class="meta" style="margin-top: 12px">Activa el botón «Solo pistas».</p>
       </div>
     </div>
   </section>
@@ -154,7 +154,7 @@
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">Las reglas las definen AWS y Pearson VUE, y cambian con el tiempo. Esta guía se revisó en septiembre de 2026: úsala como checklist y confirma lo formal en el correo de tu cita.</p>
+        <p class="densa">AWS y Pearson VUE definen las reglas, que pueden cambiar. Esta guía se revisó en septiembre de 2026; úsala como checklist y confirma los requisitos formales en el correo de tu cita.</p>
         <p class="nota">respira: vas a estar bien</p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
@@ -173,10 +173,10 @@
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
-      <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
-      <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
-      <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni tiene su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Este material te ayuda a estudiar, pero no garantiza que apruebes. Las preguntas de práctica son propias del sitio; ninguna proviene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Verifiqué el contenido en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si cambia el temario, comprueba la información actual en docs.aws.amazon.com.</p>
+      <p class="sello">No necesitas cuenta ni correo; el sitio tampoco usa cookies. La analítica reúne páginas vistas, país y navegador, sin crear perfiles ni seguirte entre sitios. Tu avance de estudio se queda en tu navegador.</p>
+      <p class="sello">Este es el segundo recurso libre de sintitulo.dev; habrá más.</p>
     </div>
   </div>
 </footer>

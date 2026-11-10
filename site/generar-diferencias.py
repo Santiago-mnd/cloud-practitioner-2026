@@ -75,12 +75,12 @@ DIFERENCIAS = [
   dict(dominio=1, tema="Beneficios", id="agility-vs-elasticity",
        titulo="Agilidad es lanzar rápido; elasticidad es ajustarse a la demanda",
        pista="Algo nuevo disponible en minutos = agilidad. Crecer y encogerse según la carga = elasticidad.",
-       confusion="Las dos suenan a rapidez, y en un escenario de lanzamiento aparecen juntas.",
+       confusion="Las dos suenan a rapidez; además, pueden aparecer juntas en un escenario de lanzamiento.",
        regla="AWS enumera seis ventajas de la nube. «Aumentar la velocidad y la agilidad» habla de tener recursos nuevos en minutos para experimentar más. «Dejar de adivinar la capacidad» habla de subirla o bajarla según la demanda real, que es la elasticidad. La alta disponibilidad responde a otra pregunta: que el servicio siga en línea aunque falle una parte."),
   dict(dominio=1, tema="Economía de la nube", id="economies-of-scale",
        titulo="Economías de escala y gasto variable abaratan por caminos distintos",
        pista="Pagar solo lo que se consume = gasto variable. Precio más bajo porque AWS suma el uso de muchos clientes = economías de escala.",
-       confusion="Las dos terminan en «sale más barato», así que parecen la misma ventaja.",
+       confusion="Ambas pueden significar «sale más barato», así que parecen la misma ventaja.",
        regla="Cambiar gasto fijo por variable significa no invertir por adelantado en centros de datos y servidores, y pagar solo cuando se consume. Las economías de escala vienen de que AWS suma el uso de cientos de miles de clientes. Con ese volumen cobra un precio por uso más bajo del que lograría una empresa por su cuenta."),
   dict(dominio=1, tema="Well-Architected", id="well-architected-pillars",
        titulo="Los seis pilares de Well-Architected se distinguen por la pregunta que responden",
@@ -113,12 +113,12 @@ DIFERENCIAS = [
   dict(dominio=1, tema="Economía de la nube", id="byol-vs-license-included",
        titulo="Con BYOL se reusa la licencia propia; con licencia incluida, AWS la cobra",
        pista="Ya tiene licencias y quiere reusarlas = BYOL.",
-       confusion="En los dos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.",
+       confusion="En ambos casos el software termina funcionando en AWS, así que la diferencia parece solo contable.",
        regla="Con licencia incluida, el precio del servicio ya trae la licencia del software; por ejemplo, Oracle Database Standard Edition 2 en Amazon RDS, que también admite BYOL. Con BYOL (Bring Your Own License), la empresa usa licencias que ya compró. Algunas licencias se cuentan por socket o por núcleo físico, y los hosts dedicados permiten usarlas."),
   dict(dominio=1, tema="Economía de la nube", id="rightsizing-vs-autoscaling",
        titulo="Rightsizing cambia el tamaño; Auto Scaling cambia la cantidad",
        pista="Instancias sobradas todo el tiempo = rightsizing. Carga que sube y baja = Auto Scaling.",
-       confusion="Los dos ajustan la capacidad al uso para no pagar de más.",
+       confusion="Ambos ajustan la capacidad al uso para no pagar de más.",
        regla="El dimensionamiento correcto (rightsizing) elige el tipo y el tamaño de instancia que corresponden al uso real, al menor costo. Es una revisión continua. AWS Compute Optimizer da recomendaciones de este tipo. El escalado automático agrega o quita instancias según la demanda, sin cambiarles el tamaño."),
 
   # ---------- Dominio 2 ----------
@@ -126,11 +126,11 @@ DIFERENCIAS = [
        titulo="AWS protege la nube; el cliente protege lo que pone en ella",
        pista="Instalaciones, hardware, red y virtualización = AWS. Datos, identidades, configuración y sistema operativo invitado = cliente.",
        confusion="«Seguridad de la nube» y «seguridad en la nube» se leen casi igual.",
-       regla="AWS responde por la seguridad de la nube: la infraestructura de hardware, software, red e instalaciones que corre todos sus servicios. El cliente responde por la seguridad en la nube: sus datos, sus accesos, su configuración y, según el servicio, el sistema operativo y las aplicaciones."),
+       regla="AWS responde por la seguridad de la nube: la infraestructura de hardware, software, red e instalaciones con la que opera todos sus servicios. El cliente responde por la seguridad en la nube: sus datos, sus accesos, su configuración y, según el servicio, el sistema operativo y las aplicaciones."),
   dict(dominio=2, tema="Responsabilidad compartida", id="responsibility-by-service",
        titulo="Lo que le toca al cliente cambia con cada servicio",
        pista="EC2 = el cliente parcha el sistema operativo. S3 o DynamoDB = AWS opera hasta la plataforma.",
-       confusion="El modelo se aprende como una línea fija, pero la línea se mueve según el servicio.",
+       confusion="El modelo se aprende como una línea fija, pero esa línea cambia según el servicio.",
        regla="Mientras más abstracto es el servicio, más capas opera AWS. Los datos, las opciones de cifrado y los permisos de AWS Identity and Access Management (IAM) siempre quedan del lado del cliente.",
        tabla=[("Amazon EC2", "Cliente: sistema operativo invitado con sus parches, aplicaciones y grupo de seguridad"),
               ("Amazon RDS", "AWS: parches, respaldos y recuperación ante fallas. Cliente: datos, usuarios y acceso de red"),
@@ -140,7 +140,7 @@ DIFERENCIAS = [
        titulo="En un control compartido, cada parte cubre su propia capa",
        pista="Parches, configuración y capacitación = compartidos. Físicos y ambientales = heredados de AWS.",
        confusion="«Compartido» suena a que AWS y el cliente hacen juntos la misma tarea.",
-       regla="Un control heredado lo cumple AWS por completo y el cliente lo recibe tal cual, como los controles físicos y ambientales. En un control compartido cada parte lo implementa en su capa: AWS parcha su infraestructura y el cliente parcha su sistema operativo invitado y sus aplicaciones; AWS capacita a su personal y el cliente al suyo. Los controles específicos del cliente, como separar datos en zonas de seguridad, son solo suyos."),
+       regla="Un control heredado lo cumple AWS por completo y el cliente lo recibe tal cual, como los controles físicos y ambientales. En un control compartido, cada parte lo implementa en su capa: AWS parcha su infraestructura y el cliente parcha su sistema operativo invitado y sus aplicaciones; AWS capacita a su personal y el cliente al suyo. Los controles específicos del cliente, como separar datos en zonas de seguridad, son solo suyos."),
   dict(dominio=2, tema="Monitoreo y auditoría", id="cloudwatch-cloudtrail-config",
        titulo="CloudWatch, CloudTrail y Config responden tres preguntas distintas",
        pista="¿Cómo se comporta? = CloudWatch. ¿Quién hizo qué? = CloudTrail. ¿Cómo está configurado y si cumple? = Config.",
@@ -181,7 +181,7 @@ DIFERENCIAS = [
   dict(dominio=2, tema="Cifrado y secretos", id="encryption-transit-vs-rest",
        titulo="El cifrado en tránsito protege el viaje; el cifrado en reposo protege lo guardado",
        pista="TLS o HTTPS = en tránsito. Datos guardados en S3, EBS o RDS = en reposo.",
-       confusion="Las dos se llaman cifrado y muchos servicios ofrecen ambas.",
+       confusion="Ambas formas se llaman cifrado y muchos servicios ofrecen las dos.",
        regla="El cifrado en tránsito protege los datos mientras viajan entre sistemas, con protocolos de cifrado como TLS. El cifrado en reposo protege los datos almacenados; en AWS se puede hacer con claves de AWS KMS."),
   dict(dominio=2, tema="Identidad y acceso", id="iam-user-vs-role",
        titulo="Un usuario de IAM tiene credenciales fijas; un rol se asume",
@@ -212,17 +212,17 @@ DIFERENCIAS = [
        titulo="Para AWS, la nube privada se llama «en las instalaciones»",
        pista="Todo en AWS = en la nube. AWS y centro de datos propio conectados = híbrido. Todo en centro propio = en las instalaciones.",
        confusion="Quien estudió otros temarios busca «pública, privada e híbrida» y no encuentra esos nombres en las opciones.",
-       regla="La guía del CLF-C02 nombra tres modelos de implementación: en la nube, híbrido y en las instalaciones (on-premises). En la nube, la aplicación corre por completo ahí. El híbrido conecta recursos de la nube con los que siguen fuera de ella. En las instalaciones, que AWS a veces llama nube privada, la infraestructura vive en el centro de datos propio."),
+       regla="La guía del CLF-C02 nombra tres modelos de implementación: en la nube, híbrido y en las instalaciones (on-premises). En la nube, la aplicación corre por completo ahí. El híbrido conecta recursos de la nube con los que siguen fuera de ella. En las instalaciones, que AWS a veces llama nube privada, la infraestructura está en el centro de datos propio."),
   dict(dominio=3, tema="Implementación", id="console-vs-iac",
        titulo="La consola sirve para una vez; lo que se repite va en código",
        pista="Operación única = consola. Proceso repetible o automatizado = CLI, SDK o infraestructura como código.",
        confusion="Todo se puede hacer desde la consola, así que parece la respuesta segura.",
-       regla="La consola de administración es para tareas puntuales con interfaz visual. La CLI, los SDK y las API, que son las interfaces que usan los programas, permiten automatizar. Con infraestructura como código, como AWS CloudFormation, el entorno se describe en plantillas y se crea igual cada vez."),
+       regla="La consola de administración sirve para tareas puntuales mediante una interfaz visual. La CLI, los SDK y las API, que son las interfaces que usan los programas, permiten automatizar. Con infraestructura como código, como AWS CloudFormation, el entorno se describe en plantillas y se crea igual cada vez."),
   dict(dominio=3, tema="Infraestructura global", id="region-az-edge",
        titulo="Región, zona de disponibilidad y ubicación periférica son tres niveles distintos",
        pista="Falla un centro de datos = varias AZ. Desastre regional, latencia o soberanía de datos = varias regiones. Contenido cerca del usuario = ubicación periférica.",
        confusion="Las tres son lugares de AWS, y un escenario de alta disponibilidad parece pedir más regiones.",
-       regla="Una región es una ubicación física con varias zonas de disponibilidad (AZ), aislada de las demás regiones. Cada AZ es uno o más centros de datos con energía, red y conectividad redundantes, y las AZ no comparten puntos únicos de falla. Las ubicaciones periféricas acercan el contenido al usuario con Amazon CloudFront."),
+       regla="Una región es una ubicación física con varias zonas de disponibilidad (AZ), aislada de las demás regiones. Cada AZ comprende uno o más centros de datos con energía, red y conectividad redundantes; las AZ no comparten puntos únicos de falla. Las ubicaciones periféricas acercan el contenido al usuario con Amazon CloudFront."),
   dict(dominio=3, tema="Cómputo", id="ec2-instance-families",
        titulo="La familia de instancia se elige por el recurso que más usa la carga",
        pista="CPU intensiva = optimizada para cómputo. Datos grandes en memoria = optimizada para memoria. Mucha lectura y escritura local = optimizada para almacenamiento.",
@@ -242,7 +242,7 @@ DIFERENCIAS = [
        titulo="El balanceador reparte el tráfico; Auto Scaling decide cuántas instancias hay",
        pista="Repartir peticiones entre instancias sanas = Elastic Load Balancing. Agregar o quitar instancias = Auto Scaling.",
        confusion="En los diagramas de arquitectura aparecen juntos, así que parecen un solo servicio.",
-       regla="Elastic Load Balancing reparte el tráfico entrante entre varios destinos y deja de mandarlo a los que no están sanos. Amazon EC2 Auto Scaling mantiene el número de instancias y lo ajusta según la demanda; eso es lo que da elasticidad."),
+       regla="Elastic Load Balancing reparte el tráfico entrante entre varios destinos y deja de enviarlo a los que no están sanos. Amazon EC2 Auto Scaling mantiene el número de instancias y lo ajusta según la demanda; eso es lo que da elasticidad."),
   dict(dominio=3, tema="Bases de datos", id="database-options",
        titulo="Cada modelo de datos tiene su base de datos administrada",
        pista="Relacional = RDS o Aurora. NoSQL sin servidor = DynamoDB. Caché en memoria = ElastiCache. Almacén de datos para análisis = Redshift.",
@@ -356,9 +356,9 @@ DIFERENCIAS = [
 
   # ---------- Dominio 4 ----------
   dict(dominio=4, tema="Precios", id="purchase-options",
-       titulo="La opción de compra de EC2 se elige por compromiso y tolerancia a interrupciones",
+       titulo="La opción de compra de EC2 depende del compromiso y de la tolerancia a interrupciones",
        pista="Puede interrumpirse = spot. Uso estable por 1 o 3 años = Savings Plans o instancias reservadas. Licencia por socket o núcleo = host dedicado.",
-       confusion="Varias opciones dan descuento y varias hablan de «reservar».",
+       confusion="Varias opciones ofrecen descuentos y varias hablan de «reservar».",
        regla="Las reservas de capacidad aseguran capacidad pero, por sí solas, se cobran a precio bajo demanda; el descuento llega al combinarlas con Savings Plans o instancias reservadas regionales.",
        tabla=[("Sin compromiso, pago por uso", "Instancias bajo demanda"),
               ("Capacidad sobrante con gran descuento, que AWS puede recuperar", "Instancias de spot"),
@@ -371,17 +371,17 @@ DIFERENCIAS = [
        titulo="Savings Plans compromete dinero; una instancia reservada compromete una configuración",
        pista="Descuento que también cubre Fargate y Lambda = Compute Savings Plans.",
        confusion="Los dos dan descuento a cambio de un compromiso de uno o tres años.",
-       regla="Con Savings Plans el cliente se compromete a gastar una cantidad por hora. Compute Savings Plans aplica sin importar familia, tamaño, sistema operativo, tenencia o región, y cubre también Fargate y Lambda. Una instancia reservada compromete una configuración: la estándar da más descuento y la convertible permite cambiarla por otra. En AWS Organizations, los descuentos se comparten entre las cuentas de la facturación unificada, salvo que se desactive."),
+       regla="Con Savings Plans, el cliente se compromete a gastar una cantidad por hora. Compute Savings Plans aplica sin importar familia, tamaño, sistema operativo, tenencia o región; también cubre Fargate y Lambda. Una instancia reservada compromete una configuración: la estándar da más descuento y la convertible permite cambiarla por otra. En AWS Organizations, los descuentos se comparten entre las cuentas de la facturación unificada, salvo que se desactive."),
   dict(dominio=4, tema="Precios", id="data-transfer",
        titulo="Meter datos a AWS desde internet no cuesta; sacarlos sí",
        pista="Salida a internet = se cobra. Entrada = en general sin costo.",
        confusion="Parece lógico que mover datos cueste lo mismo en las dos direcciones.",
-       regla="La transferencia desde internet hacia AWS no se cobra. La salida hacia internet sí, y mientras más se transfiere, menos cuesta cada GB. Dentro de una región, algunos servicios no cobran el tráfico, pero pasar datos entre zonas de disponibilidad se cobra en los dos sentidos. Pasar datos a otra región también genera cargos."),
+       regla="La transferencia desde internet hacia AWS no se cobra. La salida hacia internet sí; mientras más se transfiere, menos cuesta cada GB. Dentro de una región, algunos servicios no cobran el tráfico, pero pasar datos entre zonas de disponibilidad se cobra en los dos sentidos. Pasar datos a otra región también genera cargos."),
   dict(dominio=4, tema="Costos", id="cost-tools",
        titulo="Estimar, analizar, avisar y detallar: una herramienta de costos para cada verbo",
        pista="Antes de construir = Calculadora de precios. Gasto pasado y pronóstico = Cost Explorer. Aviso al pasar un umbral = Budgets. Detalle máximo = CUR.",
        confusion="Las cuatro hablan de costos y viven juntas en la consola de facturación.",
-       regla="AWS Budgets avisa cuando el gasto real o pronosticado pasa un umbral. Con acciones de presupuesto también puede aplicar una política de IAM o una SCP, o detener instancias de EC2 o RDS. Esas acciones corren solas o después de una aprobación.",
+       regla="AWS Budgets avisa cuando el gasto real o pronosticado pasa un umbral. Con acciones de presupuesto, también puede aplicar una política de IAM o una SCP, o detener instancias de EC2 o RDS. Esas acciones corren solas o después de una aprobación.",
        tabla=[("Estimar el costo antes de construir", "Calculadora de precios de AWS"),
               ("Ver y analizar el gasto, con pronóstico", "AWS Cost Explorer"),
               ("Recibir una alerta cuando el gasto real o pronosticado pasa un umbral", "AWS Budgets"),
@@ -398,10 +398,10 @@ DIFERENCIAS = [
        confusion="Los dos administran varias cuentas.",
        regla="AWS Organizations agrupa cuentas en unidades organizativas, unifica la facturación y aplica SCP. AWS Control Tower se apoya en Organizations para montar una zona de aterrizaje con controles ya configurados."),
   dict(dominio=4, tema="Soporte", id="support-plans",
-       titulo="Los planes de soporte del examen se separan por el TAM y el tiempo de respuesta",
+       titulo="Los planes de soporte del examen se distinguen por el TAM y el tiempo de respuesta",
        pista="TAM designado = Enterprise. Grupo de TAM = Enterprise On-Ramp. Teléfono 24/7 = desde Business. Solo web en horario laboral = Developer.",
        confusion="Los planes de pago comparten casi todo, y «Enterprise On-Ramp» suena a una versión menor de Business.",
-       regla="La guía del CLF-C02 nombra Developer, Business, Enterprise On-Ramp y Enterprise, y el examen sigue la guía. AWS descontinúa Developer, Business y Enterprise On-Ramp el 1 de enero de 2027; hoy ofrece Business Support+, Enterprise Support y Unified Operations. Basic, sin costo, incluye servicio al cliente, las revisiones centrales de Trusted Advisor y AWS Health.",
+       regla="La guía del CLF-C02 nombra Developer, Business, Enterprise On-Ramp y Enterprise; el examen sigue esa guía. AWS descontinúa Developer, Business y Enterprise On-Ramp el 1 de enero de 2027; hoy ofrece Business Support+, Enterprise Support y Unified Operations. Basic, sin costo, incluye servicio al cliente, las revisiones centrales de Trusted Advisor y AWS Health.",
        tabla=[("Experimentar o probar; web en horario laboral", "Developer"),
               ("Mínimo recomendado para producción; teléfono, web y chat 24/7; todas las revisiones de Trusted Advisor", "Business"),
               ("Cargas críticas; un grupo de gerentes técnicos de cuenta (TAM); menos de 30 minutos si cae un sistema crítico", "Enterprise On-Ramp"),
@@ -498,17 +498,17 @@ doc = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Las {total} diferencias clave del CLF-C02 · Cuaderno Cloud Practitioner</title>
-<meta name="description" content="Las {total} diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden, qué pasa en realidad y la frase que decide la respuesta.">
+<meta name="description" content="Las {total} diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden los servicios, qué pasa en realidad y qué frase decide la respuesta.">
 <link rel="canonical" href="{SITE_URL}/diferencias">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cuaderno Cloud Practitioner">
 <meta property="og:locale" content="es_MX">
 <meta property="og:url" content="{SITE_URL}/diferencias">
 <meta property="og:title" content="Las {total} diferencias clave del CLF-C02">
-<meta property="og:description" content="Dónde se confunde cada par de servicios y conceptos del examen CLF-C02, qué pasa en realidad y la frase que decide la respuesta.">
+<meta property="og:description" content="Cada par de servicios y conceptos del CLF-C02 tiene una confusión frecuente; aquí encuentras la frase que decide la respuesta y la explicación.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Las {total} diferencias clave del CLF-C02">
-<meta name="twitter:description" content="Dónde se confunde cada par de servicios y conceptos del examen CLF-C02, qué pasa en realidad y la frase que decide la respuesta.">
+<meta name="twitter:description" content="Cada par de servicios y conceptos del CLF-C02 tiene una confusión frecuente; aquí encuentras la frase que decide la respuesta y la explicación.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -545,12 +545,12 @@ doc = f"""<!doctype html>
 
   <div class="encabezado-diferencias">
     <h1>Las {total} diferencias del CLF&#8209;C02</h1>
-    <p class="subtitulo">¿CloudTrail o CloudWatch? ¿Shield o WAF? Resueltas una por una.</p>
-    <p class="prosa" style="margin-top: 20px">La respuesta equivocada convence hasta que alguien explica por qué falla. De cada una: la pista que decide la respuesta, dónde se confunde y qué pasa en realidad. Se leen en unos 25 minutos; en la vista de pistas, en siete.</p>
+    <p class="subtitulo">¿CloudTrail o CloudWatch? ¿Shield o WAF? Una frase para distinguir cada par.</p>
+    <p class="prosa" style="margin-top: 20px">Una opción equivocada puede sonar convincente porque nombra un servicio real. Cada diferencia te muestra la pista que decide la respuesta, dónde surge la confusión y qué pasa en realidad; puedes leerlas en unos 25 minutos o repasar solo las pistas en siete.</p>
     <div class="controles">
       <button type="button" class="cta secundaria" id="alternar-pistas" aria-pressed="false">Solo pistas</button>
       <span class="meta" id="estado-dominadas" role="status"></span>
-      <span class="meta">Marca las que ya dominas y desaparecen de la hoja de pistas.</span>
+      <span class="meta">Marca las que dominas para quitarlas de la hoja de pistas.</span>
     </div>
   </div>
 
@@ -575,7 +575,7 @@ doc = f"""<!doctype html>
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">Son {total}. Salieron de cruzar la guía oficial del examen con la documentación de cada servicio y con lo que reporta quien ya lo presentó. Ninguna reproduce preguntas del examen ni las preguntas de práctica oficiales de AWS.</p>
+        <p class="densa">Estas {total} diferencias salen de cruzar la guía oficial del examen, la documentación de cada servicio y lo que reporta quien ya lo presentó. Ninguna reproduce preguntas del examen ni preguntas de práctica oficiales de AWS.</p>
         <p class="nota">practicarlas <span aria-hidden="true">→</span></p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
@@ -594,10 +594,10 @@ doc = f"""<!doctype html>
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
-      <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
-      <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
-      <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni tiene su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Este material te ayuda a estudiar, pero no garantiza que apruebes. Las preguntas de práctica son propias del sitio; ninguna proviene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Verifiqué el contenido en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si cambia el temario, comprueba la información actual en docs.aws.amazon.com.</p>
+      <p class="sello">No necesitas cuenta ni correo; el sitio tampoco usa cookies. La analítica reúne páginas vistas, país y navegador, sin crear perfiles ni seguirte entre sitios. Tu avance de estudio se queda en tu navegador.</p>
+      <p class="sello">Este es el segundo recurso libre de sintitulo.dev; habrá más.</p>
     </div>
   </div>
 </footer>

@@ -28,20 +28,19 @@ The study questions are original, with none copied from the real exam or AWS’s
 
 ### Development and contributions
 
-Development details are in the Spanish section below. To regenerate the differences and then the English pages, run these commands from the repository root:
+Development details are in the Spanish section below. To regenerate the differences and then the English pages, run this from the repository root:
 
 ```bash
-(cd site && python3 generar-diferencias.py)
-(cd tools && pnpm install && node localize.ts)
+cd tools && pnpm install && pnpm run build
 ```
 
-The English pages are generated from the Spanish pages using `tools/localize.ts` and `tools/i18n/en.json`. Issues are welcome in either language, especially for factual errors cited against AWS documentation or English phrasing that sounds unnatural.
+The differences live in `tools/data/differences.json`; the English pages are generated from the Spanish pages using `tools/localize.ts` and `tools/i18n/en.json`. Issues are welcome in either language, especially for factual errors cited against AWS documentation or English phrasing that sounds unnatural.
 
 ### Trademarks and license
 
 This project is not affiliated with, sponsored by, or endorsed by Amazon Web Services. AWS, Amazon Web Services, and AWS Certified Cloud Practitioner are trademarks of Amazon.com, Inc. or its affiliates.
 
-The code in `site/css/`, `site/js/`, and the Python scripts is licensed under [MIT](LICENSE). The site text, the differences, and `research/` are licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT). You may use and adapt that content if you credit Santiago García Arellano and link to this repository.
+The code in `site/css/`, `site/js/`, and `tools/` is licensed under [MIT](LICENSE). The site text, the differences, and `research/` are licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT). You may use and adapt that content if you credit Santiago García Arellano and link to this repository.
 
 ## Español
 
@@ -73,7 +72,7 @@ Este es el segundo cuaderno de la serie. El primero preparó al autor para el ex
 
 ## Repositorio
 
-- `tools/`: scripts en TypeScript para extraer, revisar y traducir los textos del sitio (`text-blocks.ts`, `localize.ts`).
+- `tools/`: scripts en TypeScript que generan y traducen el sitio: `build-differences.ts` arma `diferencias.html` con `data/differences.json` y `templates/differences.html`; `localize.ts` genera `site/en/`; `text-blocks.ts` extrae y revisa textos; `indexnow.ts` avisa a los buscadores.
 - `site/`: sitio estático en HTML, CSS y JavaScript, sin paso de compilación; Vercel lo despliega desde esta carpeta.
 - `research/`: investigación y fuentes. Incluye la logística del examen (`00-research.md`), el temario oficial con 135 puntos identificados (`01-exam-outline.md`), servicios dentro y fuera del alcance (`02-services.md`), recursos oficiales gratuitos (`03-official-resources.md`), 110 pares trampa candidatos junto con una tabla de equivalencias Azure ↔ AWS (`04-trap-pairs.md`), experiencias de la comunidad identificadas como tales (`05-community-experience.md`) y el plan (`06-plan.md`).
 
@@ -86,9 +85,12 @@ cd site && pnpm dlx serve .
 Para regenerar las diferencias y después las páginas en inglés (desde la raíz del repositorio):
 
 ```bash
-(cd site && python3 generar-diferencias.py)
-(cd tools && pnpm install && node localize.ts)
+cd tools && pnpm install && pnpm run build
 ```
+
+Las diferencias se editan en `tools/data/differences.json`, nunca en `site/diferencias.html`. Cada una tiene `domain` (1 a 4), `topic`, `id` (ancla estable), `title`, `hint`, `confusion`, `rule` y, opcional, `table` con pares de situación y respuesta.
+
+Después de un despliegue con páginas nuevas, `cd tools && pnpm run indexnow` avisa a Bing y a otros buscadores con las URLs de `site/sitemap.xml`.
 
 Las páginas de `site/en/` no se editan a mano: salen de las páginas en español y del diccionario `tools/i18n/en.json`. Si cambias un texto en español, agrega su traducción al diccionario; `localize.ts` avisa qué falta.
 
@@ -102,6 +104,6 @@ Este proyecto no está afiliado a Amazon Web Services ni cuenta con su patrocini
 
 ## Licencia
 
-El código (`site/css/`, `site/js/` y los scripts de Python) usa la licencia MIT; ver [`LICENSE`](LICENSE). Los textos (las páginas del sitio, las diferencias y `research/`) usan Creative Commons Atribución 4.0 Internacional; ver [`LICENSE-CONTENT`](LICENSE-CONTENT). Puedes usarlos y adaptarlos si das crédito a Santiago García Arellano con un enlace a este repositorio.
+El código (`site/css/`, `site/js/` y `tools/`) usa la licencia MIT; ver [`LICENSE`](LICENSE). Los textos (las páginas del sitio, las diferencias y `research/`) usan Creative Commons Atribución 4.0 Internacional; ver [`LICENSE-CONTENT`](LICENSE-CONTENT). Puedes usarlos y adaptarlos si das crédito a Santiago García Arellano con un enlace a este repositorio.
 
 Si te sirvió, puedes dejarle una estrella al repositorio.

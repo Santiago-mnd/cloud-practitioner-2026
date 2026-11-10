@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las {{total}} diferencias clave del CLF-C02 · Cuaderno Cloud Practitioner</title>
+<meta name="description" content="Las {{total}} diferencias clave del examen AWS Certified Cloud Practitioner (CLF-C02): dónde se confunden los servicios, qué pasa en realidad y qué frase decide la respuesta.">
+<link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/diferencias">
+<link rel="alternate" hreflang="es-MX" href="https://cloud-practitioner.sintitulo.dev/diferencias">
+<link rel="alternate" hreflang="en-US" href="https://cloud-practitioner.sintitulo.dev/en/differences">
+<link rel="alternate" hreflang="x-default" href="https://cloud-practitioner.sintitulo.dev/diferencias">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuaderno Cloud Practitioner">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/diferencias">
+<meta property="og:title" content="Las {{total}} diferencias clave del CLF-C02">
+<meta property="og:description" content="Cada par de servicios y conceptos del CLF-C02 tiene una confusión frecuente; aquí encuentras la frase que decide la respuesta y la explicación.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Las {{total}} diferencias clave del CLF-C02">
+<meta name="twitter:description" content="Cada par de servicios y conceptos del CLF-C02 tiene una confusión frecuente; aquí encuentras la frase que decide la respuesta y la explicación.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf9f2">
+<meta property="og:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuaderno Cloud Practitioner: ¿CloudTrail o CloudWatch? ¿Shield o WAF? ¿EBS o EFS?">
+<meta name="twitter:image" content="https://cloud-practitioner.sintitulo.dev/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Work+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cabecera">
+  <div class="limite pad barra">
+    <a class="marca-sitio" href="/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H18a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5.5A1.5 1.5 0 0 1 4 18.5z"></path><path d="M4 16.5h15"></path><path d="M8 3v17"></path></svg>
+      Cuaderno Cloud Practitioner
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a class="nav-cta" href="/practica">Practicar</a>
+      <a href="/diferencias" aria-current="page">Diferencias</a>
+      <a href="/metodo">Método</a>
+      <a href="/examen"><span class="largo">Día del examen</span><span class="corto">Examen</span></a>
+      <div class="idioma" role="group" aria-label="Idioma"><a href="/en/differences" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><span class="idioma-actual" lang="es">ES</span></div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1" class="limite pad" style="padding-top: 64px">
+
+  <div class="encabezado-diferencias">
+    <h1>Las {{total}} diferencias del CLF&#8209;C02</h1>
+    <p class="subtitulo">¿CloudTrail o CloudWatch? ¿Shield o WAF? Una frase para distinguir cada par.</p>
+    <p class="prosa" style="margin-top: 20px">Una opción equivocada puede sonar convincente porque nombra un servicio real. Cada diferencia te muestra la pista que decide la respuesta, dónde surge la confusión y qué pasa en realidad; puedes leerlas en unos 25 minutos o repasar solo las pistas en siete.</p>
+    <div class="controles">
+      <button type="button" class="cta secundaria" id="alternar-pistas" aria-pressed="false">Solo pistas</button>
+      <span class="meta" id="estado-dominadas" role="status"></span>
+      <span class="meta">Marca las que dominas para quitarlas de la hoja de pistas.</span>
+    </div>
+  </div>
+
+  <div class="marco-diferencias">
+    <nav class="indice-lateral" aria-label="Índice de diferencias">
+      <details class="indice-caja" id="indice-caja" open>
+        <summary>Índice · {{total}} diferencias</summary>
+        <ul>
+{{index}}
+        </ul>
+      </details>
+    </nav>
+
+    <div class="columna-diferencias">
+{{domains}}
+    </div>
+  </div>
+
+</main>
+
+<footer class="pie-sitio">
+  <div class="limite pad">
+    <div class="pie-rejilla">
+      <div class="pie-columna">
+        <p class="densa">Estas {{total}} diferencias salen de cruzar la guía oficial del examen, la documentación de cada servicio y lo que reporta quien ya lo presentó. Ninguna reproduce preguntas del examen ni preguntas de práctica oficiales de AWS.</p>
+        <p class="nota">practicarlas <span aria-hidden="true">→</span></p>
+      </div>
+      <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
+        <h2>El cuaderno</h2>
+        <a href="/practica">Práctica</a>
+        <a href="/diferencias">Diferencias</a>
+        <a href="/metodo">Método</a>
+        <a href="/examen"><span class="largo">Día del </span>examen</a>
+      </nav>
+      <div class="pie-columna pie-menu">
+        <h2>Quién lo hizo</h2>
+        <a href="https://www.santiagos.mx/es/inicio">Santiago García Arellano</a>
+        <a href="https://github.com/Santiago-mnd">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-garcia-arellano/">LinkedIn</a>
+        <a href="https://github.com/sponsors/Santiago-mnd">Apoyar el proyecto</a>
+      </div>
+    </div>
+    <div class="pie-letra-chica">
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni tiene su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Este material te ayuda a estudiar, pero no garantiza que apruebes. Las preguntas de práctica son propias del sitio; ninguna proviene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Verifiqué el contenido en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si cambia el temario, comprueba la información actual en docs.aws.amazon.com.</p>
+      <p class="sello">No necesitas cuenta ni correo; el sitio tampoco usa cookies. La analítica reúne páginas vistas, país y navegador, sin crear perfiles ni seguirte entre sitios. Tu avance de estudio se queda en tu navegador.</p>
+      <p class="sello">Este es el segundo recurso libre de sintitulo.dev; habrá más.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cabecera.js" defer></script>
+<script src="js/diferencias.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js" data-sdkn="@vercel/analytics" data-sdkv="1"></script>
+</body>
+</html>

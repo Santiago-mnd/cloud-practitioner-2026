@@ -194,7 +194,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Several pillars sound like “making everything work well.” Turning off unused resources saves both money and energy, so cost optimization and sustainability overlap.</p>
             <p class="regla">The AWS Well-Architected Tool assesses a workload against the framework’s best practices and recommends improvements.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Organize the team, operate the workload, and improve it over time</th><td>Operational excellence</td></tr>
               <tr><th scope="row">Protect data, systems, and assets</th><td>Security</td></tr>
@@ -241,7 +241,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Rehost, relocate, and replatform all sound like moving an application to the cloud.</p>
             <p class="regla">For large migrations, AWS recommends rehost, replatform, or relocate, and saving redesign for after the migration, because refactor is the most complex strategy.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Move it as-is, without changes (lift and shift)</th><td>Rehost</td></tr>
               <tr><th scope="row">Move it with some adjustments to take advantage of the cloud (lift, tinker and shift)</th><td>Replatform</td></tr>
@@ -330,7 +330,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> The shared responsibility model can look like a fixed dividing line, but that line shifts by service.</p>
             <p class="regla">The more abstract the service, the more layers AWS operates. Data, encryption settings, and AWS Identity and Access Management (IAM) permissions always remain the customer’s responsibility.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Amazon EC2</th><td>Customer: guest operating system and its patches, applications, and security group</td></tr>
               <tr><th scope="row">Amazon RDS</th><td>AWS: patches, backups, and failure recovery. Customer: data, users, and network access</td></tr>
@@ -375,7 +375,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> All three record something, and the exam guide groups them under the same governance and compliance skill.</p>
             <p class="regla">A configuration change leaves a trail in the last two: CloudTrail records who made the call, while Config records the resulting configuration if it is recording that resource type.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Metrics, logs, and alarms for resources and applications</th><td>Amazon CloudWatch</td></tr>
               <tr><th scope="row">Who took each action in the account, and when</th><td>AWS CloudTrail</td></tr>
@@ -419,7 +419,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They all look for security problems, but their names don’t tell you what each one finds.</p>
             <p class="regla">Inspector checks installed software. GuardDuty analyzes account activity, network, and DNS logs.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Software vulnerabilities and network exposure in EC2, container images, and Lambda</th><td>Amazon Inspector</td></tr>
               <tr><th scope="row">Suspicious or malicious activity in the account</th><td>Amazon GuardDuty</td></tr>
@@ -465,7 +465,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They all sound like ways to store something secret.</p>
             <p class="regla">Other AWS services, such as S3 and EBS, integrate with KMS to encrypt their data using KMS keys.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Create and control managed encryption keys</th><td>AWS Key Management Service (KMS)</td></tr>
               <tr><th scope="row">A dedicated hardware security module (HSM) controlled by the customer</th><td>AWS CloudHSM</td></tr>
@@ -528,7 +528,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> All three authenticate users.</p>
             <p class="regla">IAM Identity Center was previously called AWS Single Sign-On, and that name still appears in study materials.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Identities and permissions within an AWS account</th><td>AWS IAM</td></tr>
               <tr><th scope="row">Employee single sign-on across multiple accounts and applications</th><td>AWS IAM Identity Center</td></tr>
@@ -649,7 +649,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They are all EC2 virtual machines, and the letters in each family are not obvious at first glance.</p>
             <p class="regla">EC2 groups instance types into families based on the resource they optimize.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Balance of compute, memory, and networking</th><td>General purpose</td></tr>
               <tr><th scope="row">Batch jobs, transcoding, high-performance web servers, high-performance computing (HPC)</th><td>Compute optimized</td></tr>
@@ -713,7 +713,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They all store data, and AWS manages all of them.</p>
             <p class="regla">First, choose the data model. Then decide whether AWS should manage the database or you should install it on EC2 to control the database engine and operating system.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Managed relational database with several engines</th><td>Amazon RDS</td></tr>
               <tr><th scope="row">AWS relational database compatible with MySQL and PostgreSQL</th><td>Amazon Aurora</td></tr>
@@ -780,7 +780,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> All four connect something to a VPC.</p>
             <p class="regla">Direct Connect avoids the internet. Site-to-Site VPN travels over the internet through an encrypted IPsec tunnel.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Dedicated, private physical connection from a data center</th><td>AWS Direct Connect</td></tr>
               <tr><th scope="row">Encrypted IPsec tunnel over the internet between a network and the VPC</th><td>AWS Site-to-Site VPN</td></tr>
@@ -825,7 +825,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> S3, EBS, and EFS all store data, and each has an S in its name.</p>
             <p class="regla">AWS Backup and Elastic Disaster Recovery handle backups and recovery. Storage Gateway also supports backup and archiving from on-premises environments.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Persistent block storage for an instance</th><td>Amazon EBS</td></tr>
               <tr><th scope="row">Temporary block storage, lost when the instance stops or terminates</th><td>Instance store</td></tr>
@@ -856,7 +856,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Every class stores the same object; price, Availability Zones, and retrieval time vary.</p>
             <p class="regla">Lifecycle policies move objects between classes using fixed rules, such as an object's age. Intelligent-Tiering moves them only between its own access tiers, within the same class, based on actual access.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Frequent access</th><td>S3 Standard</td></tr>
               <tr><th scope="row">Unknown or changing access patterns</th><td>S3 Intelligent-Tiering</td></tr>
@@ -886,7 +886,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They all work with data for analysis, and a real architecture may use them together.</p>
             <p class="regla">For example, Kinesis can receive the data, Glue can transform it, Athena can query it, and Quick Sight can display it on a dashboard.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Direct, serverless SQL queries on data in S3</th><td>Amazon Athena</td></tr>
               <tr><th scope="row">Serverless data integration and ETL (extract, transform, and load)</th><td>AWS Glue</td></tr>
@@ -915,7 +915,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Their names do not explain what they do, and several work with text.</p>
             <p class="regla">Except for SageMaker AI, these services come with pretrained models and can be used through an API without knowing machine learning. Some, such as Comprehend, also let you train your own models.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Create, train, and deploy your own models</th><td>Amazon SageMaker AI</td></tr>
               <tr><th scope="row">Chatbots and conversational interfaces</th><td>Amazon Lex</td></tr>
@@ -946,7 +946,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> They all move messages between parts of an application.</p>
             <p class="regla">SNS delivers a message to its subscribers as soon as it arrives. In SQS, the message waits in the queue until a consumer requests it.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Send one message to many subscribers</th><td>Amazon SNS</td></tr>
               <tr><th scope="row">Message queue that decouples components</th><td>Amazon SQS</td></tr>
@@ -975,7 +975,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> You may encounter these services less often while studying, and their names can sound alike.</p>
             <p class="regla">AppStream 2.0 is now called WorkSpaces Applications, but the exam guide uses the earlier name.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Full virtual desktops</th><td>Amazon WorkSpaces</td></tr>
               <tr><th scope="row">Stream individual applications (now called WorkSpaces Applications)</th><td>Amazon AppStream 2.0</td></tr>
@@ -1011,7 +1011,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Several options offer discounts, and several use the word “reserve.”</p>
             <p class="regla">Capacity Reservations guarantee capacity but, on their own, are billed at On-Demand rates; combine them with Savings Plans or regional Reserved Instances for a discount.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">No commitment, pay for what you use</th><td>On-Demand Instances</td></tr>
               <tr><th scope="row">Spare capacity at a steep discount that AWS can reclaim</th><td>Spot Instances</td></tr>
@@ -1077,7 +1077,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> All four deal with costs and sit together in the billing console.</p>
             <p class="regla">AWS Budgets alerts you when actual or forecasted spending crosses a threshold. Budget actions can also apply an IAM policy or an SCP, or stop EC2 or RDS instances. Those actions can run automatically or after approval.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Estimate costs before you build</th><td>AWS Pricing Calculator</td></tr>
               <tr><th scope="row">View and analyze spending, including forecasts</th><td>AWS Cost Explorer</td></tr>
@@ -1141,7 +1141,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Paid plans share many features, and “Enterprise On-Ramp” sounds like a step below Business.</p>
             <p class="regla">The CLF-C02 guide names Developer, Business, Enterprise On-Ramp, and Enterprise; the exam follows that guide. AWS will discontinue Developer, Business, and Enterprise On-Ramp on January 1, 2027; it currently offers Business Support+, Enterprise Support, and Unified Operations. Basic is free and includes customer service, core Trusted Advisor checks, and AWS Health.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Experimenting or testing; business-hours web support</th><td>Developer</td></tr>
               <tr><th scope="row">Minimum recommended for production; 24/7 phone, web, and chat support; all Trusted Advisor checks</th><td>Business</td></tr>
@@ -1168,7 +1168,7 @@
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Several options sound like ways to ask AWS for help.</p>
             <p class="regla">Trust &amp; Safety handles abuse originating from AWS resources. For a technical issue with your own account, contact AWS Support.</p>
             <table class="mapa">
-              <caption class="sr">Which pillar fits each situation</caption>
+              <caption class="sr">Which answer fits each situation</caption>
               <tbody>
               <tr><th scope="row">Report spam, attacks, or illegal content originating from AWS resources</th><td>Trust &amp; Safety team</td></tr>
               <tr><th scope="row">Consulting from AWS’s own team</th><td>AWS Professional Services</td></tr>

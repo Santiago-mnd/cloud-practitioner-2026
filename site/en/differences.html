@@ -239,7 +239,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Rehost, relocate, and replatform all sound like moving an application to the cloud.</p>
-            <p class="regla">For large migrations, AWS recommends rehost, replatform, or relocate, then redesigning after migration because refactor is the most complex strategy.</p>
+            <p class="regla">For large migrations, AWS recommends rehost, replatform, or relocate, and saving redesign for after the migration, because refactor is the most complex strategy.</p>
             <table class="mapa">
               <caption class="sr">Which pillar fits each situation</caption>
               <tbody>
@@ -269,7 +269,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Either way, the software runs on AWS, so the difference can seem purely financial.</p>
-            <p class="regla">With license included, the service price covers the software license. Oracle Database Standard Edition 2 on Amazon RDS, for example, also supports BYOL. With BYOL (Bring Your Own License), a company uses licenses it has already purchased. Some licenses are counted by socket or physical core, and Dedicated Hosts let companies use them.</p>
+            <p class="regla">With license included, the service price covers the software license—for example, Oracle Database Standard Edition 2 on Amazon RDS, which also supports BYOL. With BYOL (Bring Your Own License), a company uses licenses it has already purchased. Some licenses are counted by socket or physical core, and Dedicated Hosts let companies use them.</p>
             <p class="tema-pie">Cloud economics</p>
           </div>
         </article>
@@ -319,7 +319,7 @@
             <span class="numero">09</span>
             <div class="dif-titular">
               <h3><a href="#responsibility-by-service">Customer responsibilities change from one service to another</a></h3>
-              <p><strong class="pista">EC2 = the customer patches the operating system. S3 or DynamoDB = AWS operates through the platform layer.</strong></p>
+              <p><strong class="pista">EC2 = the customer patches the operating system. S3 or DynamoDB = AWS operates everything up to the platform.</strong></p>
             </div>
             <label class="dominada">
               <input type="checkbox" data-dominada="responsibility-by-service" aria-label="Mark as mastered: Customer responsibilities change from one service to another">
@@ -760,7 +760,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Both filter traffic with port and address rules inside an AWS virtual private cloud (VPC).</p>
-            <p class="regla">A security group is associated with instances, allows only allow rules, and is stateful: if a connection is allowed in, its response can leave without another rule. A network access control list (ACL) is associated with a subnet, allows both allow and deny rules, and is stateless: inbound and outbound traffic must each be allowed separately.</p>
+            <p class="regla">A security group is associated with instances, supports only allow rules, and is stateful: if a connection is allowed in, its response can leave without another rule. A network access control list (ACL) is associated with a subnet, supports both allow and deny rules, and is stateless: inbound and outbound traffic must each be allowed separately.</p>
             <p class="tema-pie">Networking</p>
           </div>
         </article>
@@ -993,7 +993,7 @@
         </div>
       </section>
       <section class="dominio" id="dominio-4" data-dominio="4">
-        <h2>Billing, pricing, and support <span class="conteo">38–45</span></h2>
+        <h2>Billing, Pricing, and Support <span class="conteo">38–45</span></h2>
         <div class="lista-diferencias">
         <article class="diferencia" id="purchase-options" data-dif="purchase-options">
           <div class="dif-cabeza">
@@ -1112,7 +1112,7 @@
             <span class="numero">43</span>
             <div class="dif-titular">
               <h3><a href="#organizations-vs-control-tower">Organizations groups accounts; Control Tower sets up the landing zone</a></h3>
-              <p><strong class="pista">Consolidated billing and SCP = Organizations. Ready-to-use multi-account environment with controls = Control Tower.</strong></p>
+              <p><strong class="pista">Consolidated billing and SCPs = Organizations. Ready-to-use multi-account environment with controls = Control Tower.</strong></p>
             </div>
             <label class="dominada">
               <input type="checkbox" data-dominada="organizations-vs-control-tower" aria-label="Mark as mastered: Organizations groups accounts; Control Tower sets up the landing zone">
@@ -1121,7 +1121,7 @@
           </div>
           <div class="dif-cuerpo">
             <p class="confusion"><span class="rotulo">Where it gets confusing:</span> Both manage multiple accounts.</p>
-            <p class="regla">AWS Organizations groups accounts into organizational units, consolidates billing, and applies SCP. AWS Control Tower uses Organizations to set up a landing zone with preconfigured controls.</p>
+            <p class="regla">AWS Organizations groups accounts into organizational units, consolidates billing, and applies SCPs. AWS Control Tower uses Organizations to set up a landing zone with preconfigured controls.</p>
             <p class="tema-pie">Accounts</p>
           </div>
         </article>
@@ -1145,7 +1145,7 @@
               <tbody>
               <tr><th scope="row">Experimenting or testing; business-hours web support</th><td>Developer</td></tr>
               <tr><th scope="row">Minimum recommended for production; 24/7 phone, web, and chat support; all Trusted Advisor checks</th><td>Business</td></tr>
-              <tr><th scope="row">Critical workloads; a team of technical account managers (TAM); under 30 minutes for a critical system outage</th><td>Enterprise On-Ramp</td></tr>
+              <tr><th scope="row">Critical workloads; a team of technical account managers (TAMs); under 30 minutes for a critical system outage</th><td>Enterprise On-Ramp</td></tr>
               <tr><th scope="row">Critical workloads; designated TAM; under 15 minutes for a critical system outage</th><td>Enterprise</td></tr>
               </tbody>
             </table>
@@ -1194,11 +1194,11 @@
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">These 45 Differences draw on the official exam guide, each service’s documentation, and reports from people who have taken the exam. None reproduce exam questions or official AWS practice questions.</p>
+        <p class="densa">These 45 differences draw on the official exam guide, each service’s documentation, and reports from people who have taken the exam. None reproduce exam questions or official AWS practice questions.</p>
         <p class="nota">practice them <span aria-hidden="true">→</span></p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Site sections">
-        <h2>The guide</h2>
+        <h2>The notebook</h2>
         <a href="/en/practice">Practice</a>
         <a href="/en/differences">Differences</a>
         <a href="/en/method">Method</a>

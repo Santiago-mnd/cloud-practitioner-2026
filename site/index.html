@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cuaderno Cloud Practitioner · las diferencias clave del CLF-C02, en español</title>
-<meta name="description" content="Las 45 diferencias que más se confunden en el examen AWS Certified Cloud Practitioner (CLF-C02), explicadas una por una, y la guía de OnVUE. Gratis, en español y sin cuenta.">
+<title>Cuaderno Cloud Practitioner · 45 diferencias clave del CLF-C02, en español</title>
+<meta name="description" content="Las 45 diferencias entre servicios que suelen confundirse en el examen AWS Certified Cloud Practitioner (CLF-C02), explicadas una por una. Incluye una guía de OnVUE; es gratis, en español y sin cuenta.">
 <link rel="canonical" href="https://cloud-practitioner.sintitulo.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cuaderno Cloud Practitioner">
 <meta property="og:locale" content="es_MX">
 <meta property="og:url" content="https://cloud-practitioner.sintitulo.dev/">
-<meta property="og:title" content="Cuaderno Cloud Practitioner: las diferencias clave del CLF-C02, en español">
-<meta property="og:description" content="Las 45 diferencias que más se confunden en el examen AWS Certified Cloud Practitioner (CLF-C02) y la guía de OnVUE. Gratis, en español y sin cuenta.">
+<meta property="og:title" content="Cuaderno Cloud Practitioner: 45 diferencias clave del CLF-C02, en español">
+<meta property="og:description" content="Las 45 diferencias entre servicios que suelen confundirse en el examen AWS Certified Cloud Practitioner (CLF-C02), más una guía de OnVUE. Gratis, en español y sin cuenta.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cuaderno Cloud Practitioner: las diferencias clave del CLF-C02, en español">
-<meta name="twitter:description" content="Las 45 diferencias que más se confunden en el examen AWS Certified Cloud Practitioner (CLF-C02) y la guía de OnVUE. Gratis, en español y sin cuenta.">
+<meta name="twitter:title" content="Cuaderno Cloud Practitioner: 45 diferencias clave del CLF-C02, en español">
+<meta name="twitter:description" content="Las 45 diferencias entre servicios que suelen confundirse en el examen AWS Certified Cloud Practitioner (CLF-C02), más una guía de OnVUE. Gratis, en español y sin cuenta.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -53,8 +53,8 @@
     <div class="rejilla" style="align-items: end">
       <div class="col-8">
         <h1>¿CloudTrail o CloudWatch?<br>¿Shield o WAF?<br><span class="marca">¿EBS o EFS?</span></h1>
-        <p class="prosa" style="max-width: 64ch; margin-top: 28px">Las 45 diferencias que más se confunden en el CLF&#8209;C02, el examen AWS Certified Cloud Practitioner, resueltas una por una: dónde se confunden, qué pasa en realidad y la frase que decide la respuesta.</p>
-        <p class="meta" style="margin-top: 20px">Armado con la guía oficial del examen y la documentación de AWS, y verificado contra ellas en septiembre de 2026.</p>
+        <p class="prosa" style="max-width: 64ch; margin-top: 28px">En el CLF&#8209;C02, las opciones equivocadas también son servicios reales. Estas 45 diferencias del examen AWS Certified Cloud Practitioner te muestran dónde se parecen y qué frase decide la respuesta.</p>
+        <p class="meta" style="margin-top: 20px">Armado con la guía oficial del examen y la documentación de AWS; verificado contra ambas en septiembre de 2026.</p>
       </div>
       <div class="col-4">
         <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap">
@@ -66,7 +66,7 @@
   </section>
 
   <section class="limite pad seccion" id="diferencias" data-revelar aria-labelledby="titulo-diferencias">
-    <h2 class="sr" id="titulo-diferencias">Un ejemplo de las diferencias</h2>
+    <h2 class="sr" id="titulo-diferencias">Una diferencia, en una pregunta</h2>
     <div class="rejilla" style="align-items: start">
       <div class="col-7">
         <div class="tarjeta">
@@ -76,20 +76,20 @@
             <li class="opcion correcta"><span class="letra">B</span><span>AWS CloudTrail</span></li>
             <li class="opcion"><span class="letra">C</span><span>AWS Config</span></li>
           </ul>
-          <p class="densa" style="margin-top: 22px">CloudWatch mide cómo se comportan los recursos y Config guarda cómo están configurados. La pregunta pide quién hizo qué, y eso lo registra CloudTrail.</p>
+          <p class="densa" style="margin-top: 22px">CloudWatch mide el comportamiento de los recursos; Config guarda su configuración. Pero la pregunta dice «quién hizo qué»: eso lo registra CloudTrail.</p>
           <p style="margin-top: 24px"><strong class="pista">¿Quién hizo qué? = CloudTrail.</strong></p>
         </div>
       </div>
       <div class="col-5">
         <p class="nota">tres servicios, tres preguntas distintas</p>
-        <p class="prosa" style="margin-top: 18px">En este examen las opciones equivocadas son servicios reales que suenan bien. Aquí cada grupo de vecinos se separa con una frase.</p>
+        <p class="prosa" style="margin-top: 18px">Las opciones equivocadas suenan bien porque son servicios reales. Por eso, cada grupo de vecinos tiene aquí una frase que los separa.</p>
         <ul class="lista-limpia" style="margin-top: 24px">
-          <li class="densa">Una SCP pone el techo de permisos; por sí sola no da ninguno.</li>
-          <li class="densa">AWS Budgets avisa y, con acciones, también puede detener instancias.</li>
+          <li class="densa">Una SCP fija el techo de permisos; por sí sola no concede ninguno.</li>
+          <li class="densa">AWS Budgets avisa; con acciones, también puede detener instancias.</li>
           <li class="densa">Meter datos a AWS desde internet no cuesta; sacarlos sí.</li>
           <li class="densa">Shield Standard viene incluido; Shield Advanced es de pago.</li>
         </ul>
-        <p style="margin-top: 20px"><a href="/diferencias" style="font-weight: 600">Ver las 45 completas</a></p>
+        <p style="margin-top: 20px"><a href="/diferencias" style="font-weight: 600">Ver las 45 diferencias</a></p>
       </div>
     </div>
   </section>
@@ -99,8 +99,8 @@
       <div class="rejilla" style="align-items: start">
         <div class="col-5">
           <h2>La práctica viene en camino</h2>
-          <p class="prosa" style="margin-top: 20px">El banco de 240 preguntas propias está en construcción, repartido según el peso de cada dominio del examen. Lo que falles regresará a los pocos minutos, y otra vez al día siguiente, hasta que la respuesta salga sin pensarla.</p>
-          <p class="prosa" style="margin-top: 16px">El simulacro será de 65 preguntas en 90 minutos, como el examen. El CLF&#8209;C02 se aprueba con 700 de 1000, que es un puntaje escalado y no un porcentaje de aciertos.</p>
+          <p class="prosa" style="margin-top: 20px">El banco de 240 preguntas propias está en construcción, distribuido según el peso de cada dominio del examen. Las que falles volverán a los pocos minutos; después, al día siguiente, hasta que reconozcas la respuesta.</p>
+          <p class="prosa" style="margin-top: 16px">El simulacro tendrá 65 preguntas en 90 minutos, como el examen. El CLF&#8209;C02 se aprueba con 700 de 1000: es un puntaje escalado, no un porcentaje de aciertos.</p>
         </div>
         <div class="col-7">
           <div class="tarjeta">
@@ -134,24 +134,24 @@
   </section>
 
   <section class="limite pad seccion" id="metodo" data-revelar>
-    <h2>Cómo se estudia esto</h2>
-    <p class="prosa" style="max-width: 70ch; margin-top: 16px">Cuatro pasos, en este orden. El tercero es el que más cuesta y el que más se salta.</p>
+    <h2>Cómo estudiar con este cuaderno</h2>
+    <p class="prosa" style="max-width: 70ch; margin-top: 16px">Sigue estos cuatro pasos. El tercero suele costar más; también es el más fácil de saltarse.</p>
     <ol class="lista-limpia" style="margin-top: 36px; gap: 24px; max-width: 900px">
       <li style="display: flex; gap: 22px; align-items: baseline">
         <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">1</span>
-        <div><h3>Una analogía antes que un dato</h3><p class="densa" style="margin-top: 6px">Un concepto se entiende cuando se puede contar con algo de la vida diaria. Antes de eso solo está memorizado.</p></div>
+        <div><h3>Una analogía antes que un dato</h3><p class="densa" style="margin-top: 6px">Si puedes explicar un concepto con algo de la vida diaria, lo entendiste. Si todavía no puedes, quizá solo memorizaste el dato.</p></div>
       </li>
       <li style="display: flex; gap: 22px; align-items: baseline">
         <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">2</span>
-        <div><h3>Una frase que decide la respuesta</h3><p class="densa" style="margin-top: 6px">Cada tema se reduce a una pista corta: «¿quién hizo qué?» separa CloudTrail de CloudWatch en dos segundos.</p></div>
+        <div><h3>Una frase que decide la respuesta</h3><p class="densa" style="margin-top: 6px">Busca la pista corta de cada tema: «¿quién hizo qué?» distingue CloudTrail de CloudWatch en dos segundos.</p></div>
       </li>
       <li style="display: flex; gap: 22px; align-items: baseline">
         <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">3</span>
-        <div><h3>Anota cada error, no cada tema</h3><p class="densa" style="margin-top: 6px">Una bitácora de fallos vale más que cualquier resumen: es la lista exacta de lo que va a costar puntos.</p></div>
+        <div><h3>Anota cada error, no cada tema</h3><p class="densa" style="margin-top: 6px">Tu bitácora de fallos vale más que cualquier resumen: señala justo las preguntas que te van a costar puntos.</p></div>
       </li>
       <li style="display: flex; gap: 22px; align-items: baseline">
         <span style="font-size: 19px; font-weight: 700; color: var(--green); min-width: 30px">4</span>
-        <div><h3>Simulacro completo, sin pausas</h3><p class="densa" style="margin-top: 6px">Un simulacro mide algo solo si se hace de corrido y con reloj.</p></div>
+        <div><h3>Simulacro completo, sin pausas</h3><p class="densa" style="margin-top: 6px">Haz el simulacro de corrido y con reloj; así sabrás cómo respondes bajo el tiempo del examen.</p></div>
       </li>
     </ol>
   </section>
@@ -161,29 +161,29 @@
       <div class="rejilla" style="align-items: start">
         <div class="col-5">
           <h2>Muchos exámenes se pierden antes de la primera pregunta</h2>
-          <p class="prosa" style="margin-top: 18px">El CLF&#8209;C02 también se presenta en línea con OnVUE, el software de Pearson VUE, y ahí la computadora también se evalúa. Esta lista junta las reglas que Pearson VUE publica para AWS con las fallas que aparecen en la práctica.</p>
+          <p class="prosa" style="margin-top: 18px">También puedes presentar el CLF&#8209;C02 en línea con OnVUE, el software de Pearson VUE; para entrar, tu computadora debe cumplir sus reglas. Esta lista reúne las que Pearson VUE publica para AWS y las fallas que aparecen en la práctica.</p>
         </div>
         <div class="col-7">
           <ul class="lista-limpia">
             <li style="display: flex; gap: 14px; align-items: flex-start">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="densa" style="color: inherit">Corre la prueba del sistema en la misma computadora y la misma red del examen.</span>
+              <span class="densa" style="color: inherit">Corre la prueba del sistema en la misma computadora y la misma red que usarás en el examen.</span>
             </li>
             <li style="display: flex; gap: 14px; align-items: flex-start">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="densa" style="color: inherit">Nada de máquinas virtuales. Con WSL, Docker o emuladores instalados, Hyper&#8209;V suele estar activo sin que nadie lo haya encendido, y desactivarlo pide reiniciar.</span>
+              <span class="densa" style="color: inherit">Nada de máquinas virtuales. Si tienes WSL, Docker o emuladores instalados, Hyper&#8209;V suele estar activo sin que lo hayas encendido; desactivarlo requiere reiniciar.</span>
             </li>
             <li style="display: flex; gap: 14px; align-items: flex-start">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="densa" style="color: inherit">Nada de VPN ni de redes corporativas o públicas. Detén el <em>servicio</em> de la VPN: Tailscale y similares se reinician solos si solo cierras la ventana.</span>
+              <span class="densa" style="color: inherit">Evita las VPN y las redes corporativas o públicas. Detén el <em>servicio</em> de la VPN: Tailscale y similares pueden reiniciarse aunque cierres la ventana.</span>
             </li>
             <li style="display: flex; gap: 14px; align-items: flex-start">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="densa" style="color: inherit">Entra al check&#8209;in 30 minutos antes. Incluye pruebas del equipo, una foto tuya y de tu identificación, y un escaneo del cuarto en 360 grados.</span>
+              <span class="densa" style="color: inherit">Entra al check&#8209;in 30 minutos antes. Harás pruebas del equipo, tomarás una foto tuya y de tu identificación, además de escanear el cuarto en 360 grados.</span>
             </li>
             <li style="display: flex; gap: 14px; align-items: flex-start">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>
-              <span class="densa" style="color: inherit">Una sola pantalla, sin audífonos, a solas en el cuarto y con una identificación oficial cuyo nombre coincida exacto con tu reserva.</span>
+              <span class="densa" style="color: inherit">Una sola pantalla, sin audífonos y a solas en el cuarto. Lleva una identificación oficial cuyo nombre coincida exactamente con tu reserva.</span>
             </li>
           </ul>
           <p style="margin-top: 26px"><a href="/examen" style="color: #FF9900; font-weight: 600">Ver la guía completa del día del examen</a></p>
@@ -196,11 +196,11 @@
     <div class="cierre">
       <div>
         <h2>Empieza por las diferencias</h2>
-        <p class="prosa" style="margin-top: 16px">Se leen en unos 25 minutos. Marca las que ya dominas y desaparecen de la hoja de pistas. La práctica, con diagnóstico por dominio, llega después.</p>
+        <p class="prosa" style="margin-top: 16px">Puedes leer las 45 diferencias en unos 25 minutos. Marca las que ya dominas para quitarlas de tu hoja de pistas; la práctica con diagnóstico por dominio llegará después.</p>
       </div>
       <div class="cierre-accion">
         <a class="cta grande" href="/diferencias">Ver las diferencias</a>
-        <p class="meta" style="margin-top: 12px">Nada que instalar ni registrar. Lo que marques se queda en este navegador: no viaja a ningún servidor.</p>
+        <p class="meta" style="margin-top: 12px">No necesitas instalar nada ni crear una cuenta. Tus marcas se quedan en este navegador; no viajan a ningún servidor.</p>
       </div>
     </div>
   </section>
@@ -211,7 +211,7 @@
   <div class="limite pad">
     <div class="pie-rejilla">
       <div class="pie-columna">
-        <p class="densa">Este cuaderno se armó con la guía oficial del CLF&#8209;C02 y la documentación de AWS, con el mismo método que sirvió para aprobar el AZ&#8209;900. Las 45 diferencias salen de cruzar el temario con los servicios que más se confunden entre sí. Es gratis y seguirá siéndolo.</p>
+        <p class="densa">Este cuaderno parte de la guía oficial del CLF&#8209;C02 y la documentación de AWS; usa el mismo método que sirvió para aprobar el AZ&#8209;900. Las 45 diferencias cruzan el temario con servicios que se confunden entre sí. Es gratis y seguirá siéndolo.</p>
         <p class="nota">léelo completo la mañana del examen</p>
       </div>
       <nav class="pie-columna pie-menu" aria-label="Secciones del sitio">
@@ -230,10 +230,10 @@
       </div>
     </div>
     <div class="pie-letra-chica">
-      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni cuenta con su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Es material de estudio y no garantiza que apruebes. Las preguntas de práctica son propias de este sitio; ninguna viene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
-      <p class="sello">Contenido verificado en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si el temario cambia, esta fecha se queda atrás: compruébalo en docs.aws.amazon.com.</p>
-      <p class="sello">Sin cuentas, sin correo y sin cookies. La analítica de visitas es agregada: cuenta páginas vistas, país y navegador, sin perfiles ni seguimiento entre sitios. Tu avance de estudio nunca sale de tu navegador.</p>
-      <p class="sello">El segundo de una serie de recursos libres que irán apareciendo en sintitulo.dev.</p>
+      <p class="sello"><strong>Aviso.</strong> Cuaderno Cloud Practitioner es un proyecto personal y gratuito; no está afiliado a Amazon Web Services ni tiene su patrocinio o aval. AWS, Amazon Web Services y AWS Certified Cloud Practitioner son marcas de Amazon.com, Inc. o sus filiales. Este material te ayuda a estudiar, pero no garantiza que apruebes. Las preguntas de práctica son propias del sitio; ninguna proviene del examen real. Preparé parte del contenido con ayuda de IA y lo revisé contra la documentación oficial; si encuentras un error, avísame en <a href="https://github.com/Santiago-mnd">GitHub</a>.</p>
+      <p class="sello">Verifiqué el contenido en septiembre de 2026 contra la guía oficial del CLF-C02 y la documentación de AWS. Si cambia el temario, comprueba la información actual en docs.aws.amazon.com.</p>
+      <p class="sello">No necesitas cuenta ni correo; el sitio tampoco usa cookies. La analítica reúne páginas vistas, país y navegador, sin crear perfiles ni seguirte entre sitios. Tu avance de estudio se queda en tu navegador.</p>
+      <p class="sello">Este es el segundo recurso libre de sintitulo.dev; habrá más.</p>
     </div>
   </div>
 </footer>
